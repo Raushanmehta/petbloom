@@ -1,0 +1,495 @@
+{
+  "navLinks": [
+    {
+      "label": "Home",
+      "href": "/"
+    },
+    {
+      "label": "About Us",
+      "href": "/about"
+    },
+    {
+      "label": "Our Team",
+      "href": "/team"
+    },
+    {
+      "label": "Blogs",
+      "href": "/blogs"
+    },
+    {
+      "label": "Contact Us",
+      "href": "/contact"
+    }
+  ],
+  "serviceAreas": [
+    {
+      "id": "1",
+      "title": "South Delhi",
+      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?auto=format&fit=crop&q=80&w=600"
+    },
+    {
+      "id": "2",
+      "title": "Gurugram",
+      "image": "https://images.unsplash.com/photo-1570168007204-dfb528c6958f?auto=format&fit=crop&q=80&w=600"
+    },
+    {
+      "id": "3",
+      "title": "Noida",
+      "image": "https://images.unsplash.com/photo-1514565131-fce0801e5785?auto=format&fit=crop&q=80&w=600"
+    },
+    {
+      "id": "4",
+      "title": "Faridabad",
+      "image": "https://images.unsplash.com/photo-1724243040324-aa945e452d8b?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bW9kZXJuJTIwY2l0eXxlbnwwfHwwfHx8MA%3D%3D"
+    },
+    {
+      "id": "5",
+      "title": "Ghaziabad",
+      "image": "https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&q=80&w=600"
+    },
+    {
+      "id": "6",
+      "title": "Greater Noida",
+      "image": "https://images.unsplash.com/photo-1709015653284-1c121cf92ddf?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z3JlYXRlciUyMG5vaWRhfGVufDB8fDB8fHww"
+    },
+    {
+      "id": "7",
+      "title": "Dwarka",
+      "image": "https://images.unsplash.com/photo-1555899434-94d1368aa7af?auto=format&fit=crop&q=80&w=600"
+    }
+  ],
+  "servicesData": [
+    {
+      "id": "1",
+      "title": "Dental Checkup",
+      "subtitle": "Pet Dentistry",
+      "image": "https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&q=80&w=600"
+    },
+    {
+      "id": "2",
+      "title": "Pet Boarding",
+      "subtitle": "Safe & Secure",
+      "image": "https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&q=80&w=600"
+    },
+    {
+      "id": "3",
+      "title": "Pet Daycare",
+      "subtitle": "Pet Care",
+      "image": "https://images.unsplash.com/photo-1587300003388-59208cc962cb?auto=format&fit=crop&q=80&w=600"
+    },
+    {
+      "id": "4",
+      "title": "Grooming Services",
+      "subtitle": "Veterinary Behaviourist",
+      "image": "https://images.unsplash.com/photo-1537151625747-768eb6cf92b2?auto=format&fit=crop&q=80&w=600"
+    },
+    {
+      "id": "5",
+      "title": "Grooming Services",
+      "subtitle": "Veterinary Behaviourist",
+      "image": "https://images.unsplash.com/photo-1537151625747-768eb6cf92b2?auto=format&fit=crop&q=80&w=600"
+    },
+    {
+      "id": "6",
+      "title": "Grooming Services",
+      "subtitle": "Veterinary Behaviourist",
+      "image": "https://images.unsplash.com/photo-1537151625747-768eb6cf92b2?auto=format&fit=crop&q=80&w=600"
+    }
+  ],
+  "whyChooseUsFeatures": [
+    {
+      "id": "1",
+      "title": "Expert Pet Care",
+      "description": "Trained professionals who truly love animals.",
+      "icon": "/icon/cat-paw-icon.png"
+    },
+    {
+      "id": "2",
+      "title": "Safe & Clean Environment",
+      "description": "A hygienic, stress-free space for your pet.",
+      "icon": "/icon/heart-icon.png"
+    },
+    {
+      "id": "3",
+      "title": "Premium Pet Services",
+      "description": "Grooming, boarding, training and more.",
+      "icon": "/icon/dog-icon.png"
+    },
+    {
+      "id": "4",
+      "title": "Happy Pet, Happy Owner",
+      "description": "Because a healthy pet makes a happier home.",
+      "icon": "/icon/badge-icon.png"
+    }
+  ],
+  "statisticsData": [
+    {
+      "id": "1",
+      "count": "300+",
+      "label": "Appointments Successfully",
+      "icon": "/icon/team-icon.png"
+    },
+    {
+      "id": "2",
+      "count": "200+",
+      "label": "Specialists Doctors",
+      "icon": "/icon/doctor-icon.png"
+    },
+    {
+      "id": "3",
+      "count": "50k",
+      "label": "Happy Customer",
+      "icon": "/icon/dog-icon.png"
+    },
+    {
+      "id": "4",
+      "count": "152+",
+      "label": "Winning Awards",
+      "icon": "/icon/award-icon.png"
+    }
+  ],
+  "footerData": {
+    "quickLinks": [
+      {
+        "label": "Home",
+        "href": "/"
+      },
+      {
+        "label": "About Us",
+        "href": "/about"
+      },
+      {
+        "label": "Our Services",
+        "href": "/services"
+      },
+      {
+        "label": "Our Team",
+        "href": "/team"
+      },
+      {
+        "label": "Service Areas",
+        "href": "/service-areas"
+      },
+      {
+        "label": "Gallery",
+        "href": "/gallery"
+      },
+      {
+        "label": "Blog",
+        "href": "/blog"
+      },
+      {
+        "label": "Contact Us",
+        "href": "/contact"
+      }
+    ],
+    "serviceLinks": [
+      {
+        "label": "Pet Grooming",
+        "href": "/services/pet-grooming"
+      },
+      {
+        "label": "Pet Bath & Spa",
+        "href": "/services/pet-bath-spa"
+      },
+      {
+        "label": "Haircuts & Styling",
+        "href": "/services/haircuts-styling"
+      },
+      {
+        "label": "Nail Trimming",
+        "href": "/services/nail-trimming"
+      },
+      {
+        "label": "Ear Cleaning",
+        "href": "/services/ear-cleaning"
+      },
+      {
+        "label": "De-shedding",
+        "href": "/services/de-shedding"
+      },
+      {
+        "label": "Pet Day Care",
+        "href": "/services/pet-day-care"
+      },
+      {
+        "label": "Pet Care Products",
+        "href": "/products"
+      }
+    ],
+    "resourceLinks": [
+      {
+        "label": "Pet Care Tips",
+        "href": "/resources/tips"
+      },
+      {
+        "label": "Pet Care Guide",
+        "href": "/resources/guide"
+      },
+      {
+        "label": "FAQs",
+        "href": "/faqs"
+      },
+      {
+        "label": "Terms & Conditions",
+        "href": "/terms"
+      },
+      {
+        "label": "Privacy Policy",
+        "href": "/privacy"
+      },
+      {
+        "label": "Sitemap",
+        "href": "/sitemap"
+      }
+    ],
+    "supportLinks": [
+      {
+        "label": "Help Center",
+        "href": "/help"
+      },
+      {
+        "label": "FAQs",
+        "href": "/faqs"
+      },
+      {
+        "label": "Contact Us",
+        "href": "/contact"
+      },
+      {
+        "label": "Live Chat",
+        "href": "/chat"
+      },
+      {
+        "label": "Feedback",
+        "href": "/feedback"
+      }
+    ]
+  },
+  "heroSectionData": {
+    "slides": [
+      {
+        "id": 1,
+        "titleWhite": "The Best Pets",
+        "titleColored": "Grooming Session",
+        "description": "We blend professional grooming with compassionate care to deliver clean, stylish results your pet will love.",
+        "image": "https://plus.unsplash.com/premium_photo-1707410048990-c9e0fb4e3956?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0"
+      },
+      {
+        "id": 2,
+        "titleWhite": "Expert Care &",
+        "titleColored": "Gentle Bathing",
+        "description": "Pamper your furry friend with organic shampoos, soothing massages, and luxurious spa treatments.",
+        "image": "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?q=80&w=1600&auto=format&fit=crop"
+      },
+      {
+        "id": 3,
+        "titleWhite": "Professional Styling",
+        "titleColored": "& Haircuts",
+        "description": "Keep your pets looking their absolute best with breed-specific styling and meticulous coat care.",
+        "image": "https://images.unsplash.com/photo-1535930891776-0c2dfb7fda1a?q=80&w=1600&auto=format&fit=crop"
+      },
+      {
+        "id": 4,
+        "titleWhite": "Happy & Healthy",
+        "titleColored": "Pet Lifestyle",
+        "description": "Dedicated to keeping tails wagging through healthy routines, hygiene maintenance, and love.",
+        "image": "https://images.unsplash.com/photo-1548767797-d8c844163c4c?q=80&w=1600&auto=format&fit=crop"
+      }
+    ],
+    "button1": {
+      "label": "Make an Appointment",
+      "href": "/book-appointment"
+    },
+    "button2": {
+      "label": "Browse all Services",
+      "href": "/services"
+    }
+  },
+  "aboutSectionData": {
+    "badgeText": "About Us",
+    "titleWhite": "Where Pets Look Great",
+    "titleColored": "and Feel Loved",
+    "description1": "At PetBloom, we believe every pet deserves the best care, attention, and a whole lot of love. Our professional grooming services are designed to keep your furry friends clean, healthy, and happy.",
+    "description2": "With experienced groomers, premium products, and a gentle approach, we make grooming a stress-free and enjoyable experience for every pet.",
+    "features": [
+      {
+        "id": "1",
+        "icon": "scissors",
+        "title": "Expert Groomers",
+        "description": "Trained professionals who truly love animals."
+      },
+      {
+        "id": "2",
+        "icon": "leaf",
+        "title": "Premium Products",
+        "description": "We use safe, high-quality products for your pets."
+      },
+      {
+        "id": "3",
+        "icon": "heart",
+        "title": "Happy Pets",
+        "description": "Your pet's comfort and happiness is our priority."
+      }
+    ],
+    "images": {
+      "main": "https://plus.unsplash.com/premium_photo-1707410050552-e94a738102a1?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y296eSUyMGRvZ3xlbnwwfHwwfHx8MA%3D%3D",
+      "secondary": "https://images.unsplash.com/photo-1625794084867-8ddd239946b1?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c3RyZXNzZWQlMjBkb2d8ZW58MHx8MHx8fDA%3D",
+      "badgeIcon": "/icon/cat-foot-icon.svg"
+    },
+    "badge": {
+      "line1": "Safe, Gentle",
+      "line2": "& Pet-Friendly",
+      "line3": "Grooming"
+    }
+  },
+  "serviceAreasSectionData": {
+    "badgeText": "Service Areas",
+    "titleWhite": "Our",
+    "titleColored": "Service Areas",
+    "descriptionPart1": "We proudly serve premium pet grooming and care services across ",
+    "descriptionPart2": "Delhi NCR."
+  },
+  "servicesSectionData": {
+    "badgeText": "Our Services",
+    "titleWhite": "Boarding Services",
+    "titleColored": "Tailored for Every Pet",
+    "description": "From pampering grooming to safe stays, we offer a range of professional services designed to keep your pets happy, healthy, and loved."
+  },
+  "whyChooseUsSectionData": {
+    "badgeText": "Why Choose Us",
+    "titleWhite": "Why PetBloom",
+    "titleColored": "Is the Right Choice",
+    "description": "At PetBloom, we treat every pet like family. Our expert care, safe environment, and personalized attention ensure your furry friend stays happy, healthy, and loved.",
+    "images": {
+      "main": "https://images.unsplash.com/photo-1523979229794-bd082f68650a?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8"
+    },
+    "badge": {
+      "line1": "Healthy Pets,",
+      "line2": "Happy You"
+    }
+  },
+  "teamSectionData": {
+    "badgeText": "Our Team",
+    "titleWhite": "Meet Our",
+    "titleColored": "Pet Care Experts",
+    "description": "Passionate professionals dedicated to providing the best care and love for your pets.",
+    "teamMembers": [
+      {
+        "id": "1",
+        "name": "Alex Javed",
+        "role": "Pet Care Specialist",
+        "image": "https://plus.unsplash.com/premium_photo-1661632923172-ccbf02bfe44f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZG9nJTIwYW5kJTIwcGVyc29ufGVufDB8fDB8fHww"
+      },
+      {
+        "id": "2",
+        "name": "Jessica Lauren",
+        "role": "Pet Care Specialist",
+        "image": "https://plus.unsplash.com/premium_photo-1663090958042-b3ad11c255b6?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDV8fGRvZyUyMGFuZCUyMHBlcnNvbnxlbnwwfHwwfHx8MA%3D%3D"
+      },
+      {
+        "id": "3",
+        "name": "Jenny William",
+        "role": "Pet Care Specialist",
+        "image": "https://plus.unsplash.com/premium_photo-1667727017194-6e43400f2d5c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGRvZyUyMGFuZCUyMHBlcnNvbnxlbnwwfHwwfHx8MA%3D%3D"
+      },
+      {
+        "id": "4",
+        "name": "Daniel Thomas",
+        "role": "Pet Care Specialist",
+        "image": "https://plus.unsplash.com/premium_photo-1707410050564-df6b5503f220?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8ZG9nJTIwYW5kJTIwcGVyc29ufGVufDB8fDB8fHww"
+      }
+    ]
+  },
+  "testimonialSectionData": {
+    "badgeText": "Testimonials",
+    "titleWhite": "Happy Pets, ",
+    "titleColored": "Happy Parents",
+    "description": "Real stories from pet parents who trust PetBloom for exceptional care, love, and happiness.",
+    "image": "https://images.unsplash.com/photo-1575859431774-2e57ed632664?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZG9vZGxlJTIwZG9nfGVufDB8fDB8fHww",
+    "testimonials": [
+      {
+        "id": "1",
+        "quote": "PetBloom has been a blessing for my Bruno! He looks so fresh and happy after every grooming session. The staff is so gentle and caring.",
+        "author": "Priya Sharma",
+        "role": "Dog Mom",
+        "image": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=200"
+      },
+      {
+        "id": "2",
+        "quote": "The team is so caring and professional. My cat, Miu, is always calm and comfortable here. Their grooming services are truly top-notch!",
+        "author": "Rahul Mehta",
+        "role": "Cat Dad",
+        "image": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&q=80&w=200"
+      },
+      {
+        "id": "3",
+        "quote": "Excellent service, friendly staff, and a spotless environment. I wouldn't trust anyone else with my pet's care. They do an amazing job.",
+        "author": "Anjali Verma",
+        "role": "Proud Pet Parent",
+        "image": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=200"
+      },
+      {
+        "id": "4",
+        "quote": "PetBloom has been a blessing for my Bruno! He looks so fresh and happy after every grooming session. The staff is so gentle and caring.",
+        "author": "Priya Sharma",
+        "role": "Dog Mom",
+        "image": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=200"
+      },
+      {
+        "id": "5",
+        "quote": "The team is so caring and professional. My cat, Miu, is always calm and comfortable here. Their grooming services are truly top-notch!",
+        "author": "Rahul Mehta",
+        "role": "Cat Dad",
+        "image": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&q=80&w=200"
+      },
+      {
+        "id": "6",
+        "quote": "Excellent service, friendly staff, and a spotless environment. I wouldn't trust anyone else with my pet's care. They do an amazing job.",
+        "author": "Anjali Verma",
+        "role": "Proud Pet Parent",
+        "image": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=200"
+      }
+    ]
+  },
+  "faqSectionData": {
+    "badgeText": "FAQS",
+    "titleWhite": "Frequently Asked ",
+    "titleColored": "Questions",
+    "description": "Find answers to common questions about our pet grooming <br className=\"hidden sm:block\" /> services, care, and appointments.",
+    "image": "https://plus.unsplash.com/premium_photo-1707410049087-8a0a5ab77bce?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZG9nJTIwb24lMjBiZWR8ZW58MHx8MHx8fDA%3D",
+    "faqs": [
+      {
+        "id": "1",
+        "question": "How often should I groom my pet?",
+        "answer": "It depends on your pet’s breed, coat type, and lifestyle. Generally, we recommend grooming every 4–6 weeks to keep your pet clean, healthy, and looking their best."
+      },
+      {
+        "id": "2",
+        "question": "What does a standard grooming session include?",
+        "answer": "Our pet grooming includes a full bath with premium shampoo, blow-drying, hair styling/haircut, nail trimming, ear cleaning, and a brush-out."
+      },
+      {
+        "id": "3",
+        "question": "Do you offer grooming for puppies and senior pets?",
+        "answer": "Yes, absolutely! Our professional groomers are trained to handle puppies and senior pets with extra care, patience, and specialized gentle products."
+      },
+      {
+        "id": "4",
+        "question": "How long does a typical grooming session take?",
+        "answer": "A standard grooming session typically takes between 1.5 to 3 hours depending on your pet's size, breed, coat condition, and the specific services requested."
+      },
+      {
+        "id": "5",
+        "question": "Do I need to book an appointment in advance?",
+        "answer": "Yes, we highly recommend booking an appointment in advance to secure your preferred slot and ensure your pet gets dedicated, uninterrupted care."
+      },
+      {
+        "id": "6",
+        "question": "Can I bring my own shampoo if my pet has allergies?",
+        "answer": "Please inform us beforehand! We use hypoallergenic, organic, and vet-approved products specifically tailored for pets with sensitive skin or allergies."
+      }
+    ]
+  },
+  "contactPhone": "+00-(120) 3456 789"
+}
