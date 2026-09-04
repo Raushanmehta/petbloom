@@ -1,4 +1,5 @@
 import AboutSection from "@/sections/home/AboutSection";
+import BlogSection from "@/sections/home/BlogSection";
 import FaqSection from "@/sections/home/FaqSection";
 import HeroSection from "@/sections/home/HeroSection";
 import ServiceAreasSection from "@/sections/home/ServiceAreasSection";
@@ -19,6 +20,7 @@ export default function HomePage() {
       <TeamSection />
       <TestimonialsSection />
       <FaqSection />
+      <BlogSection />
     </main>
   );
 }

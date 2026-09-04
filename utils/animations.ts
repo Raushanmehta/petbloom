@@ -36,3 +36,41 @@ export const faqFadeUpVariants = { hidden: { opacity: 0, y: 25 }, visible: { opa
 export const faqContainerVariants = { hidden: {}, visible: { transition: { staggerChildren: 0.12 } } };
 export const faqItemVariants = { hidden: { opacity: 0, x: 50, y: 15 }, visible: { opacity: 1, x: 0, y: 0, transition: { duration: 0.55, ease: "easeOut" as const } } };
 export const faqAnswerVariants = { hidden: { opacity: 0, y: -8 }, visible: { opacity: 1, y: 0, transition: { duration: 0.3, delay: 0.05, ease: "easeOut" as const } } };
+
+// Blog Section
+export const blogContainerVariants = { hidden: {}, visible: { transition: { staggerChildren: 0.12 } } };
+export const blogFadeUpVariants = { hidden: { opacity: 0, y: 35 }, visible: { opacity: 1, y: 0, transition: { duration: 0.7, ease: [0.22, 1, 0.36, 1] as const } } };
+export const blogFeaturedVariants = { hidden: { opacity: 0, x: -50, scale: 0.97 }, visible: { opacity: 1, x: 0, scale: 1, transition: { duration: 0.8, ease: [0.22, 1, 0.36, 1] as const } } };
+export const blogSideContainerVariants = { hidden: {}, visible: { transition: { staggerChildren: 0.15 } } };
+export const blogSideCardVariants = { hidden: { opacity: 0, x: 50 }, visible: { opacity: 1, x: 0, transition: { duration: 0.7, ease: [0.22, 1, 0.36, 1] as const } } };
+
+// Mission Vision Section
+export const missionHeaderContainerVariants = { hidden: {}, visible: { transition: { staggerChildren: 0.15 } } };
+export const missionFadeUpVariants = { hidden: { opacity: 0, y: 35 }, visible: { opacity: 1, y: 0, transition: { duration: 0.7, ease: [0.22, 1, 0.36, 1] as const } } };
+export const missionCardsContainerVariants = { hidden: {}, visible: { transition: { staggerChildren: 0.2 } } };
+export const missionLeftCardVariants = { hidden: { opacity: 0, x: -70, scale: 0.96 }, visible: { opacity: 1, x: 0, scale: 1, transition: { duration: 0.8, ease: [0.22, 1, 0.36, 1] as const } } };
+export const missionCenterImageVariants = { hidden: { opacity: 0, y: 50, scale: 0.94 }, visible: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.9, ease: [0.22, 1, 0.36, 1] as const } } };
+export const missionRightCardVariants = { hidden: { opacity: 0, x: 70, scale: 0.96 }, visible: { opacity: 1, x: 0, scale: 1, transition: { duration: 0.8, ease: [0.22, 1, 0.36, 1] as const } } };
+
+// Services Section
+export const servicesHeaderContainerVariants = { hidden: {}, visible: { transition: { staggerChildren: 0.12 } } };
+export const servicesFadeUpVariants = { hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } } };
+export const breadcrumbVariants = { hidden: { opacity: 0, y: -15 }, visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" as const } } };
+export const heroItemVariants = { hidden: { opacity: 0, y: 25 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" as const } } };
+export const featureItemVariants = { hidden: { opacity: 0, y: 20, scale: 0.95 }, visible: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.45, ease: "easeOut" as const } } };
+export const sectionVariants = { hidden: { opacity: 0, y: 35 }, visible: { opacity: 1, y: 0, transition: { duration: 0.65, ease: "easeOut" as const } } };
+export const includedContainerVariants = { hidden: {}, visible: { transition: { staggerChildren: 0.08 } } };
+export const includedItemVariants = { hidden: { opacity: 0, y: 25, scale: 0.96 }, visible: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.45, ease: "easeOut" as const } } };
+export const sidebarVariants = { hidden: { opacity: 0, x: 50 }, visible: { opacity: 1, x: 0, transition: { duration: 0.7, ease: "easeOut" as const } } };
+export const sidebarItemVariants = { hidden: { opacity: 0, x: 20 }, visible: { opacity: 1, x: 0, transition: { duration: 0.4, ease: "easeOut" as const } } };
+export const servicesCardsContainerVariants = { hidden: {}, visible: { transition: { staggerChildren: 0.15, delayChildren: 0.1 } } };
+export const servicesCardVariants = { hidden: { opacity: 0, y: 60, scale: 0.94 }, visible: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.7, ease: "easeOut" as const } } };
+
+
+
+
+
+
+
+
+

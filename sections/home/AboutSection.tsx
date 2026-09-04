@@ -6,10 +6,10 @@ import data from "@/data/data.json";
 import { motion } from "framer-motion";
 import { Scissors, Leaf, Heart } from "lucide-react";
 import { FaPaw } from "react-icons/fa";
-import { Lilita_One } from "next/font/google";
+import { Lilita_One, Courgette } from "next/font/google";
 import { AboutSectionData } from "@/types";
+import { containerVariants, fadeUpVariants, featureVariants } from "@/utils/animations";
 
-const { aboutSectionData } = data as { aboutSectionData: AboutSectionData };
 
 const IconMap: Record<string, React.ElementType> = {
     scissors: Scissors,
@@ -22,11 +22,12 @@ const lilitaOne = Lilita_One({
     weight: "400",
 });
 
-import {
-    containerVariants,
-    fadeUpVariants,
-    featureVariants
-} from "@/utils/animations";
+const courgette = Courgette({
+    subsets: ["latin"],
+    weight: "400",
+});
+
+const { aboutSectionData } = data as { aboutSectionData: AboutSectionData };
 
 export default function AboutSection() {
     return (
@@ -99,10 +100,10 @@ export default function AboutSection() {
                         </div>
 
                         <div>
-                            <p className="text-sm font-bold leading-tight text-gray-900">
+                            <p className={`${courgette.className} text-base font-bold leading-tight text-gray-900`}>
                                 {aboutSectionData.badge.line1}
                             </p>
-                            <p className="text-sm font-bold leading-tight text-gray-900">
+                            <p className={`${courgette.className} text-base font-bold leading-tight text-gray-900`}>
                                 {aboutSectionData.badge.line2}
                             </p>
                             <p className="text-sm font-semibold text-gray-500">
@@ -192,9 +193,9 @@ export default function AboutSection() {
                                 >
                                     <motion.div
                                         whileHover={{ rotate: 10, scale: 1.1 }}
-                                        className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-[#F4E6D8] text-[#387478]"
+                                        className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-[#F4E6D8] text-[#387478]"
                                     >
-                                        {IconComponent && <IconComponent className="h-6 w-6" />}
+                                        {IconComponent && <IconComponent className="h-8 w-8" />}
                                     </motion.div>
 
                                     <div className="flex flex-col pt-0.5">

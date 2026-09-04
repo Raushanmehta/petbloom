@@ -64,8 +64,8 @@ export default function Footer() {
                         <Image
                             src="/logo/logo.png"
                             alt="Logo"
-                            width={200}
-                            height={200}
+                            width={150}
+                            height={150}
                             style={{ width: "auto", height: "auto" }}
                         />
                     </motion.div>

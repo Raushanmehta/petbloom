@@ -1,0 +1,11 @@
+import PageTopSection from "@/components/common/PageTopSection";
+import WhyChooseUsSection from "@/sections/home/WhyChooseUsSection";
+
+export default function WhyChooseUsPage() {
+    return (
+        <main>
+            <PageTopSection title="Why Choose Us" subTitle="why choose us" />
+            <WhyChooseUsSection />
+        </main>
+    )
+}

@@ -42,23 +42,22 @@ export default function HeroSection() {
     }, [api]);
 
     return (
-        <div className="relative w-full overflow-hidden">
+        <div className="relative w-full overflow-hidden   bg-[#F2EDE9] px-4 py-6 sm:px-6 lg:px-8 ">
             <Carousel
                 setApi={setApi}
                 className="relative w-full"
                 opts={{ loop: true }}
             >
-                <CarouselContent className="ml-0">
+                <CarouselContent className="ml-0 rounded-[2.5rem]">
                     {slides.map((slide, index) => {
                         const isActive = currentSlide === index;
 
                         return (
                             <CarouselItem
                                 key={slide.id}
-                                className="relative flex min-h-[650px] items-center pl-0 lg:min-h-[730px]"
-                            >
+                                className="relative flex h-[650px] items-center pl-0 lg:h-[680px] rounded-[2.5rem]">
                                 {/* Background Image */}
-                                <div className="absolute inset-0 z-0 h-full w-full overflow-hidden">
+                                <div className="absolute inset-0 z-0 h-full w-full overflow-hidden rounded-[2.5rem] ">
                                     <motion.div className="relative h-full w-full" animate={{ scale: isActive ? 1.08 : 1, }} transition={{ duration: 6, ease: "easeOut", }} >
                                         <Image src={slide.image} alt={slide.titleWhite} fill sizes="100vw" priority={slide.id === 1} className="object-cover object-center" />
                                     </motion.div> {/* Left Side Dark Overlay */}

@@ -139,8 +139,8 @@ export default function WhyChooseUsSection() {
                                         <motion.div
                                             whileHover={{ rotate: 8, scale: 1.12, }}
                                             transition={{ duration: 0.3, }}
-                                            className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-transparent">
-                                            <Image src={item.icon || "/icon/heart-icon.svg"} width={48} height={48} alt="grooming" />
+                                            className="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-transparent">
+                                            <Image src={item.icon || "/icon/heart-icon.svg"} width={40} height={40} alt="grooming" />
                                         </motion.div>
 
                                         {/* Text */}
@@ -205,7 +205,7 @@ export default function WhyChooseUsSection() {
                                 animate={{ scale: [1, 1.08, 1], }}
                                 transition={{ duration: 2, repeat: Infinity, }}
                                 className="flex h-16 w-16 shrink-0 items-center justify-center  text-[#387478]">
-                                <Image src="/icon/heart-icon.png" width={48} height={48} alt="grooming" />
+                                <Image src="/icon/heart-icon.png" width={40} height={40} alt="grooming" />
                             </motion.div>
 
                             <div className={`${courgette.className} text-base`}>

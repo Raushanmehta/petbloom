@@ -4,16 +4,10 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
-
-import {
-    FaPhoneAlt,
-    FaChevronDown,
-    FaBars,
-    FaTimes,
-} from "react-icons/fa";
-
+import { FaPhoneAlt, FaChevronDown, FaBars, FaTimes } from "react-icons/fa";
 import { NavLink } from "@/types";
 import data from "@/data/data.json";
+
 
 const { navLinks, contactPhone } = data as { navLinks: NavLink[], contactPhone: string };
 
@@ -33,18 +27,16 @@ export default function Navbar() {
         };
     }, []);
 
-    // Close mobile menu when clicking a link
     const closeMenu = () => {
         setIsOpen(false);
     };
 
     return (
         <header
-            className={`fixed left-0 top-0 z-50 w-full border-b border-white/10 transition-all duration-300 ${scrolled
-                ? "bg-[#051d1b]/95 shadow-lg backdrop-blur-md"
-                : "bg-transparent"
-                }`}
-        >
+            className={`fixed left-0 z-50 w-full transition-all duration-300 ${scrolled
+                ? "top-0 bg-[#051d1b]/95 shadow-lg backdrop-blur-md border-b border-white/10"
+                : "top-6 bg-transparent border-b border-transparent"
+                }`}>
             <div className="mx-auto flex h-[90px] max-w-[1355px] items-center justify-between px-6">
                 {/* Logo */}
                 <motion.div
@@ -57,8 +49,8 @@ export default function Navbar() {
                         <Image
                             src="/logo/logo.png"
                             alt="Logo"
-                            width={200}
-                            height={200}
+                            width={150}
+                            height={150}
                             style={{ width: "auto", height: "auto" }}
                             priority
                         />
@@ -72,12 +64,8 @@ export default function Navbar() {
                             key={link.href}
                             initial={{ opacity: 0, y: -20 }}
                             animate={{ opacity: 1, y: 0 }}
-                            transition={{
-                                duration: 0.5,
-                                delay: index * 0.1,
-                            }}
-                            className="relative"
-                        >
+                            transition={{ duration: 0.5, delay: index * 0.1, }}
+                            className="relative">
                             <Link
                                 href={link.href}
                                 className={`relative py-1 text-[15px] font-medium transition-colors duration-300 hover:text-[#2ec4b6] ${link.label === "Home"

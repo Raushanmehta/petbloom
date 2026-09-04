@@ -117,3 +117,58 @@ export interface FaqSectionData {
     image: string;
     faqs: FAQItem[];
 }
+
+// BLOG SECTION TYPES
+export interface BlogPost {
+    id: string;
+    title: string;
+    excerpt?: string;
+    category: string;
+    date: string;
+    image: string;
+    featured?: boolean;
+}
+
+export interface BlogSectionData {
+    badgeText: string;
+    titleWhite: string;
+    titleColored: string;
+    description: string;
+}
+
+// PAGE TOP SECTION
+export interface PageTopSectionData {
+    backgroundImage: string;
+    backgroundAlt: string;
+}
+
+// MISSION VISION SECTION
+export interface MissionVisionSectionData {
+    header: {
+        badgeText: string;
+        titleStart: string;
+        titleHighlight1: string;
+        titleMiddle: string;
+        titleHighlight2: string;
+    };
+    centerImage: {
+        src: string;
+        alt: string;
+    };
+    mission: {
+        iconName: string;
+        title: string;
+        description: string;
+        themeColor: string;
+        borderColor: string;
+        bgAccent: string;
+    };
+    vision: {
+        iconName: string;
+        title: string;
+        description: string;
+        themeColor: string;
+        borderColor: string;
+        bgAccent: string;
+    };
+}
