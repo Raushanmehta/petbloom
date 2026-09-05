@@ -2,7 +2,7 @@ import AboutSection from "@/sections/home/AboutSection";
 import BlogSection from "@/sections/home/BlogSection";
 import FaqSection from "@/sections/home/FaqSection";
 import HeroSection from "@/sections/home/HeroSection";
-import ServiceAreasSection from "@/sections/home/ServiceAreasSection";
+import ServiceAreasSection from "@/sections/home/LocationSection";
 import ServicesSection from "@/sections/home/ServicesSection";
 import TeamSection from "@/sections/home/TeamSection";
 import TestimonialsSection from "@/sections/home/TestimonialSection";

@@ -21,565 +21,1561 @@
       "href": "/contact"
     }
   ],
-  "serviceAreas": [
-    {
-      "id": "1",
-      "title": "South Delhi",
-      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?auto=format&fit=crop&q=80&w=600"
+  "servicesData": {
+    "pageData": {
+      "badgeText": "Our Services",
+      "titleWhite": "Premium Care For ",
+      "titleColored": "Your Pet",
+      "description": "We offer a wide range of professional services to keep your furry friends happy, healthy, and looking their absolute best."
     },
-    {
-      "id": "2",
-      "title": "Gurugram",
-      "image": "https://images.unsplash.com/photo-1570168007204-dfb528c6958f?auto=format&fit=crop&q=80&w=600"
+    "sectionData": {
+      "badgeText": "Our Services",
+      "titleBlack": "Boarding Service Tailored For Eevery Pets",
+      "description": "We offer a wide range of professional services to keep your furry friends happy, healthy, and looking their absolute best."
     },
-    {
-      "id": "3",
-      "title": "Noida",
-      "image": "https://images.unsplash.com/photo-1514565131-fce0801e5785?auto=format&fit=crop&q=80&w=600"
-    },
-    {
-      "id": "4",
-      "title": "Faridabad",
-      "image": "https://images.unsplash.com/photo-1724243040324-aa945e452d8b?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bW9kZXJuJTIwY2l0eXxlbnwwfHwwfHx8MA%3D%3D"
-    },
-    {
-      "id": "5",
-      "title": "Ghaziabad",
-      "image": "https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&q=80&w=600"
-    },
-    {
-      "id": "6",
-      "title": "Greater Noida",
-      "image": "https://images.unsplash.com/photo-1709015653284-1c121cf92ddf?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z3JlYXRlciUyMG5vaWRhfGVufDB8fDB8fHww"
-    },
-    {
-      "id": "7",
-      "title": "Dwarka",
-      "image": "https://images.unsplash.com/photo-1555899434-94d1368aa7af?auto=format&fit=crop&q=80&w=600"
-    }
-  ],
-  "servicesData": [
-    {
-      "id": "1",
-      "title": "Full Grooming",
-      "subtitle": "Shiny & Fresh",
-      "image": "https://images.unsplash.com/photo-1537151625747-768eb6cf92b2?auto=format&fit=crop&q=80&w=600",
-      "slug": "full-grooming",
-      "detail": {
-        "heroTitle": "Professional Grooming",
-        "heroTitleHighlight": "Healthy & Happy Pet",
-        "heroDescription": "Our grooming services are designed to keep your pet looking their best while ensuring their comfort, hygiene, and overall well-being.",
-        "heroFeatures": [
-          {
-            "icon": "Scissors",
-            "title": "Expert Groomers"
-          },
-          {
-            "icon": "Heart",
-            "title": "Premium Products"
-          },
-          {
-            "icon": "ShieldCheck",
-            "title": "Safe & Gentle"
-          },
-          {
-            "icon": "Sparkles",
-            "title": "Stress-Free Care"
-          }
-        ],
-        "overviewText1": "Regular grooming is essential for your pet's health and happiness. Our professional grooming services include bathing, brushing, nail trimming, hair styling, ear cleaning, and more — all tailored to your pet's breed and needs.",
-        "overviewText2": "We use high-quality, pet-safe products and gentle techniques to ensure your furry friend feels relaxed, comfortable, and pampered.",
-        "overviewImage": "https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&q=80&w=600",
-        "includedFeatures": [
-          {
-            "id": "1",
-            "title": "Bath & Shampoo",
-            "description": "Gentle, skin-friendly shampoo for a deep clean."
-          },
-          {
-            "id": "2",
-            "title": "Brushing Detangling",
-            "description": "Removes loose hair, prevents tangles & keeps coat smooth."
-          },
-          {
-            "id": "3",
-            "title": "Nail Trimming",
-            "description": "Safe trimming to keep nails at the perfect length."
-          },
-          {
-            "id": "4",
-            "title": "Ear Cleaning",
-            "description": "Removes dirt & wax to prevent infections & discomfort."
-          },
-          {
-            "id": "5",
-            "title": "Hair Styling",
-            "description": "Breed-specific cuts & styling for a neat and charming look."
-          },
-          {
-            "id": "6",
-            "title": "Deodorizing Spray",
-            "description": "Finishing touch with a refreshing, long-lasting fragrance."
-          }
-        ]
+    "services": [
+      {
+        "id": "1",
+        "title": "Full Grooming",
+        "subtitle": "Shiny & Fresh",
+        "description": "Complete grooming care to keep your pet clean, healthy, comfortable, and looking their best.",
+        "image": "https://images.unsplash.com/photo-1537151625747-768eb6cf92b2?auto=format&fit=crop&q=80&w=600",
+        "slug": "full-grooming",
+        "icon": "Scissors",
+        "detail": {
+          "heroTitle": "Professional Grooming",
+          "heroTitleHighlight": "Healthy & Happy Pet",
+          "heroDescription": "Our grooming services are designed to keep your pet looking their best while ensuring their comfort, hygiene, and overall well-being.",
+          "heroFeatures": [
+            {
+              "icon": "Scissors",
+              "title": "Expert Groomers"
+            },
+            {
+              "icon": "Heart",
+              "title": "Premium Products"
+            },
+            {
+              "icon": "ShieldCheck",
+              "title": "Safe & Gentle"
+            },
+            {
+              "icon": "Sparkles",
+              "title": "Stress-Free Care"
+            }
+          ],
+          "overviewText1": "Regular grooming is essential for your pet's health and happiness.",
+          "overviewText2": "We use high-quality, pet-safe products and gentle techniques to ensure your furry friend feels relaxed, comfortable, and pampered.",
+          "overviewImage": "https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&q=80&w=600",
+          "includedFeatures": [
+            {
+              "id": "1",
+              "title": "Bath & Shampoo",
+              "description": "Gentle, skin-friendly shampoo for a deep clean."
+            },
+            {
+              "id": "2",
+              "title": "Brushing & Detangling",
+              "description": "Removes loose hair, prevents tangles and keeps coat smooth."
+            },
+            {
+              "id": "3",
+              "title": "Nail Trimming",
+              "description": "Safe trimming to keep nails at the perfect length."
+            },
+            {
+              "id": "4",
+              "title": "Ear Cleaning",
+              "description": "Removes dirt and wax to prevent infections and discomfort."
+            },
+            {
+              "id": "5",
+              "title": "Hair Styling",
+              "description": "Breed-specific cuts and styling for a neat look."
+            },
+            {
+              "id": "6",
+              "title": "Deodorizing Spray",
+              "description": "Refreshing pet-safe finishing fragrance."
+            }
+          ]
+        }
+      },
+      {
+        "id": "2",
+        "title": "Pet Boarding",
+        "subtitle": "Safe & Secure Stay",
+        "description": "A safe, comfortable, and supervised stay for your pet while you're away.",
+        "image": "https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&q=80&w=600",
+        "slug": "pet-boarding",
+        "icon": "Home",
+        "detail": {
+          "heroTitle": "Premium Pet Boarding",
+          "heroTitleHighlight": "Safe & Comfortable Stay",
+          "heroDescription": "Give your pet a comfortable home away from home with our safe and loving boarding services.",
+          "heroFeatures": [
+            {
+              "icon": "ShieldCheck",
+              "title": "Safe Environment"
+            },
+            {
+              "icon": "Heart",
+              "title": "Loving Care"
+            },
+            {
+              "icon": "Home",
+              "title": "Comfortable Stay"
+            },
+            {
+              "icon": "Clock",
+              "title": "24/7 Supervision"
+            }
+          ],
+          "overviewText1": "Our pet boarding service provides a clean, secure, and comfortable environment.",
+          "overviewText2": "Every pet receives individual attention, meals, playtime, exercise, and plenty of love.",
+          "overviewImage": "https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&q=80&w=600",
+          "includedFeatures": [
+            {
+              "id": "1",
+              "title": "Comfortable Rooms",
+              "description": "Clean and cozy spaces designed for comfortable stays."
+            },
+            {
+              "id": "2",
+              "title": "Daily Meals",
+              "description": "Nutritious meals based on your pet's routine."
+            },
+            {
+              "id": "3",
+              "title": "Playtime",
+              "description": "Supervised activities to keep pets active."
+            },
+            {
+              "id": "4",
+              "title": "Daily Exercise",
+              "description": "Regular exercise sessions."
+            },
+            {
+              "id": "5",
+              "title": "Individual Attention",
+              "description": "Personalized care according to your pet's needs."
+            },
+            {
+              "id": "6",
+              "title": "24/7 Supervision",
+              "description": "Continuous monitoring for safety and comfort."
+            }
+          ]
+        }
+      },
+      {
+        "id": "3",
+        "title": "Pet Daycare",
+        "subtitle": "Fun & Supervised",
+        "description": "Supervised playtime and socialization for your pet while you're at work.",
+        "image": "https://images.unsplash.com/photo-1587300003388-59208cc962cb?auto=format&fit=crop&q=80&w=600",
+        "slug": "pet-daycare",
+        "icon": "Sun",
+        "detail": {
+          "heroTitle": "Fun Pet Daycare",
+          "heroTitleHighlight": "Active & Social",
+          "heroDescription": "Let your pet enjoy a day of play, socialization, and activities while you are busy.",
+          "heroFeatures": [
+            {
+              "icon": "Smile",
+              "title": "Socialization"
+            },
+            {
+              "icon": "Activity",
+              "title": "Active Play"
+            },
+            {
+              "icon": "Eye",
+              "title": "Supervised"
+            },
+            {
+              "icon": "Heart",
+              "title": "Loving Staff"
+            }
+          ],
+          "overviewText1": "Daycare provides your pet with the opportunity to play and socialize.",
+          "overviewText2": "We offer structured activities and rest periods to keep your pet happy.",
+          "overviewImage": "https://images.unsplash.com/photo-1587300003388-59208cc962cb?auto=format&fit=crop&q=80&w=600",
+          "includedFeatures": [
+            {
+              "id": "1",
+              "title": "Group Play",
+              "description": "Supervised play with other compatible pets."
+            },
+            {
+              "id": "2",
+              "title": "Rest Periods",
+              "description": "Quiet time for relaxation."
+            },
+            {
+              "id": "3",
+              "title": "Basic Training",
+              "description": "Reinforcement of good behaviors."
+            },
+            {
+              "id": "4",
+              "title": "Updates",
+              "description": "Photos and updates of your pet's day."
+            }
+          ]
+        }
+      },
+      {
+        "id": "4",
+        "title": "Bath & Spa",
+        "subtitle": "Relax & Refresh",
+        "description": "Luxurious bath and spa treatments to keep your pet clean and relaxed.",
+        "image": "https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&q=80&w=600",
+        "slug": "bath-spa",
+        "icon": "Droplets",
+        "detail": {
+          "heroTitle": "Pet Bath & Spa",
+          "heroTitleHighlight": "Relaxing Experience",
+          "heroDescription": "Treat your pet to a spa day with our refreshing and relaxing bath services.",
+          "heroFeatures": [
+            {
+              "icon": "Droplets",
+              "title": "Deep Clean"
+            },
+            {
+              "icon": "Wind",
+              "title": "Fluff Dry"
+            },
+            {
+              "icon": "Heart",
+              "title": "Gentle Care"
+            },
+            {
+              "icon": "Sparkles",
+              "title": "Fresh Scent"
+            }
+          ],
+          "overviewText1": "A good bath is essential for healthy skin and coat.",
+          "overviewText2": "Our spa treatments use premium products tailored to your pet's skin type.",
+          "overviewImage": "https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&q=80&w=600",
+          "includedFeatures": [
+            {
+              "id": "1",
+              "title": "Premium Shampoo",
+              "description": "Selected based on coat type."
+            },
+            {
+              "id": "2",
+              "title": "Conditioner",
+              "description": "For a soft and shiny coat."
+            },
+            {
+              "id": "3",
+              "title": "Blow Dry",
+              "description": "Gentle drying."
+            },
+            {
+              "id": "4",
+              "title": "Brush Out",
+              "description": "To remove loose hair."
+            }
+          ]
+        }
+      },
+      {
+        "id": "5",
+        "title": "Dog Walking",
+        "subtitle": "Daily walking",
+        "description": "Professional dog walking services for exercise and mental stimulation.",
+        "image": "https://images.unsplash.com/photo-1537151625747-768eb6cf92b2?auto=format&fit=crop&q=80&w=600",
+        "slug": "dog-walking",
+        "icon": "Map",
+        "detail": {
+          "heroTitle": "Professional Dog Walking",
+          "heroTitleHighlight": "Healthy Exercise",
+          "heroDescription": "Keep your dog active and healthy with our regular walking services.",
+          "heroFeatures": [
+            {
+              "icon": "Activity",
+              "title": "Exercise"
+            },
+            {
+              "icon": "Map",
+              "title": "Exploration"
+            },
+            {
+              "icon": "Shield",
+              "title": "Safe Routes"
+            },
+            {
+              "icon": "Clock",
+              "title": "Flexible Times"
+            }
+          ],
+          "overviewText1": "Regular walks are crucial for your dog's physical and mental health.",
+          "overviewText2": "Our experienced walkers ensure a safe and enjoyable outing for your pet.",
+          "overviewImage": "https://images.unsplash.com/photo-1537151625747-768eb6cf92b2?auto=format&fit=crop&q=80&w=600",
+          "includedFeatures": [
+            {
+              "id": "1",
+              "title": "Neighborhood Walks",
+              "description": "Familiar routes for comfort."
+            },
+            {
+              "id": "2",
+              "title": "Park Visits",
+              "description": "For extra sniffing and exploring."
+            },
+            {
+              "id": "3",
+              "title": "Potty Breaks",
+              "description": "Essential relief during the day."
+            },
+            {
+              "id": "4",
+              "title": "Water Refresh",
+              "description": "Fresh water after every walk."
+            }
+          ]
+        }
+      },
+      {
+        "id": "6",
+        "title": "Cat Grooming",
+        "subtitle": "Gentle & Caring",
+        "description": "Specialized grooming services tailored specifically for feline friends.",
+        "image": "https://images.unsplash.com/photo-1537151625747-768eb6cf92b2?auto=format&fit=crop&q=80&w=600",
+        "slug": "cat-grooming",
+        "icon": "Scissors",
+        "detail": {
+          "heroTitle": "Feline Grooming",
+          "heroTitleHighlight": "Stress-Free",
+          "heroDescription": "We provide a calm and quiet environment for cat grooming to minimize stress.",
+          "heroFeatures": [
+            {
+              "icon": "Heart",
+              "title": "Gentle Handling"
+            },
+            {
+              "icon": "Shield",
+              "title": "Quiet Area"
+            },
+            {
+              "icon": "Scissors",
+              "title": "Cat Experts"
+            },
+            {
+              "icon": "Sparkles",
+              "title": "Clean Coat"
+            }
+          ],
+          "overviewText1": "Cats require special handling and a quiet environment for grooming.",
+          "overviewText2": "Our groomers are trained to work with felines safely and gently.",
+          "overviewImage": "https://images.unsplash.com/photo-1537151625747-768eb6cf92b2?auto=format&fit=crop&q=80&w=600",
+          "includedFeatures": [
+            {
+              "id": "1",
+              "title": "Waterless Bath",
+              "description": "For cats who dislike water."
+            },
+            {
+              "id": "2",
+              "title": "Lion Cut",
+              "description": "Popular styling for long-haired cats."
+            },
+            {
+              "id": "3",
+              "title": "Nail Trims",
+              "description": "Careful trimming of sharp claws."
+            },
+            {
+              "id": "4",
+              "title": "Ear Cleaning",
+              "description": "Gentle removal of wax."
+            }
+          ]
+        }
+      },
+      {
+        "id": "7",
+        "title": "Pet Training",
+        "subtitle": "Smart & Obedient",
+        "description": "Professional obedience training and behavioral correction for your pet.",
+        "image": "https://images.unsplash.com/photo-1537151625747-768eb6cf92b2?auto=format&fit=crop&q=80&w=600",
+        "slug": "pet-training",
+        "icon": "Award",
+        "detail": {
+          "heroTitle": "Expert Pet Training",
+          "heroTitleHighlight": "Positive Reinforcement",
+          "heroDescription": "Build a stronger bond with your pet through our positive reinforcement training methods.",
+          "heroFeatures": [
+            {
+              "icon": "Award",
+              "title": "Certified Trainers"
+            },
+            {
+              "icon": "Smile",
+              "title": "Positive Methods"
+            },
+            {
+              "icon": "Book",
+              "title": "Custom Plans"
+            },
+            {
+              "icon": "Heart",
+              "title": "Better Bond"
+            }
+          ],
+          "overviewText1": "Training helps prevent behavioral issues and strengthens your relationship.",
+          "overviewText2": "We focus on positive reinforcement to make learning fun for your pet.",
+          "overviewImage": "https://images.unsplash.com/photo-1537151625747-768eb6cf92b2?auto=format&fit=crop&q=80&w=600",
+          "includedFeatures": [
+            {
+              "id": "1",
+              "title": "Basic Obedience",
+              "description": "Sit, stay, come, and leash walking."
+            },
+            {
+              "id": "2",
+              "title": "Puppy Socialization",
+              "description": "Getting puppies used to the world."
+            },
+            {
+              "id": "3",
+              "title": "Behavior Modification",
+              "description": "Addressing specific issues."
+            },
+            {
+              "id": "4",
+              "title": "Advanced Tricks",
+              "description": "Fun commands to challenge your pet."
+            }
+          ]
+        }
+      },
+      {
+        "id": "8",
+        "title": "Pet Taxi",
+        "subtitle": "Safe Transportation",
+        "description": "Reliable transportation for your pet to vet appointments, grooming, or daycare.",
+        "image": "https://images.unsplash.com/photo-1537151625747-768eb6cf92b2?auto=format&fit=crop&q=80&w=600",
+        "slug": "pet-taxi",
+        "icon": "Truck",
+        "detail": {
+          "heroTitle": "Reliable Pet Taxi",
+          "heroTitleHighlight": "Safe Travel",
+          "heroDescription": "Need a ride for your pet? Our pet taxi service offers safe and convenient transportation.",
+          "heroFeatures": [
+            {
+              "icon": "Truck",
+              "title": "Safe Vehicles"
+            },
+            {
+              "icon": "Clock",
+              "title": "Punctual"
+            },
+            {
+              "icon": "Shield",
+              "title": "Insured"
+            },
+            {
+              "icon": "Heart",
+              "title": "Comfortable Ride"
+            }
+          ],
+          "overviewText1": "We provide safe transport for your pet when you are unable to.",
+          "overviewText2": "Our vehicles are equipped with safety restraints for pets of all sizes.",
+          "overviewImage": "https://images.unsplash.com/photo-1537151625747-768eb6cf92b2?auto=format&fit=crop&q=80&w=600",
+          "includedFeatures": [
+            {
+              "id": "1",
+              "title": "Vet Visits",
+              "description": "Transport to and from the clinic."
+            },
+            {
+              "id": "2",
+              "title": "Grooming Drop-off",
+              "description": "We'll take them to the salon."
+            },
+            {
+              "id": "3",
+              "title": "Airport Transfers",
+              "description": "Assistance with travel arrangements."
+            },
+            {
+              "id": "4",
+              "title": "Wait & Return",
+              "description": "We can wait during appointments."
+            }
+          ]
+        }
       }
+    ]
+  },
+  "teamData": {
+    "pageData": {
+      "badgeText": "Our Team",
+      "titleWhite": "Meet Our ",
+      "titleColored": "Pet Care Experts",
+      "description": "Passionate professionals dedicated to providing the best care and love for your pets."
     },
-    {
-      "id": "2",
-      "title": "Pet Boarding",
-      "subtitle": "Safe & Secure Stay",
-      "image": "https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&q=80&w=600",
-      "slug": "pet-boarding",
-      "detail": {
-        "heroTitle": "Professional Grooming",
-        "heroTitleHighlight": "Healthy & Happy Pet",
-        "heroDescription": "Our grooming services are designed to keep your pet looking their best while ensuring their comfort, hygiene, and overall well-being.",
-        "heroFeatures": [
-          {
-            "icon": "Scissors",
-            "title": "Expert Groomers"
-          },
-          {
-            "icon": "Heart",
-            "title": "Premium Products"
-          },
-          {
-            "icon": "ShieldCheck",
-            "title": "Safe & Gentle"
-          },
-          {
-            "icon": "Sparkles",
-            "title": "Stress-Free Care"
-          }
-        ],
-        "overviewText1": "Regular grooming is essential for your pet's health and happiness. Our professional grooming services include bathing, brushing, nail trimming, hair styling, ear cleaning, and more — all tailored to your pet's breed and needs.",
-        "overviewText2": "We use high-quality, pet-safe products and gentle techniques to ensure your furry friend feels relaxed, comfortable, and pampered.",
-        "overviewImage": "https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&q=80&w=600",
-        "includedFeatures": [
-          {
-            "id": "1",
-            "title": "Bath & Shampoo",
-            "description": "Gentle, skin-friendly shampoo for a deep clean."
-          },
-          {
-            "id": "2",
-            "title": "Brushing Detangling",
-            "description": "Removes loose hair, prevents tangles & keeps coat smooth."
-          },
-          {
-            "id": "3",
-            "title": "Nail Trimming",
-            "description": "Safe trimming to keep nails at the perfect length."
-          },
-          {
-            "id": "4",
-            "title": "Ear Cleaning",
-            "description": "Removes dirt & wax to prevent infections & discomfort."
-          },
-          {
-            "id": "5",
-            "title": "Hair Styling",
-            "description": "Breed-specific cuts & styling for a neat and charming look."
-          },
-          {
-            "id": "6",
-            "title": "Deodorizing Spray",
-            "description": "Finishing touch with a refreshing, long-lasting fragrance."
-          }
-        ]
-      }
+    "sectionData": {
+      "badgeText": "Our Team",
+      "titleWhite": "Meet Our",
+      "titleColored": "Pet Care Experts",
+      "description": "Passionate professionals dedicated to providing the best care and love for your pets."
     },
-    {
-      "id": "3",
-      "title": "Pet Daycare",
-      "subtitle": "Fun & Supervised ",
-      "image": "https://images.unsplash.com/photo-1587300003388-59208cc962cb?auto=format&fit=crop&q=80&w=600",
-      "slug": "pet-daycare",
-      "detail": {
-        "heroTitle": "Professional Grooming",
-        "heroTitleHighlight": "Healthy & Happy Pet",
-        "heroDescription": "Our grooming services are designed to keep your pet looking their best while ensuring their comfort, hygiene, and overall well-being.",
-        "heroFeatures": [
-          {
-            "icon": "Scissors",
-            "title": "Expert Groomers"
-          },
-          {
-            "icon": "Heart",
-            "title": "Premium Products"
-          },
-          {
-            "icon": "ShieldCheck",
-            "title": "Safe & Gentle"
-          },
-          {
-            "icon": "Sparkles",
-            "title": "Stress-Free Care"
-          }
-        ],
-        "overviewText1": "Regular grooming is essential for your pet's health and happiness. Our professional grooming services include bathing, brushing, nail trimming, hair styling, ear cleaning, and more — all tailored to your pet's breed and needs.",
-        "overviewText2": "We use high-quality, pet-safe products and gentle techniques to ensure your furry friend feels relaxed, comfortable, and pampered.",
-        "overviewImage": "https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&q=80&w=600",
-        "includedFeatures": [
-          {
-            "id": "1",
-            "title": "Bath & Shampoo",
-            "description": "Gentle, skin-friendly shampoo for a deep clean."
-          },
-          {
-            "id": "2",
-            "title": "Brushing Detangling",
-            "description": "Removes loose hair, prevents tangles & keeps coat smooth."
-          },
-          {
-            "id": "3",
-            "title": "Nail Trimming",
-            "description": "Safe trimming to keep nails at the perfect length."
-          },
-          {
-            "id": "4",
-            "title": "Ear Cleaning",
-            "description": "Removes dirt & wax to prevent infections & discomfort."
-          },
-          {
-            "id": "5",
-            "title": "Hair Styling",
-            "description": "Breed-specific cuts & styling for a neat and charming look."
-          },
-          {
-            "id": "6",
-            "title": "Deodorizing Spray",
-            "description": "Finishing touch with a refreshing, long-lasting fragrance."
-          }
-        ]
+    "teams": [
+      {
+        "id": "1",
+        "name": "Alex Javed",
+        "slug": "alex-javed",
+        "role": "Pet Care Specialist",
+        "image": "https://plus.unsplash.com/premium_photo-1661632923172-ccbf02bfe44f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZG9nJTIwYW5kJTIwcGVyc29ufGVufDB8fDB8fHww",
+        "detail": {
+          "bio": "Professional pet care specialist with comprehensive training for handling, agility coaching, and wellness guidance. Offers dietary consultations to ensure pets receive optimal nutrients tailored to their age, breed, and health condition.",
+          "phone": "+00 (573) 597 24",
+          "email": "alex.javed@petbloom.com",
+          "website": "www.petbloom.com",
+          "address": "4140 Parker Rd. Petbloom, New Mexico 31134",
+          "experience": "5 Years",
+          "aboutMeText1": "Conducts dedicated workshops and personalized seminars on pet care, covering vital topics including positive-reinforcement training, nutrition, grooming ethics, and gentle handling techniques.",
+          "aboutMeText2": "Provides consulting services for facilities and pet parents wanting to optimize spaces for pet safety and comfort, utilizing eco-friendly materials and veterinary-approved environmental setups.",
+          "skillsDescription": "Certified in modern animal behavior, gentle grooming practices, and strict adherence to hygienic safety protocols.",
+          "skills": [
+            {
+              "id": "1",
+              "title": "Tailored Grooming",
+              "percentage": 85,
+              "icon": "Scissors"
+            },
+            {
+              "id": "2",
+              "title": "Senior Pet Care",
+              "percentage": 80,
+              "icon": "Heart"
+            },
+            {
+              "id": "3",
+              "title": "Cozy Overnight Stay",
+              "percentage": 92,
+              "icon": "Home"
+            }
+          ]
+        }
+      },
+      {
+        "id": "2",
+        "name": "Jessica Lauren",
+        "slug": "jessica-lauren",
+        "role": "Senior Dog Groomer",
+        "image": "https://plus.unsplash.com/premium_photo-1663090958042-b3ad11c255b6?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDV8fGRvZyUyMGFuZCUyMHBlcnNvbnxlbnwwfHwwfHx8MA%3D%3D",
+        "detail": {
+          "bio": "Expert groomer with a passion for creative styling, skin rejuvenation treatments, and breed-standard haircuts. Dedicated to providing a calming, spa-like experience for anxious pets.",
+          "phone": "+00 (573) 597 25",
+          "email": "jessica.lauren@petbloom.com",
+          "website": "www.petbloom.com",
+          "address": "4140 Parker Rd. Petbloom, New Mexico 31134",
+          "experience": "6 Years",
+          "aboutMeText1": "Specializes in coat restoration, de-shedding therapies, and sensitive-skin baths using 100% natural, hypoallergenic formulas.",
+          "aboutMeText2": "Passionate about creating trust-based relationships with nervous dogs to ensure grooming sessions are relaxing and enjoyable.",
+          "skillsDescription": "Highly skilled in breed styling, coat conditioning, hand scissoring, and gentle de-matting techniques.",
+          "skills": [
+            {
+              "id": "1",
+              "title": "Breed Haircuts & Styling",
+              "percentage": 95,
+              "icon": "Scissors"
+            },
+            {
+              "id": "2",
+              "title": "Skin & Coat Therapy",
+              "percentage": 88,
+              "icon": "Heart"
+            },
+            {
+              "id": "3",
+              "title": "Puppy First-Cut Care",
+              "percentage": 90,
+              "icon": "Sparkles"
+            }
+          ]
+        }
+      },
+      {
+        "id": "3",
+        "name": "Jenny William",
+        "slug": "jenny-william",
+        "role": "Veterinary Technician",
+        "image": "https://plus.unsplash.com/premium_photo-1667727017194-6e43400f2d5c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGRvZyUyMGFuZCUyMHBlcnNvbnxlbnwwfHwwfHx8MA%3D%3D",
+        "detail": {
+          "bio": "Dedicated veterinary technician with extensive experience in routine health checks, emergency first aid, medication administration, and dietary wellness plans.",
+          "phone": "+00 (573) 597 26",
+          "email": "jenny.william@petbloom.com",
+          "website": "www.petbloom.com",
+          "address": "4140 Parker Rd. Petbloom, New Mexico 31134",
+          "experience": "7 Years",
+          "aboutMeText1": "Provides comprehensive health screenings and monitors vital health indicators for pets staying at PetBloom boarding and day care facilities.",
+          "aboutMeText2": "Conducts regular pet health awareness programs for pet parents to catch early signs of illness and maintain active, happy lives.",
+          "skillsDescription": "Certified in Pet CPR, preventative veterinary support, emergency assistance, and physical rehabilitation.",
+          "skills": [
+            {
+              "id": "1",
+              "title": "Health Screenings",
+              "percentage": 94,
+              "icon": "Stethoscope"
+            },
+            {
+              "id": "2",
+              "title": "Emergency Pet CPR",
+              "percentage": 90,
+              "icon": "ShieldCheck"
+            },
+            {
+              "id": "3",
+              "title": "Nutrition Planning",
+              "percentage": 86,
+              "icon": "Apple"
+            }
+          ]
+        }
+      },
+      {
+        "id": "4",
+        "name": "Daniel Thomas",
+        "slug": "daniel-thomas",
+        "role": "Pet Behaviorist & Trainer",
+        "image": "https://plus.unsplash.com/premium_photo-1707410050564-df6b5503f220?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8ZG9nJTIwYW5kJTIwcGVyc29ufGVufDB8fDB8fHww",
+        "detail": {
+          "bio": "Certified animal behaviorist specializing in socialization, obedience training, and anxiety reduction through positive reinforcement and interactive games.",
+          "phone": "+00 (573) 597 27",
+          "email": "daniel.thomas@petbloom.com",
+          "website": "www.petbloom.com",
+          "address": "4140 Parker Rd. Petbloom, New Mexico 31134",
+          "experience": "8 Years",
+          "aboutMeText1": "Helps pet owners understand behavioral patterns, resolve leash reactivity, separation anxiety, and establish harmonious routines.",
+          "aboutMeText2": "Designs interactive group play sessions that build agility, confidence, and social compatibility among dogs of all ages.",
+          "skillsDescription": "Recognized leader in fear-free positive reinforcement, behavioral conditioning, and puppy socialization.",
+          "skills": [
+            {
+              "id": "1",
+              "title": "Obedience Training",
+              "percentage": 96,
+              "icon": "Award"
+            },
+            {
+              "id": "2",
+              "title": "Behavior Therapy",
+              "percentage": 92,
+              "icon": "Heart"
+            },
+            {
+              "id": "3",
+              "title": "Agility & Play",
+              "percentage": 89,
+              "icon": "Smile"
+            }
+          ]
+        }
       }
+    ]
+  },
+  "locationData": {
+    "pageData": {
+      "badgeText": "Our Service Areas",
+      "titleWhite": "Our ",
+      "titleColored": "Service Areas",
+      "description": "We proudly serve premium pet grooming and care services across Mumbai and surrounding regions."
     },
-    {
-      "id": "4",
-      "title": "Bath & Spa",
-      "subtitle": "Relax & Refresh",
-      "image": "https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&q=80&w=600",
-      "slug": "bath-&-spa",
-      "detail": {
-        "heroTitle": "Professional Grooming",
-        "heroTitleHighlight": "Healthy & Happy Pet",
-        "heroDescription": "Our grooming services are designed to keep your pet looking their best while ensuring their comfort, hygiene, and overall well-being.",
-        "heroFeatures": [
-          {
-            "icon": "Scissors",
-            "title": "Expert Groomers"
-          },
-          {
-            "icon": "Heart",
-            "title": "Premium Products"
-          },
-          {
-            "icon": "ShieldCheck",
-            "title": "Safe & Gentle"
-          },
-          {
-            "icon": "Sparkles",
-            "title": "Stress-Free Care"
-          }
-        ],
-        "overviewText1": "Regular grooming is essential for your pet's health and happiness. Our professional grooming services include bathing, brushing, nail trimming, hair styling, ear cleaning, and more — all tailored to your pet's breed and needs.",
-        "overviewText2": "We use high-quality, pet-safe products and gentle techniques to ensure your furry friend feels relaxed, comfortable, and pampered.",
-        "overviewImage": "https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&q=80&w=600",
-        "includedFeatures": [
-          {
-            "id": "1",
-            "title": "Bath & Shampoo",
-            "description": "Gentle, skin-friendly shampoo for a deep clean."
-          },
-          {
-            "id": "2",
-            "title": "Brushing Detangling",
-            "description": "Removes loose hair, prevents tangles & keeps coat smooth."
-          },
-          {
-            "id": "3",
-            "title": "Nail Trimming",
-            "description": "Safe trimming to keep nails at the perfect length."
-          },
-          {
-            "id": "4",
-            "title": "Ear Cleaning",
-            "description": "Removes dirt & wax to prevent infections & discomfort."
-          },
-          {
-            "id": "5",
-            "title": "Hair Styling",
-            "description": "Breed-specific cuts & styling for a neat and charming look."
-          },
-          {
-            "id": "6",
-            "title": "Deodorizing Spray",
-            "description": "Finishing touch with a refreshing, long-lasting fragrance."
-          }
-        ]
-      }
+    "sectionData": {
+      "badgeText": "Our Service Areas",
+      "titleWhite": "Our ",
+      "titleColored": "Service Areas",
+      "description": "We proudly serve premium pet grooming and care services across Mumbai and surrounding regions."
     },
-    {
-      "id": "5",
-      "title": "Dog Walking",
-      "subtitle": "Daily walking",
-      "image": "https://images.unsplash.com/photo-1537151625747-768eb6cf92b2?auto=format&fit=crop&q=80&w=600",
-      "slug": "dog-walking",
-      "detail": {
-        "heroTitle": "Professional Grooming",
-        "heroTitleHighlight": "Healthy & Happy Pet",
-        "heroDescription": "Our grooming services are designed to keep your pet looking their best while ensuring their comfort, hygiene, and overall well-being.",
-        "heroFeatures": [
-          {
-            "icon": "Scissors",
-            "title": "Expert Groomers"
-          },
-          {
-            "icon": "Heart",
-            "title": "Premium Products"
-          },
-          {
-            "icon": "ShieldCheck",
-            "title": "Safe & Gentle"
-          },
-          {
-            "icon": "Sparkles",
-            "title": "Stress-Free Care"
+    "locationsData": [
+      {
+        "id": "1",
+        "name": "Mumbai",
+        "title": "Mumbai Pet Grooming & Care",
+        "slug": "mumbai",
+        "image": "https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&q=80&w=600",
+        "active": true,
+        "detail": {
+          "heroImage": "https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&q=80&w=600",
+          "heroImageAlt": "Mumbai Pet Grooming Service",
+          "title": "Mumbai",
+          "titleHighlight": "Grooming Service",
+          "titleIcon": "MapPin",
+          "description": "We bring professional pet grooming services right to your neighborhood in Mumbai. Our team ensures your furry friend gets the best care, comfort, and pampering.",
+          "features": [
+            {
+              "id": "1",
+              "icon": "MapPin",
+              "title": "Service Area",
+              "subtitle": "All Over Mumbai"
+            },
+            {
+              "id": "2",
+              "icon": "Clock",
+              "title": "Service Time",
+              "subtitle": "9:00 AM - 8:00 PM"
+            },
+            {
+              "id": "3",
+              "icon": "Calendar",
+              "title": "Available",
+              "subtitle": "All 7 Days a Week"
+            },
+            {
+              "id": "4",
+              "icon": "Truck",
+              "title": "Home Service",
+              "subtitle": "Available"
+            }
+          ],
+          "aboutTitle": "About Our Mumbai Grooming Service",
+          "aboutIcon": "FaPaw",
+          "aboutDescription": "We offer a complete range of grooming services at your doorstep across Mumbai. Our experienced groomers use pet-safe products and the latest techniques to ensure your pet feels relaxed, comfortable, and looks their best.",
+          "aboutImage": "/images/location-image.png",
+          "aboutImageAlt": "About Our Mumbai Grooming Service",
+          "trustTitle": "Why Pet Parents in Mumbai Trust Us",
+          "trustFeatures": [
+            {
+              "id": "1",
+              "icon": "ShieldCheck",
+              "title": "Trained &\nVerified Experts"
+            },
+            {
+              "id": "2",
+              "icon": "Leaf",
+              "title": "Pet-Safe &\nQuality Products"
+            },
+            {
+              "id": "3",
+              "icon": "Home",
+              "title": "Hassle-Free\nHome Service"
+            },
+            {
+              "id": "4",
+              "icon": "Heart",
+              "title": "Personalized\nCare & Attention"
+            },
+            {
+              "id": "5",
+              "icon": "FaPaw",
+              "title": "Stress-Free\nExperience"
+            }
+          ],
+          "sidebarTitle": "Our Service Locations",
+          "sidebarIcon": "MapPin",
+          "bookService": {
+            "title": "Book Our Service",
+            "icon": "CalendarCheck",
+            "description": "Give your pet the care they deserve. Book an appointment with us today!",
+            "buttonText": "Book Appointment",
+            "buttonLink": "/appointment",
+            "buttonIcon": "CalendarCheck",
+            "helpText": "Need Help?",
+            "helpPhone": "+91 98765 43210",
+            "helpIcon": "Phone"
           }
-        ],
-        "overviewText1": "Regular grooming is essential for your pet's health and happiness. Our professional grooming services include bathing, brushing, nail trimming, hair styling, ear cleaning, and more — all tailored to your pet's breed and needs.",
-        "overviewText2": "We use high-quality, pet-safe products and gentle techniques to ensure your furry friend feels relaxed, comfortable, and pampered.",
-        "overviewImage": "https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&q=80&w=600",
-        "includedFeatures": [
-          {
-            "id": "1",
-            "title": "Bath & Shampoo",
-            "description": "Gentle, skin-friendly shampoo for a deep clean."
-          },
-          {
-            "id": "2",
-            "title": "Brushing Detangling",
-            "description": "Removes loose hair, prevents tangles & keeps coat smooth."
-          },
-          {
-            "id": "3",
-            "title": "Nail Trimming",
-            "description": "Safe trimming to keep nails at the perfect length."
-          },
-          {
-            "id": "4",
-            "title": "Ear Cleaning",
-            "description": "Removes dirt & wax to prevent infections & discomfort."
-          },
-          {
-            "id": "5",
-            "title": "Hair Styling",
-            "description": "Breed-specific cuts & styling for a neat and charming look."
-          },
-          {
-            "id": "6",
-            "title": "Deodorizing Spray",
-            "description": "Finishing touch with a refreshing, long-lasting fragrance."
+        }
+      },
+      {
+        "id": "2",
+        "name": "Navi Mumbai",
+        "title": "Navi Mumbai Pet Grooming & Care",
+        "slug": "navi-mumbai",
+        "image": "https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?auto=format&fit=crop&q=80&w=600",
+        "active": false,
+        "detail": {
+          "heroImage": "https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?auto=format&fit=crop&q=80&w=600",
+          "heroImageAlt": "Navi Mumbai Pet Grooming Service",
+          "title": "Navi Mumbai",
+          "titleHighlight": "Grooming Service",
+          "titleIcon": "MapPin",
+          "description": "We bring professional pet grooming services right to your neighborhood in Navi Mumbai. Our team ensures your furry friend gets the best care, comfort, and pampering.",
+          "features": [
+            {
+              "id": "1",
+              "icon": "MapPin",
+              "title": "Service Area",
+              "subtitle": "Across Navi Mumbai"
+            },
+            {
+              "id": "2",
+              "icon": "Clock",
+              "title": "Service Time",
+              "subtitle": "9:00 AM - 8:00 PM"
+            },
+            {
+              "id": "3",
+              "icon": "Calendar",
+              "title": "Available",
+              "subtitle": "All 7 Days a Week"
+            },
+            {
+              "id": "4",
+              "icon": "Truck",
+              "title": "Home Service",
+              "subtitle": "Available"
+            }
+          ],
+          "aboutTitle": "About Our Navi Mumbai Grooming Service",
+          "aboutIcon": "FaPaw",
+          "aboutDescription": "We offer a complete range of grooming services at your doorstep across Navi Mumbai. Our experienced groomers use pet-safe products and the latest techniques to ensure your pet feels relaxed, comfortable, and looks their best.",
+          "aboutImage": "/images/location-image.png",
+          "aboutImageAlt": "About Our Navi Mumbai Grooming Service",
+          "trustTitle": "Why Pet Parents in Navi Mumbai Trust Us",
+          "trustFeatures": [
+            {
+              "id": "1",
+              "icon": "ShieldCheck",
+              "title": "Trained &\nVerified Experts"
+            },
+            {
+              "id": "2",
+              "icon": "Leaf",
+              "title": "Pet-Safe &\nQuality Products"
+            },
+            {
+              "id": "3",
+              "icon": "Home",
+              "title": "Hassle-Free\nHome Service"
+            },
+            {
+              "id": "4",
+              "icon": "Heart",
+              "title": "Personalized\nCare & Attention"
+            },
+            {
+              "id": "5",
+              "icon": "FaPaw",
+              "title": "Stress-Free\nExperience"
+            }
+          ],
+          "sidebarTitle": "Our Service Locations",
+          "sidebarIcon": "MapPin",
+          "bookService": {
+            "title": "Book Our Service",
+            "icon": "CalendarCheck",
+            "description": "Give your pet the care they deserve. Book an appointment with us today!",
+            "buttonText": "Book Appointment",
+            "buttonLink": "/appointment",
+            "buttonIcon": "CalendarCheck",
+            "helpText": "Need Help?",
+            "helpPhone": "+91 98765 43210",
+            "helpIcon": "Phone"
           }
-        ]
+        }
+      },
+      {
+        "id": "3",
+        "name": "Thane",
+        "title": "Thane Pet Grooming & Care",
+        "slug": "thane",
+        "image": "https://images.unsplash.com/photo-1537151625747-768eb6cf92b2?auto=format&fit=crop&q=80&w=600",
+        "active": false,
+        "detail": {
+          "heroImage": "https://images.unsplash.com/photo-1537151625747-768eb6cf92b2?auto=format&fit=crop&q=80&w=600",
+          "heroImageAlt": "Thane Pet Grooming Service",
+          "title": "Thane",
+          "titleHighlight": "Grooming Service",
+          "titleIcon": "MapPin",
+          "description": "We bring professional pet grooming services right to your neighborhood in Thane. Our team ensures your furry friend gets the best care, comfort, and pampering.",
+          "features": [
+            {
+              "id": "1",
+              "icon": "MapPin",
+              "title": "Service Area",
+              "subtitle": "Thane & Surrounding"
+            },
+            {
+              "id": "2",
+              "icon": "Clock",
+              "title": "Service Time",
+              "subtitle": "9:00 AM - 8:00 PM"
+            },
+            {
+              "id": "3",
+              "icon": "Calendar",
+              "title": "Available",
+              "subtitle": "All 7 Days a Week"
+            },
+            {
+              "id": "4",
+              "icon": "Truck",
+              "title": "Home Service",
+              "subtitle": "Available"
+            }
+          ],
+          "aboutTitle": "About Our Thane Grooming Service",
+          "aboutIcon": "FaPaw",
+          "aboutDescription": "We offer a complete range of grooming services at your doorstep across Thane. Our experienced groomers use pet-safe products and the latest techniques to ensure your pet feels relaxed, comfortable, and looks their best.",
+          "aboutImage": "/images/location-image.png",
+          "aboutImageAlt": "About Our Thane Grooming Service",
+          "trustTitle": "Why Pet Parents in Thane Trust Us",
+          "trustFeatures": [
+            {
+              "id": "1",
+              "icon": "ShieldCheck",
+              "title": "Trained &\nVerified Experts"
+            },
+            {
+              "id": "2",
+              "icon": "Leaf",
+              "title": "Pet-Safe &\nQuality Products"
+            },
+            {
+              "id": "3",
+              "icon": "Home",
+              "title": "Hassle-Free\nHome Service"
+            },
+            {
+              "id": "4",
+              "icon": "Heart",
+              "title": "Personalized\nCare & Attention"
+            },
+            {
+              "id": "5",
+              "icon": "FaPaw",
+              "title": "Stress-Free\nExperience"
+            }
+          ],
+          "sidebarTitle": "Our Service Locations",
+          "sidebarIcon": "MapPin",
+          "bookService": {
+            "title": "Book Our Service",
+            "icon": "CalendarCheck",
+            "description": "Give your pet the care they deserve. Book an appointment with us today!",
+            "buttonText": "Book Appointment",
+            "buttonLink": "/appointment",
+            "buttonIcon": "CalendarCheck",
+            "helpText": "Need Help?",
+            "helpPhone": "+91 98765 43210",
+            "helpIcon": "Phone"
+          }
+        }
+      },
+      {
+        "id": "4",
+        "name": "Bandra",
+        "title": "Bandra Pet Grooming & Care",
+        "slug": "bandra",
+        "image": "https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&q=80&w=600",
+        "active": false,
+        "detail": {
+          "heroImage": "https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&q=80&w=600",
+          "heroImageAlt": "Bandra Pet Grooming Service",
+          "title": "Bandra",
+          "titleHighlight": "Grooming Service",
+          "titleIcon": "MapPin",
+          "description": "We bring professional pet grooming services right to your neighborhood in Bandra. Our team ensures your furry friend gets the best care, comfort, and pampering.",
+          "features": [
+            {
+              "id": "1",
+              "icon": "MapPin",
+              "title": "Service Area",
+              "subtitle": "Bandra & Khar Area"
+            },
+            {
+              "id": "2",
+              "icon": "Clock",
+              "title": "Service Time",
+              "subtitle": "9:00 AM - 8:00 PM"
+            },
+            {
+              "id": "3",
+              "icon": "Calendar",
+              "title": "Available",
+              "subtitle": "All 7 Days a Week"
+            },
+            {
+              "id": "4",
+              "icon": "Truck",
+              "title": "Home Service",
+              "subtitle": "Available"
+            }
+          ],
+          "aboutTitle": "About Our Bandra Grooming Service",
+          "aboutIcon": "FaPaw",
+          "aboutDescription": "We offer a complete range of grooming services at your doorstep across Bandra. Our experienced groomers use pet-safe products and the latest techniques to ensure your pet feels relaxed, comfortable, and looks their best.",
+          "aboutImage": "/images/location-image.png",
+          "aboutImageAlt": "About Our Bandra Grooming Service",
+          "trustTitle": "Why Pet Parents in Bandra Trust Us",
+          "trustFeatures": [
+            {
+              "id": "1",
+              "icon": "ShieldCheck",
+              "title": "Trained &\nVerified Experts"
+            },
+            {
+              "id": "2",
+              "icon": "Leaf",
+              "title": "Pet-Safe &\nQuality Products"
+            },
+            {
+              "id": "3",
+              "icon": "Home",
+              "title": "Hassle-Free\nHome Service"
+            },
+            {
+              "id": "4",
+              "icon": "Heart",
+              "title": "Personalized\nCare & Attention"
+            },
+            {
+              "id": "5",
+              "icon": "FaPaw",
+              "title": "Stress-Free\nExperience"
+            }
+          ],
+          "sidebarTitle": "Our Service Locations",
+          "sidebarIcon": "MapPin",
+          "bookService": {
+            "title": "Book Our Service",
+            "icon": "CalendarCheck",
+            "description": "Give your pet the care they deserve. Book an appointment with us today!",
+            "buttonText": "Book Appointment",
+            "buttonLink": "/appointment",
+            "buttonIcon": "CalendarCheck",
+            "helpText": "Need Help?",
+            "helpPhone": "+91 98765 43210",
+            "helpIcon": "Phone"
+          }
+        }
+      },
+      {
+        "id": "5",
+        "name": "Andheri",
+        "title": "Andheri Pet Grooming & Care",
+        "slug": "andheri",
+        "image": "https://images.unsplash.com/photo-1587300003388-59208cc962cb?auto=format&fit=crop&q=80&w=600",
+        "active": false,
+        "detail": {
+          "heroImage": "https://images.unsplash.com/photo-1587300003388-59208cc962cb?auto=format&fit=crop&q=80&w=600",
+          "heroImageAlt": "Andheri Pet Grooming Service",
+          "title": "Andheri",
+          "titleHighlight": "Grooming Service",
+          "titleIcon": "MapPin",
+          "description": "We bring professional pet grooming services right to your neighborhood in Andheri. Our team ensures your furry friend gets the best care, comfort, and pampering.",
+          "features": [
+            {
+              "id": "1",
+              "icon": "MapPin",
+              "title": "Service Area",
+              "subtitle": "Andheri East & West"
+            },
+            {
+              "id": "2",
+              "icon": "Clock",
+              "title": "Service Time",
+              "subtitle": "9:00 AM - 8:00 PM"
+            },
+            {
+              "id": "3",
+              "icon": "Calendar",
+              "title": "Available",
+              "subtitle": "All 7 Days a Week"
+            },
+            {
+              "id": "4",
+              "icon": "Truck",
+              "title": "Home Service",
+              "subtitle": "Available"
+            }
+          ],
+          "aboutTitle": "About Our Andheri Grooming Service",
+          "aboutIcon": "FaPaw",
+          "aboutDescription": "We offer a complete range of grooming services at your doorstep across Andheri. Our experienced groomers use pet-safe products and the latest techniques to ensure your pet feels relaxed, comfortable, and looks their best.",
+          "aboutImage": "/images/location-image.png",
+          "aboutImageAlt": "About Our Andheri Grooming Service",
+          "trustTitle": "Why Pet Parents in Andheri Trust Us",
+          "trustFeatures": [
+            {
+              "id": "1",
+              "icon": "ShieldCheck",
+              "title": "Trained &\nVerified Experts"
+            },
+            {
+              "id": "2",
+              "icon": "Leaf",
+              "title": "Pet-Safe &\nQuality Products"
+            },
+            {
+              "id": "3",
+              "icon": "Home",
+              "title": "Hassle-Free\nHome Service"
+            },
+            {
+              "id": "4",
+              "icon": "Heart",
+              "title": "Personalized\nCare & Attention"
+            },
+            {
+              "id": "5",
+              "icon": "FaPaw",
+              "title": "Stress-Free\nExperience"
+            }
+          ],
+          "sidebarTitle": "Our Service Locations",
+          "sidebarIcon": "MapPin",
+          "bookService": {
+            "title": "Book Our Service",
+            "icon": "CalendarCheck",
+            "description": "Give your pet the care they deserve. Book an appointment with us today!",
+            "buttonText": "Book Appointment",
+            "buttonLink": "/appointment",
+            "buttonIcon": "CalendarCheck",
+            "helpText": "Need Help?",
+            "helpPhone": "+91 98765 43210",
+            "helpIcon": "Phone"
+          }
+        }
+      },
+      {
+        "id": "6",
+        "name": "Borivali",
+        "title": "Borivali Pet Grooming & Care",
+        "slug": "borivali",
+        "image": "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&q=80&w=600",
+        "active": false,
+        "detail": {
+          "heroImage": "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&q=80&w=600",
+          "heroImageAlt": "Borivali Pet Grooming Service",
+          "title": "Borivali",
+          "titleHighlight": "Grooming Service",
+          "titleIcon": "MapPin",
+          "description": "We bring professional pet grooming services right to your neighborhood in Borivali. Our team ensures your furry friend gets the best care, comfort, and pampering.",
+          "features": [
+            {
+              "id": "1",
+              "icon": "MapPin",
+              "title": "Service Area",
+              "subtitle": "Borivali & Dahisar"
+            },
+            {
+              "id": "2",
+              "icon": "Clock",
+              "title": "Service Time",
+              "subtitle": "9:00 AM - 8:00 PM"
+            },
+            {
+              "id": "3",
+              "icon": "Calendar",
+              "title": "Available",
+              "subtitle": "All 7 Days a Week"
+            },
+            {
+              "id": "4",
+              "icon": "Truck",
+              "title": "Home Service",
+              "subtitle": "Available"
+            }
+          ],
+          "aboutTitle": "About Our Borivali Grooming Service",
+          "aboutIcon": "FaPaw",
+          "aboutDescription": "We offer a complete range of grooming services at your doorstep across Borivali. Our experienced groomers use pet-safe products and the latest techniques to ensure your pet feels relaxed, comfortable, and looks their best.",
+          "aboutImage": "/images/location-image.png",
+          "aboutImageAlt": "About Our Borivali Grooming Service",
+          "trustTitle": "Why Pet Parents in Borivali Trust Us",
+          "trustFeatures": [
+            {
+              "id": "1",
+              "icon": "ShieldCheck",
+              "title": "Trained &\nVerified Experts"
+            },
+            {
+              "id": "2",
+              "icon": "Leaf",
+              "title": "Pet-Safe &\nQuality Products"
+            },
+            {
+              "id": "3",
+              "icon": "Home",
+              "title": "Hassle-Free\nHome Service"
+            },
+            {
+              "id": "4",
+              "icon": "Heart",
+              "title": "Personalized\nCare & Attention"
+            },
+            {
+              "id": "5",
+              "icon": "FaPaw",
+              "title": "Stress-Free\nExperience"
+            }
+          ],
+          "sidebarTitle": "Our Service Locations",
+          "sidebarIcon": "MapPin",
+          "bookService": {
+            "title": "Book Our Service",
+            "icon": "CalendarCheck",
+            "description": "Give your pet the care they deserve. Book an appointment with us today!",
+            "buttonText": "Book Appointment",
+            "buttonLink": "/appointment",
+            "buttonIcon": "CalendarCheck",
+            "helpText": "Need Help?",
+            "helpPhone": "+91 98765 43210",
+            "helpIcon": "Phone"
+          }
+        }
+      },
+      {
+        "id": "7",
+        "name": "Ghatkopar",
+        "title": "Ghatkopar Pet Grooming & Care",
+        "slug": "ghatkopar",
+        "image": "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&q=80&w=600",
+        "active": false,
+        "detail": {
+          "heroImage": "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&q=80&w=600",
+          "heroImageAlt": "Ghatkopar Pet Grooming Service",
+          "title": "Ghatkopar",
+          "titleHighlight": "Grooming Service",
+          "titleIcon": "MapPin",
+          "description": "We bring professional pet grooming services right to your neighborhood in Ghatkopar. Our team ensures your furry friend gets the best care, comfort, and pampering.",
+          "features": [
+            {
+              "id": "1",
+              "icon": "MapPin",
+              "title": "Service Area",
+              "subtitle": "Ghatkopar & Vidyavihar"
+            },
+            {
+              "id": "2",
+              "icon": "Clock",
+              "title": "Service Time",
+              "subtitle": "9:00 AM - 8:00 PM"
+            },
+            {
+              "id": "3",
+              "icon": "Calendar",
+              "title": "Available",
+              "subtitle": "All 7 Days a Week"
+            },
+            {
+              "id": "4",
+              "icon": "Truck",
+              "title": "Home Service",
+              "subtitle": "Available"
+            }
+          ],
+          "aboutTitle": "About Our Ghatkopar Grooming Service",
+          "aboutIcon": "FaPaw",
+          "aboutDescription": "We offer a complete range of grooming services at your doorstep across Ghatkopar. Our experienced groomers use pet-safe products and the latest techniques to ensure your pet feels relaxed, comfortable, and looks their best.",
+          "aboutImage": "/images/location-image.png",
+          "aboutImageAlt": "About Our Ghatkopar Grooming Service",
+          "trustTitle": "Why Pet Parents in Ghatkopar Trust Us",
+          "trustFeatures": [
+            {
+              "id": "1",
+              "icon": "ShieldCheck",
+              "title": "Trained &\nVerified Experts"
+            },
+            {
+              "id": "2",
+              "icon": "Leaf",
+              "title": "Pet-Safe &\nQuality Products"
+            },
+            {
+              "id": "3",
+              "icon": "Home",
+              "title": "Hassle-Free\nHome Service"
+            },
+            {
+              "id": "4",
+              "icon": "Heart",
+              "title": "Personalized\nCare & Attention"
+            },
+            {
+              "id": "5",
+              "icon": "FaPaw",
+              "title": "Stress-Free\nExperience"
+            }
+          ],
+          "sidebarTitle": "Our Service Locations",
+          "sidebarIcon": "MapPin",
+          "bookService": {
+            "title": "Book Our Service",
+            "icon": "CalendarCheck",
+            "description": "Give your pet the care they deserve. Book an appointment with us today!",
+            "buttonText": "Book Appointment",
+            "buttonLink": "/appointment",
+            "buttonIcon": "CalendarCheck",
+            "helpText": "Need Help?",
+            "helpPhone": "+91 98765 43210",
+            "helpIcon": "Phone"
+          }
+        }
+      },
+      {
+        "id": "8",
+        "name": "Malad",
+        "title": "Malad Pet Grooming & Care",
+        "slug": "malad",
+        "image": "https://images.unsplash.com/photo-1561037404-61cd46aa615b?auto=format&fit=crop&q=80&w=600",
+        "active": false,
+        "detail": {
+          "heroImage": "https://images.unsplash.com/photo-1561037404-61cd46aa615b?auto=format&fit=crop&q=80&w=600",
+          "heroImageAlt": "Malad Pet Grooming Service",
+          "title": "Malad",
+          "titleHighlight": "Grooming Service",
+          "titleIcon": "MapPin",
+          "description": "We bring professional pet grooming services right to your neighborhood in Malad. Our team ensures your furry friend gets the best care, comfort, and pampering.",
+          "features": [
+            {
+              "id": "1",
+              "icon": "MapPin",
+              "title": "Service Area",
+              "subtitle": "Malad West & East"
+            },
+            {
+              "id": "2",
+              "icon": "Clock",
+              "title": "Service Time",
+              "subtitle": "9:00 AM - 8:00 PM"
+            },
+            {
+              "id": "3",
+              "icon": "Calendar",
+              "title": "Available",
+              "subtitle": "All 7 Days a Week"
+            },
+            {
+              "id": "4",
+              "icon": "Truck",
+              "title": "Home Service",
+              "subtitle": "Available"
+            }
+          ],
+          "aboutTitle": "About Our Malad Grooming Service",
+          "aboutIcon": "FaPaw",
+          "aboutDescription": "We offer a complete range of grooming services at your doorstep across Malad. Our experienced groomers use pet-safe products and the latest techniques to ensure your pet feels relaxed, comfortable, and looks their best.",
+          "aboutImage": "/images/location-image.png",
+          "aboutImageAlt": "About Our Malad Grooming Service",
+          "trustTitle": "Why Pet Parents in Malad Trust Us",
+          "trustFeatures": [
+            {
+              "id": "1",
+              "icon": "ShieldCheck",
+              "title": "Trained &\nVerified Experts"
+            },
+            {
+              "id": "2",
+              "icon": "Leaf",
+              "title": "Pet-Safe &\nQuality Products"
+            },
+            {
+              "id": "3",
+              "icon": "Home",
+              "title": "Hassle-Free\nHome Service"
+            },
+            {
+              "id": "4",
+              "icon": "Heart",
+              "title": "Personalized\nCare & Attention"
+            },
+            {
+              "id": "5",
+              "icon": "FaPaw",
+              "title": "Stress-Free\nExperience"
+            }
+          ],
+          "sidebarTitle": "Our Service Locations",
+          "sidebarIcon": "MapPin",
+          "bookService": {
+            "title": "Book Our Service",
+            "icon": "CalendarCheck",
+            "description": "Give your pet the care they deserve. Book an appointment with us today!",
+            "buttonText": "Book Appointment",
+            "buttonLink": "/appointment",
+            "buttonIcon": "CalendarCheck",
+            "helpText": "Need Help?",
+            "helpPhone": "+91 98765 43210",
+            "helpIcon": "Phone"
+          }
+        }
+      },
+      {
+        "id": "9",
+        "name": "Kandivali",
+        "title": "Kandivali Pet Grooming & Care",
+        "slug": "kandivali",
+        "image": "https://images.unsplash.com/photo-1534361960057-19889db9621e?auto=format&fit=crop&q=80&w=600",
+        "active": false,
+        "detail": {
+          "heroImage": "https://images.unsplash.com/photo-1534361960057-19889db9621e?auto=format&fit=crop&q=80&w=600",
+          "heroImageAlt": "Kandivali Pet Grooming Service",
+          "title": "Kandivali",
+          "titleHighlight": "Grooming Service",
+          "titleIcon": "MapPin",
+          "description": "We bring professional pet grooming services right to your neighborhood in Kandivali. Our team ensures your furry friend gets the best care, comfort, and pampering.",
+          "features": [
+            {
+              "id": "1",
+              "icon": "MapPin",
+              "title": "Service Area",
+              "subtitle": "Kandivali East & West"
+            },
+            {
+              "id": "2",
+              "icon": "Clock",
+              "title": "Service Time",
+              "subtitle": "9:00 AM - 8:00 PM"
+            },
+            {
+              "id": "3",
+              "icon": "Calendar",
+              "title": "Available",
+              "subtitle": "All 7 Days a Week"
+            },
+            {
+              "id": "4",
+              "icon": "Truck",
+              "title": "Home Service",
+              "subtitle": "Available"
+            }
+          ],
+          "aboutTitle": "About Our Kandivali Grooming Service",
+          "aboutIcon": "FaPaw",
+          "aboutDescription": "We offer a complete range of grooming services at your doorstep across Kandivali. Our experienced groomers use pet-safe products and the latest techniques to ensure your pet feels relaxed, comfortable, and looks their best.",
+          "aboutImage": "/images/location-image.png",
+          "aboutImageAlt": "About Our Kandivali Grooming Service",
+          "trustTitle": "Why Pet Parents in Kandivali Trust Us",
+          "trustFeatures": [
+            {
+              "id": "1",
+              "icon": "ShieldCheck",
+              "title": "Trained &\nVerified Experts"
+            },
+            {
+              "id": "2",
+              "icon": "Leaf",
+              "title": "Pet-Safe &\nQuality Products"
+            },
+            {
+              "id": "3",
+              "icon": "Home",
+              "title": "Hassle-Free\nHome Service"
+            },
+            {
+              "id": "4",
+              "icon": "Heart",
+              "title": "Personalized\nCare & Attention"
+            },
+            {
+              "id": "5",
+              "icon": "FaPaw",
+              "title": "Stress-Free\nExperience"
+            }
+          ],
+          "sidebarTitle": "Our Service Locations",
+          "sidebarIcon": "MapPin",
+          "bookService": {
+            "title": "Book Our Service",
+            "icon": "CalendarCheck",
+            "description": "Give your pet the care they deserve. Book an appointment with us today!",
+            "buttonText": "Book Appointment",
+            "buttonLink": "/appointment",
+            "buttonIcon": "CalendarCheck",
+            "helpText": "Need Help?",
+            "helpPhone": "+91 98765 43210",
+            "helpIcon": "Phone"
+          }
+        }
+      },
+      {
+        "id": "10",
+        "name": "Chembur",
+        "title": "Chembur Pet Grooming & Care",
+        "slug": "chembur",
+        "image": "https://images.unsplash.com/photo-1596492784531-6e6eb5ea9993?auto=format&fit=crop&q=80&w=600",
+        "active": false,
+        "detail": {
+          "heroImage": "https://images.unsplash.com/photo-1596492784531-6e6eb5ea9993?auto=format&fit=crop&q=80&w=600",
+          "heroImageAlt": "Chembur Pet Grooming Service",
+          "title": "Chembur",
+          "titleHighlight": "Grooming Service",
+          "titleIcon": "MapPin",
+          "description": "We bring professional pet grooming services right to your neighborhood in Chembur. Our team ensures your furry friend gets the best care, comfort, and pampering.",
+          "features": [
+            {
+              "id": "1",
+              "icon": "MapPin",
+              "title": "Service Area",
+              "subtitle": "Chembur & Govandi"
+            },
+            {
+              "id": "2",
+              "icon": "Clock",
+              "title": "Service Time",
+              "subtitle": "9:00 AM - 8:00 PM"
+            },
+            {
+              "id": "3",
+              "icon": "Calendar",
+              "title": "Available",
+              "subtitle": "All 7 Days a Week"
+            },
+            {
+              "id": "4",
+              "icon": "Truck",
+              "title": "Home Service",
+              "subtitle": "Available"
+            }
+          ],
+          "aboutTitle": "About Our Chembur Grooming Service",
+          "aboutIcon": "FaPaw",
+          "aboutDescription": "We offer a complete range of grooming services at your doorstep across Chembur. Our experienced groomers use pet-safe products and the latest techniques to ensure your pet feels relaxed, comfortable, and looks their best.",
+          "aboutImage": "/images/location-image.png",
+          "aboutImageAlt": "About Our Chembur Grooming Service",
+          "trustTitle": "Why Pet Parents in Chembur Trust Us",
+          "trustFeatures": [
+            {
+              "id": "1",
+              "icon": "ShieldCheck",
+              "title": "Trained &\nVerified Experts"
+            },
+            {
+              "id": "2",
+              "icon": "Leaf",
+              "title": "Pet-Safe &\nQuality Products"
+            },
+            {
+              "id": "3",
+              "icon": "Home",
+              "title": "Hassle-Free\nHome Service"
+            },
+            {
+              "id": "4",
+              "icon": "Heart",
+              "title": "Personalized\nCare & Attention"
+            },
+            {
+              "id": "5",
+              "icon": "FaPaw",
+              "title": "Stress-Free\nExperience"
+            }
+          ],
+          "sidebarTitle": "Our Service Locations",
+          "sidebarIcon": "MapPin",
+          "bookService": {
+            "title": "Book Our Service",
+            "icon": "CalendarCheck",
+            "description": "Give your pet the care they deserve. Book an appointment with us today!",
+            "buttonText": "Book Appointment",
+            "buttonLink": "/appointment",
+            "buttonIcon": "CalendarCheck",
+            "helpText": "Need Help?",
+            "helpPhone": "+91 98765 43210",
+            "helpIcon": "Phone"
+          }
+        }
       }
-    },
-    {
-      "id": "6",
-      "title": "Cat Grooming",
-      "subtitle": "Gental & Caring",
-      "image": "https://images.unsplash.com/photo-1537151625747-768eb6cf92b2?auto=format&fit=crop&q=80&w=600",
-      "slug": "cat-grooming",
-      "detail": {
-        "heroTitle": "Professional Grooming",
-        "heroTitleHighlight": "Healthy & Happy Pet",
-        "heroDescription": "Our grooming services are designed to keep your pet looking their best while ensuring their comfort, hygiene, and overall well-being.",
-        "heroFeatures": [
-          {
-            "icon": "Scissors",
-            "title": "Expert Groomers"
-          },
-          {
-            "icon": "Heart",
-            "title": "Premium Products"
-          },
-          {
-            "icon": "ShieldCheck",
-            "title": "Safe & Gentle"
-          },
-          {
-            "icon": "Sparkles",
-            "title": "Stress-Free Care"
-          }
-        ],
-        "overviewText1": "Regular grooming is essential for your pet's health and happiness. Our professional grooming services include bathing, brushing, nail trimming, hair styling, ear cleaning, and more — all tailored to your pet's breed and needs.",
-        "overviewText2": "We use high-quality, pet-safe products and gentle techniques to ensure your furry friend feels relaxed, comfortable, and pampered.",
-        "overviewImage": "https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&q=80&w=600",
-        "includedFeatures": [
-          {
-            "id": "1",
-            "title": "Bath & Shampoo",
-            "description": "Gentle, skin-friendly shampoo for a deep clean."
-          },
-          {
-            "id": "2",
-            "title": "Brushing Detangling",
-            "description": "Removes loose hair, prevents tangles & keeps coat smooth."
-          },
-          {
-            "id": "3",
-            "title": "Nail Trimming",
-            "description": "Safe trimming to keep nails at the perfect length."
-          },
-          {
-            "id": "4",
-            "title": "Ear Cleaning",
-            "description": "Removes dirt & wax to prevent infections & discomfort."
-          },
-          {
-            "id": "5",
-            "title": "Hair Styling",
-            "description": "Breed-specific cuts & styling for a neat and charming look."
-          },
-          {
-            "id": "6",
-            "title": "Deodorizing Spray",
-            "description": "Finishing touch with a refreshing, long-lasting fragrance."
-          }
-        ]
-      }
-    },
-    {
-      "id": "7",
-      "title": "Pet Training",
-      "subtitle": "Smart & Obedient",
-      "image": "https://images.unsplash.com/photo-1537151625747-768eb6cf92b2?auto=format&fit=crop&q=80&w=600",
-      "slug": "pet-training",
-      "detail": {
-        "heroTitle": "Professional Grooming",
-        "heroTitleHighlight": "Healthy & Happy Pet",
-        "heroDescription": "Our grooming services are designed to keep your pet looking their best while ensuring their comfort, hygiene, and overall well-being.",
-        "heroFeatures": [
-          {
-            "icon": "Scissors",
-            "title": "Expert Groomers"
-          },
-          {
-            "icon": "Heart",
-            "title": "Premium Products"
-          },
-          {
-            "icon": "ShieldCheck",
-            "title": "Safe & Gentle"
-          },
-          {
-            "icon": "Sparkles",
-            "title": "Stress-Free Care"
-          }
-        ],
-        "overviewText1": "Regular grooming is essential for your pet's health and happiness. Our professional grooming services include bathing, brushing, nail trimming, hair styling, ear cleaning, and more — all tailored to your pet's breed and needs.",
-        "overviewText2": "We use high-quality, pet-safe products and gentle techniques to ensure your furry friend feels relaxed, comfortable, and pampered.",
-        "overviewImage": "https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&q=80&w=600",
-        "includedFeatures": [
-          {
-            "id": "1",
-            "title": "Bath & Shampoo",
-            "description": "Gentle, skin-friendly shampoo for a deep clean."
-          },
-          {
-            "id": "2",
-            "title": "Brushing Detangling",
-            "description": "Removes loose hair, prevents tangles & keeps coat smooth."
-          },
-          {
-            "id": "3",
-            "title": "Nail Trimming",
-            "description": "Safe trimming to keep nails at the perfect length."
-          },
-          {
-            "id": "4",
-            "title": "Ear Cleaning",
-            "description": "Removes dirt & wax to prevent infections & discomfort."
-          },
-          {
-            "id": "5",
-            "title": "Hair Styling",
-            "description": "Breed-specific cuts & styling for a neat and charming look."
-          },
-          {
-            "id": "6",
-            "title": "Deodorizing Spray",
-            "description": "Finishing touch with a refreshing, long-lasting fragrance."
-          }
-        ]
-      }
-    },
-    {
-      "id": "8",
-      "title": "Pet Taxi",
-      "subtitle": "Safe Transportation",
-      "image": "https://images.unsplash.com/photo-1537151625747-768eb6cf92b2?auto=format&fit=crop&q=80&w=600",
-      "slug": "pet-taxi",
-      "detail": {
-        "heroTitle": "Professional Grooming",
-        "heroTitleHighlight": "Healthy & Happy Pet",
-        "heroDescription": "Our grooming services are designed to keep your pet looking their best while ensuring their comfort, hygiene, and overall well-being.",
-        "heroFeatures": [
-          {
-            "icon": "Scissors",
-            "title": "Expert Groomers"
-          },
-          {
-            "icon": "Heart",
-            "title": "Premium Products"
-          },
-          {
-            "icon": "ShieldCheck",
-            "title": "Safe & Gentle"
-          },
-          {
-            "icon": "Sparkles",
-            "title": "Stress-Free Care"
-          }
-        ],
-        "overviewText1": "Regular grooming is essential for your pet's health and happiness. Our professional grooming services include bathing, brushing, nail trimming, hair styling, ear cleaning, and more — all tailored to your pet's breed and needs.",
-        "overviewText2": "We use high-quality, pet-safe products and gentle techniques to ensure your furry friend feels relaxed, comfortable, and pampered.",
-        "overviewImage": "https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&q=80&w=600",
-        "includedFeatures": [
-          {
-            "id": "1",
-            "title": "Bath & Shampoo",
-            "description": "Gentle, skin-friendly shampoo for a deep clean."
-          },
-          {
-            "id": "2",
-            "title": "Brushing Detangling",
-            "description": "Removes loose hair, prevents tangles & keeps coat smooth."
-          },
-          {
-            "id": "3",
-            "title": "Nail Trimming",
-            "description": "Safe trimming to keep nails at the perfect length."
-          },
-          {
-            "id": "4",
-            "title": "Ear Cleaning",
-            "description": "Removes dirt & wax to prevent infections & discomfort."
-          },
-          {
-            "id": "5",
-            "title": "Hair Styling",
-            "description": "Breed-specific cuts & styling for a neat and charming look."
-          },
-          {
-            "id": "6",
-            "title": "Deodorizing Spray",
-            "description": "Finishing touch with a refreshing, long-lasting fragrance."
-          }
-        ]
-      }
-    }
-  ],
+    ]
+  },
   "whyChooseUsFeatures": [
     {
       "id": "1",
@@ -652,7 +1648,7 @@
       },
       {
         "label": "Service Areas",
-        "href": "/service-areas"
+        "href": "/locations"
       },
       {
         "label": "Gallery",
@@ -826,25 +1822,6 @@
       "line2": "& Pet-Friendly",
       "line3": "Grooming"
     }
-  },
-  "serviceAreasSectionData": {
-    "badgeText": "Service Areas",
-    "titleWhite": "Our",
-    "titleColored": "Service Areas",
-    "descriptionPart1": "We proudly serve premium pet grooming and care services across ",
-    "descriptionPart2": "Delhi NCR."
-  },
-  "servicesSectionData": {
-    "badgeText": "Our Services",
-    "titleWhite": "Boarding Services",
-    "titleColored": "Tailored for Every Pet",
-    "description": "From pampering grooming to safe stays, we offer a range of professional services designed to keep your pets happy, healthy, and loved."
-  },
-  "servicesPageData": {
-    "badgeText": "Our services",
-    "titleWhite": "Boarding Services Tailored For ",
-    "titleColored": "Every pet",
-    "description": "From pampering grooming to safe stays, we offer range of peofessioal services designed to keep"
   },
   "whyChooseUsSectionData": {
     "badgeText": "Why Choose Us",

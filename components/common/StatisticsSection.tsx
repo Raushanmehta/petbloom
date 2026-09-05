@@ -7,19 +7,19 @@ import { StatisticsItem } from "@/types";
 import { statisticsContainerVariants, statisticsItemVariants } from "@/utils/animations";
 
 
+import data from "@/data/data.json";
+
 const lilitaOne = Lilita_One({
     subsets: ["latin"],
     weight: "400",
 });
 
-
 interface StatisticsSectionProps {
-    statisticsData: StatisticsItem[];
+    statisticsData?: StatisticsItem[];
 }
 
-
 export default function StatisticsSection({
-    statisticsData,
+    statisticsData = (data as any).statisticsData as StatisticsItem[],
 }: StatisticsSectionProps) {
     return (
         <motion.div
@@ -27,7 +27,7 @@ export default function StatisticsSection({
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className="mt-20 rounded-[2.5rem] bg-[#387478] px-6 py-10 text-white shadow-xl">
+            className="mt-20 rounded-[1.5rem] bg-[#387478] px-6 py-10 text-white shadow-xl">
             <motion.div
                 variants={statisticsContainerVariants}
                 initial="hidden"

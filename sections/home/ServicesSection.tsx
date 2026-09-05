@@ -3,7 +3,7 @@
 import data from "@/data/data.json";
 import { motion } from "framer-motion";
 import { Lilita_One } from "next/font/google";
-import { ServiceItem, SectionHeaderData } from "@/types";
+import { ServicesDataWrapper } from "@/types";
 import ServiceCard from "@/components/cards/ServiceCard";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious, } from "@/components/ui/carousel";
 import { IoIosArrowRoundBack, IoIosArrowRoundForward, } from "react-icons/io";
@@ -17,10 +17,7 @@ const lilitaOne = Lilita_One({
 });
 
 
-const { servicesData, servicesSectionData } = data as {
-    servicesData: ServiceItem[];
-    servicesSectionData: SectionHeaderData;
-};
+const { servicesData } = data as { servicesData: ServicesDataWrapper };
 
 export default function ServicesSection() {
     return (
@@ -47,7 +44,7 @@ export default function ServicesSection() {
                                     transition={{ duration: 2, repeat: Infinity, repeatDelay: 3, }}>
                                     <FaPaw className="h-6 w-6 text-[#E67E22]" />
                                 </motion.div>
-                                {servicesSectionData.badgeText}
+                                {servicesData.sectionData.badgeText}
                             </span>
                         </motion.div>
 
@@ -56,9 +53,7 @@ export default function ServicesSection() {
                             variants={fadeUp}
                             className={`${lilitaOne.className} text-4xl leading-[1.15] tracking-wide text-gray-900 sm:text-5xl lg:text-6xl`}
                         >
-                            {servicesSectionData.titleWhite}
-                            <br />
-                            {servicesSectionData.titleColored}
+                            {servicesData.sectionData.titleBlack}
                         </motion.h2>
 
                         {/* Description */}
@@ -66,7 +61,7 @@ export default function ServicesSection() {
                             variants={fadeUp}
                             className="mt-4 text-base font-medium text-gray-600 sm:text-lg"
                         >
-                            {servicesSectionData.description}
+                            {servicesData.sectionData.description}
                         </motion.p>
                     </div>
                 </motion.div>
@@ -102,7 +97,7 @@ export default function ServicesSection() {
 
                         {/* Cards */}
                         <CarouselContent className="-ml-4">
-                            {servicesData.map((service, index) => (
+                            {servicesData.services.map((service, index) => (
                                 <CarouselItem
                                     key={`${service.id}-${index}`}
                                     className="pl-4 md:basis-1/2 lg:basis-1/4"

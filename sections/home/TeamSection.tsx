@@ -4,7 +4,7 @@ import data from "@/data/data.json";
 import { motion } from "framer-motion";
 import { FaPaw } from "react-icons/fa";
 import TeamCard from "@/components/cards/TeamCard";
-import { TeamSectionData } from "@/types";
+import { TeamDataWrapper } from "@/types";
 import { Lilita_One } from "next/font/google";
 import { teamHeaderContainerVariants, teamFadeUpVariants, teamCardsContainerVariants } from "@/utils/animations";
 
@@ -13,7 +13,7 @@ const lilitaOne = Lilita_One({
     weight: "400",
 });
 
-const { teamSectionData } = data as { teamSectionData: TeamSectionData };
+const { teamData } = data as { teamData: TeamDataWrapper };
 
 export default function TeamSection() {
     return (
@@ -62,7 +62,7 @@ export default function TeamSection() {
                     </motion.div>
 
                     <span className="text-xs font-bold uppercase tracking-wider text-[#387478]">
-                        {teamSectionData.badgeText}
+                        {teamData.sectionData.badgeText}
                     </span>
                 </motion.div>
 
@@ -71,9 +71,9 @@ export default function TeamSection() {
                     variants={teamFadeUpVariants}
                     className={`${lilitaOne.className} mt-4 text-4xl tracking-wide text-gray-900 sm:text-5xl lg:text-6xl`}
                 >
-                    {teamSectionData.titleWhite}{" "}
+                    {teamData.sectionData.titleWhite}{" "}
                     <span className="text-[#387478]">
-                        {teamSectionData.titleColored}
+                        {teamData.sectionData.titleColored}
                     </span>
                 </motion.h2>
 
@@ -107,7 +107,7 @@ export default function TeamSection() {
                 <motion.p
                     variants={teamFadeUpVariants}
                     className="mx-auto mt-4 max-w-xl text-base font-medium text-gray-600 sm:text-lg">
-                    {teamSectionData.description}
+                    {teamData.sectionData.description}
                 </motion.p>
             </motion.div>
 
@@ -117,7 +117,7 @@ export default function TeamSection() {
                 whileInView="visible"
                 viewport={{ once: true, amount: 0.15, }}
                 className="relative z-10 mx-auto mt-14 grid max-w-[1300px] grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-                {teamSectionData.teamMembers.map((team) => (
+                {teamData.teams.map((team) => (
                     <TeamCard
                         key={team.id}
                         team={team}

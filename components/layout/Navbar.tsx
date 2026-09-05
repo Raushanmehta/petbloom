@@ -5,15 +5,15 @@ import Link from "next/link";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaPhoneAlt, FaChevronDown, FaBars, FaTimes } from "react-icons/fa";
-import { NavLink } from "@/types";
+import { NavLink, ServicesDataWrapper } from "@/types";
 import data from "@/data/data.json";
 
-
-const { navLinks, contactPhone } = data as { navLinks: NavLink[], contactPhone: string };
+const { navLinks, contactPhone, servicesData } = data as { navLinks: NavLink[], contactPhone: string, servicesData: ServicesDataWrapper };
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
+    const [isMobileServicesOpen, setIsMobileServicesOpen] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -53,6 +53,7 @@ export default function Navbar() {
                             height={150}
                             style={{ width: "auto", height: "auto" }}
                             priority
+                            loading="eager"
                         />
                     </Link>
                 </motion.div>
@@ -85,24 +86,42 @@ export default function Navbar() {
                         </motion.div>
                     ))}
 
-                    {/* Services */}
-                    <motion.div
-                        initial={{ opacity: 0, y: -20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.5, delay: 0.2 }}
-                        whileHover={{ y: -2 }}
-                        className="group flex cursor-pointer items-center gap-1 text-[15px] font-medium text-[#d1d8d8] transition-colors hover:text-[#2ec4b6]"
-                    >
-                        <span>Services</span>
+                    {/* Services Dropdown */}
+                    <div className="group relative">
+                        <Link href="/services">
+                            <motion.div
+                                initial={{ opacity: 0, y: -20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.5, delay: 0.2 }}
+                                whileHover={{ y: -2 }}
+                                className="flex cursor-pointer items-center gap-1 text-[15px] font-medium text-[#d1d8d8] py-2 transition-colors hover:text-[#2ec4b6]"
+                            >
+                                <span>Services</span>
 
-                        <motion.span
-                            className="flex"
-                            whileHover={{ rotate: 180 }}
-                            transition={{ duration: 0.3 }}
-                        >
-                            <FaChevronDown size={11} />
-                        </motion.span>
-                    </motion.div>
+                                <motion.span
+                                    className="flex"
+                                    whileHover={{ rotate: 180 }}
+                                    transition={{ duration: 0.3 }}
+                                >
+                                    <FaChevronDown size={11} />
+                                </motion.span>
+                            </motion.div>
+                        </Link>
+
+                        <div className="invisible absolute left-0 top-full z-50 pt-2 opacity-0 transition-all duration-300 group-hover:visible group-hover:opacity-100">
+                            <div className="flex w-[240px] flex-col overflow-hidden rounded-xl border border-white/10 bg-[#051d1b]/95 p-2 shadow-xl backdrop-blur-md">
+                                {servicesData.services.map((service) => (
+                                    <Link
+                                        key={service.slug}
+                                        href={`/services/${service.slug}`}
+                                        className="rounded-lg px-4 py-3 text-[15px] font-medium text-[#d1d8d8] transition-colors hover:bg-white/10 hover:text-[#2ec4b6]"
+                                    >
+                                        {service.title}
+                                    </Link>
+                                ))}
+                            </div>
+                        </div>
+                    </div>
 
                     {navLinks.slice(2).map((link, index) => (
                         <motion.div
@@ -247,32 +266,39 @@ export default function Navbar() {
                             className="flex flex-col gap-4 px-6 py-6"
                         >
                             {/* Mobile Links */}
-                            {navLinks.map((link) => (
-                                <motion.div
-                                    key={link.href}
-                                    variants={{
-                                        hidden: {
-                                            opacity: 0,
-                                            x: -20,
-                                        },
-                                        visible: {
-                                            opacity: 1,
-                                            x: 0,
-                                            transition: {
-                                                duration: 0.35,
-                                                ease: "easeOut",
-                                            },
-                                        },
-                                    }}
-                                >
-                                    <Link
-                                        href={link.href}
-                                        onClick={closeMenu}
-                                        className={`block text-lg font-medium transition-colors ${link.label === "Home"
-                                            ? "font-semibold text-[#e5a942]"
-                                            : "text-white hover:text-[#2ec4b6]"
-                                            }`}
-                                    >
+                            {navLinks.slice(0, 2).map((link) => (
+                                <motion.div key={link.href} variants={{ hidden: { opacity: 0, x: -20 }, visible: { opacity: 1, x: 0, transition: { duration: 0.35, ease: "easeOut" } } }}>
+                                    <Link href={link.href} onClick={closeMenu} className={`block text-lg font-medium transition-colors ${link.label === "Home" ? "font-semibold text-[#e5a942]" : "text-white hover:text-[#2ec4b6]"}`}>
+                                        {link.label}
+                                    </Link>
+                                </motion.div>
+                            ))}
+
+                            <motion.div variants={{ hidden: { opacity: 0, x: -20 }, visible: { opacity: 1, x: 0, transition: { duration: 0.35, ease: "easeOut" } } }}>
+                                <div className="flex cursor-pointer items-center justify-between text-lg font-medium text-white transition-colors hover:text-[#2ec4b6]" onClick={() => setIsMobileServicesOpen(!isMobileServicesOpen)}>
+                                    <Link href="/services" onClick={(e) => { e.stopPropagation(); closeMenu(); }}>
+                                        Services
+                                    </Link>
+                                    <motion.span animate={{ rotate: isMobileServicesOpen ? 180 : 0 }} transition={{ duration: 0.3 }} className="p-2">
+                                        <FaChevronDown size={14} />
+                                    </motion.span>
+                                </div>
+                                <AnimatePresence>
+                                    {isMobileServicesOpen && (
+                                        <motion.div initial={{ opacity: 0, height: 0 }} animate={{ opacity: 1, height: "auto" }} exit={{ opacity: 0, height: 0 }} transition={{ duration: 0.3 }} className="mt-3 flex flex-col gap-3 overflow-hidden border-l-2 border-[#2ec4b6]/30 pl-4">
+                                            {servicesData.services.map((service) => (
+                                                <Link key={service.slug} href={`/services/${service.slug}`} onClick={closeMenu} className="block text-[15px] font-medium text-[#d1d8d8] transition-colors hover:text-[#2ec4b6]">
+                                                    {service.title}
+                                                </Link>
+                                            ))}
+                                        </motion.div>
+                                    )}
+                                </AnimatePresence>
+                            </motion.div>
+
+                            {navLinks.slice(2).map((link) => (
+                                <motion.div key={link.href} variants={{ hidden: { opacity: 0, x: -20 }, visible: { opacity: 1, x: 0, transition: { duration: 0.35, ease: "easeOut" } } }}>
+                                    <Link href={link.href} onClick={closeMenu} className="block text-lg font-medium text-white transition-colors hover:text-[#2ec4b6]">
                                         {link.label}
                                     </Link>
                                 </motion.div>

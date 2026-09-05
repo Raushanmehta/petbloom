@@ -1,27 +1,22 @@
 "use client";
-
-import data from "@/data/data.json";
 import { useRef } from "react";
 import { motion } from "framer-motion";
 import { FaPaw } from "react-icons/fa";
 import { Lilita_One } from "next/font/google";
-import { ServiceArea, SectionHeaderData } from "@/types";
 import { MapPin, ChevronLeft, ChevronRight } from "lucide-react";
-import ServiceAreaCard from "@/components/cards/ServiceAreaCard";
 import { headerContainer, fadeUp, cardsContainer, cardAnimation, } from "@/utils/animations";
+import LocationCard from "@/components/cards/LocationCard";
+import data from "@/data/data.json";
+import { LocationDataWrapper } from "@/types";
 
 const lilitaOne = Lilita_One({
     subsets: ["latin"],
     weight: "400",
 });
 
-const { serviceAreas, serviceAreasSectionData } = data as {
-    serviceAreas: ServiceArea[];
-    serviceAreasSectionData: SectionHeaderData;
-};
+const { locationData } = data as { locationData: LocationDataWrapper };
 
-
-export default function ServiceAreasSection() {
+export default function LocationSection() {
     const scrollRef = useRef<HTMLDivElement>(null);
 
     const scroll = (direction: "left" | "right") => {
@@ -122,7 +117,7 @@ export default function ServiceAreasSection() {
                     </motion.div>
 
                     <span className="text-xs font-bold uppercase tracking-wider text-[#387478]">
-                        {serviceAreasSectionData.badgeText}
+                        {locationData.sectionData.badgeText}
                     </span>
                 </motion.div>
 
@@ -131,7 +126,7 @@ export default function ServiceAreasSection() {
                     variants={fadeUp}
                     className={`${lilitaOne.className} mt-4 text-4xl tracking-wide text-gray-900 sm:text-5xl lg:text-6xl`}
                 >
-                    {serviceAreasSectionData.titleWhite} <span className="text-[#387478]">{serviceAreasSectionData.titleColored}</span>
+                    {locationData.sectionData.titleWhite} <span className="text-[#387478]">{locationData.sectionData.titleColored}</span>
                 </motion.h2>
 
                 {/* Divider */}
@@ -167,8 +162,14 @@ export default function ServiceAreasSection() {
                     variants={fadeUp}
                     className="mx-auto mt-4 max-w-xl text-base font-medium text-gray-600 sm:text-lg"
                 >
-                    {serviceAreasSectionData.descriptionPart1}
-                    <span className="font-bold text-[#387478]">{serviceAreasSectionData.descriptionPart2}</span>.
+                    {locationData.sectionData.descriptionPart1 ? (
+                        <>
+                            {locationData.sectionData.descriptionPart1}
+                            <span className="font-bold text-[#387478]">{locationData.sectionData.descriptionPart2}</span>
+                        </>
+                    ) : (
+                        locationData.sectionData.description
+                    )}
                 </motion.p>
             </motion.div>
 
@@ -210,13 +211,13 @@ export default function ServiceAreasSection() {
                         msOverflowStyle: "none",
                     }}
                 >
-                    {serviceAreas.map((area, index) => (
+                    {locationData.locationsData.map((location, index) => (
                         <motion.div
-                            key={`${area.id}-${index}`}
+                            key={`${location.id}-${index}`}
                             variants={cardAnimation}
                             className="w-[280px] shrink-0 snap-center sm:w-[320px] lg:w-[calc(20%-1.2rem)]"
                         >
-                            <ServiceAreaCard area={area} />
+                            <LocationCard location={location} />
                         </motion.div>
                     ))}
                 </div>

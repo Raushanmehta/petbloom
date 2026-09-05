@@ -64,7 +64,55 @@ export const includedItemVariants = { hidden: { opacity: 0, y: 25, scale: 0.96 }
 export const sidebarVariants = { hidden: { opacity: 0, x: 50 }, visible: { opacity: 1, x: 0, transition: { duration: 0.7, ease: "easeOut" as const } } };
 export const sidebarItemVariants = { hidden: { opacity: 0, x: 20 }, visible: { opacity: 1, x: 0, transition: { duration: 0.4, ease: "easeOut" as const } } };
 export const servicesCardsContainerVariants = { hidden: {}, visible: { transition: { staggerChildren: 0.15, delayChildren: 0.1 } } };
-export const servicesCardVariants = { hidden: { opacity: 0, y: 60, scale: 0.94 }, visible: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.7, ease: "easeOut" as const } } };
+// Team Detail Page
+export const teamDetailContainerVariants = {
+    hidden: {},
+    visible: {
+        transition: {
+            staggerChildren: 0.12,
+            delayChildren: 0.1,
+        },
+    },
+};
+
+export const teamDetailLeftCardVariants = {
+    hidden: { opacity: 0, x: -50, scale: 0.96 },
+    visible: {
+        opacity: 1,
+        x: 0,
+        scale: 1,
+        transition: { duration: 0.75, ease: "easeOut" as const },
+    },
+};
+
+export const teamDetailRightCardVariants = {
+    hidden: { opacity: 0, x: 50, scale: 0.96 },
+    visible: {
+        opacity: 1,
+        x: 0,
+        scale: 1,
+        transition: { duration: 0.75, ease: "easeOut" as const },
+    },
+};
+
+export const teamDetailBottomCardVariants = {
+    hidden: { opacity: 0, y: 40, scale: 0.97 },
+    visible: {
+        opacity: 1,
+        y: 0,
+        scale: 1,
+        transition: { duration: 0.7, ease: "easeOut" as const },
+    },
+};
+
+export const teamDetailItemVariants = {
+    hidden: { opacity: 0, y: 15 },
+    visible: {
+        opacity: 1,
+        y: 0,
+        transition: { duration: 0.45, ease: "easeOut" as const },
+    },
+};
 
 
 
