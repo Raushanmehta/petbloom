@@ -14,7 +14,7 @@ const lilitaOne = Lilita_One({
     weight: "400",
 });
 
-const { locationData } = data as { locationData: LocationDataWrapper };
+const { locationsData } = data as { locationsData: LocationDataWrapper };
 
 export default function LocationSection() {
     const scrollRef = useRef<HTMLDivElement>(null);
@@ -66,7 +66,6 @@ export default function LocationSection() {
                 </svg>
             </motion.div>
 
-
             <motion.div
                 initial={{ opacity: 0, x: 60 }}
                 whileInView={{ opacity: 0.1, x: 0 }}
@@ -96,7 +95,6 @@ export default function LocationSection() {
                 </svg>
             </motion.div>
 
-
             <motion.div
                 className="relative z-10 mx-auto max-w-[1300px] text-center"
                 variants={headerContainer}
@@ -117,7 +115,7 @@ export default function LocationSection() {
                     </motion.div>
 
                     <span className="text-xs font-bold uppercase tracking-wider text-[#387478]">
-                        {locationData.sectionData.badgeText}
+                        {locationsData.sectionData.badgeText}
                     </span>
                 </motion.div>
 
@@ -126,7 +124,7 @@ export default function LocationSection() {
                     variants={fadeUp}
                     className={`${lilitaOne.className} mt-4 text-4xl tracking-wide text-gray-900 sm:text-5xl lg:text-6xl`}
                 >
-                    {locationData.sectionData.titleWhite} <span className="text-[#387478]">{locationData.sectionData.titleColored}</span>
+                    {locationsData.sectionData.titleWhite} <span className="text-[#387478]">{locationsData.sectionData.titleColored}</span>
                 </motion.h2>
 
                 {/* Divider */}
@@ -162,13 +160,13 @@ export default function LocationSection() {
                     variants={fadeUp}
                     className="mx-auto mt-4 max-w-xl text-base font-medium text-gray-600 sm:text-lg"
                 >
-                    {locationData.sectionData.descriptionPart1 ? (
+                    {locationsData.sectionData.descriptionPart1 ? (
                         <>
-                            {locationData.sectionData.descriptionPart1}
-                            <span className="font-bold text-[#387478]">{locationData.sectionData.descriptionPart2}</span>
+                            {locationsData.sectionData.descriptionPart1}
+                            <span className="font-bold text-[#387478]">{locationsData.sectionData.descriptionPart2}</span>
                         </>
                     ) : (
-                        locationData.sectionData.description
+                        locationsData.sectionData.description
                     )}
                 </motion.p>
             </motion.div>
@@ -211,13 +209,13 @@ export default function LocationSection() {
                         msOverflowStyle: "none",
                     }}
                 >
-                    {locationData.locationsData.map((location, index) => (
+                    {locationsData.locations.map((locationItem, index) => (
                         <motion.div
-                            key={`${location.id}-${index}`}
+                            key={`${locationItem.id}-${index}`}
                             variants={cardAnimation}
                             className="w-[280px] shrink-0 snap-center sm:w-[320px] lg:w-[calc(20%-1.2rem)]"
                         >
-                            <LocationCard location={location} />
+                            <LocationCard location={locationItem} />
                         </motion.div>
                     ))}
                 </div>

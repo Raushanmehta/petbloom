@@ -10,11 +10,11 @@ interface PageProps {
     }>;
 }
 
-const { locationData } = data as { locationData: LocationDataWrapper };
+const { locationsData } = data as { locationsData: LocationDataWrapper };
 
 export default async function LocationDetail({ params }: PageProps) {
     const { slug } = await params;
-    const location = locationData.locationsData.find(
+    const location = locationsData.locations.find(
         (l) => l.slug === slug || l.name.toLowerCase().replace(/\s+/g, '-') === slug
     );
 
@@ -25,7 +25,7 @@ export default async function LocationDetail({ params }: PageProps) {
     return (
         <main>
             <PageTopSection
-                title={location.detail?.title ? `${location.detail.title} Service Area` : `${location.name} Location`}
+                title={location.name}
                 subTitle="Location Detail"
             />
             <LocationDetailPage location={location} />

@@ -9,16 +9,18 @@ import { Location } from "@/types";
 interface LocationCardProps {
     location?: Location;
     area?: Location;
+
 }
 
 export default function LocationCard({
     location,
     area,
+
 }: LocationCardProps) {
     const loc = location || area;
     if (!loc) return null;
 
-    const displayTitle = loc.title || loc.name || "Location";
+    const displayTitle = loc.name || "Location";
     const slug = loc.slug || (loc.name || loc.title || "").toLowerCase().replace(/\s+/g, "-");
     const href = `/locations/${slug}`;
 
@@ -54,7 +56,7 @@ export default function LocationCard({
                         viewport={{ once: true }}
                         transition={{ type: "spring", stiffness: 220, damping: 14, delay: 0.25 }}
                         whileHover={{ scale: 1.12, rotate: 5 }}
-                        className="absolute -bottom-6 left-1/2 z-10 flex h-16 w-16 -translate-x-1/2 items-center justify-center rounded-full bg-white/90 text-[#387478] backdrop-blur-sm transition-colors duration-300 group-hover:bg-[#387478] group-hover:text-white shadow-md"
+                        className="absolute -bottom-6 left-1/2 z-10 flex h-16 w-16 -translate-x-1/2 items-center justify-center rounded-full bg-white/90 text-[#387478] backdrop-blur-sm transition-colors duration-300 group-hover:bg-[#387478] group-hover:text-white "
                     >
                         <MapPin className="h-8 w-8 fill-[#387478] text-white transition-colors duration-300 group-hover:fill-white group-hover:text-[#387478]" />
                     </motion.div>
@@ -64,7 +66,7 @@ export default function LocationCard({
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.5, delay: 0.3 }}
-                    className="mt-6 text-2xl font-bold tracking-wide text-gray-900 transition-colors duration-300 group-hover:text-[#387478]"
+                    className="mt-6 text-2xl pt-2 font-bold tracking-wide text-gray-900 transition-colors duration-300 group-hover:text-[#387478]"
                 >
                     {displayTitle}
                 </motion.h3>

@@ -108,7 +108,7 @@ export type ServiceArea = Location;
 export interface LocationDataWrapper {
     pageData: SectionHeaderData;
     sectionData: SectionHeaderData;
-    locationsData: LocationItem[];
+    locations: LocationItem[];
 }
 
 // SERVICES SECTION TYPES
@@ -304,3 +304,111 @@ export interface ServicesDataWrapper {
     sectionData: ServicesSectionData;
     services: ServiceItem[];
 }
+
+// PRICING SECTION TYPES
+export interface PricingPackage {
+    id: string;
+    name: string;
+    description: string;
+    price: string;
+    popular?: boolean;
+    features: string[];
+}
+
+export interface PricingDataWrapper {
+    pageData: SectionHeaderData;
+    pricingPackages: PricingPackage[];
+}
+
+// PARTNERS SECTION TYPES
+export interface Partner {
+    id: string;
+    name: string;
+    tagline: string;
+    logoImage: string;
+    logoColor?: string;
+}
+
+export interface PartnersDataWrapper {
+    pageData: SectionHeaderData;
+    partners: Partner[];
+}
+
+// GALLERY SECTION TYPES
+export interface PhotoItem {
+    id: string;
+    image: string;
+    alt: string;
+}
+
+export interface VideoItem {
+    id: string;
+    title: string;
+    description: string;
+    duration: string;
+    image: string;
+}
+
+export interface GalleryDataWrapper {
+    pageData: SectionHeaderData;
+    videoPageData?: SectionHeaderData;
+    photos: PhotoItem[];
+    videos: VideoItem[];
+}
+
+// APPOINTMENT SECTION TYPES
+export interface AppointmentFeature {
+    icon: string;
+    title: string;
+}
+
+export interface AppointmentSectionData {
+    bannerImage: string;
+    bannerTitleWhite: string;
+    bannerTitleColored: string;
+    bannerDescription: string;
+    features: AppointmentFeature[];
+    formTitleBlack: string;
+    formTitleColored: string;
+    formDescription: string;
+}
+
+export interface AppointmentDataWrapper {
+    pageData: SectionHeaderData;
+    appointment: AppointmentSectionData;
+}
+
+// PRIVACY POLICY TYPES
+export interface PolicyItem {
+    id: string;
+    number: string;
+    title: string;
+    content: string;
+}
+
+export interface PrivacyPolicyDataWrapper {
+    pageData: SectionHeaderData;
+    introDescription: string;
+    policies: PolicyItem[];
+    contactEmail: string;
+    contactPhoneDisplay: string;
+    contactPhoneValue: string;
+}
+
+// PRIVACY POLICY TYPES
+export interface PolicyItem {
+    id: string;
+    number: string;
+    title: string;
+    content: string;
+}
+
+export interface PrivacyPolicyDataWrapper {
+    pageData: SectionHeaderData;
+    introDescription: string;
+    policies: PolicyItem[];
+    contactEmail: string;
+    contactPhoneDisplay: string;
+    contactPhoneValue: string;
+}
+

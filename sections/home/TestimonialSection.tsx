@@ -11,6 +11,7 @@ import Autoplay from "embla-carousel-autoplay";
 import { testimonialHeaderContainerVariants as headerContainerVariants, testimonialFadeUpVariants as fadeUpVariants, testimonialCarouselVariants as carouselVariants } from "@/utils/animations";
 import data from "@/data/data.json";
 import { TestimonialSectionData } from "@/types/sections";
+import StatisticsSection from "@/components/common/StatisticsSection";
 
 
 const lilitaOne = Lilita_One({
@@ -228,7 +229,9 @@ export default function TestimonialsSection() {
                         </motion.div>
                     </div>
                 </div>
+                <StatisticsSection />
             </div>
+
         </section>
     );
 }

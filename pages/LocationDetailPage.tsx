@@ -22,7 +22,7 @@ const lilitaOne = Lilita_One({
     weight: "400",
 });
 
-const { locationData } = data as { locationData: LocationDataWrapper };
+const { locationsData } = data as { locationsData: LocationDataWrapper };
 
 // Helper to render dynamic icons by string name
 function DynamicLocationIcon({ name, className }: { name?: string; className?: string }) {
@@ -42,17 +42,17 @@ interface LocationDetailPageProps {
 }
 
 export default function LocationDetailPage({ location: propLocation }: LocationDetailPageProps) {
-    // Current location either from props or fallback to first/active location in locationData
-    const defaultLocation = locationData.locationsData.find((l) => l.active) || locationData.locationsData[0];
+    // Current location either from props or fallback to first/active location in locationsData
+    const defaultLocation = locationsData.locations.find((l) => l.active) || locationsData.locations[0];
     const currentLocation = propLocation || defaultLocation;
 
-    // Detail data strictly from locationData
-    const fallbackDetail = locationData.locationsData[0]?.detail as LocationDetail;
+    // Detail data strictly from locationsData
+    const fallbackDetail = locationsData.locations[0]?.detail as LocationDetail;
     const detail: LocationDetail = (currentLocation?.detail || fallbackDetail) as LocationDetail;
 
     if (!detail) return null;
 
-    const allLocations = locationData.locationsData;
+    const allLocations = locationsData.locations;
 
     return (
         <section className="relative overflow-hidden bg-[#FEFDFB] px-4 py-20 sm:px-6 lg:px-12">

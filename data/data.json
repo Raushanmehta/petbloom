@@ -680,7 +680,7 @@
       }
     ]
   },
-  "locationData": {
+  "locationsData": {
     "pageData": {
       "badgeText": "Our Service Areas",
       "titleWhite": "Our ",
@@ -693,7 +693,7 @@
       "titleColored": "Service Areas",
       "description": "We proudly serve premium pet grooming and care services across Mumbai and surrounding regions."
     },
-    "locationsData": [
+    "locations": [
       {
         "id": "1",
         "name": "Mumbai",
@@ -1576,6 +1576,323 @@
       }
     ]
   },
+  "pricingData": {
+    "pageData": {
+      "badgeText": "OUR PACKAGES",
+      "titleWhite": "Grooming Packages for Every",
+      "titleColored": "Pet & Need",
+      "description": "Choose the perfect grooming package that keeps your furry friend clean, comfortable, and looking their absolute best."
+    },
+    "pricingPackages": [
+      {
+        "id": "1",
+        "name": "Basic Grooming",
+        "description": "Essential care to keep your pet clean and fresh.",
+        "price": "₹999",
+        "popular": false,
+        "features": [
+          "Bath & Shampoo",
+          "Brush & Comb",
+          "Nail Trimming",
+          "Ear Cleaning",
+          "Blow Dry"
+        ]
+      },
+      {
+        "id": "2",
+        "name": "Premium Grooming",
+        "description": "Complete grooming for a healthy and shiny coat.",
+        "price": "₹1,699",
+        "popular": true,
+        "features": [
+          "Bath & Shampoo",
+          "Haircut & Styling",
+          "Nail Trimming",
+          "Ear Cleaning",
+          "Teeth Brushing",
+          "Blow Dry",
+          "Paw Pad Care",
+          "Perfume Spray"
+        ]
+      },
+      {
+        "id": "3",
+        "name": "Deluxe Grooming",
+        "description": "Pampering session with extra care and attention.",
+        "price": "₹2,499",
+        "popular": false,
+        "features": [
+          "Bath & Shampoo",
+          "Haircut & Styling",
+          "Nail Trimming",
+          "Ear Cleaning",
+          "Teeth Brushing",
+          "Paw Pad Care",
+          "Blow Dry",
+          "Perfume Spray",
+          "De-shedding Treatment",
+          "Premium Coat Conditioning"
+        ]
+      }
+    ]
+  },
+  "partnersData": {
+    "pageData": {
+      "badgeText": "OUR PARTNERS",
+      "titleWhite": "Grooming Packages for Every",
+      "titleColored": "Pet & Need",
+      "description": "Choose the perfect grooming package that keeps your furry friend clean, comfortable, and looking their absolute best."
+    },
+    "partners": [
+      {
+        "id": "1",
+        "name": "ROYAL CANIN",
+        "tagline": "INCREDIBLE IN EVERY DETAIL",
+        "logoImage": "/partners/partner-royal-canin.png"
+      },
+      {
+        "id": "2",
+        "name": "Hill's",
+        "tagline": "Transforming Lives",
+        "logoImage": "/partners/partner-hills.png"
+      },
+      {
+        "id": "3",
+        "name": "BarkBox",
+        "tagline": "Happiness Delivered",
+        "logoImage": "/partners/partner-barkbox.png"
+      },
+      {
+        "id": "4",
+        "name": "PETSMART",
+        "tagline": "For the Love of Pets",
+        "logoImage": "/partners/partner-petsmart.png"
+      },
+      {
+        "id": "5",
+        "name": "chewy",
+        "tagline": "where pet lovers shop",
+        "logoImage": "/partners/partner-chewy.png"
+      },
+      {
+        "id": "6",
+        "name": "vetcor",
+        "tagline": "Together for Better Care",
+        "logoImage": "/partners/partner-vetcor.png"
+      },
+      {
+        "id": "7",
+        "name": "Banfield",
+        "tagline": "Together for the Life of Your Pet",
+        "logoImage": "/partners/partner-banfield.png"
+      },
+      {
+        "id": "8",
+        "name": "zoetis",
+        "tagline": "For Animals. For Health. For You.",
+        "logoImage": "/partners/partner-zoetis.png"
+      },
+      {
+        "id": "9",
+        "name": "earthbath",
+        "tagline": "Good for the Planet\nGood for Your Pet",
+        "logoImage": "/partners/partner-earthbath.png"
+      },
+      {
+        "id": "10",
+        "name": "DOGTV",
+        "tagline": "Television for Dogs",
+        "logoImage": "/partners/partner-dogtv.png"
+      },
+      {
+        "id": "11",
+        "name": "Miles4Pets",
+        "tagline": "Travel. Experience. Love.",
+        "logoImage": "/partners/partner-miles4pets.png"
+      },
+      {
+        "id": "12",
+        "name": "PetSafe",
+        "tagline": "Protect. Teach. Love.",
+        "logoImage": "/partners/partner-petsafe.png"
+      }
+    ]
+  },
+  "galleryData": {
+    "pageData": {
+      "badgeText": "PHOTO GALLERY",
+      "titleWhite": "Photo",
+      "titleColored": "Gallery",
+      "description": "Take a look at our happy pets and their amazing grooming transformations."
+    },
+    "videoPageData": {
+      "badgeText": "VIDEO GALLERY",
+      "titleWhite": "Video",
+      "titleColored": "Gallery",
+      "description": "Watch our grooming process and happy pet moments in action."
+    },
+    "photos": [
+      {
+        "id": "1",
+        "image": "https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?auto=format&fit=crop&q=80&w=600",
+        "alt": "Cute dog with bowtie"
+      },
+      {
+        "id": "2",
+        "image": "https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&q=80&w=600",
+        "alt": "Golden retriever bath time"
+      },
+      {
+        "id": "3",
+        "image": "https://images.unsplash.com/photo-1537151625747-768eb6cf92b2?auto=format&fit=crop&q=80&w=600",
+        "alt": "Fluffy pomeranian"
+      },
+      {
+        "id": "4",
+        "image": "https://images.unsplash.com/photo-1587300003388-59208cc962cb?auto=format&fit=crop&q=80&w=600",
+        "alt": "Cute brown poodle puppy"
+      },
+      {
+        "id": "5",
+        "image": "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&q=80&w=600",
+        "alt": "Corgi brushing session"
+      },
+      {
+        "id": "6",
+        "image": "https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&q=80&w=600",
+        "alt": "White maltese grooming"
+      },
+      {
+        "id": "7",
+        "image": "https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&q=80&w=600",
+        "alt": "Dog wrapped in towel"
+      },
+      {
+        "id": "8",
+        "image": "https://images.unsplash.com/photo-1534361960057-19889db9621e?auto=format&fit=crop&q=80&w=600",
+        "alt": "Schnauzer pet care"
+      }
+    ],
+    "videos": [
+      {
+        "id": "1",
+        "title": "Relaxing Bath Time",
+        "description": "A soothing bath experience for a happy pet.",
+        "duration": "01:16",
+        "image": "https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&q=80&w=600"
+      },
+      {
+        "id": "2",
+        "title": "Full Grooming Transformation",
+        "description": "From fluffy to fabulous!",
+        "duration": "01:08",
+        "image": "https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?auto=format&fit=crop&q=80&w=600"
+      },
+      {
+        "id": "3",
+        "title": "Blow Dry & Styling",
+        "description": "Fluffy, shiny and camera-ready.",
+        "duration": "00:59",
+        "image": "https://images.unsplash.com/photo-1537151625747-768eb6cf92b2?auto=format&fit=crop&q=80&w=600"
+      },
+      {
+        "id": "4",
+        "title": "Nail Trimming Made Easy",
+        "description": "Safe and gentle nail care.",
+        "duration": "00:47",
+        "image": "https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&q=80&w=600"
+      }
+    ]
+  },
+  "appointmentData": {
+    "pageData": {
+      "badgeText": "Book Now",
+      "titleWhite": "Schedule an",
+      "titleColored": "Appointment"
+    },
+    "appointment": {
+      "bannerImage": "https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&q=80&w=800",
+      "bannerTitleWhite": "Book an Appointment",
+      "bannerTitleColored": "for Your Pet",
+      "bannerDescription": "Give your furry friend the care they deserve. Fill out the form and we'll get back to you to confirm your appointment.",
+      "features": [
+        {
+          "icon": "ShieldCheck",
+          "title": "Experienced Groomers"
+        },
+        {
+          "icon": "Leaf",
+          "title": "Pet-Safe & Products"
+        },
+        {
+          "icon": "HomeIcon",
+          "title": "Hassle-Free Home Service"
+        },
+        {
+          "icon": "Heart",
+          "title": "Love & Care Guaranteed"
+        }
+      ],
+      "formTitleBlack": "Appointment",
+      "formTitleColored": "Form",
+      "formDescription": "Please provide the details below to book an appointment."
+    }
+  },
+  "privacyPolicyData": {
+    "pageData": {
+      "badgeText": "Privacy Policy",
+      "titleWhite": "Privacy",
+      "titleColored": "Policy",
+      "description": "At Pet Bloom, we value your privacy and are committed to protecting your personal information. This policy explains how we collect, use, and safeguard your data."
+    },
+    "policies": [
+      {
+        "id": "1",
+        "number": "1.",
+        "title": "Information We Collect",
+        "content": "We collect personal information you provide to us when you book an appointment, contact us, or subscribe to our services. This may include your name, phone number, email address, pet details, and location."
+      },
+      {
+        "id": "2",
+        "number": "2.",
+        "title": "How We Use Your Information",
+        "content": "We use the information we collect to provide and improve our services, confirm appointments, communicate with you, and send you important updates and offers (only with your consent)."
+      },
+      {
+        "id": "3",
+        "number": "3.",
+        "title": "Data Protection",
+        "content": "We implement appropriate security measures to protect your personal data from unauthorized access, misuse, or disclosure. Your information is stored securely and accessed only by authorized personnel."
+      },
+      {
+        "id": "4",
+        "number": "4.",
+        "title": "Sharing of Information",
+        "content": "We do not sell, trade, or rent your personal information to third parties. We may share data only with trusted service providers who assist in operating our business, under strict confidentiality agreements."
+      },
+      {
+        "id": "5",
+        "number": "5.",
+        "title": "Cookies",
+        "content": "Our website uses cookies to enhance your browsing experience and analyze site traffic. You can choose to disable cookies in your browser settings."
+      },
+      {
+        "id": "6",
+        "number": "6.",
+        "title": "Your Rights",
+        "content": "You have the right to access, update, or delete your personal information at any time. Please contact us if you wish to exercise these rights."
+      },
+      {
+        "id": "7",
+        "number": "7.",
+        "title": "Changes to This Policy",
+        "content": "We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated effective date."
+      }
+    ],
+    "contactEmail": "hello@petbloom.com",
+    "contactPhoneDisplay": "+91 98765 43210",
+    "contactPhoneValue": "+919876543210"
+  },
   "whyChooseUsFeatures": [
     {
       "id": "1",
@@ -1716,7 +2033,7 @@
       },
       {
         "label": "Privacy Policy",
-        "href": "/privacy"
+        "href": "/privacy-policy"
       },
       {
         "label": "Sitemap",
@@ -1737,12 +2054,12 @@
         "href": "/contact"
       },
       {
-        "label": "Live Chat",
-        "href": "/chat"
+        "label": "Appointments",
+        "href": "/appointment"
       },
       {
-        "label": "Feedback",
-        "href": "/feedback"
+        "label": "Testimonials",
+        "href": "/testimonials"
       }
     ]
   },
@@ -1835,38 +2152,6 @@
       "line1": "Healthy Pets,",
       "line2": "Happy You"
     }
-  },
-  "teamSectionData": {
-    "badgeText": "Our Team",
-    "titleWhite": "Meet Our",
-    "titleColored": "Pet Care Experts",
-    "description": "Passionate professionals dedicated to providing the best care and love for your pets.",
-    "teamMembers": [
-      {
-        "id": "1",
-        "name": "Alex Javed",
-        "role": "Pet Care Specialist",
-        "image": "https://plus.unsplash.com/premium_photo-1661632923172-ccbf02bfe44f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZG9nJTIwYW5kJTIwcGVyc29ufGVufDB8fDB8fHww"
-      },
-      {
-        "id": "2",
-        "name": "Jessica Lauren",
-        "role": "Pet Care Specialist",
-        "image": "https://plus.unsplash.com/premium_photo-1663090958042-b3ad11c255b6?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDV8fGRvZyUyMGFuZCUyMHBlcnNvbnxlbnwwfHwwfHx8MA%3D%3D"
-      },
-      {
-        "id": "3",
-        "name": "Jenny William",
-        "role": "Pet Care Specialist",
-        "image": "https://plus.unsplash.com/premium_photo-1667727017194-6e43400f2d5c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGRvZyUyMGFuZCUyMHBlcnNvbnxlbnwwfHwwfHx8MA%3D%3D"
-      },
-      {
-        "id": "4",
-        "name": "Daniel Thomas",
-        "role": "Pet Care Specialist",
-        "image": "https://plus.unsplash.com/premium_photo-1707410050564-df6b5503f220?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8ZG9nJTIwYW5kJTIwcGVyc29ufGVufDB8fDB8fHww"
-      }
-    ]
   },
   "testimonialSectionData": {
     "badgeText": "Testimonials",
