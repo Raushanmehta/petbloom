@@ -5,7 +5,7 @@ export default function MissionVisionPage() {
     return (
         <main>
             <PageTopSection title="Our Mission & Vision" subTitle="Our Mission & Vision" />
-            <MissionVisionSection />
+            <MissionVisionSection isPage={true} />
         </main>
     );
 }

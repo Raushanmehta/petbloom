@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { Lilita_One, Courgette } from "next/font/google";
 import { FaPaw } from "react-icons/fa";
 import StatisticsSection from "@/components/common/StatisticsSection";
-import { FeatureItem, StatisticsItem, SectionHeaderData } from "@/types";
+import { StatisticsItem, WhyChooseDataWrapper } from "@/types";
 import { containerVariants, fadeUpVariants, featureContainerVariants, featureVariants } from "@/utils/animations";
 
 const lilitaOne = Lilita_One({
@@ -18,13 +18,22 @@ const courgette = Courgette({
     weight: "400",
 });
 
-const { whyChooseUsFeatures, statisticsData, whyChooseUsSectionData } = data as {
-    whyChooseUsFeatures: FeatureItem[] & { icon: string }[];
-    statisticsData: StatisticsItem[];
-    whyChooseUsSectionData: SectionHeaderData;
-};
+interface WhyChooseUsSectionProps {
+    isPage?: boolean;
+}
 
-export default function WhyChooseUsSection() {
+export default function WhyChooseUsSection({ isPage = false }: WhyChooseUsSectionProps) {
+    const rawWhyChoose = (data as unknown as { whychooseData: WhyChooseDataWrapper })?.whychooseData;
+    const sectionHeader = (isPage ? rawWhyChoose?.pageData : rawWhyChoose?.sectionData) || {
+        badgeText: "Why Choose Us",
+        titleWhite: "Why PetBloom",
+        titleColored: "Is the Right Choice",
+        description: ""
+    };
+    const features = rawWhyChoose?.features || [];
+    const images = rawWhyChoose?.images || { main: "" };
+    const badge = rawWhyChoose?.badge || { line1: "", line2: "" };
+    const statisticsData: StatisticsItem[] = (data as any)?.statisticsData || [];
 
     return (
         <section className="relative overflow-hidden bg-[#FEFDFB] px-4 py-20 sm:px-6 lg:px-12">
@@ -78,7 +87,7 @@ export default function WhyChooseUsSection() {
                             </motion.div>
 
                             <span className="text-xs font-bold uppercase tracking-wider text-[#387478]">
-                                {whyChooseUsSectionData.badgeText}
+                                {sectionHeader.badgeText}
                             </span>
                         </motion.div>
 
@@ -87,9 +96,9 @@ export default function WhyChooseUsSection() {
                             variants={fadeUpVariants}
                             className={`${lilitaOne.className} text-4xl leading-[1.15] tracking-wide text-gray-900 sm:text-5xl lg:text-6xl`}
                         >
-                            {whyChooseUsSectionData.titleWhite}
+                            {sectionHeader.titleWhite}
                             <br />
-                            <span className="text-[#387478]">{whyChooseUsSectionData.titleColored}</span>
+                            <span className="text-[#387478]">{sectionHeader.titleColored}</span>
                         </motion.h2>
 
                         {/* Divider */}
@@ -118,7 +127,7 @@ export default function WhyChooseUsSection() {
                             variants={fadeUpVariants}
                             className="max-w-xl text-base font-medium text-gray-600 sm:text-lg"
                         >
-                            {whyChooseUsSectionData.description}
+                            {sectionHeader.description}
                         </motion.p>
                         <motion.div
                             variants={featureContainerVariants}
@@ -127,7 +136,7 @@ export default function WhyChooseUsSection() {
                             viewport={{ once: true, amount: 0.15 }}
                             className="grid grid-cols-1 gap-4 pt-2 sm:grid-cols-2"
                         >
-                            {whyChooseUsFeatures.map((item, index) => {
+                            {features.map((item, index) => {
                                 return (
                                     <motion.div
                                         key={item.id}
@@ -173,7 +182,7 @@ export default function WhyChooseUsSection() {
                             whileHover={{ scale: 1.02, }}
                             className="relative h-[550px] w-full max-w-[440px] overflow-hidden rounded-[3rem]  shadow-2xl">
                             <Image
-                                src={whyChooseUsSectionData.images?.main || ""}
+                                src={images?.main || ""}
                                 alt="Pet Grooming Professional"
                                 fill
                                 sizes="(max-width: 768px) 100vw, 50vw"
@@ -210,10 +219,10 @@ export default function WhyChooseUsSection() {
 
                             <div className={`${courgette.className} text-base`}>
                                 <p className="font-bold leading-tight text-gray-900">
-                                    {whyChooseUsSectionData.badge?.line1}
+                                    {badge?.line1}
                                 </p>
                                 <p className="font-bold leading-tight text-gray-900">
-                                    {whyChooseUsSectionData.badge?.line2}
+                                    {badge?.line2}
                                 </p>
                             </div>
                         </motion.div>

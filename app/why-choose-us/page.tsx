@@ -5,7 +5,7 @@ export default function WhyChooseUsPage() {
     return (
         <main>
             <PageTopSection title="Why Choose Us" subTitle="why choose us" />
-            <WhyChooseUsSection />
+            <WhyChooseUsSection isPage={true} />
         </main>
     )
 }

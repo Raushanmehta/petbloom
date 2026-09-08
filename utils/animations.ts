@@ -74,3 +74,14 @@ export const pricingFeatureContainer = { hidden: {}, visible: { transition: { st
 export const pricingFeatureVariants = { hidden: { opacity: 0, x: -15 }, visible: { opacity: 1, x: 0, transition: { duration: 0.35, ease: "easeOut" as const } } };
 export const pricingIconVariants = { hidden: { scale: 0, rotate: -45 }, visible: { scale: 1, rotate: 0, transition: { type: "spring" as const, stiffness: 300, damping: 15 } } };
 
+// Contact Page
+export const contactContainerVariants = { hidden: {}, visible: { transition: { staggerChildren: 0.15 } } };
+export const contactLeftColumnVariants = { hidden: { opacity: 0, x: -40 }, visible: { opacity: 1, x: 0, transition: { duration: 0.7, ease: "easeOut" as const } } };
+export const contactRightColumnVariants = { hidden: { opacity: 0, x: 40, scale: 0.98 }, visible: { opacity: 1, x: 0, scale: 1, transition: { duration: 0.75, ease: "easeOut" as const } } };
+export const contactCardContainerVariants = { hidden: {}, visible: { transition: { staggerChildren: 0.1, delayChildren: 0.1 } } };
+export const contactCardVariants = { hidden: { opacity: 0, y: 25, scale: 0.96 }, visible: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.5, ease: "easeOut" as const } } };
+export const contactFormContainerVariants = { hidden: {}, visible: { transition: { staggerChildren: 0.08, delayChildren: 0.15 } } };
+export const contactFormFieldVariants = { hidden: { opacity: 0, y: 15 }, visible: { opacity: 1, y: 0, transition: { duration: 0.4, ease: "easeOut" as const } } };
+export const contactSocialContainerVariants = { hidden: {}, visible: { transition: { staggerChildren: 0.07 } } };
+export const contactSocialIconVariants = { hidden: { opacity: 0, scale: 0.7 }, visible: { opacity: 1, scale: 1, transition: { duration: 0.35, ease: "easeOut" as const } } };
+

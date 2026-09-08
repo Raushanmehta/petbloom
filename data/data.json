@@ -13,14 +13,18 @@
       "href": "/team"
     },
     {
-      "label": "Blogs",
-      "href": "/blogs"
+      "label": "Blog",
+      "href": "/blog"
     },
     {
       "label": "Contact Us",
-      "href": "/contact"
+      "href": "/contact-us"
     }
   ],
+  "pageTopSectionData": {
+    "backgroundImage": "https://images.unsplash.com/photo-1450778869180-41d0601e046e?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8ZG9nJTIwYW5kJTIwY2F0fGVufDB8fDB8fHww",
+    "backgroundAlt": "Dog getting bubble bath background"
+  },
   "servicesData": {
     "pageData": {
       "badgeText": "Our Services",
@@ -1838,10 +1842,28 @@
       "formDescription": "Please provide the details below to book an appointment."
     }
   },
-  "privacyPolicyData": {
-    "pageData": {
+  "legalData": {
+    "privacyPolicyPageData": {
       "badgeText": "Privacy Policy",
       "titleWhite": "Privacy",
+      "titleColored": "Policy",
+      "description": "At Pet Bloom, we value your privacy and are committed to protecting your personal information. This policy explains how we collect, use, and safeguard your data."
+    },
+    "termsConditionsPageData": {
+      "badgeText": "Terms & Conditions",
+      "titleWhite": "Terms &",
+      "titleColored": "Conditions",
+      "description": "At Pet Bloom, we value your privacy and are committed to protecting your personal information. This policy explains how we collect, use, and safeguard your data."
+    },
+    "disclaimerData": {
+      "badgeText": "Disclaimer",
+      "titleWhite": "Disclaimer",
+      "titleColored": "Disclaimer",
+      "description": "At Pet Bloom, we value your privacy and are committed to protecting your personal information. This policy explains how we collect, use, and safeguard your data."
+    },
+    "cookiePolicyData": {
+      "badgeText": "Cookie Policy",
+      "titleWhite": "Cookie",
       "titleColored": "Policy",
       "description": "At Pet Bloom, we value your privacy and are committed to protecting your personal information. This policy explains how we collect, use, and safeguard your data."
     },
@@ -1893,32 +1915,599 @@
     "contactPhoneDisplay": "+91 98765 43210",
     "contactPhoneValue": "+919876543210"
   },
-  "whyChooseUsFeatures": [
-    {
-      "id": "1",
-      "title": "Expert Pet Care",
-      "description": "Trained professionals who truly love animals.",
-      "icon": "/icon/cat-paw-icon.png"
+  "404Data": {
+    "badgeText": "404",
+    "titleWhite": "Page Not Found",
+    "description": "Looks like this page has wandered off. Let's get you back to something pawsome!",
+    "homeButtonText": "Back to Home",
+    "bgImage": "https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&q=80&w=1600",
+    "servicesButtonText": "Our Services",
+    "servicesButtonLink": "/services",
+    "dogImage": "/images/404-dog-image.webp"
+  },
+  "sitemapData": {
+    "pageData": {
+      "title": "Site Map",
+      "subTitle": "Explore all our pages"
     },
-    {
-      "id": "2",
-      "title": "Safe & Clean Environment",
-      "description": "A hygienic, stress-free space for your pet.",
-      "icon": "/icon/heart-icon.png"
+    "categories": [
+      {
+        "id": "1",
+        "number": "01. HOME",
+        "title": "Home",
+        "iconType": "home",
+        "links": [
+          {
+            "label": "Home Page",
+            "href": "/"
+          },
+          {
+            "label": "Why Choose Us",
+            "href": "/why-choose-us"
+          }
+        ]
+      },
+      {
+        "id": "2",
+        "number": "02. ABOUT US",
+        "title": "About Us",
+        "iconType": "users",
+        "links": [
+          {
+            "label": "About Us",
+            "href": "/about"
+          },
+          {
+            "label": "Mission & Vision",
+            "href": "/mission-vision"
+          },
+          {
+            "label": "Partners",
+            "href": "/partners"
+          }
+        ]
+      },
+      {
+        "id": "3",
+        "number": "03. OUR SERVICES",
+        "title": "Our Services",
+        "iconType": "paw",
+        "links": [
+          {
+            "label": "All Services",
+            "href": "/services"
+          },
+          {
+            "label": "Full Grooming",
+            "href": "/services/full-grooming"
+          },
+          {
+            "label": "Pet Boarding",
+            "href": "/services/pet-boarding"
+          },
+          {
+            "label": "Pet Daycare",
+            "href": "/services/pet-daycare"
+          },
+          {
+            "label": "Bath & Spa",
+            "href": "/services/bath-spa"
+          },
+          {
+            "label": "Dog Walking",
+            "href": "/services/dog-walking"
+          },
+          {
+            "label": "Cat Grooming",
+            "href": "/services/cat-grooming"
+          },
+          {
+            "label": "Pet Training",
+            "href": "/services/pet-training"
+          },
+          {
+            "label": "Pet Taxi",
+            "href": "/services/pet-taxi"
+          }
+        ]
+      },
+      {
+        "id": "4",
+        "number": "04. LOCATIONS",
+        "title": "Locations",
+        "iconType": "map-pin",
+        "links": [
+          {
+            "label": "Service Areas",
+            "href": "/locations"
+          }
+        ]
+      },
+      {
+        "id": "5",
+        "number": "05. OUR TEAM",
+        "title": "Our Team",
+        "iconType": "team",
+        "links": [
+          {
+            "label": "Meet Our Team",
+            "href": "/team"
+          },
+          {
+            "label": "Alex Javed",
+            "href": "/team/alex-javed"
+          },
+          {
+            "label": "Jessica Lauren",
+            "href": "/team/jessica-lauren"
+          },
+          {
+            "label": "Jenny William",
+            "href": "/team/jenny-william"
+          },
+          {
+            "label": "Daniel Thomas",
+            "href": "/team/daniel-thomas"
+          }
+        ]
+      },
+      {
+        "id": "6",
+        "number": "06. PRICING",
+        "title": "Pricing",
+        "iconType": "tag",
+        "links": [
+          {
+            "label": "Pricing / Packages",
+            "href": "/pricing"
+          }
+        ]
+      },
+      {
+        "id": "7",
+        "number": "07. BOOK A SERVICE",
+        "title": "Book a Service",
+        "iconType": "calendar",
+        "links": [
+          {
+            "label": "Book Appointment",
+            "href": "/appointment"
+          }
+        ]
+      },
+      {
+        "id": "8",
+        "number": "08. GALLERY",
+        "title": "Gallery",
+        "iconType": "image",
+        "links": [
+          {
+            "label": "Photo Gallery",
+            "href": "/gallery"
+          }
+        ]
+      },
+      {
+        "id": "9",
+        "number": "09. TESTIMONIALS",
+        "title": "Testimonials",
+        "iconType": "message-square",
+        "links": [
+          {
+            "label": "Client Reviews",
+            "href": "/testimonials"
+          }
+        ]
+      },
+      {
+        "id": "10",
+        "number": "10. FAQS",
+        "title": "FAQs",
+        "iconType": "help-circle",
+        "links": [
+          {
+            "label": "General Questions",
+            "href": "/faqs"
+          }
+        ]
+      },
+      {
+        "id": "11",
+        "number": "11. LEGAL",
+        "title": "Legal",
+        "iconType": "shield",
+        "links": [
+          {
+            "label": "Privacy Policy",
+            "href": "/privacy-policy"
+          },
+          {
+            "label": "Terms & Conditions",
+            "href": "/terms-conditions"
+          },
+          {
+            "label": "Cookie Policy",
+            "href": "/cookie-policy"
+          },
+          {
+            "label": "Disclaimer",
+            "href": "/disclaimer"
+          }
+        ]
+      },
+      {
+        "id": "12",
+        "number": "12. OTHER",
+        "title": "Other Pages",
+        "iconType": "alert-triangle",
+        "links": [
+          {
+            "label": "404 Page",
+            "href": "/404"
+          },
+          {
+            "label": "Sitemap",
+            "href": "/sitemap"
+          }
+        ]
+      }
+    ]
+  },
+  "blogData": {
+    "pageData": {
+      "badgeText": "BLOG & NEWS",
+      "titleWhite": "Latest ",
+      "titleColored": "Articles ",
+      "description": "Tips, stories, and expert advice to keep your pets happy, healthy, and well cared for."
     },
-    {
-      "id": "3",
-      "title": "Premium Pet Services",
-      "description": "Grooming, boarding, training and more.",
-      "icon": "/icon/dog-icon.png"
+    "sectionData": {
+      "badgeText": "BLOG & NEWS",
+      "titleWhite": "Latest",
+      "titleColored": "Blog Articles",
+      "description": "Tips, stories, and expert advice to keep your pets happy, healthy, and well cared for."
     },
-    {
-      "id": "4",
-      "title": "Happy Pet, Happy Owner",
-      "description": "Because a healthy pet makes a happier home.",
-      "icon": "/icon/badge-icon.png"
-    }
-  ],
+    "blogs": [
+      {
+        "id": "1",
+        "title": "The Essential Guide to Professional Pet Grooming & Coat Health",
+        "category": "PET GROOMING",
+        "author": "Dr. Jordan Park",
+        "date": "24 Jun, 2025",
+        "readTime": "5 min read",
+        "image": "https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&q=80&w=800",
+        "heroImage": "https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&q=80&w=1200",
+        "excerpt": "Discover why routine grooming is vital for your pet's physical health, coat shine, and emotional happiness.",
+        "featured": true,
+        "introText": "Grooming isn't just about keeping your pet looking adorable — it's a vital pillar of their overall health and longevity. From preventing painful skin mats to detecting early health warnings, regular grooming plays a decisive role in ensuring a happier, more comfortable life for your furry companion.",
+        "sections": [
+          {
+            "id": "1",
+            "number": "1.",
+            "title": "Preventing Severe Matting and Painful Hot Spots",
+            "content": "Dirt, debris, and loose undercoat naturally accumulate in your pet's fur over time. Without consistent brushing, these tangled fibers tighten against the skin, creating painful mats that pull on delicate tissue and trap moisture. Regular professional grooming removes these irritants and allows the epidermis to breathe naturally.",
+            "subheading": "Routine coat brushing delivers immediate benefits:",
+            "bullets": [
+              "Stimulates cutaneous blood circulation and hair follicle health",
+              "Distributes beneficial natural oils evenly across the coat for brilliant shine",
+              "Prevents painful tangles in high-friction areas like the armpits and ears"
+            ],
+            "image": "https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&q=80&w=600",
+            "imagePosition": "right"
+          },
+          {
+            "id": "2",
+            "number": "2.",
+            "title": "Nail Care Is Crucial for Joint and Skeletal Health",
+            "content": "Overgrown claws alter how a dog or cat places their paws upon the floor, forcing joints into unnatural angles and causing premature arthritis or hip strain. If you hear a distinctive clicking noise when your pet walks across hard floors, a nail trim is overdue. Professional dremel grinding smooths sharp edges while keeping the quick completely safe.",
+            "image": "https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?auto=format&fit=crop&q=80&w=600",
+            "imagePosition": "right"
+          },
+          {
+            "id": "3",
+            "number": "3.",
+            "title": "Ear Cleaning and Dental Hygiene Prevent Infections",
+            "content": "Floppy-eared breeds and pets with dense ear canals trap moisture, yeasts, and harmful bacteria that quickly cause painful otitis. Meanwhile, uncleaned teeth allow plaque to harden into tartar, leading to periodontal disease.",
+            "bullets": [
+              "Gentle ear flush cleans out dark wax before ear infections develop",
+              "Enzymatic pet toothpaste reduces oral bacteria and eliminates bad breath"
+            ],
+            "footerNote": "Combining grooming with a dental checkup protects your pet from systemic heart and kidney complications!",
+            "quote": {
+              "text": "Grooming is far more than styling — it is one of the most effective preventative wellness habits any pet guardian can maintain.",
+              "author": "Dr. Jordan Park"
+            },
+            "image": "https://images.unsplash.com/photo-1534361960057-19889db9621e?auto=format&fit=crop&q=80&w=600",
+            "imagePosition": "bottom-banner"
+          },
+          {
+            "id": "4",
+            "number": "4.",
+            "title": "Building Calmness, Trust, and Handling Confidence",
+            "content": "When introduced with positive reinforcement and gentle touch, grooming turns into a comforting bonding ritual. Pets learn to stay calm when their paws, ears, and tails are handled, making future veterinary visits and daily home inspections completely stress-free.",
+            "images": [
+              "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&q=80&w=400",
+              "https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&q=80&w=400"
+            ],
+            "imagePosition": "split-right"
+          },
+          {
+            "id": "5",
+            "number": "5.",
+            "title": "A Clean, Well-Groomed Pet Brings Joy to the Entire Household",
+            "content": "Beyond medical advantages, routine deshedding baths and conditioning blowouts significantly reduce indoor allergens, pet dander, and odors in your living spaces. Investing in your pet's coat cleanliness creates a healthier, happier sanctuary for the whole family.",
+            "image": "https://images.unsplash.com/photo-1587300003388-59208cc962cb?auto=format&fit=crop&q=80&w=800",
+            "imagePosition": "full-bottom-image"
+          }
+        ]
+      },
+      {
+        "id": "2",
+        "title": "Holistic Nutrition: Feeding Your Dog for Lifelong Vitality",
+        "category": "PET NUTRITION",
+        "author": "Dr. Emily Watson",
+        "date": "12 Jul, 2025",
+        "readTime": "6 min read",
+        "image": "https://images.unsplash.com/photo-1589924691995-400dc9ecc119?auto=format&fit=crop&q=80&w=800",
+        "heroImage": "https://images.unsplash.com/photo-1589924691995-400dc9ecc119?auto=format&fit=crop&q=80&w=1200",
+        "excerpt": "Learn how clean ingredients, wholesome proteins, and superfoods fuel your companion's natural immunity.",
+        "featured": false,
+        "introText": "Every dog owner dreams of giving their pet the highest quality of life and boundless energy. That journey begins right in their food bowl. Understanding balanced canine nutrition helps prevent allergies, promotes lean muscle mass, and keeps digestive systems functioning at their peak.",
+        "sections": [
+          {
+            "id": "1",
+            "number": "1.",
+            "title": "Real Animal Protein: The Fundamental Building Block",
+            "content": "Canines thrive when their primary energy and amino acids come from named animal proteins like fresh deboned chicken, pasture-raised lamb, or wild salmon. Avoid mystery meat meals and cheap fillers like corn gluten or soy that strain sensitive stomachs.",
+            "subheading": "Key markers of premium protein sources:",
+            "bullets": [
+              "Delivers complete amino acid profiles for lean muscle repair and stamina",
+              "Naturally rich in bioavailable iron, zinc, and B-complex vitamins",
+              "Significantly higher digestibility rate compared to plant-based substitutes"
+            ],
+            "image": "https://images.unsplash.com/photo-1589924691995-400dc9ecc119?auto=format&fit=crop&q=80&w=600",
+            "imagePosition": "right"
+          },
+          {
+            "id": "2",
+            "number": "2.",
+            "title": "Spotting and Managing Food Sensitivities",
+            "content": "Chronic ear infections, red paws, and frequent itching are often telltale signals of food intolerances rather than seasonal allergies. Transitioning your pet to a limited-ingredient diet with novel protein sources like venison or turkey can resolve gastrointestinal distress within weeks.",
+            "image": "https://images.unsplash.com/photo-1576201836106-db1758fd1c97?auto=format&fit=crop&q=80&w=600",
+            "imagePosition": "right"
+          },
+          {
+            "id": "3",
+            "number": "3.",
+            "title": "The Incredible Power of Canine Superfoods",
+            "content": "Adding small portions of blueberries, pumpkin, sweet potatoes, and chia seeds to your dog's daily meals supplies potent antioxidants, prebiotics, and insoluble fibers that protect cellular longevity.",
+            "bullets": [
+              "Pure pumpkin puree balances digestive motility and firms loose stool",
+              "Omega-3 fatty acids from fish oils soothe inflamed joints and reduce shedding"
+            ],
+            "footerNote": "Always consult your veterinarian before introducing significant changes or raw supplements to daily meals.",
+            "quote": {
+              "text": "What we put into our pets' bodies directly governs their mood, lifespan, and resistance to modern chronic diseases.",
+              "author": "Dr. Emily Watson"
+            },
+            "image": "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&q=80&w=600",
+            "imagePosition": "bottom-banner"
+          },
+          {
+            "id": "4",
+            "number": "4.",
+            "title": "Hydration and Moisture-Rich Dietary Balance",
+            "content": "Many dogs fed solely dry kibble exist in a chronic state of mild dehydration. Incorporating bone broths, wet toppers, and fresh water fountains encourages adequate renal filtration and urinary tract protection.",
+            "images": [
+              "https://images.unsplash.com/photo-1534361960057-19889db9621e?auto=format&fit=crop&q=80&w=400",
+              "https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&q=80&w=400"
+            ],
+            "imagePosition": "split-right"
+          },
+          {
+            "id": "5",
+            "number": "5.",
+            "title": "Tailoring Meal Portions to Age and Energy Output",
+            "content": "Puppies, active working adults, and senior couch companions require drastically different caloric ratios. Routine weight monitoring prevents obesity — the single greatest threat to modern pet longevity.",
+            "image": "https://images.unsplash.com/photo-1560807707-8cc77767d783?auto=format&fit=crop&q=80&w=800",
+            "imagePosition": "full-bottom-image"
+          }
+        ]
+      },
+      {
+        "id": "3",
+        "title": "Positive Reinforcement: Secrets to Stress-Free Dog Training",
+        "category": "PET TRAINING",
+        "author": "Marcus Vance",
+        "date": "05 Aug, 2025",
+        "readTime": "4 min read",
+        "image": "https://images.unsplash.com/photo-1587300003388-59208cc962cb?auto=format&fit=crop&q=80&w=800",
+        "heroImage": "https://images.unsplash.com/photo-1587300003388-59208cc962cb?auto=format&fit=crop&q=80&w=1200",
+        "excerpt": "Transform your dog's habits with science-backed positive reinforcement techniques that build lifelong trust.",
+        "featured": false,
+        "introText": "Training should never rely on fear, intimidation, or outdated dominance theory. Modern behavioral science proves that reward-based positive reinforcement produces more confident, resilient, and cooperative pets who genuinely delight in learning.",
+        "sections": [
+          {
+            "id": "1",
+            "number": "1.",
+            "title": "Why Reward-Based Learning Outperforms Punishment",
+            "content": "Aversive methods suppress symptoms temporarily while creating underlying anxiety and defensiveness. Positive reinforcement instead marks the exact moment a desirable choice occurs and pairs it with praise, toys, or tasty treats.",
+            "subheading": "Three core pillars of positive dog training:",
+            "bullets": [
+              "Marker timing: clicking or saying 'Yes!' within 1.5 seconds of the target behavior",
+              "High-value rewards: using real chicken or freeze-dried liver for tough distractions",
+              "Short, fun sessions: 5 to 10 minutes daily keeps canine motivation razor-sharp"
+            ],
+            "image": "https://images.unsplash.com/photo-1587300003388-59208cc962cb?auto=format&fit=crop&q=80&w=600",
+            "imagePosition": "right"
+          },
+          {
+            "id": "2",
+            "number": "2.",
+            "title": "Mastering Loose-Leash Walking Without Pulling",
+            "content": "When dogs pull on the leash, it is usually because walking forward is their primary self-reinforcing reward. By immediately stopping and waiting for eye contact whenever tension appears, dogs quickly discover that slack leashes are the only ticket forward.",
+            "image": "https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&q=80&w=600",
+            "imagePosition": "right"
+          },
+          {
+            "id": "3",
+            "number": "3.",
+            "title": "Managing Separation Anxiety and Building Independence",
+            "content": "Helping a dog feel secure while home alone requires progressive desensitization. Practice short micro-departures without fanfare, and leave long-lasting puzzle toys filled with frozen peanut butter to foster independent relaxation.",
+            "bullets": [
+              "Keep comings and goings low-key to minimize dramatic emotional spikes",
+              "Provide interactive lick mats that trigger natural calming endorphins"
+            ],
+            "footerNote": "A tired mind is a calm mind: combine physical walks with mental scent work for optimal tranquility.",
+            "quote": {
+              "text": "You do not train a dog by forcing your will upon them; you inspire them to make the right choices willingly.",
+              "author": "Marcus Vance"
+            },
+            "image": "https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&q=80&w=600",
+            "imagePosition": "bottom-banner"
+          },
+          {
+            "id": "4",
+            "number": "4.",
+            "title": "Intentional Socialization Across Varied Environments",
+            "content": "Socialization does not mean forcing your dog to greet every stranger or animal. True socialization means teaching neutral indifference to novel sounds, surfaces, strollers, and traffic.",
+            "images": [
+              "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&q=80&w=400",
+              "https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?auto=format&fit=crop&q=80&w=400"
+            ],
+            "imagePosition": "split-right"
+          },
+          {
+            "id": "5",
+            "number": "5.",
+            "title": "Patience and Consistency: The Hallmarks of Great Companionship",
+            "content": "Every dog progresses at their own pace. Celebrating small milestones and maintaining calm consistency cements good manners that last a lifetime and deepens the bond you share.",
+            "image": "https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&q=80&w=800",
+            "imagePosition": "full-bottom-image"
+          }
+        ]
+      },
+      {
+        "id": "4",
+        "title": "Preventative Veterinary Care: Keeping Your Pets Thriving",
+        "category": "PET HEALTH",
+        "author": "Dr. Sarah Jenkins",
+        "date": "18 Sep, 2025",
+        "readTime": "7 min read",
+        "image": "https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&q=80&w=800",
+        "heroImage": "https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&q=80&w=1200",
+        "excerpt": "Regular wellness exams, vaccinations, and proactive diagnostics detect hidden illnesses before symptoms arise.",
+        "featured": false,
+        "introText": "Animals have evolved an instinctive habit to conceal pain and vulnerability until an illness has progressed. Establishing a proactive veterinary wellness routine ensures early clinical intervention, saves thousands in emergency treatments, and keeps your furry companions thriving.",
+        "sections": [
+          {
+            "id": "1",
+            "number": "1.",
+            "title": "Comprehensive Annual Physicals: Your First Line of Defense",
+            "content": "During a wellness exam, your veterinarian evaluates heart murmurs, abdominal organs, joint mobility, and lymph nodes. Routine baseline blood chemistry panels detect asymptomatic kidney and liver shifts years before visible distress appears.",
+            "subheading": "What veterinarians check during thorough checkups:",
+            "bullets": [
+              "Ophthalmic and otic exams to catch cataracts or inner ear imbalances",
+              "Cardiopulmonary auscultation to ensure robust circulatory health",
+              "Comprehensive body condition scoring to fine-tune caloric balance"
+            ],
+            "image": "https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&q=80&w=600",
+            "imagePosition": "right"
+          },
+          {
+            "id": "2",
+            "number": "2.",
+            "title": "Tailored Vaccinations & Year-Round Parasite Defense",
+            "content": "Core vaccines protect against deadly pathogens like rabies, parvovirus, and distemper, while lifestyle vaccines defend against Lyme disease and Bordetella. Year-round heartworm and flea-and-tick protection prevent debilitating vector-borne infections.",
+            "image": "https://images.unsplash.com/photo-1601758228041-f3b2795255f1?auto=format&fit=crop&q=80&w=600",
+            "imagePosition": "right"
+          },
+          {
+            "id": "3",
+            "number": "3.",
+            "title": "Dental Disease: The Silent Gateway to Organ Failure",
+            "content": "Over 80% of dogs and cats exhibit periodontal disease by age three. Bacteria flourishing below the gumline can enter the bloodstream and cause permanent micro-damage to heart valves and kidneys.",
+            "bullets": [
+              "Professional ultrasonic scaling eliminates calcified subgingival tartar",
+              "Daily at-home dental chews and brushing prevent gum inflammation"
+            ],
+            "footerNote": "Schedule an annual dental exam to safeguard your pet's organ health and maintain a fresh, healthy mouth!",
+            "quote": {
+              "text": "Preventative care is not an added luxury; it is the single most compassionate commitment you make to your companion's future.",
+              "author": "Dr. Sarah Jenkins"
+            },
+            "image": "https://images.unsplash.com/photo-1534361960057-19889db9621e?auto=format&fit=crop&q=80&w=600",
+            "imagePosition": "bottom-banner"
+          },
+          {
+            "id": "4",
+            "number": "4.",
+            "title": "Recognizing Subtle Behavioral Signals of Pain",
+            "content": "Subtle indicators like reluctance to climb stairs, appetite hesitation, unusual withdrawal, or excessive paw licking frequently signify joint discomfort, dental pain, or gastrointestinal distress.",
+            "images": [
+              "https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?auto=format&fit=crop&q=80&w=400",
+              "https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&q=80&w=400"
+            ],
+            "imagePosition": "split-right"
+          },
+          {
+            "id": "5",
+            "number": "5.",
+            "title": "Senior Pet Wellness: Supporting Mobility and Golden Years",
+            "content": "Pets aged seven and older benefit immensely from bi-annual wellness reviews. Joint supplements, orthopedic bedding, and gentle cognitive enrichment ensure their golden years remain dignified, vibrant, and joyful.",
+            "image": "https://images.unsplash.com/photo-1587300003388-59208cc962cb?auto=format&fit=crop&q=80&w=800",
+            "imagePosition": "full-bottom-image"
+          }
+        ]
+      }
+    ]
+  },
+  "whychooseData": {
+    "pageData": {
+      "badgeText": "Why Choose Us",
+      "titleWhite": "Why PetBloom ",
+      "titleColored": "Is the Right Choice",
+      "description": "At PetBloom, we treat every pet like family. Our expert care, safe environment, and personalized attention ensure your furry friend stays happy, healthy, and loved."
+    },
+    "sectionData": {
+      "badgeText": "Why Choose Us",
+      "titleWhite": "Why PetBloom",
+      "titleColored": "Is the Right Choice",
+      "description": "At PetBloom, we treat every pet like family. Our expert care, safe environment, and personalized attention ensure your furry friend stays happy, healthy, and loved."
+    },
+    "images": {
+      "main": "https://images.unsplash.com/photo-1523979229794-bd082f68650a?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8"
+    },
+    "badge": {
+      "line1": "Healthy Pets,",
+      "line2": "Happy You"
+    },
+    "features": [
+      {
+        "id": "1",
+        "title": "Expert Pet Care",
+        "description": "Trained professionals who truly love animals.",
+        "icon": "/icon/cat-paw-icon.png"
+      },
+      {
+        "id": "2",
+        "title": "Safe & Clean Environment",
+        "description": "A hygienic, stress-free space for your pet.",
+        "icon": "/icon/heart-icon.png"
+      },
+      {
+        "id": "3",
+        "title": "Premium Pet Services",
+        "description": "Grooming, boarding, training and more.",
+        "icon": "/icon/dog-icon.png"
+      },
+      {
+        "id": "4",
+        "title": "Happy Pet, Happy Owner",
+        "description": "Because a healthy pet makes a happier home.",
+        "icon": "/icon/badge-icon.png"
+      }
+    ]
+  },
   "statisticsData": [
     {
       "id": "1",
@@ -1945,124 +2534,6 @@
       "icon": "/icon/award-icon.png"
     }
   ],
-  "footerData": {
-    "quickLinks": [
-      {
-        "label": "Home",
-        "href": "/"
-      },
-      {
-        "label": "About Us",
-        "href": "/about"
-      },
-      {
-        "label": "Our Services",
-        "href": "/services"
-      },
-      {
-        "label": "Our Team",
-        "href": "/team"
-      },
-      {
-        "label": "Service Areas",
-        "href": "/locations"
-      },
-      {
-        "label": "Gallery",
-        "href": "/gallery"
-      },
-      {
-        "label": "Blog",
-        "href": "/blog"
-      },
-      {
-        "label": "Contact Us",
-        "href": "/contact"
-      }
-    ],
-    "serviceLinks": [
-      {
-        "label": "Pet Grooming",
-        "href": "/services/pet-grooming"
-      },
-      {
-        "label": "Pet Bath & Spa",
-        "href": "/services/pet-bath-spa"
-      },
-      {
-        "label": "Haircuts & Styling",
-        "href": "/services/haircuts-styling"
-      },
-      {
-        "label": "Nail Trimming",
-        "href": "/services/nail-trimming"
-      },
-      {
-        "label": "Ear Cleaning",
-        "href": "/services/ear-cleaning"
-      },
-      {
-        "label": "De-shedding",
-        "href": "/services/de-shedding"
-      },
-      {
-        "label": "Pet Day Care",
-        "href": "/services/pet-day-care"
-      },
-      {
-        "label": "Pet Care Products",
-        "href": "/products"
-      }
-    ],
-    "resourceLinks": [
-      {
-        "label": "Pet Care Tips",
-        "href": "/resources/tips"
-      },
-      {
-        "label": "Pet Care Guide",
-        "href": "/resources/guide"
-      },
-      {
-        "label": "FAQs",
-        "href": "/faqs"
-      },
-      {
-        "label": "Terms & Conditions",
-        "href": "/terms"
-      },
-      {
-        "label": "Privacy Policy",
-        "href": "/privacy-policy"
-      },
-      {
-        "label": "Sitemap",
-        "href": "/sitemap"
-      }
-    ],
-    "supportLinks": [
-      {
-        "label": "Help Center",
-        "href": "/help"
-      },
-      {
-        "label": "FAQs",
-        "href": "/faqs"
-      },
-      {
-        "label": "Contact Us",
-        "href": "/contact"
-      },
-      {
-        "label": "Appointments",
-        "href": "/appointment"
-      },
-      {
-        "label": "Testimonials",
-        "href": "/testimonials"
-      }
-    ]
-  },
   "heroSectionData": {
     "slides": [
       {
@@ -2103,12 +2574,21 @@
       "href": "/services"
     }
   },
-  "aboutSectionData": {
-    "badgeText": "About Us",
-    "titleWhite": "Where Pets Look Great",
-    "titleColored": "and Feel Loved",
-    "description1": "At PetBloom, we believe every pet deserves the best care, attention, and a whole lot of love. Our professional grooming services are designed to keep your furry friends clean, healthy, and happy.",
-    "description2": "With experienced groomers, premium products, and a gentle approach, we make grooming a stress-free and enjoyable experience for every pet.",
+  "aboutData": {
+    "pageData": {
+      "badgeText": "About Us",
+      "titleWhite": "Where Pets Look Great",
+      "titleColored": "and Feel Loved",
+      "description1": "At PetBloom, we believe every pet deserves the best care, attention, and a whole lot of love. Our professional grooming services are designed to keep your furry friends clean, healthy, and happy.",
+      "description2": "With experienced groomers, premium products, and a gentle approach, we make grooming a stress-free and enjoyable experience for every pet."
+    },
+    "sectionData": {
+      "badgeText": "About Us",
+      "titleWhite": "Where Pets Look Great",
+      "titleColored": "and Feel Loved",
+      "description1": "At PetBloom, we believe every pet deserves the best care, attention, and a whole lot of love. Our professional grooming services are designed to keep your furry friends clean, healthy, and happy.",
+      "description2": "With experienced groomers, premium products, and a gentle approach, we make grooming a stress-free and enjoyable experience for every pet."
+    },
     "features": [
       {
         "id": "1",
@@ -2140,24 +2620,19 @@
       "line3": "Grooming"
     }
   },
-  "whyChooseUsSectionData": {
-    "badgeText": "Why Choose Us",
-    "titleWhite": "Why PetBloom",
-    "titleColored": "Is the Right Choice",
-    "description": "At PetBloom, we treat every pet like family. Our expert care, safe environment, and personalized attention ensure your furry friend stays happy, healthy, and loved.",
-    "images": {
-      "main": "https://images.unsplash.com/photo-1523979229794-bd082f68650a?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8"
+  "testimonialData": {
+    "pageData": {
+      "badgeText": "Testimonials",
+      "titleWhite": "Happy Pets, ",
+      "titleColored": "Happy Parents",
+      "description": "Real stories from pet parents who trust PetBloom for exceptional care, love, and happiness."
     },
-    "badge": {
-      "line1": "Healthy Pets,",
-      "line2": "Happy You"
-    }
-  },
-  "testimonialSectionData": {
-    "badgeText": "Testimonials",
-    "titleWhite": "Happy Pets, ",
-    "titleColored": "Happy Parents",
-    "description": "Real stories from pet parents who trust PetBloom for exceptional care, love, and happiness.",
+    "sectionData": {
+      "badgeText": "Testimonials",
+      "titleWhite": "Happy Pets, ",
+      "titleColored": "Happy Parents",
+      "description": "Real stories from pet parents who trust PetBloom for exceptional care, love, and happiness."
+    },
     "image": "https://images.unsplash.com/photo-1575859431774-2e57ed632664?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZG9vZGxlJTIwZG9nfGVufDB8fDB8fHww",
     "testimonials": [
       {
@@ -2204,11 +2679,19 @@
       }
     ]
   },
-  "faqSectionData": {
-    "badgeText": "FAQS",
-    "titleWhite": "Frequently Asked ",
-    "titleColored": "Questions",
-    "description": "Find answers to common questions about our pet grooming <br className=\"hidden sm:block\" /> services, care, and appointments.",
+  "faqData": {
+    "pageData": {
+      "badgeText": "FAQS",
+      "titleWhite": "Frequently Asked ",
+      "titleColored": "Questions",
+      "description": "Find answers to common questions about our pet grooming <br className=\"hidden sm:block\" /> services, care, and appointments."
+    },
+    "sectionData": {
+      "badgeText": "FAQS",
+      "titleWhite": "Frequently Asked ",
+      "titleColored": "Questions",
+      "description": "Find answers to common questions about our pet grooming <br className=\"hidden sm:block\" /> services, care, and appointments."
+    },
     "image": "https://plus.unsplash.com/premium_photo-1707410049087-8a0a5ab77bce?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZG9nJTIwb24lMjBiZWR8ZW58MHx8MHx8fDA%3D",
     "faqs": [
       {
@@ -2243,53 +2726,15 @@
       }
     ]
   },
-  "blogSectionData": {
-    "badgeText": "BLOG & NEWS",
-    "titleWhite": "Latest",
-    "titleColored": "Blog Articles",
-    "description": "Tips, stories, and expert advice to keep your pets happy, healthy, and well cared for."
-  },
-  "blogsData": [
-    {
-      "id": "1",
-      "title": "Clean Energy From The Skies Wind Power For A Brighter Future",
-      "excerpt": "Discover how wind energy is shaping a cleaner future for our planet and supporting a healthier environment for pets and people alike.",
-      "category": "PET CARE",
-      "date": "18 August, 2025",
-      "image": "https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&q=80&w=800",
-      "featured": true
+  "missionVisionData": {
+    "pageData": {
+      "badgeText": "OUR PURPOSE",
+      "titleStart": "Our",
+      "titleHighlight1": "Mission",
+      "titleMiddle": "&",
+      "titleHighlight2": "Vision"
     },
-    {
-      "id": "2",
-      "title": "Sustainable Solutions The Future Of Wind Energy",
-      "category": "PET HEALTH",
-      "date": "18 August, 2025",
-      "image": "https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&q=80&w=600",
-      "featured": false
-    },
-    {
-      "id": "3",
-      "title": "Wind Energy Driving A Cleaner, Greener Tomorrow",
-      "category": "PET SAFETY",
-      "date": "18 October, 2025",
-      "image": "https://images.unsplash.com/photo-1587300003388-59208cc962cb?auto=format&fit=crop&q=80&w=600",
-      "featured": false
-    },
-    {
-      "id": "4",
-      "title": "Wind Energy Driving A Cleaner, Greener Tomorrow",
-      "category": "PET RESCUE",
-      "date": "18 November, 2025",
-      "image": "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&q=80&w=600",
-      "featured": false
-    }
-  ],
-  "pageTopSectionData": {
-    "backgroundImage": "https://images.unsplash.com/photo-1450778869180-41d0601e046e?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8ZG9nJTIwYW5kJTIwY2F0fGVufDB8fDB8fHww",
-    "backgroundAlt": "Dog getting bubble bath background"
-  },
-  "missionVisionSectionData": {
-    "header": {
+    "sectionData": {
       "badgeText": "OUR PURPOSE",
       "titleStart": "Our",
       "titleHighlight1": "Mission",
@@ -2317,5 +2762,256 @@
       "bgAccent": "bg-[#FDF6F0]"
     }
   },
-  "contactPhone": "+00-(120) 3456 789"
+  "footerData": {
+    "quickLinks": [
+      {
+        "label": "Home",
+        "href": "/"
+      },
+      {
+        "label": "About Us",
+        "href": "/about"
+      },
+      {
+        "label": "Our Services",
+        "href": "/services"
+      },
+      {
+        "label": "Our Team",
+        "href": "/team"
+      },
+      {
+        "label": "Service Areas",
+        "href": "/locations"
+      },
+      {
+        "label": "Gallery",
+        "href": "/gallery"
+      },
+      {
+        "label": "Blog",
+        "href": "/blog"
+      },
+      {
+        "label": "Why Choose Us",
+        "href": "/why-choose-us"
+      }
+    ],
+    "serviceLinks": [
+      {
+        "label": "Pet Grooming",
+        "href": "/services/pet-grooming"
+      },
+      {
+        "label": "Pet Bath & Spa",
+        "href": "/services/pet-bath-spa"
+      },
+      {
+        "label": "Haircuts & Styling",
+        "href": "/services/haircuts-styling"
+      },
+      {
+        "label": "Nail Trimming",
+        "href": "/services/nail-trimming"
+      },
+      {
+        "label": "Ear Cleaning",
+        "href": "/services/ear-cleaning"
+      },
+      {
+        "label": "De-shedding",
+        "href": "/services/de-shedding"
+      },
+      {
+        "label": "Pet Day Care",
+        "href": "/services/pet-day-care"
+      },
+      {
+        "label": "Pet Care Products",
+        "href": "/products"
+      }
+    ],
+    "resourceLinks": [
+      {
+        "label": "FAQs",
+        "href": "/faqs"
+      },
+      {
+        "label": "Disclaimer",
+        "href": "/disclaimer"
+      },
+      {
+        "label": "Cookie Policy",
+        "href": "/cookie-policy"
+      },
+      {
+        "label": "Privacy Policy",
+        "href": "/privacy-policy"
+      },
+      {
+        "label": "Terms & Conditions",
+        "href": "/terms-conditions"
+      },
+      {
+        "label": "Sitemap",
+        "href": "/sitemap"
+      }
+    ],
+    "supportLinks": [
+      {
+        "label": "Help Center",
+        "href": "/help"
+      },
+      {
+        "label": "Contact Us",
+        "href": "/contact-us"
+      },
+      {
+        "label": "Appointments",
+        "href": "/appointment"
+      },
+      {
+        "label": "Testimonials",
+        "href": "/testimonials"
+      }
+    ]
+  },
+  "contactData": {
+    "pageData": {
+      "badgeText": "Contact Us",
+      "brandStart": "Pet",
+      "brandEnd": "Bloom",
+      "titleStart": "Get in Touch",
+      "titleMiddle": "With",
+      "titleColored": "PetBloom",
+      "description": "We offer a range of services including grooming, pet sitting, dog walking, overnight boarding, and pet taxi services. Our staff is trained in pet first aid, and we maintain a safe, clean environment with constant supervision."
+    },
+    "sectionData": {
+      "badgeText": "Contact Us",
+      "brandStart": "Pet",
+      "brandEnd": "Bloom",
+      "titleStart": "Get in Touch",
+      "titleMiddle": "With",
+      "titleColored": "PetBloom",
+      "description": "We offer a range of services including grooming, pet sitting, dog walking, overnight boarding, and pet taxi services. Our staff is trained in pet first aid, and we maintain a safe, clean environment with constant supervision."
+    },
+    "infoCards": [
+      {
+        "id": "1",
+        "icon": "MapPin",
+        "title": "Our Address",
+        "lines": [
+          "123 Pet Care Lane, Paws Town, CA 90210, United States"
+        ]
+      },
+      {
+        "id": "2",
+        "icon": "Phone",
+        "title": "Phone Number",
+        "lines": [
+          "+1 (555) 123-4567",
+          "+1 (555) 987-6543"
+        ]
+      },
+      {
+        "id": "3",
+        "icon": "Mail",
+        "title": "Email Address",
+        "lines": [
+          "info@petbloom.com",
+          "care@petbloom.com"
+        ]
+      },
+      {
+        "id": "4",
+        "icon": "Clock",
+        "title": "Working Time",
+        "lines": [
+          "Mon - Fri: 8:00 AM - 7:00 PM",
+          "Sat: 9:00 AM - 5:00 PM",
+          "Sun: Closed"
+        ]
+      }
+    ],
+    "social": {
+      "titleWhite": "Follow Us On ",
+      "titleColored": "Social Media",
+      "description": "Stay connected with us for pet care tips, updates and special offers!",
+      "links": [
+        {
+          "id": "1",
+          "platform": "facebook",
+          "href": "#"
+        },
+        {
+          "id": "2",
+          "platform": "instagram",
+          "href": "#"
+        },
+        {
+          "id": "3",
+          "platform": "twitter",
+          "href": "#"
+        },
+        {
+          "id": "4",
+          "platform": "linkedin",
+          "href": "#"
+        },
+        {
+          "id": "5",
+          "platform": "youtube",
+          "href": "#"
+        }
+      ]
+    },
+    "illustrationImage": {
+      "src": "https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&q=80&w=600",
+      "alt": "Cute pets together"
+    },
+    "form": {
+      "titleWhite": "Book An ",
+      "titleColored": "Appointment",
+      "namePlaceholder": "Your Name*",
+      "emailPlaceholder": "Your Email*",
+      "phonePlaceholder": "Phone Number*",
+      "datePlaceholder": "Select Date*",
+      "messagePlaceholder": "Write Message*",
+      "subjects": [
+        {
+          "value": "grooming",
+          "label": "Pet Grooming Inquiry"
+        },
+        {
+          "value": "boarding",
+          "label": "Pet Boarding Service"
+        },
+        {
+          "value": "training",
+          "label": "Pet Training Consultation"
+        },
+        {
+          "value": "general",
+          "label": "General Support"
+        }
+      ],
+      "timeSlots": [
+        {
+          "value": "morning",
+          "label": "Morning (9:00 AM - 12:00 PM)"
+        },
+        {
+          "value": "afternoon",
+          "label": "Afternoon (12:00 PM - 4:00 PM)"
+        },
+        {
+          "value": "evening",
+          "label": "Evening (4:00 PM - 7:00 PM)"
+        }
+      ],
+      "submitButtonText": "REQUEST A QUOTE",
+      "privacyNotice": "We respect your privacy. Your information is safe with us.",
+      "successMessage": "Quote request submitted successfully!"
+    }
+  }
 }

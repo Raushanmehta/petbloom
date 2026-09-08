@@ -5,8 +5,8 @@ import { FaPaw } from "react-icons/fa";
 import { Lilita_One } from "next/font/google";
 import { fadeUpVariants } from "@/utils/animations";
 import PageTopSection from "@/components/common/PageTopSection";
-import data from "@/data/data.json";
 import { LegalDataWrapper } from "@/types/sections";
+import data from "@/data/data.json";
 import LegalSection from "@/sections/LegalSection";
 
 const lilitaOne = Lilita_One({
@@ -14,11 +14,11 @@ const lilitaOne = Lilita_One({
     weight: "400",
 });
 
-export default function PrivacyPolicyPage() {
+export default function DisclaimerPage() {
     const legalData = data.legalData;
     const pageDataWrapper: LegalDataWrapper = {
-        pageData: legalData.privacyPolicyPageData,
-        introDescription: legalData.privacyPolicyPageData.description,
+        pageData: legalData.disclaimerData,
+        introDescription: legalData.disclaimerData.description,
         policies: legalData.policies,
         contactEmail: legalData.contactEmail,
         contactPhoneDisplay: legalData.contactPhoneDisplay,
@@ -28,8 +28,8 @@ export default function PrivacyPolicyPage() {
     return (
         <main>
             <PageTopSection
-                title={pageDataWrapper.pageData.titleColored || "Privacy Policy"}
-                subTitle={pageDataWrapper.pageData.badgeText || "Privacy Policy"}
+                title={pageDataWrapper.pageData.titleColored || "Disclaimer"}
+                subTitle={pageDataWrapper.pageData.badgeText || "Disclaimer"}
             />
             <section className="relative overflow-hidden bg-[#FEFDFB] px-4 py-20 sm:px-6 lg:px-12">
                 <div className="mx-auto max-w-[1300px]">
@@ -87,10 +87,7 @@ export default function PrivacyPolicyPage() {
                         <motion.h2
                             variants={fadeUpVariants}
                             className={`${lilitaOne.className} mt-4 text-4xl tracking-wide text-gray-900 sm:text-5xl lg:text-6xl`} >
-                            {pageDataWrapper.pageData.titleWhite} {""}
-                            <span className="text-[#E67E22]">
-                                {pageDataWrapper.pageData.titleColored}
-                            </span>
+                            {pageDataWrapper.pageData.titleWhite} {" "}
                         </motion.h2>
 
                         {/* Divider */}
@@ -131,5 +128,5 @@ export default function PrivacyPolicyPage() {
                 <LegalSection data={pageDataWrapper} />
             </section>
         </main>
-    );
+    )
 }

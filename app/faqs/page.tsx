@@ -5,7 +5,7 @@ export default function FaqsPage() {
     return (
         <div>
             <PageTopSection title="Faqs" subTitle="Faqs" />
-            <FaqSection />
+            <FaqSection isPage={true} />
         </div>
     );
 }

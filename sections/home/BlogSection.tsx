@@ -16,13 +16,15 @@ const lilitaOne = Lilita_One({
     weight: "400",
 });
 
-
-const { blogSectionData, blogsData } = allData as {
-    blogSectionData: BlogSectionData;
-    blogsData: BlogPost[];
-};
-
 export default function BlogSection() {
+    const rawBlog = (allData as any)?.blogData;
+    const blogSectionData: BlogSectionData = rawBlog?.sectionData || {
+        badgeText: "BLOG & NEWS",
+        titleWhite: "Latest",
+        titleColored: "Blog Articles",
+        description: ""
+    };
+    const blogsData: BlogPost[] = rawBlog?.blogs || [];
     const featuredBlog =
         blogsData.find((blog) => blog.featured) || blogsData[0];
 
@@ -111,9 +113,9 @@ export default function BlogSection() {
                         transition={{ duration: 0.3, ease: "easeOut" }}
                         className="flex flex-col overflow-hidden rounded-[1rem] bg-white shadow-xl shadow-gray-100 lg:col-span-6">
                         {/* Image */}
-                        <div className="group relative h-[320px] w-full overflow-hidden rounded-[1rem] sm:h-[360px]">
+                        <Link href={`/blog/${featuredBlog.id}`} className="group relative block h-[320px] w-full overflow-hidden rounded-[1rem] sm:h-[360px]">
                             <Image
-                                src={featuredBlog.image}
+                                src={featuredBlog.image || featuredBlog.heroImage || ""}
                                 alt={featuredBlog.title}
                                 fill
                                 sizes="(max-width: 1024px) 100vw, 50vw"
@@ -122,12 +124,11 @@ export default function BlogSection() {
 
                             {/* Image overlay */}
                             <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
-                        </div>
+                        </Link>
 
                         {/* Content */}
                         <div className="flex flex-grow flex-col justify-between px-6 py-8">
                             <div>
-                                {/* Meta */}
                                 <motion.div
                                     initial={{ opacity: 0, y: 10 }}
                                     whileInView={{ opacity: 1, y: 0 }}
@@ -138,7 +139,6 @@ export default function BlogSection() {
                                         <FaPaw className="h-3 w-3" />
                                         {featuredBlog.category}
                                     </span>
-
                                     <span className="flex items-center gap-1.5 text-gray-600">
                                         <Calendar className="h-4 w-4 text-[#387478]" />
                                         {featuredBlog.date}
@@ -146,14 +146,16 @@ export default function BlogSection() {
                                 </motion.div>
 
                                 {/* Title */}
-                                <motion.h3
-                                    initial={{ opacity: 0, y: 15 }}
-                                    whileInView={{ opacity: 1, y: 0 }}
-                                    viewport={{ once: true }}
-                                    transition={{ delay: 0.3, duration: 0.5 }}
-                                    className="text-xl font-bold leading-snug tracking-wide text-gray-900 sm:text-2xl">
-                                    {featuredBlog.title}
-                                </motion.h3>
+                                <Link href={`/blog/${featuredBlog.id}`} className="block">
+                                    <motion.h3
+                                        initial={{ opacity: 0, y: 15 }}
+                                        whileInView={{ opacity: 1, y: 0 }}
+                                        viewport={{ once: true }}
+                                        transition={{ delay: 0.3, duration: 0.5 }}
+                                        className="text-xl font-bold leading-snug tracking-wide text-gray-900 transition-colors duration-300 hover:text-[#387478] sm:text-2xl">
+                                        {featuredBlog.title}
+                                    </motion.h3>
+                                </Link>
 
                                 {/* Excerpt */}
                                 <motion.p
@@ -184,7 +186,6 @@ export default function BlogSection() {
                     </motion.div>
 
                     {/* SIDE BLOGS */}
-
                     <motion.div
                         variants={blogSideContainerVariants}
                         initial="hidden"
@@ -208,7 +209,7 @@ export default function BlogSection() {
                     transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1], }}
                     className="mt-14 flex justify-center">
                     <Link
-                        href="/blogs"
+                        href="/blog"
                         className="group inline-flex items-center gap-3 rounded-full bg-[#387478] px-8 py-4 text-base font-bold text-white shadow-xl transition-all duration-300 hover:scale-105 hover:bg-[#2d5d61]">
                         <FaPaw className="h-5 w-5 transition-transform duration-300 group-hover:rotate-12" />
                         View All Blogs

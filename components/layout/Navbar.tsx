@@ -8,7 +8,7 @@ import { FaPhoneAlt, FaChevronDown, FaBars, FaTimes } from "react-icons/fa";
 import { NavLink, ServicesDataWrapper } from "@/types";
 import data from "@/data/data.json";
 
-const { navLinks, contactPhone, servicesData } = data as { navLinks: NavLink[], contactPhone: string, servicesData: ServicesDataWrapper };
+const { navLinks, servicesData } = data as { navLinks: NavLink[], servicesData: ServicesDataWrapper };
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -173,7 +173,7 @@ export default function Navbar() {
                             </span>
 
                             <span className="text-[17px] font-bold tracking-tight text-white">
-                                {contactPhone}
+                                +00-(120) 3456 789
                             </span>
                         </div>
                     </motion.div>
@@ -332,7 +332,7 @@ export default function Navbar() {
                                         </span>
 
                                         <span className="text-sm font-bold text-white">
-                                            {contactPhone}
+                                            +00-(120) 3456 789
                                         </span>
                                     </div>
                                 </div>

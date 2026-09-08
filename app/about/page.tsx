@@ -7,8 +7,8 @@ export default function AboutPage() {
     return (
         <main>
             <PageTopSection title="About Us" subTitle="About Us" />
-            <AboutSection />
-            <WhyChooseUsSection />
+            <AboutSection isPage={true} />
+            <WhyChooseUsSection isPage={true} />
             <MissionVisionSection />
         </main>
     )

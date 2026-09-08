@@ -42,16 +42,13 @@ interface LocationDetailPageProps {
 }
 
 export default function LocationDetailPage({ location: propLocation }: LocationDetailPageProps) {
-    // Current location either from props or fallback to first/active location in locationsData
     const defaultLocation = locationsData.locations.find((l) => l.active) || locationsData.locations[0];
     const currentLocation = propLocation || defaultLocation;
 
-    // Detail data strictly from locationsData
     const fallbackDetail = locationsData.locations[0]?.detail as LocationDetail;
     const detail: LocationDetail = (currentLocation?.detail || fallbackDetail) as LocationDetail;
 
     if (!detail) return null;
-
     const allLocations = locationsData.locations;
 
     return (

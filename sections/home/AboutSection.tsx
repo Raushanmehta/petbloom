@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 import { Scissors, Leaf, Heart } from "lucide-react";
 import { FaPaw } from "react-icons/fa";
 import { Lilita_One, Courgette } from "next/font/google";
-import { AboutSectionData } from "@/types";
+import { AboutDataWrapper } from "@/types";
 import { containerVariants, fadeUpVariants, featureVariants } from "@/utils/animations";
 
 
@@ -27,9 +27,30 @@ const courgette = Courgette({
     weight: "400",
 });
 
-const { aboutSectionData } = data as { aboutSectionData: AboutSectionData };
+interface AboutSectionProps {
+    isPage?: boolean;
+}
 
-export default function AboutSection() {
+export default function AboutSection({ isPage = false }: AboutSectionProps) {
+    const rawAbout = (data as unknown as { aboutData: AboutDataWrapper })?.aboutData;
+    const headerData = (isPage ? rawAbout?.pageData : rawAbout?.sectionData) || {
+        badgeText: "About Us",
+        titleWhite: "Where Pets Look Great",
+        titleColored: "and Feel Loved",
+        description1: "",
+        description2: ""
+    };
+    const images = rawAbout?.images || {
+        main: "https://plus.unsplash.com/premium_photo-1707410050552-e94a738102a1?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y296eSUyMGRvZ3xlbnwwfHwwfHx8MA%3D%3D",
+        secondary: "https://images.unsplash.com/photo-1625794084867-8ddd239946b1?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c3RyZXNzZWQlMjBkb2d8ZW58MHx8MHx8fDA%3D",
+        badgeIcon: "/icon/cat-foot-icon.svg"
+    };
+    const badge = rawAbout?.badge || {
+        line1: "Safe, Gentle",
+        line2: "& Pet-Friendly",
+        line3: "Grooming"
+    };
+    const features = rawAbout?.features || [];
     return (
         <section className="relative overflow-hidden bg-[#FCF7F3] px-4 py-20 sm:px-6 lg:px-8">
             <div className="mx-auto grid max-w-[1300px] grid-cols-1 items-center justify-between gap-16 sm:gap-24 lg:gap-12 lg:grid-cols-12">
@@ -58,7 +79,7 @@ export default function AboutSection() {
                         whileHover={{ scale: 1.02 }}
                         className="relative z-10 h-[380px] sm:h-[500px] lg:h-[480px] w-full max-w-[300px] sm:max-w-[480px] lg:max-w-[420px] lg:-right-4 lg:-top-6 overflow-hidden rounded-[2.5rem] border-4 border-white shadow-xl">
                         <Image
-                            src={aboutSectionData.images.main}
+                            src={images.main}
                             alt="Dog getting groomed"
                             fill
                             className="object-cover"
@@ -75,7 +96,7 @@ export default function AboutSection() {
                         whileHover={{ scale: 1.05, y: -5 }}
                         className="absolute -bottom-12 left-0 sm:-bottom-8 sm:-left-10 z-20 h-36 w-36 sm:h-48 sm:w-48 overflow-hidden rounded-[1.5rem] sm:rounded-[2rem] border-4 border-white shadow-lg">
                         <Image
-                            src={aboutSectionData.images.secondary}
+                            src={images.secondary}
                             alt="Dog bath"
                             fill
                             className="object-cover"
@@ -92,7 +113,7 @@ export default function AboutSection() {
                         className="absolute -bottom-6 right-0 sm:-bottom-2 sm:right-0 lg:right-4 z-30 flex scale-90 sm:scale-100 items-center gap-2 sm:gap-3 rounded-2xl border border-gray-100 bg-white/95 px-3 py-3 sm:px-4 sm:py-4 shadow-xl backdrop-blur-md">
                         <div className="rounded-xl bg-[#E67E22] p-2.5 text-white shadow-md">
                             <Image
-                                src={aboutSectionData.images.badgeIcon}
+                                src={images.badgeIcon}
                                 alt="Pet friendly"
                                 width={24}
                                 height={24}
@@ -101,13 +122,13 @@ export default function AboutSection() {
 
                         <div>
                             <p className={`${courgette.className} text-base font-bold leading-tight text-gray-900`}>
-                                {aboutSectionData.badge.line1}
+                                {badge.line1}
                             </p>
                             <p className={`${courgette.className} text-base font-bold leading-tight text-gray-900`}>
-                                {aboutSectionData.badge.line2}
+                                {badge.line2}
                             </p>
                             <p className="text-sm font-semibold text-gray-500">
-                                {aboutSectionData.badge.line3}
+                                {badge.line3}
                             </p>
                         </div>
                     </motion.div>
@@ -131,7 +152,7 @@ export default function AboutSection() {
                         </motion.div>
 
                         <span className="text-sm font-bold uppercase tracking-wider text-[#387478]">
-                            {aboutSectionData.badgeText}
+                            {headerData.badgeText}
                         </span>
                     </motion.div>
 
@@ -140,9 +161,9 @@ export default function AboutSection() {
                         variants={fadeUpVariants}
                         className={`${lilitaOne.className} text-4xl tracking-wide text-gray-900 sm:text-5xl lg:text-6xl`}
                     >
-                        {aboutSectionData.titleWhite}
+                        {headerData.titleWhite}
                         <br />
-                        <span className="text-[#E67E22]">{aboutSectionData.titleColored}</span>
+                        <span className="text-[#E67E22]">{headerData.titleColored}</span>
                     </motion.h2>
 
                     {/* Decorative Divider */}
@@ -165,7 +186,7 @@ export default function AboutSection() {
                         variants={fadeUpVariants}
                         className="text-sm font-medium leading-relaxed text-gray-600 sm:text-base"
                     >
-                        {aboutSectionData.description1}
+                        {headerData.description1}
                     </motion.p>
 
                     {/* Paragraph 2 */}
@@ -173,7 +194,7 @@ export default function AboutSection() {
                         variants={fadeUpVariants}
                         className="text-sm font-medium leading-relaxed text-gray-600 sm:text-base"
                     >
-                        {aboutSectionData.description2}
+                        {headerData.description2}
                     </motion.p>
 
                     {/* Features */}
@@ -181,7 +202,7 @@ export default function AboutSection() {
                         variants={containerVariants}
                         className="grid grid-cols-1 gap-4 sm:grid-cols-3 pt-2"
                     >
-                        {aboutSectionData.features.map((feature) => {
+                        {features.map((feature) => {
                             const IconComponent = IconMap[feature.icon];
                             return (
                                 <motion.div

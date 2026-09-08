@@ -5,7 +5,7 @@ export default function TestimonialsPage() {
     return (
         <div>
             <PageTopSection title="Testimonials" subTitle="Testimonials" />
-            <TestimonialSection />
+            <TestimonialSection isPage={true} />
 
         </div>
     );

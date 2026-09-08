@@ -5,7 +5,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import allData from "@/data/data.json";
 import { Target, Eye } from "lucide-react";
-import type { MissionVisionSectionData } from "@/types/sections";
+import type { MissionVisionDataWrapper } from "@/types/sections";
 import { FaPaw } from "react-icons/fa";
 import { Lilita_One } from "next/font/google";
 import { missionHeaderContainerVariants, missionFadeUpVariants, missionCardsContainerVariants, missionLeftCardVariants, missionCenterImageVariants, missionRightCardVariants } from "@/utils/animations";
@@ -21,12 +21,38 @@ const iconMap: Record<string, React.ElementType> = {
     Eye,
 };
 
-const { missionVisionSectionData } = allData as { missionVisionSectionData: MissionVisionSectionData; };
-const { header, centerImage, mission: missionData, vision: visionData } = missionVisionSectionData;
-const MissionIcon = iconMap[missionData.iconName] || Target;
-const VisionIcon = iconMap[visionData.iconName] || Eye;
+interface MissionVisionSectionProps {
+    isPage?: boolean;
+}
 
-export default function MissionVisionSection() {
+export default function MissionVisionSection({ isPage = false }: MissionVisionSectionProps) {
+    const rawMV = (allData as unknown as { missionVisionData: MissionVisionDataWrapper })?.missionVisionData;
+    const header = (isPage ? rawMV?.pageData : rawMV?.sectionData) || {
+        badgeText: "OUR PURPOSE",
+        titleStart: "Our",
+        titleHighlight1: "Mission",
+        titleMiddle: "&",
+        titleHighlight2: "Vision"
+    };
+    const centerImage = rawMV?.centerImage || { src: "", alt: "" };
+    const missionData = rawMV?.mission || {
+        iconName: "Target",
+        title: "Our Mission",
+        description: "",
+        themeColor: "text-[#387478]",
+        borderColor: "border-[#387478]/20",
+        bgAccent: "bg-[#EAF2F2]"
+    };
+    const visionData = rawMV?.vision || {
+        iconName: "Eye",
+        title: "Our Vision",
+        description: "",
+        themeColor: "text-[#E67E22]",
+        borderColor: "border-[#E67E22]/20",
+        bgAccent: "bg-[#FDF6F0]"
+    };
+    const MissionIcon = iconMap[missionData.iconName] || Target;
+    const VisionIcon = iconMap[visionData.iconName] || Eye;
     return (
         <section className="relative overflow-hidden bg-white px-4 py-20 sm:px-6 lg:px-12">
             <div className="mx-auto max-w-[1300px]">

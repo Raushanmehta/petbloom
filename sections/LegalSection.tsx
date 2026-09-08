@@ -4,13 +4,13 @@ import { columnVariants } from "@/utils/animations";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { FaPaw } from "react-icons/fa";
-import { PrivacyPolicyDataWrapper } from "@/types/sections";
+import { LegalDataWrapper } from "@/types/sections";
 
-interface PrivacyPolicySectionProps {
-    data: PrivacyPolicyDataWrapper;
+interface LegalSectionProps {
+    data: LegalDataWrapper;
 }
 
-export default function PrivacyPolicySection({ data }: PrivacyPolicySectionProps) {
+export default function LegalSection({ data }: LegalSectionProps) {
     return (
         <div>
             <div className="space-y-8 divide-y divide-gray-100 mx-auto max-w-[1300px]">

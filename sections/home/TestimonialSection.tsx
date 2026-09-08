@@ -10,7 +10,7 @@ import { Carousel, CarouselContent, CarouselItem, CarouselApi } from "@/componen
 import Autoplay from "embla-carousel-autoplay";
 import { testimonialHeaderContainerVariants as headerContainerVariants, testimonialFadeUpVariants as fadeUpVariants, testimonialCarouselVariants as carouselVariants } from "@/utils/animations";
 import data from "@/data/data.json";
-import { TestimonialSectionData } from "@/types/sections";
+import { TestimonialDataWrapper } from "@/types/sections";
 import StatisticsSection from "@/components/common/StatisticsSection";
 
 
@@ -19,9 +19,20 @@ const lilitaOne = Lilita_One({
     weight: "400",
 });
 
-const { testimonialSectionData } = data as { testimonialSectionData: TestimonialSectionData };
+interface TestimonialSectionProps {
+    isPage?: boolean;
+}
 
-export default function TestimonialsSection() {
+export default function TestimonialsSection({ isPage = false }: TestimonialSectionProps) {
+    const rawTestimonial = (data as unknown as { testimonialData: TestimonialDataWrapper })?.testimonialData;
+    const headerData = (isPage ? rawTestimonial?.pageData : rawTestimonial?.sectionData) || {
+        badgeText: "Testimonials",
+        titleWhite: "Happy Pets, ",
+        titleColored: "Happy Parents",
+        description: ""
+    };
+    const image = rawTestimonial?.image || "";
+    const testimonials = rawTestimonial?.testimonials || [];
     const [api, setApi] = useState<CarouselApi>();
     const [current, setCurrent] = useState(0);
     const [count, setCount] = useState(0);
@@ -75,7 +86,7 @@ export default function TestimonialsSection() {
                         whileHover={{ scale: 1.015, }}
                         className="group relative h-[720px] w-full overflow-hidden rounded-[2.5rem] shadow-2xl lg:col-span-5">
                         <Image
-                            src={testimonialSectionData.image}
+                            src={image}
                             alt="Testimonials Hero"
                             fill
                             sizes="(max-width: 768px) 100vw, 50vw"
@@ -110,7 +121,7 @@ export default function TestimonialsSection() {
                                     <FaPaw className="h-6 w-6 text-[#387478]" />
                                 </motion.div>
                                 <span className="text-xs font-bold uppercase tracking-wider text-[#387478]">
-                                    {testimonialSectionData.badgeText}
+                                    {headerData.badgeText}
                                 </span>
                             </motion.div>
 
@@ -119,9 +130,9 @@ export default function TestimonialsSection() {
                             <motion.h2
                                 variants={fadeUpVariants}
                                 className={`${lilitaOne.className} mt-4 text-4xl tracking-wide text-gray-900 sm:text-5xl lg:text-6xl`}>
-                                {testimonialSectionData.titleWhite}
+                                {headerData.titleWhite}
                                 <span className="text-[#387478]">
-                                    {testimonialSectionData.titleColored}
+                                    {headerData.titleColored}
                                 </span>
                             </motion.h2>
 
@@ -160,7 +171,7 @@ export default function TestimonialsSection() {
                                 variants={fadeUpVariants}
                                 className="mt-4 max-w-xl text-base font-medium text-gray-600 sm:text-lg"
                             >
-                                {testimonialSectionData.description}
+                                {headerData.description}
                             </motion.p>
                         </motion.div>
 
@@ -180,7 +191,7 @@ export default function TestimonialsSection() {
                                 ]}
                                 className="relative w-full">
                                 <CarouselContent className="-ml-4">
-                                    {testimonialSectionData.testimonials.map(
+                                    {testimonials.map(
                                         (testimonial, index) => (
                                             <CarouselItem
                                                 key={testimonial.id}

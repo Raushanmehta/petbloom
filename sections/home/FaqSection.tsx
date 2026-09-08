@@ -7,7 +7,7 @@ import { Plus, Minus } from "lucide-react";
 import { FaPaw } from "react-icons/fa";
 import { Lilita_One } from "next/font/google";
 import { faqHeaderContainerVariants as headerContainerVariants, faqFadeUpVariants as fadeUpVariants, faqContainerVariants, faqItemVariants, faqAnswerVariants as answerVariants } from "@/utils/animations";
-import { FaqSectionData } from "@/types/sections";
+import { FaqDataWrapper } from "@/types/sections";
 import data from "@/data/data.json";
 
 
@@ -16,9 +16,20 @@ const lilitaOne = Lilita_One({
     weight: "400",
 });
 
-const faqSectionData = data.faqSectionData as FaqSectionData;
+interface FaqSectionProps {
+    isPage?: boolean;
+}
 
-export default function FaqSection() {
+export default function FaqSection({ isPage = false }: FaqSectionProps) {
+    const rawFaq = (data as unknown as { faqData: FaqDataWrapper })?.faqData;
+    const headerData = (isPage ? rawFaq?.pageData : rawFaq?.sectionData) || {
+        badgeText: "FAQS",
+        titleWhite: "Frequently Asked ",
+        titleColored: "Questions",
+        description: ""
+    };
+    const image = rawFaq?.image || "";
+    const faqs = rawFaq?.faqs || [];
     const [openId, setOpenId] = useState<string | null>("1");
 
     const toggleAccordion = (id: string) => {
@@ -66,7 +77,7 @@ export default function FaqSection() {
                         </motion.div>
 
                         <span className="text-xs font-bold uppercase tracking-wider text-[#387478]">
-                            {faqSectionData.badgeText}
+                            {headerData.badgeText}
                         </span>
                     </motion.div>
 
@@ -75,14 +86,14 @@ export default function FaqSection() {
                     <motion.h2
                         variants={fadeUpVariants}
                         className={`${lilitaOne.className} mt-4 text-4xl tracking-wide text-gray-900 sm:text-5xl lg:text-6xl`}>
-                        {faqSectionData.titleWhite}
+                        {headerData.titleWhite}
                         <motion.span
                             initial={{ opacity: 0, x: 15, }}
                             whileInView={{ opacity: 1, x: 0, }}
                             viewport={{ once: true, }}
                             transition={{ duration: 0.6, delay: 0.2, }}
                             className="inline-block text-[#387478]">
-                            {faqSectionData.titleColored}
+                            {headerData.titleColored}
                         </motion.span>
                     </motion.h2>
 
@@ -123,7 +134,7 @@ export default function FaqSection() {
                     <motion.p
                         variants={fadeUpVariants}
                         className="mx-auto mt-4 max-w-lg text-base font-medium leading-relaxed text-gray-600 sm:text-lg"
-                        dangerouslySetInnerHTML={{ __html: faqSectionData.description }}
+                        dangerouslySetInnerHTML={{ __html: headerData.description || "" }}
                     />
                 </motion.div>
 
@@ -137,7 +148,7 @@ export default function FaqSection() {
                         whileHover={{ y: -6, }}
                         className="group relative h-[520px] w-full overflow-hidden rounded-[2.5rem] shadow-2xl lg:col-span-5">
                         <Image
-                            src={faqSectionData.image}
+                            src={image}
                             alt="Dog relaxing during grooming"
                             fill
                             priority
@@ -155,7 +166,7 @@ export default function FaqSection() {
                         whileInView="visible"
                         viewport={{ once: true, amount: 0.15, }}
                         className="space-y-4 lg:col-span-7">
-                        {faqSectionData.faqs.map((faq) => {
+                        {faqs.map((faq) => {
                             const isOpen = openId === faq.id;
 
                             return (

@@ -34,16 +34,30 @@ export interface HeroSectionData {
 }
 
 // ABOUT SECTION TYPES
-export interface AboutSectionData {
+export interface AboutHeaderData {
     badgeText: string;
     titleWhite: string;
     titleColored: string;
     description1: string;
     description2: string;
-    features: { id: string; icon: string; title: string; description: string }[];
+}
+
+export interface AboutFeature {
+    id: string;
+    icon: string;
+    title: string;
+    description: string;
+}
+
+export interface AboutDataWrapper {
+    pageData: AboutHeaderData;
+    sectionData: AboutHeaderData;
+    features: AboutFeature[];
     images: { main: string; secondary: string; badgeIcon: string };
     badge: { line1: string; line2: string; line3: string };
 }
+
+export type AboutSectionData = AboutDataWrapper;
 
 // location SECTION TYPES
 export interface LocationFeature {
@@ -153,6 +167,14 @@ export interface FeatureItem {
     icon?: string;
 }
 
+export interface WhyChooseDataWrapper {
+    pageData: SectionHeaderData;
+    sectionData: SectionHeaderData;
+    images?: { main: string };
+    badge?: { line1?: string; line2?: string };
+    features: (FeatureItem & { icon: string })[];
+}
+
 // TEAM SECTION TYPES
 export interface TeamSkillItem {
     id: string;
@@ -207,14 +229,14 @@ export interface Testimonial {
     image: string;
 }
 
-export interface TestimonialSectionData {
-    badgeText: string;
-    titleWhite: string;
-    titleColored: string;
-    description: string;
+export interface TestimonialDataWrapper {
+    pageData: SectionHeaderData;
+    sectionData: SectionHeaderData;
     image: string;
     testimonials: Testimonial[];
 }
+
+export type TestimonialSectionData = TestimonialDataWrapper;
 
 // FAQ SECTION TYPES
 export interface FAQItem {
@@ -223,14 +245,14 @@ export interface FAQItem {
     answer: string;
 }
 
-export interface FaqSectionData {
-    badgeText: string;
-    titleWhite: string;
-    titleColored: string;
-    description: string;
+export interface FaqDataWrapper {
+    pageData: SectionHeaderData;
+    sectionData: SectionHeaderData;
     image: string;
     faqs: FAQItem[];
 }
+
+export type FaqSectionData = FaqDataWrapper;
 
 // BLOG SECTION TYPES
 export interface BlogPost {
@@ -239,8 +261,13 @@ export interface BlogPost {
     excerpt?: string;
     category: string;
     date: string;
-    image: string;
+    image?: string;
+    heroImage?: string;
     featured?: boolean;
+    author?: string;
+    readTime?: string;
+    introText?: string;
+    sections?: BlogDetailSection[];
 }
 
 export interface BlogSectionData {
@@ -257,14 +284,17 @@ export interface PageTopSectionData {
 }
 
 // MISSION VISION SECTION
-export interface MissionVisionSectionData {
-    header: {
-        badgeText: string;
-        titleStart: string;
-        titleHighlight1: string;
-        titleMiddle: string;
-        titleHighlight2: string;
-    };
+export interface MissionVisionHeader {
+    badgeText: string;
+    titleStart: string;
+    titleHighlight1: string;
+    titleMiddle: string;
+    titleHighlight2: string;
+}
+
+export interface MissionVisionDataWrapper {
+    pageData: MissionVisionHeader;
+    sectionData: MissionVisionHeader;
     centerImage: {
         src: string;
         alt: string;
@@ -286,6 +316,8 @@ export interface MissionVisionSectionData {
         bgAccent: string;
     };
 }
+
+export type MissionVisionSectionData = MissionVisionDataWrapper;
 
 export interface ServicesPageData extends SectionHeaderData {
     servicesData: ServiceItem[];
@@ -378,15 +410,15 @@ export interface AppointmentDataWrapper {
     appointment: AppointmentSectionData;
 }
 
-// PRIVACY POLICY TYPES
-export interface PolicyItem {
+// LEGAL TYPES
+export interface LegalItem {
     id: string;
     number: string;
     title: string;
     content: string;
 }
 
-export interface PrivacyPolicyDataWrapper {
+export interface LegalDataWrapper {
     pageData: SectionHeaderData;
     introDescription: string;
     policies: PolicyItem[];
@@ -403,7 +435,7 @@ export interface PolicyItem {
     content: string;
 }
 
-export interface PrivacyPolicyDataWrapper {
+export interface LDataWrapper {
     pageData: SectionHeaderData;
     introDescription: string;
     policies: PolicyItem[];
@@ -412,3 +444,130 @@ export interface PrivacyPolicyDataWrapper {
     contactPhoneValue: string;
 }
 
+// NOT FOUND PAGE TYPES
+export interface NotFoundData {
+    badgeText: string;
+    titleWhite: string;
+    description: string;
+    homeButtonText: string;
+    servicesButtonText: string;
+    servicesButtonLink: string;
+    bgImage: string;
+    dogImage: string;
+}
+
+// SITEMAP TYPES
+export interface SitemapLink {
+    label: string;
+    href: string;
+}
+
+export interface SitemapCategory {
+    id: string;
+    number: string;
+    title: string;
+    iconType: string;
+    links: SitemapLink[];
+}
+
+export interface SitemapData {
+    pageData: SectionHeaderData;
+    categories: SitemapCategory[];
+}
+export interface BlogDetailSection {
+  id: string;
+  number: string;
+  title: string;
+  content: string;
+  subheading?: string;
+  bullets?: string[];
+  footerNote?: string;
+  quote?: { text: string; author: string };
+  image?: string;
+  images?: string[];
+  imagePosition: 'right' | 'bottom-banner' | 'split-right' | 'full-bottom-image';
+}
+
+export interface BlogDetailData {
+  title: string;
+  category: string;
+  author: string;
+  date: string;
+  readTime: string;
+  heroImage: string;
+  introText: string;
+  sections: BlogDetailSection[];
+}
+
+export interface BlogDataWrapper {
+  pageData: SectionHeaderData;
+  sectionData: SectionHeaderData;
+  blogs: BlogPost[];
+  blogDetailData?: BlogDetailData;
+}
+
+// CONTACT SECTION TYPES
+export interface ContactHeaderData {
+    badgeText?: string;
+    titleWhite?: string;
+    titleColored?: string;
+    brandStart?: string;
+    brandEnd?: string;
+    titleStart?: string;
+    titleMiddle?: string;
+    description?: string;
+}
+
+export interface ContactInfoCard {
+    id: string;
+    icon: string;
+    title: string;
+    lines: string[];
+}
+
+export interface ContactSocialLink {
+    id: string;
+    platform: string;
+    href: string;
+}
+
+export interface ContactSocialSection {
+    titleWhite: string;
+    titleColored: string;
+    description: string;
+    links: ContactSocialLink[];
+}
+
+export interface ContactFormSelectOption {
+    value: string;
+    label: string;
+}
+
+export interface ContactFormData {
+    titleWhite: string;
+    titleColored: string;
+    namePlaceholder?: string;
+    emailPlaceholder?: string;
+    phonePlaceholder?: string;
+    datePlaceholder?: string;
+    messagePlaceholder?: string;
+    subjects: ContactFormSelectOption[];
+    timeSlots: ContactFormSelectOption[];
+    submitButtonText: string;
+    privacyNotice: string;
+    successMessage?: string;
+}
+
+export interface ContactDataWrapper {
+    pageData: ContactHeaderData;
+    sectionData: ContactHeaderData;
+    infoCards: ContactInfoCard[];
+    social: ContactSocialSection;
+    illustrationImage: {
+        src: string;
+        alt: string;
+    };
+    form: ContactFormData;
+}
+
+export type ContactSectionData = ContactDataWrapper;
