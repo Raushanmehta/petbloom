@@ -39,7 +39,7 @@ export default function HeroSection() {
     }, [api]);
 
     return (
-        <div className="relative w-full overflow-hidden bg-[#F2EDE9] px-4 py-4 sm:px-4 md:px-6 lg:px-8">
+        <div className="relative w-full overflow-hidden bg-[#F2EDE9] p-4 sm:p-4 md:p-6 lg:p-6">
             <Carousel
                 setApi={setApi}
                 className="relative w-full"
@@ -52,7 +52,7 @@ export default function HeroSection() {
                         return (
                             <CarouselItem
                                 key={slide.id}
-                                className="relative flex min-h-[610px] h-[610px] sm:h-[640px] lg:h-[680px] xl:h-[680px] items-center pl-0 rounded-[2.5rem] sm:rounded-[2.5rem]"
+                                className="relative flex min-h-[610px] h-[calc(100vh-2rem)] sm:h-[calc(100vh-2rem)] md:h-[calc(100vh-3rem)] lg:h-[calc(100vh-4rem)] items-center pl-0 rounded-[2.5rem] sm:rounded-[2.5rem]"
                             >
                                 {/* Background Image */}
                                 <div className="absolute inset-0 z-0 h-full w-full overflow-hidden rounded-2xl sm:rounded-[2.5rem]">
