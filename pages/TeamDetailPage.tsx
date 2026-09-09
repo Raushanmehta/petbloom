@@ -32,7 +32,7 @@ export default function TeamDetailPage({ team: propTeam }: { team?: Team }) {
     ];
 
     return (
-        <section className="relative overflow-hidden bg-[#FEFDFB] px-4 py-20 sm:px-6 lg:px-12">
+        <section className="relative overflow-hidden bg-[#FEFDFB] py-16 sm:py-20">
             <motion.div
                 initial={{ opacity: 0, x: -30, rotate: -25 }}
                 whileInView={{ opacity: 0.08, x: 0, rotate: -15 }}
@@ -59,7 +59,7 @@ export default function TeamDetailPage({ team: propTeam }: { team?: Team }) {
                 </motion.div>
             </motion.div>
 
-            <div className="relative z-10 mx-auto max-w-[1300px] space-y-10">
+            <div className="relative z-10 mx-auto max-w-[1355px] px-4 sm:px-4 md:px-6 lg:px-8 space-y-10">
                 <motion.div
                     initial={{ opacity: 0, y: -15 }}
                     animate={{ opacity: 1, y: 0 }}
@@ -87,7 +87,7 @@ export default function TeamDetailPage({ team: propTeam }: { team?: Team }) {
                         viewport={{ once: true, amount: 0.2 }}
                         whileHover={{ y: -6 }}
                         transition={{ duration: 0.35 }}
-                        className="group relative h-[420px] sm:h-[615px] w-full overflow-hidden rounded-[1.5rem] shadow-xl border border-gray-100/90 lg:col-span-6 bg-gray-100">
+                        className="group relative h-[360px] sm:h-[480px] lg:h-[615px] w-full overflow-hidden rounded-2xl sm:rounded-[1.75rem] shadow-xl border border-gray-100/90 lg:col-span-6 bg-gray-100">
                         <Image
                             src={team.image}
                             alt={`${team.name} - ${team.role}`}
@@ -101,13 +101,13 @@ export default function TeamDetailPage({ team: propTeam }: { team?: Team }) {
                             whileInView={{ opacity: 1, scale: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: 0.3, type: "spring", stiffness: 220 }}
-                            className="absolute bottom-6 left-6 flex items-center gap-3 rounded-2xl border border-white/30 bg-white/90 px-4 py-3 shadow-lg backdrop-blur-md">
-                            <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#387478] text-white">
-                                <Briefcase className="h-6 w-6" />
+                            className="absolute bottom-4 left-4 sm:bottom-6 sm:left-6 flex items-center gap-2.5 sm:gap-3 rounded-2xl border border-white/30 bg-white/90 p-2.5 sm:px-4 sm:py-3 shadow-lg backdrop-blur-md">
+                            <div className="flex h-10 w-10 sm:h-12 sm:w-12 items-center justify-center rounded-full bg-[#387478] text-white">
+                                <Briefcase className="h-5 w-5 sm:h-6 sm:w-6" />
                             </div>
                             <div>
-                                <p className="text-[11px] font-bold uppercase tracking-wider text-gray-500">Experience</p>
-                                <p className="text-base font-extrabold text-gray-900">{team.detail.experience}</p>
+                                <p className="text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-gray-500">Experience</p>
+                                <p className="text-sm sm:text-base font-extrabold text-gray-900">{team.detail.experience}</p>
                             </div>
                         </motion.div>
                     </motion.div>
@@ -118,7 +118,7 @@ export default function TeamDetailPage({ team: propTeam }: { team?: Team }) {
                         initial="hidden"
                         whileInView="visible"
                         viewport={{ once: true, amount: 0.2 }}
-                        className="flex flex-col justify-between rounded-[1.5rem] bg-white p-5 sm:p-8 border border-gray-100/90 shadow-xl shadow-gray-100/70 lg:col-span-6">
+                        className="flex flex-col justify-between rounded-2xl sm:rounded-[1.75rem] bg-white p-5 sm:p-8 border border-gray-100/90 shadow-xl shadow-gray-100/70 lg:col-span-6">
                         <div>
                             <motion.h2
                                 initial={{ opacity: 0, y: 15 }}
@@ -166,19 +166,19 @@ export default function TeamDetailPage({ team: propTeam }: { team?: Team }) {
                                     variants={teamDetailItemVariants}
                                     whileHover={{ x: 6 }}
                                     transition={{ type: "spring", stiffness: 350, damping: 20 }}
-                                    className="group/row flex items-center justify-between pb-2.5 border-b border-gray-50 last:border-0"
+                                    className="group/row flex flex-col sm:flex-row sm:items-center justify-between gap-1 sm:gap-2 pb-2.5 border-b border-gray-50 last:border-0"
                                 >
-                                    <div className="flex items-center gap-3 text-gray-900 font-bold">
+                                    <div className="flex items-center gap-3 text-gray-900 font-bold shrink-0">
                                         <motion.div
                                             whileHover={{ scale: 1.15, rotate: 10 }}
-                                            className="flex h-11 w-11 items-center justify-center rounded-full bg-[#EAF2F2] text-[#387478] shadow-sm transition-colors group-hover/row:bg-[#387478] group-hover/row:text-white"
+                                            className="flex h-10 w-10 sm:h-11 sm:w-11 items-center justify-center rounded-full bg-[#EAF2F2] text-[#387478] shadow-sm transition-colors group-hover/row:bg-[#387478] group-hover/row:text-white"
                                         >
-                                            <item.icon className="h-5 w-5" />
+                                            <item.icon className="h-4 w-4 sm:h-5 sm:w-5" />
                                         </motion.div>
                                         <span className="transition-colors group-hover/row:text-[#387478]">{item.label}</span>
                                     </div>
-                                    <span className="text-gray-400 font-semibold px-2">:</span>
-                                    <span className={`text-gray-600 font-semibold transition-colors group-hover/row:text-gray-900 ${item.alignRight ? "text-right" : ""}`}>
+                                    <span className="hidden sm:inline text-gray-400 font-semibold px-2">:</span>
+                                    <span className={`text-gray-600 font-semibold transition-colors group-hover/row:text-gray-900 break-words ${item.alignRight ? "sm:text-right" : ""}`}>
                                         {item.value}
                                     </span>
                                 </motion.div>

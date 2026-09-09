@@ -25,8 +25,35 @@ export default function ServiceDetailPage({ service }: { service: ServiceItem })
     if (!service) return null;
 
     return (
-        <section className="relative overflow-hidden bg-[#FEFDFB] px-4 py-20 sm:px-6 lg:px-12">
-            <div className="mx-auto max-w-[1300px]">
+        <section className="relative overflow-hidden bg-[#FEFDFB] py-16 sm:py-20">
+            {/* Background Decorative Paws */}
+            <motion.div
+                initial={{ opacity: 0, x: -30, rotate: -25 }}
+                whileInView={{ opacity: 0.08, x: 0, rotate: -15 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.9 }}
+                className="pointer-events-none absolute left-6 top-20 hidden text-[#387478] lg:block">
+                <motion.div
+                    animate={{ y: [0, -12, 0], rotate: [-15, -8, -15] }}
+                    transition={{ duration: 4.5, repeat: Infinity, ease: "easeInOut" }}>
+                    <FaPaw className="h-28 w-28" />
+                </motion.div>
+            </motion.div>
+
+            <motion.div
+                initial={{ opacity: 0, x: 30, rotate: 25 }}
+                whileInView={{ opacity: 0.08, x: 0, rotate: 15 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.9, delay: 0.2 }}
+                className="pointer-events-none absolute right-6 top-32 hidden text-[#E67E22] lg:block">
+                <motion.div
+                    animate={{ y: [0, -12, 0], rotate: [15, 8, 15] }}
+                    transition={{ duration: 4.5, repeat: Infinity, ease: "easeInOut" }}>
+                    <FaPaw className="h-24 w-24" />
+                </motion.div>
+            </motion.div>
+
+            <div className="relative z-10 mx-auto max-w-[1355px] px-4 sm:px-4 md:px-6 lg:px-8">
                 <motion.div
                     variants={breadcrumbVariants}
                     initial="hidden"
@@ -55,7 +82,7 @@ export default function ServiceDetailPage({ service }: { service: ServiceItem })
                             viewport={{ once: true, amount: 0.25, }}
                             transition={{ duration: 0.8, ease: "easeOut", }}
                             whileHover={{ y: -4, }}
-                            className="group relative flex min-h-[380px] items-center overflow-hidden rounded-[1.5rem] border border-gray-100 p-8 shadow-xl sm:p-10">
+                            className="group relative flex min-h-[380px] items-center overflow-hidden rounded-2xl sm:rounded-[1.75rem] border border-gray-100 p-6 sm:p-8 lg:p-10 shadow-xl">
 
                             <motion.div
                                 initial={{ scale: 1.08, }}
@@ -84,7 +111,7 @@ export default function ServiceDetailPage({ service }: { service: ServiceItem })
                                     className="inline-flex cursor-default items-center gap-2 rounded-full border border-[#387478]/20 bg-white px-4 py-1.5 shadow-sm">
                                     <motion.div
                                         animate={{ rotate: [0, 10, -10, 0], }}
-                                        transition={{ duration: 2, repeat: Infinity, repeatDelay: 3, }}>
+                                        transition={{ duration: 2, repeat: Infinity, repeatDelay: 3, ease: "easeInOut" }}>
                                         <FaPaw className="h-6 w-6 text-[#387478]" />
                                     </motion.div>
 
@@ -155,7 +182,7 @@ export default function ServiceDetailPage({ service }: { service: ServiceItem })
                                 className="mb-4 flex items-center gap-3">
                                 <motion.div
                                     animate={{ rotate: [0, 10, -10, 0], }}
-                                    transition={{ duration: 2, repeat: Infinity, repeatDelay: 4, }}>
+                                    transition={{ duration: 2, repeat: Infinity, repeatDelay: 4, ease: "easeInOut" }}>
                                     <FaPaw className="h-6 w-6 text-[#387478]" />
                                 </motion.div>
 
@@ -254,7 +281,7 @@ export default function ServiceDetailPage({ service }: { service: ServiceItem })
                             <div className="mb-6 flex items-center gap-3 px-2">
                                 <motion.div
                                     animate={{ rotate: [0, 10, -10, 0], }}
-                                    transition={{ duration: 2, repeat: Infinity, repeatDelay: 4, }}>
+                                    transition={{ duration: 2, repeat: Infinity, repeatDelay: 4, ease: "easeInOut" }}>
                                     <FaPaw className="h-6 w-6 text-[#387478]" />
                                 </motion.div>
 

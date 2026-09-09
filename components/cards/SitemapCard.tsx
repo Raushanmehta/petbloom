@@ -39,30 +39,30 @@ export default function SitemapCard({ category }: SitemapCardProps) {
 
     return (
         <motion.div
-            whileHover={{ y: -8, boxShadow: "0 25px 50px -12px rgba(0, 0, 0, 0.15)" }}
-            transition={{ type: "spring", stiffness: 300, damping: 20 }}
-            className="flex flex-col rounded-[1rem] bg-white p-6 shadow-xl shadow-gray-100 border border-gray-100/90 hover:border-[#387478]/30 transition-all duration-300">
+            whileHover={{ y: -6, scale: 1.01 }}
+            transition={{ duration: 0.25, ease: "easeOut" }}
+            className="flex flex-col rounded-2xl bg-white p-5 sm:p-6 shadow-lg shadow-gray-100/80 border border-gray-100/90 hover:border-[#387478]/40 hover:shadow-xl hover:shadow-[#387478]/5 transition-all duration-300">
             {/* Top Header with Icon and Number Badge */}
-            <div className="flex items-center justify-between pb-4 mb-4 border-b border-gray-100">
-                <div className="flex h-14 w-14 items-center justify-center rounded-full bg-[#EAF2F2] shadow-sm">
-                    {getIcon(category.iconType)}
+            <div className="flex items-center justify-between pb-3.5 sm:pb-4 mb-3.5 sm:mb-4 border-b border-gray-100 gap-2">
+                <div className="flex h-12 w-12 sm:h-13 sm:w-13 shrink-0 items-center justify-center rounded-full bg-[#EAF2F2] shadow-sm">
+                    {getIcon(category?.iconType || "paw")}
                 </div>
-                <div className="rounded-full bg-[#387478] px-3.5 py-1.5 text-[12px] font-bold text-white tracking-wider shadow-sm">
-                    {category.number}
-                </div>
+                <span className="shrink-0 rounded-full bg-[#387478] px-3 py-1 sm:px-3.5 sm:py-1.5 text-[11px] sm:text-xs font-bold text-white tracking-wider shadow-sm">
+                    {category?.number}
+                </span>
             </div>
 
             {/* Sub-links List */}
-            <ul className="space-y-2.5">
-                {category.links.map((link, index) => {
+            <ul className="space-y-1.5 sm:space-y-2">
+                {(category?.links || []).map((link, index) => {
                     return (
                         <li key={index}>
                             <Link
-                                href={link.href}
-                                className="flex items-center gap-2 text-xs sm:text-sm font-semibold text-gray-600 hover:text-[#387478] transition-colors group"
+                                href={link?.href || "#"}
+                                className="flex items-center gap-2 text-xs sm:text-sm font-semibold text-gray-600 hover:text-[#E67E22] transition-colors group py-1"
                             >
-                                <ChevronRight className="h-3.5 w-3.5 text-[#387478] shrink-0 transition-transform group-hover:translate-x-0.5" />
-                                <span className="line-clamp-1">{link.label}</span>
+                                <ChevronRight className="h-3.5 w-3.5 text-[#387478] shrink-0 transition-all duration-200 group-hover:translate-x-1 group-hover:text-[#E67E22]" />
+                                <span className="line-clamp-1 group-hover:translate-x-0.5 transition-transform duration-200">{link?.label}</span>
                             </Link>
                         </li>
                     );

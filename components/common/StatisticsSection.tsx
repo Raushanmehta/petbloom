@@ -5,8 +5,6 @@ import { motion } from "framer-motion";
 import { Lilita_One } from "next/font/google";
 import { StatisticsItem } from "@/types";
 import { statisticsContainerVariants, statisticsItemVariants } from "@/utils/animations";
-
-
 import data from "@/data/data.json";
 
 const lilitaOne = Lilita_One({
@@ -23,17 +21,19 @@ export default function StatisticsSection({
 }: StatisticsSectionProps) {
     return (
         <motion.div
-            initial={{ opacity: 0, y: 50 }}
+            initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className="mt-20 rounded-[1.5rem] bg-[#387478] px-6 py-10 text-white shadow-xl">
+            className="mt-12 sm:mt-16 lg:mt-20 rounded-[1.5rem] sm:rounded-[2rem] bg-[#387478] px-5 py-7 sm:px-8 sm:py-9 lg:px-6 xl:px-8 lg:py-10 text-white shadow-xl"
+        >
             <motion.div
                 variants={statisticsContainerVariants}
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true, amount: 0.2 }}
-                className="grid grid-cols-1 divide-y divide-white/80 gap-8 sm:grid-cols-2 sm:divide-x-2 sm:divide-y-0 lg:grid-cols-4">
+                className="grid grid-cols-1 divide-y divide-white/20 sm:grid-cols-2 sm:divide-y-0 sm:gap-x-8 sm:gap-y-8 lg:grid-cols-4 lg:gap-0 lg:divide-x lg:divide-white/25"
+            >
                 {statisticsData.map((stat, index) => {
                     const iconPath = stat.icon || "/icon/team-icon.png";
 
@@ -41,32 +41,41 @@ export default function StatisticsSection({
                         <motion.div
                             key={stat.id}
                             variants={statisticsItemVariants}
-                            whileHover={{ y: -6, scale: 1.03 }}
+                            whileHover={{ y: -4, scale: 1.02 }}
                             transition={{ duration: 0.25 }}
-                            className="group flex items-center gap-4 pt-6 first:pt-0 sm:px-6 sm:pt-0 first:sm:pl-0 last:sm:pr-0">
+                            className="group flex items-center justify-start sm:justify-start lg:justify-center gap-3.5 sm:gap-4 py-4 first:pt-0 last:pb-0 sm:py-0 sm:px-2 md:px-4 lg:px-5 xl:px-6"
+                        >
                             {/* Icon */}
                             <motion.div
                                 initial={{ scale: 0, rotate: -30 }}
                                 whileInView={{ scale: 1, rotate: 0 }}
                                 viewport={{ once: true }}
-                                transition={{ type: "spring", stiffness: 220, damping: 15, delay: index * 0.12 }}
+                                transition={{ type: "spring", stiffness: 220, damping: 15, delay: index * 0.1 }}
                                 whileHover={{ rotate: 8, scale: 1.1 }}
-                                className="flex h-14 w-14 shrink-0 items-center justify-center  backdrop-blur-md">
-                                <Image src={iconPath} alt={stat.label} width={55} height={55} className="text-white" />
+                                className="flex h-12 w-12 sm:h-14 sm:w-14 shrink-0 items-center justify-center"
+                            >
+                                <Image
+                                    src={iconPath}
+                                    alt={stat.label}
+                                    width={48}
+                                    height={48}
+                                    className="w-10 h-10 sm:w-12 sm:h-12 object-contain"
+                                />
                             </motion.div>
 
                             {/* Text */}
                             <div>
                                 <motion.h3
-                                    initial={{ opacity: 0, y: 15 }}
+                                    initial={{ opacity: 0, y: 12 }}
                                     whileInView={{ opacity: 1, y: 0 }}
                                     viewport={{ once: true }}
-                                    transition={{ duration: 0.5, delay: index * 0.1 + 0.2 }}
-                                    className={`${lilitaOne.className} text-3xl tracking-wide sm:text-4xl`} >
+                                    transition={{ duration: 0.5, delay: index * 0.1 + 0.15 }}
+                                    className={`${lilitaOne.className} text-2xl sm:text-3xl lg:text-4xl tracking-wide leading-tight`}
+                                >
                                     {stat.count}
                                 </motion.h3>
 
-                                <p className="mt-1 text-sm font-medium text-white /80">
+                                <p className="mt-0.5 sm:mt-1 text-xs sm:text-sm font-medium text-white/85 leading-snug max-w-[150px] sm:max-w-[160px]">
                                     {stat.label}
                                 </p>
                             </div>
@@ -74,7 +83,6 @@ export default function StatisticsSection({
                     );
                 })}
             </motion.div>
-        </motion.div >
+        </motion.div>
     );
 }
-

@@ -26,7 +26,7 @@ export default function TeamCard({
                 className="relative flex flex-col items-center rounded-3xl border border-gray-100/80 bg-white p-2 shadow-xl shadow-gray-100/60 transition-shadow duration-300 hover:shadow-2xl cursor-pointer"
             >
                 {/* Image Container */}
-                <div className="relative h-[320px] w-full overflow-hidden rounded-2xl bg-gray-100">
+                <div className="relative h-[270px] sm:h-[300px] md:h-[320px] w-full overflow-hidden rounded-2xl bg-gray-100">
                     <Image
                         src={team.image}
                         alt={team.name}

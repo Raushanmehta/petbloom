@@ -52,7 +52,7 @@ export default function LocationDetailPage({ location: propLocation }: LocationD
     const allLocations = locationsData.locations;
 
     return (
-        <section className="relative overflow-hidden bg-[#FEFDFB] px-4 py-20 sm:px-6 lg:px-12">
+        <section className="relative overflow-hidden bg-[#FEFDFB] py-16 sm:py-20">
             {/* Background Decorative Paws */}
             <motion.div
                 initial={{ opacity: 0, x: -30, rotate: -25 }}
@@ -80,7 +80,7 @@ export default function LocationDetailPage({ location: propLocation }: LocationD
                 </motion.div>
             </motion.div>
 
-            <div className="relative z-10 mx-auto max-w-[1300px]">
+            <div className="relative z-10 mx-auto max-w-[1355px] px-4 sm:px-4 md:px-6 lg:px-8">
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
                     <div className="lg:col-span-8 space-y-8">
 
@@ -113,8 +113,8 @@ export default function LocationDetailPage({ location: propLocation }: LocationD
                                 <div className="md:col-span-7 space-y-4 p-6 sm:p-8">
                                     <h1 className={`${lilitaOne.className} text-3xl sm:text-5xl tracking-wide text-gray-900 leading-tight`}>
                                         {detail.title} <br />
-                                        <span className="inline-flex items-center gap-2 text-[#E67E22] whitespace-nowrap">
-                                            {detail.titleHighlight}
+                                        <span className="inline-flex flex-wrap items-center gap-2 text-[#E67E22]">
+                                            <span>{detail.titleHighlight}</span>
                                             <motion.span
                                                 animate={{ y: [0, -4, 0] }}
                                                 transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
@@ -122,7 +122,7 @@ export default function LocationDetailPage({ location: propLocation }: LocationD
                                             >
                                                 <DynamicLocationIcon
                                                     name={detail.titleIcon || "MapPin"}
-                                                    className="h-7 w-7 sm:h-10 sm:w-10 text-[#387478] shrink-0"
+                                                    className="h-7 w-7 sm:h-9 sm:w-9 text-[#387478] shrink-0"
                                                 />
                                             </motion.span>
                                         </span>

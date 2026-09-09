@@ -22,17 +22,17 @@ export default function BlogDetailPage({ blog }: BlogDetailPageProps = {}) {
     const defaultBlog = (allData.blogData.blogs[0] as unknown) as BlogPost;
     const blogDetailData = blog || defaultBlog;
     return (
-        <section className="relative overflow-hidden bg-[#FEFDFB] px-4 py-20 sm:px-6 lg:px-12">
+        <section className="relative overflow-hidden bg-[#FEFDFB] py-16 sm:py-20">
             <motion.div
                 initial={{ opacity: 0, x: -30, rotate: -25 }}
                 whileInView={{ opacity: 0.1, x: 0, rotate: -15 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.9 }}
-                className="absolute left-10 top-12 hidden text-[#E67E22] lg:block">
+                className="pointer-events-none absolute left-6 top-12 hidden text-[#E67E22] lg:block">
                 <motion.div
                     animate={{ y: [0, -8, 0], rotate: [-15, -8, -15] }}
-                    transition={{ duration: 4, repeat: Infinity, ease: "easeInOut", }}>
-                    <FaPaw className="h-24 w-24" />
+                    transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}>
+                    <FaPaw className="h-20 w-20 xl:h-24 xl:w-24" />
                 </motion.div>
             </motion.div>
 
@@ -41,14 +41,15 @@ export default function BlogDetailPage({ blog }: BlogDetailPageProps = {}) {
                 whileInView={{ opacity: 0.1, x: 0, rotate: 15 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.9, delay: 0.15 }}
-                className="absolute right-10 top-12 hidden text-[#E67E22] lg:block">
+                className="pointer-events-none absolute right-6 top-12 hidden text-[#E67E22] lg:block">
                 <motion.div
                     animate={{ y: [0, -8, 0], rotate: [15, 8, 15] }}
-                    transition={{ duration: 4, repeat: Infinity, ease: "easeInOut", }}>
-                    <FaPaw className="h-24 w-24" />
+                    transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}>
+                    <FaPaw className="h-20 w-20 xl:h-24 xl:w-24" />
                 </motion.div>
             </motion.div>
-            <div className="relative z-10 mx-auto max-w-[1300px]">
+
+            <div className="relative z-10 mx-auto max-w-[1355px] px-4 sm:px-4 md:px-6 lg:px-8">
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
                     {/* Left Hero Image */}
                     <motion.div
@@ -56,7 +57,7 @@ export default function BlogDetailPage({ blog }: BlogDetailPageProps = {}) {
                         initial="hidden"
                         whileInView="visible"
                         viewport={{ once: true }}
-                        className="lg:col-span-6 relative h-[320px] sm:h-[480px] w-full overflow-hidden rounded-[1.5rem]">
+                        className="lg:col-span-6 relative h-[280px] sm:h-[400px] lg:h-[480px] w-full overflow-hidden rounded-2xl sm:rounded-[1.75rem]">
                         <Image
                             src={blogDetailData.heroImage || blogDetailData.image || ""}
                             alt={blogDetailData.title}
@@ -195,15 +196,15 @@ export default function BlogDetailPage({ blog }: BlogDetailPageProps = {}) {
                                         {sec.bullets && (
                                             <ul className="space-y-2 pt-1">
                                                 {sec.bullets.map((bullet, bIdx) => (
-                                                    <li key={bIdx} className="flex items-start gap-2 text-md sm:text-md font-medium text-gray-600">
-                                                        <CheckCircle2 className="h-6 w-6 text-[#387478] shrink-0 mt-0.5" />
+                                                    <li key={bIdx} className="flex items-start gap-2.5 text-sm sm:text-base font-medium text-gray-600">
+                                                        <CheckCircle2 className="h-5 w-5 text-[#387478] shrink-0 mt-0.5" />
                                                         <span>{bullet}</span>
                                                     </li>
                                                 ))}
                                             </ul>
                                         )}
                                     </div>
-                                    <div className="lg:col-span-4 relative h-[220px] w-full overflow-hidden rounded-2xl shadow-md ">
+                                    <div className="lg:col-span-4 relative h-[220px] w-full overflow-hidden rounded-2xl shadow-md">
                                         <Image src={sec.image!} alt={sec.title} fill className="object-cover" />
                                     </div>
                                 </div>
@@ -211,14 +212,14 @@ export default function BlogDetailPage({ blog }: BlogDetailPageProps = {}) {
 
                             {sec.imagePosition === "bottom-banner" && (
                                 <div className="space-y-4">
-                                    <p className="text-md sm:text-md font-medium text-gray-600 leading-relaxed">
+                                    <p className="text-sm sm:text-base font-medium text-gray-600 leading-relaxed">
                                         {sec.content}
                                     </p>
                                     {sec.bullets && (
                                         <ul className="space-y-2">
                                             {sec.bullets.map((bullet, bIdx) => (
-                                                <li key={bIdx} className="flex items-start gap-2 text-md sm:text-md font-medium text-gray-600">
-                                                    <CheckCircle2 className="h-6 w-6 text-[#387478] shrink-0 mt-0.5" />
+                                                <li key={bIdx} className="flex items-start gap-2.5 text-sm sm:text-base font-medium text-gray-600">
+                                                    <CheckCircle2 className="h-5 w-5 text-[#387478] shrink-0 mt-0.5" />
                                                     <span>{bullet}</span>
                                                 </li>
                                             ))}

@@ -19,9 +19,9 @@ export default function BlogCard({ blog }: BlogCardProps) {
                 variants={cardVariant}
                 whileHover={{ y: -6, scale: 1.01, }}
                 transition={{ duration: 0.3, ease: "easeOut", }}
-                className="group flex h-full cursor-pointer flex-col items-center gap-6 rounded-[1rem] border border-gray-100/90 bg-white p-2 shadow-lg shadow-gray-100 sm:flex-row">
+                className="group flex h-full cursor-pointer flex-col items-center gap-4 sm:gap-6 rounded-[1rem] border border-gray-100/90 bg-white p-2.5 shadow-lg shadow-gray-100 sm:flex-row">
 
-                <div className="relative h-[180px] min-h-[180px] w-full shrink-0 overflow-hidden rounded-2xl shadow-sm sm:h-[180px] sm:w-[200px]">
+                <div className="relative h-[160px] sm:h-[180px] w-full shrink-0 overflow-hidden rounded-2xl shadow-sm sm:w-[170px] md:w-[190px] xl:w-[200px]">
                     <Image
                         src={blog.image || blog.heroImage || ""}
                         alt={blog.title}

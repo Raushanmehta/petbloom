@@ -5,44 +5,43 @@ import { motion } from "framer-motion";
 import { Lilita_One } from "next/font/google";
 import { ServicesDataWrapper } from "@/types";
 import ServiceCard from "@/components/cards/ServiceCard";
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious, } from "@/components/ui/carousel";
-import { IoIosArrowRoundBack, IoIosArrowRoundForward, } from "react-icons/io";
-import { headerContainer, fadeUp, cardsContainer, cardVariant, } from "@/utils/animations";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
+import { IoIosArrowRoundBack, IoIosArrowRoundForward } from "react-icons/io";
+import { headerContainer, fadeUp, cardsContainer, cardVariant } from "@/utils/animations";
 import { FaPaw } from "react-icons/fa";
-
 
 const lilitaOne = Lilita_One({
     subsets: ["latin"],
     weight: "400",
 });
 
-
 const { servicesData } = data as { servicesData: ServicesDataWrapper };
 
 export default function ServicesSection() {
     return (
-        <section className="relative overflow-hidden bg-[#FCF7F3] px-4 py-20 sm:px-6 lg:px-12">
-            <div className="mx-auto max-w-[1300px]">
+        <section className="relative overflow-hidden bg-[#FCF7F3] py-16 sm:py-20">
+            <div className="mx-auto max-w-[1355px] px-4 sm:px-4 md:px-6 lg:px-8">
                 <motion.div
                     variants={headerContainer}
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true, amount: 0.2 }}
-                    className="mb-12 flex flex-col justify-between gap-6 md:flex-row md:items-end"
+                    className="mb-8 sm:mb-12 flex flex-col justify-between gap-4 md:flex-row md:items-end"
                 >
                     {/* Left Content */}
                     <div className="max-w-2xl">
-
                         {/* Top Badge */}
                         <motion.div
                             variants={fadeUp}
-                            whileHover={{ scale: 1.05, y: -2, }}
-                            className="mb-4 inline-flex items-center rounded-full border border-[#E67E22]/40 bg-white/80 px-4 py-1.5 shadow-sm backdrop-blur-md">
+                            whileHover={{ scale: 1.05, y: -2 }}
+                            className="mb-3 sm:mb-4 inline-flex items-center rounded-full border border-[#E67E22]/40 bg-white/80 px-4 py-1.5 shadow-sm backdrop-blur-md"
+                        >
                             <span className="text-xs flex gap-2 items-center font-bold uppercase tracking-wider text-[#E67E22]">
                                 <motion.div
-                                    animate={{ rotate: [0, 10, -10, 0], }}
-                                    transition={{ duration: 2, repeat: Infinity, repeatDelay: 3, }}>
-                                    <FaPaw className="h-6 w-6 text-[#E67E22]" />
+                                    animate={{ rotate: [0, 10, -10, 0] }}
+                                    transition={{ duration: 2, repeat: Infinity, repeatDelay: 3, ease: "easeInOut" }}
+                                >
+                                    <FaPaw className="h-5 w-5 sm:h-6 sm:w-6 text-[#E67E22]" />
                                 </motion.div>
                                 {servicesData.sectionData.badgeText}
                             </span>
@@ -51,7 +50,7 @@ export default function ServicesSection() {
                         {/* Main Title */}
                         <motion.h2
                             variants={fadeUp}
-                            className={`${lilitaOne.className} text-4xl leading-[1.15] tracking-wide text-gray-900 sm:text-5xl lg:text-6xl`}
+                            className={`${lilitaOne.className} text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-[1.15] tracking-wide text-gray-900`}
                         >
                             {servicesData.sectionData.titleBlack}
                         </motion.h2>
@@ -59,13 +58,12 @@ export default function ServicesSection() {
                         {/* Description */}
                         <motion.p
                             variants={fadeUp}
-                            className="mt-4 text-base font-medium text-gray-600 sm:text-lg"
+                            className="mt-3 sm:mt-4 text-sm sm:text-base font-medium text-gray-600 md:text-lg"
                         >
                             {servicesData.sectionData.description}
                         </motion.p>
                     </div>
                 </motion.div>
-
 
                 <motion.div
                     variants={cardsContainer}
@@ -74,24 +72,25 @@ export default function ServicesSection() {
                     viewport={{ once: true, amount: 0.1 }}
                 >
                     <Carousel
-                        opts={{ align: "start", loop: true, }}
+                        opts={{ align: "start", loop: true }}
                         className="relative w-full"
                     >
                         {/* Navigation Buttons */}
                         <motion.div
-                            initial={{ opacity: 0, x: 30 }}
+                            initial={{ opacity: 0, x: 20 }}
                             whileInView={{ opacity: 1, x: 0 }}
                             viewport={{ once: true }}
-                            transition={{ duration: 0.6, delay: 0.3, }}
-                            className="relative mb-6 flex justify-end gap-3 md:absolute md:-top-24 md:right-0 md:z-10">
+                            transition={{ duration: 0.6, delay: 0.2 }}
+                            className="relative mb-4 flex justify-end gap-2.5 sm:gap-3 md:absolute md:-top-24 md:right-0 md:z-10"
+                        >
                             {/* Previous */}
-                            <CarouselPrevious className="static h-12 w-12 translate-y-0 rounded-full border-2 border-gray-300 bg-transparent text-gray-900 hover:border-black hover:bg-black hover:text-white transition-all duration-300">
-                                <IoIosArrowRoundBack className="h-7 w-7" />
+                            <CarouselPrevious className="static h-10 w-10 sm:h-12 sm:w-12 translate-y-0 rounded-full border-2 border-gray-300 bg-white/80 sm:bg-transparent text-gray-900 hover:border-black hover:bg-black hover:text-white transition-all duration-300 shadow-sm">
+                                <IoIosArrowRoundBack className="h-6 w-6 sm:h-7 sm:w-7" />
                             </CarouselPrevious>
 
                             {/* Next */}
-                            <CarouselNext className="static h-12 w-12 translate-y-0 rounded-full border-2 border-gray-300 bg-transparent text-gray-900 hover:border-black hover:bg-black hover:text-white transition-all duration-300">
-                                <IoIosArrowRoundForward className="h-7 w-7" />
+                            <CarouselNext className="static h-10 w-10 sm:h-12 sm:w-12 translate-y-0 rounded-full border-2 border-gray-300 bg-white/80 sm:bg-transparent text-gray-900 hover:border-black hover:bg-black hover:text-white transition-all duration-300 shadow-sm">
+                                <IoIosArrowRoundForward className="h-6 w-6 sm:h-7 sm:w-7" />
                             </CarouselNext>
                         </motion.div>
 
@@ -100,7 +99,7 @@ export default function ServicesSection() {
                             {servicesData.services.map((service, index) => (
                                 <CarouselItem
                                     key={`${service.id}-${index}`}
-                                    className="pl-4 md:basis-1/2 lg:basis-1/4"
+                                    className="pl-4 basis-full sm:basis-1/2 lg:basis-1/3 xl:basis-1/4"
                                 >
                                     <motion.div variants={cardVariant}>
                                         <ServiceCard service={service} />

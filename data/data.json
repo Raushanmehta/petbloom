@@ -2534,7 +2534,7 @@
       "icon": "/icon/award-icon.png"
     }
   ],
-  "heroSectionData": {
+  "heroData": {
     "slides": [
       {
         "id": 1,
@@ -2567,7 +2567,7 @@
     ],
     "button1": {
       "label": "Make an Appointment",
-      "href": "/book-appointment"
+      "href": "/appointment"
     },
     "button2": {
       "label": "Browse all Services",
@@ -2762,120 +2762,6 @@
       "bgAccent": "bg-[#FDF6F0]"
     }
   },
-  "footerData": {
-    "quickLinks": [
-      {
-        "label": "Home",
-        "href": "/"
-      },
-      {
-        "label": "About Us",
-        "href": "/about"
-      },
-      {
-        "label": "Our Services",
-        "href": "/services"
-      },
-      {
-        "label": "Our Team",
-        "href": "/team"
-      },
-      {
-        "label": "Service Areas",
-        "href": "/locations"
-      },
-      {
-        "label": "Gallery",
-        "href": "/gallery"
-      },
-      {
-        "label": "Blog",
-        "href": "/blog"
-      },
-      {
-        "label": "Why Choose Us",
-        "href": "/why-choose-us"
-      }
-    ],
-    "serviceLinks": [
-      {
-        "label": "Pet Grooming",
-        "href": "/services/pet-grooming"
-      },
-      {
-        "label": "Pet Bath & Spa",
-        "href": "/services/pet-bath-spa"
-      },
-      {
-        "label": "Haircuts & Styling",
-        "href": "/services/haircuts-styling"
-      },
-      {
-        "label": "Nail Trimming",
-        "href": "/services/nail-trimming"
-      },
-      {
-        "label": "Ear Cleaning",
-        "href": "/services/ear-cleaning"
-      },
-      {
-        "label": "De-shedding",
-        "href": "/services/de-shedding"
-      },
-      {
-        "label": "Pet Day Care",
-        "href": "/services/pet-day-care"
-      },
-      {
-        "label": "Pet Care Products",
-        "href": "/products"
-      }
-    ],
-    "resourceLinks": [
-      {
-        "label": "FAQs",
-        "href": "/faqs"
-      },
-      {
-        "label": "Disclaimer",
-        "href": "/disclaimer"
-      },
-      {
-        "label": "Cookie Policy",
-        "href": "/cookie-policy"
-      },
-      {
-        "label": "Privacy Policy",
-        "href": "/privacy-policy"
-      },
-      {
-        "label": "Terms & Conditions",
-        "href": "/terms-conditions"
-      },
-      {
-        "label": "Sitemap",
-        "href": "/sitemap"
-      }
-    ],
-    "supportLinks": [
-      {
-        "label": "Help Center",
-        "href": "/help"
-      },
-      {
-        "label": "Contact Us",
-        "href": "/contact-us"
-      },
-      {
-        "label": "Appointments",
-        "href": "/appointment"
-      },
-      {
-        "label": "Testimonials",
-        "href": "/testimonials"
-      }
-    ]
-  },
   "contactData": {
     "pageData": {
       "badgeText": "Contact Us",
@@ -2966,8 +2852,8 @@
       ]
     },
     "illustrationImage": {
-      "src": "https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&q=80&w=600",
-      "alt": "Cute pets together"
+      "src": "/images/cat-and-dog.png",
+      "alt": "Cute cat and dog"
     },
     "form": {
       "titleWhite": "Book An ",
@@ -3013,5 +2899,123 @@
       "privacyNotice": "We respect your privacy. Your information is safe with us.",
       "successMessage": "Quote request submitted successfully!"
     }
+  },
+  "footerData": {
+    "quickLinks": [
+      {
+        "label": "Home",
+        "href": "/"
+      },
+      {
+        "label": "About Us",
+        "href": "/about"
+      },
+      {
+        "label": "Our Services",
+        "href": "/services"
+      },
+      {
+        "label": "Our Team",
+        "href": "/team"
+      },
+      {
+        "label": "Service Areas",
+        "href": "/locations"
+      },
+      {
+        "label": "Gallery",
+        "href": "/gallery"
+      },
+      {
+        "label": "Why Choose Us",
+        "href": "/why-choose-us"
+      },
+      {
+        "label": "Mission & Vision",
+        "href": "/mission-vision"
+      }
+    ],
+    "serviceLinks": [
+      {
+        "label": "Full Grooming",
+        "href": "/services/full-grooming"
+      },
+      {
+        "label": "Pet Boarding",
+        "href": "/services/pet-boarding"
+      },
+      {
+        "label": "Pet Daycare",
+        "href": "/services/pet-daycare"
+      },
+      {
+        "label": "Bath & Spa",
+        "href": "/services/bath-spa"
+      },
+      {
+        "label": "Dog Walking",
+        "href": "/services/dog-walking"
+      },
+      {
+        "label": "Cat Grooming",
+        "href": "/services/cat-grooming"
+      },
+      {
+        "label": "Pet Training",
+        "href": "/services/pet-training"
+      },
+      {
+        "label": "Pet Taxi",
+        "href": "/services/pet-taxi"
+      }
+    ],
+    "resourceLinks": [
+      {
+        "label": "FAQs",
+        "href": "/faqs"
+      },
+      {
+        "label": "Pricing",
+        "href": "/pricing"
+      },
+      {
+        "label": "Disclaimer",
+        "href": "/disclaimer"
+      },
+      {
+        "label": "Cookie Policy",
+        "href": "/cookie-policy"
+      },
+      {
+        "label": "Privacy Policy",
+        "href": "/privacy-policy"
+      },
+      {
+        "label": "Terms & Conditions",
+        "href": "/terms-conditions"
+      },
+      {
+        "label": "Sitemap",
+        "href": "/sitemap"
+      }
+    ],
+    "supportLinks": [
+      {
+        "label": "Partners",
+        "href": "/partners"
+      },
+      {
+        "label": "Contact Us",
+        "href": "/contact-us"
+      },
+      {
+        "label": "Appointments",
+        "href": "/appointment"
+      },
+      {
+        "label": "Testimonials",
+        "href": "/testimonials"
+      }
+    ]
   }
 }

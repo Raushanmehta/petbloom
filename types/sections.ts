@@ -18,7 +18,7 @@ export interface StatisticsItem {
     icon?: string;
 }
 
-// HERO SECTION TYPES
+// HERO  TYPES
 export interface HeroSlide {
     id: number;
     titleWhite: string;
@@ -27,7 +27,7 @@ export interface HeroSlide {
     image: string;
 }
 
-export interface HeroSectionData {
+export interface HeroData {
     slides: HeroSlide[];
     button1: { label: string; href: string };
     button2: { label: string; href: string };
@@ -471,39 +471,46 @@ export interface SitemapCategory {
 }
 
 export interface SitemapData {
-    pageData: SectionHeaderData;
+    pageData: {
+        title?: string;
+        subTitle?: string;
+        badgeText?: string;
+        titleWhite?: string;
+        titleColored?: string;
+        description?: string;
+    };
     categories: SitemapCategory[];
 }
 export interface BlogDetailSection {
-  id: string;
-  number: string;
-  title: string;
-  content: string;
-  subheading?: string;
-  bullets?: string[];
-  footerNote?: string;
-  quote?: { text: string; author: string };
-  image?: string;
-  images?: string[];
-  imagePosition: 'right' | 'bottom-banner' | 'split-right' | 'full-bottom-image';
+    id: string;
+    number: string;
+    title: string;
+    content: string;
+    subheading?: string;
+    bullets?: string[];
+    footerNote?: string;
+    quote?: { text: string; author: string };
+    image?: string;
+    images?: string[];
+    imagePosition: 'right' | 'bottom-banner' | 'split-right' | 'full-bottom-image';
 }
 
 export interface BlogDetailData {
-  title: string;
-  category: string;
-  author: string;
-  date: string;
-  readTime: string;
-  heroImage: string;
-  introText: string;
-  sections: BlogDetailSection[];
+    title: string;
+    category: string;
+    author: string;
+    date: string;
+    readTime: string;
+    heroImage: string;
+    introText: string;
+    sections: BlogDetailSection[];
 }
 
 export interface BlogDataWrapper {
-  pageData: SectionHeaderData;
-  sectionData: SectionHeaderData;
-  blogs: BlogPost[];
-  blogDetailData?: BlogDetailData;
+    pageData: SectionHeaderData;
+    sectionData: SectionHeaderData;
+    blogs: BlogPost[];
+    blogDetailData?: BlogDetailData;
 }
 
 // CONTACT SECTION TYPES
