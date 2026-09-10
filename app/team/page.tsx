@@ -1,20 +1,19 @@
 "use client";
 
-import data from "@/data/data.json";
+import { site } from "@/data";
 import PageTopSection from "@/components/common/PageTopSection";
 import { motion } from "framer-motion";
 import { FaPaw } from "react-icons/fa";
 import { Lilita_One } from "next/font/google";
 import { containerVariants, fadeUpVariants, teamCardsContainerVariants } from "@/utils/animations";
 import TeamCard from "@/components/cards/TeamCard";
-import { TeamDataWrapper } from "@/types";
 
 const lilitaOne = Lilita_One({
     subsets: ["latin"],
     weight: "400",
 });
 
-const { teamData } = data as { teamData: TeamDataWrapper };
+const teamData = site.team;
 
 export default function TeamPage() {
     return (

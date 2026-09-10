@@ -6,13 +6,9 @@ import { Lilita_One } from "next/font/google";
 import { blogSideContainerVariants, containerVariants, fadeUpVariants } from "@/utils/animations";
 import PageTopSection from "@/components/common/PageTopSection";
 import BlogCard from "@/components/cards/BlogCard";
-import allData from "@/data/data.json";
-import { BlogPost, SectionHeaderData } from "@/types/sections";
+import { site } from "@/data";
 
-const { pageData, blogs } = (allData.blogData as unknown as {
-    pageData: SectionHeaderData;
-    blogs: BlogPost[];
-}) || {
+const { pageData, blogs } = site.blog || {
     pageData: {
         badgeText: "Our Blog",
         titleWhite: "Latest News &",

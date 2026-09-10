@@ -4,7 +4,7 @@ import { CheckCircle2 } from "lucide-react";
 import { FaPaw } from "react-icons/fa";
 import { Lilita_One } from "next/font/google";
 import { pricingCardVariants, pricingFeatureContainer, pricingFeatureVariants } from "@/utils/animations";
-import { PricingPackage } from "@/types/sections";
+import { PricingPackage } from "@/data";
 
 const lilitaOne = Lilita_One({
     subsets: ["latin"],

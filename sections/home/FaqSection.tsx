@@ -7,20 +7,19 @@ import { Plus, Minus } from "lucide-react";
 import { FaPaw } from "react-icons/fa";
 import { Lilita_One } from "next/font/google";
 import { faqHeaderContainerVariants as headerContainerVariants, faqFadeUpVariants as fadeUpVariants, faqContainerVariants, faqItemVariants, faqAnswerVariants as answerVariants } from "@/utils/animations";
-import { FaqDataWrapper } from "@/types/sections";
-import data from "@/data/data.json";
+import { site, PetBloomFaqsPageData, SectionProps } from "@/data";
 
 const lilitaOne = Lilita_One({
     subsets: ["latin"],
     weight: "400",
 });
 
-interface FaqSectionProps {
+export interface FaqSectionProps extends SectionProps<PetBloomFaqsPageData> {
     isPage?: boolean;
 }
 
-export default function FaqSection({ isPage = false }: FaqSectionProps) {
-    const rawFaq = (data as unknown as { faqData: FaqDataWrapper })?.faqData;
+export default function FaqSection({ data, className, isPage = false }: FaqSectionProps = {}) {
+    const rawFaq = data || site.faqsPage;
     const headerData = (isPage ? rawFaq?.pageData : rawFaq?.sectionData) || {
         badgeText: "FAQS",
         titleWhite: "Frequently Asked ",
@@ -36,7 +35,7 @@ export default function FaqSection({ isPage = false }: FaqSectionProps) {
     };
 
     return (
-        <section className="relative overflow-hidden bg-[#FEFDFB] py-16 sm:py-20">
+        <section className={`relative overflow-hidden bg-[#FEFDFB] py-16 sm:py-20 ${className || ""}`}>
             <motion.div
                 initial={{ opacity: 0, scale: 0.5, rotate: -30 }}
                 whileInView={{ opacity: 0.08, scale: 1, rotate: -15 }}

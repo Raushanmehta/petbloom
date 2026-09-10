@@ -4,17 +4,23 @@ import { columnVariants } from "@/utils/animations";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { FaPaw } from "react-icons/fa";
-import { LegalDataWrapper } from "@/types/sections";
+import { site, PetBloomLegalPageData, SectionProps } from "@/data";
 
-interface LegalSectionProps {
-    data: LegalDataWrapper;
-}
+export type LegalSectionData = {
+    policies?: { id: string; number: string; title: string; content: string }[];
+    contactEmail?: string;
+    contactPhoneDisplay?: string;
+    contactPhoneValue?: string;
+} | PetBloomLegalPageData;
 
-export default function LegalSection({ data }: LegalSectionProps) {
-    const policies = data?.policies || [];
+export interface LegalSectionProps extends SectionProps<LegalSectionData> {}
+
+export default function LegalSection({ data, className }: LegalSectionProps = {}) {
+    const legal = data || site.legalPage;
+    const policies = legal?.policies || [];
 
     return (
-        <div className="w-full">
+        <div className={`w-full ${className || ""}`}>
             <div className="space-y-6 sm:space-y-8 mx-auto max-w-[1355px]">
                 {policies.map((policy) => (
                     <motion.div
@@ -46,15 +52,15 @@ export default function LegalSection({ data }: LegalSectionProps) {
                     If you have any questions about this policy, feel free to contact us at
                 </p>
                 <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-3 text-xs sm:text-sm md:text-base font-bold text-[#387478]">
-                    {data?.contactEmail && (
-                        <Link href={`mailto:${data.contactEmail}`} className="hover:underline break-all sm:break-normal">
-                            {data.contactEmail}
+                    {legal?.contactEmail && (
+                        <Link href={`mailto:${legal.contactEmail}`} className="hover:underline break-all sm:break-normal">
+                            {legal.contactEmail}
                         </Link>
                     )}
-                    {data?.contactEmail && data?.contactPhoneValue && <span>or</span>}
-                    {data?.contactPhoneValue && (
-                        <Link href={`tel:${data.contactPhoneValue}`} className="hover:underline inline-flex items-center gap-1.5">
-                            {data.contactPhoneDisplay} <FaPaw className="h-3 w-3 sm:h-3.5 sm:w-3.5 text-[#E67E22]" />
+                    {legal?.contactEmail && legal?.contactPhoneValue && <span>or</span>}
+                    {legal?.contactPhoneValue && (
+                        <Link href={`tel:${legal.contactPhoneValue}`} className="hover:underline inline-flex items-center gap-1.5">
+                            {legal.contactPhoneDisplay} <FaPaw className="h-3 w-3 sm:h-3.5 sm:w-3.5 text-[#E67E22]" />
                         </Link>
                     )}
                 </div>

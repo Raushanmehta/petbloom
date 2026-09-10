@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
-import { ServiceItem } from "@/types";
+import { ServiceItem } from "@/data";
 
 interface ServiceCardProps {
     service: ServiceItem;

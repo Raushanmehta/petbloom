@@ -1,25 +1,26 @@
 "use client";
 
-import data from "@/data/data.json";
+import { site, PetBloomServicesData, SectionProps } from "@/data";
 import { motion } from "framer-motion";
-import { Lilita_One } from "next/font/google";
-import { ServicesDataWrapper } from "@/types";
 import ServiceCard from "@/components/cards/ServiceCard";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { IoIosArrowRoundBack, IoIosArrowRoundForward } from "react-icons/io";
 import { headerContainer, fadeUp, cardsContainer, cardVariant } from "@/utils/animations";
 import { FaPaw } from "react-icons/fa";
+import { Lilita_One } from "next/font/google";
 
 const lilitaOne = Lilita_One({
     subsets: ["latin"],
     weight: "400",
 });
 
-const { servicesData } = data as { servicesData: ServicesDataWrapper };
+export interface ServicesSectionProps extends SectionProps<PetBloomServicesData> {}
 
-export default function ServicesSection() {
+export default function ServicesSection({ data, className }: ServicesSectionProps = {}) {
+    const servicesData = data || site.services;
+
     return (
-        <section className="relative overflow-hidden bg-[#FCF7F3] py-16 sm:py-20">
+        <section className={`relative overflow-hidden bg-[#FCF7F3] py-16 sm:py-20 ${className || ""}`}>
             <div className="mx-auto max-w-[1355px] px-4 sm:px-4 md:px-6 lg:px-8">
                 <motion.div
                     variants={headerContainer}

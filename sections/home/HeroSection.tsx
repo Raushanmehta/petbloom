@@ -2,11 +2,10 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import data from "@/data/data.json";
 import * as React from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Lilita_One } from "next/font/google";
-import { HeroData } from "@/types";
+import { site, PetBloomHeroData, SectionProps } from "@/data";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious, type CarouselApi } from "@/components/ui/carousel";
 
 const lilitaOne = Lilita_One({
@@ -15,10 +14,11 @@ const lilitaOne = Lilita_One({
     display: "swap",
 });
 
-const { heroData } = data as { heroData: HeroData };
-const slides = heroData.slides;
+export interface HeroSectionProps extends SectionProps<PetBloomHeroData> {}
 
-export default function HeroSection() {
+export default function HeroSection({ data, className }: HeroSectionProps = {}) {
+    const hero = data || site.hero;
+    const slides = hero.slides;
     const [api, setApi] = React.useState<CarouselApi>();
     const [currentSlide, setCurrentSlide] = React.useState(0);
 
@@ -39,7 +39,7 @@ export default function HeroSection() {
     }, [api]);
 
     return (
-        <div className="relative w-full overflow-hidden bg-[#F2EDE9] p-4 sm:p-4 md:p-6 lg:p-6">
+        <div className={`relative w-full overflow-hidden bg-[#F2EDE9] p-4 sm:p-4 md:p-6 lg:p-6 ${className || ""}`}>
             <Carousel
                 setApi={setApi}
                 className="relative w-full"
@@ -130,10 +130,10 @@ export default function HeroSection() {
                                                         className="w-full sm:w-auto"
                                                     >
                                                         <Link
-                                                            href={heroData.button1.href}
+                                                            href={hero.button1.href}
                                                             className="block w-full rounded-full border border-white/10 bg-black/85 px-6 py-3 text-center text-sm font-semibold text-white shadow-xl transition-all duration-300 hover:bg-black sm:w-auto sm:px-8 sm:py-4 sm:text-base"
                                                         >
-                                                            {heroData.button1.label}
+                                                            {hero.button1.label}
                                                         </Link>
                                                     </motion.div>
 
@@ -143,10 +143,10 @@ export default function HeroSection() {
                                                         className="w-full sm:w-auto"
                                                     >
                                                         <Link
-                                                            href={heroData.button2.href}
+                                                            href={hero.button2.href}
                                                             className="block w-full rounded-full border border-white/40 bg-transparent px-6 py-3 text-center text-sm font-medium text-white transition-all duration-300 hover:bg-white/10 sm:w-auto sm:px-8 sm:py-4 sm:text-base"
                                                         >
-                                                            {heroData.button2.label}
+                                                            {hero.button2.label}
                                                         </Link>
                                                     </motion.div>
                                                 </motion.div>

@@ -1,10 +1,9 @@
 import PageTopSection from "@/components/common/PageTopSection";
 import AppointmentSection from "@/sections/AppointmentSection";
-import data from "@/data/data.json";
-import { AppointmentDataWrapper } from "@/types/sections";
+import { site } from "@/data";
 
 export default function AppointmentPage() {
-    const pageData = (data as unknown as { appointmentData: AppointmentDataWrapper }).appointmentData;
+    const pageData = site.appointment;
 
     return (
         <main>

@@ -1,11 +1,10 @@
 "use client";
 import Image from "next/image";
-import data from "@/data/data.json";
+import { site, PetBloomWhyChooseUsData, SectionProps } from "@/data";
 import { motion } from "framer-motion";
 import { Lilita_One, Courgette } from "next/font/google";
 import { FaPaw } from "react-icons/fa";
 import StatisticsSection from "@/components/common/StatisticsSection";
-import { StatisticsItem, WhyChooseDataWrapper } from "@/types";
 import { containerVariants, fadeUpVariants, featureContainerVariants, featureVariants } from "@/utils/animations";
 
 const lilitaOne = Lilita_One({
@@ -18,12 +17,12 @@ const courgette = Courgette({
     weight: "400",
 });
 
-interface WhyChooseUsSectionProps {
+export interface WhyChooseUsSectionProps extends SectionProps<PetBloomWhyChooseUsData> {
     isPage?: boolean;
 }
 
-export default function WhyChooseUsSection({ isPage = false }: WhyChooseUsSectionProps) {
-    const rawWhyChoose = (data as unknown as { whychooseData: WhyChooseDataWrapper })?.whychooseData;
+export default function WhyChooseUsSection({ data, className, isPage = false }: WhyChooseUsSectionProps = {}) {
+    const rawWhyChoose = data || site.whyChooseUs;
     const sectionHeader = (isPage ? rawWhyChoose?.pageData : rawWhyChoose?.sectionData) || {
         badgeText: "Why Choose Us",
         titleWhite: "Why PetBloom",
@@ -33,10 +32,10 @@ export default function WhyChooseUsSection({ isPage = false }: WhyChooseUsSectio
     const features = rawWhyChoose?.features || [];
     const images = rawWhyChoose?.images || { main: "" };
     const badge = rawWhyChoose?.badge || { line1: "", line2: "" };
-    const statisticsData: StatisticsItem[] = (data as any)?.statisticsData || [];
+    const statisticsData = site.statsSection;
 
     return (
-        <section className="relative overflow-hidden bg-[#FEFDFB] py-16 sm:py-20">
+        <section className={`relative overflow-hidden bg-[#FEFDFB] py-16 sm:py-20 ${className || ""}`}>
 
             <motion.div
                 initial={{ opacity: 0, y: -30, rotate: 0 }}

@@ -1,8 +1,7 @@
 import { notFound } from "next/navigation";
 import PageTopSection from "@/components/common/PageTopSection";
 import TeamDetailPage from "@/pages/TeamDetailPage";
-import data from "@/data/data.json";
-import { TeamDataWrapper } from "@/types";
+import { site } from "@/data";
 
 interface PageProps {
     params: Promise<{
@@ -10,10 +9,9 @@ interface PageProps {
     }>;
 }
 
-const { teamData } = data as { teamData: TeamDataWrapper };
-
 export default async function TeamDetail({ params }: PageProps) {
     const { slug } = await params;
+    const teamData = site.team;
     const decodedSlug = decodeURIComponent(slug).toLowerCase();
     const team = teamData.teams.find(
         (t) =>
@@ -29,7 +27,7 @@ export default async function TeamDetail({ params }: PageProps) {
     return (
         <main>
             <PageTopSection title={team.name} subTitle={team.role} />
-            <TeamDetailPage team={team} />
+            <TeamDetailPage data={team} team={team} />
         </main>
     );
 }

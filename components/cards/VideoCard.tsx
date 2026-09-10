@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { Play } from "lucide-react";
-import { VideoItem } from "@/types/sections";
+import { VideoItem } from "@/data";
 
 interface VideoCardProps {
     video: VideoItem;

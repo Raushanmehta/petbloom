@@ -1,10 +1,9 @@
 "use client";
 
-import data from "@/data/data.json";
+import { site, PetBloomTeamData, SectionProps } from "@/data";
 import { motion } from "framer-motion";
 import { FaPaw } from "react-icons/fa";
 import TeamCard from "@/components/cards/TeamCard";
-import { TeamDataWrapper } from "@/types";
 import { Lilita_One } from "next/font/google";
 import { teamHeaderContainerVariants, teamFadeUpVariants, teamCardsContainerVariants } from "@/utils/animations";
 
@@ -13,11 +12,13 @@ const lilitaOne = Lilita_One({
     weight: "400",
 });
 
-const { teamData } = data as { teamData: TeamDataWrapper };
+export interface TeamSectionProps extends SectionProps<PetBloomTeamData> {}
 
-export default function TeamSection() {
+export default function TeamSection({ data, className }: TeamSectionProps = {}) {
+    const teamData = data || site.team;
+
     return (
-        <section className="relative overflow-hidden bg-[#FCF7F3] py-16 sm:py-20">
+        <section className={`relative overflow-hidden bg-[#FCF7F3] py-16 sm:py-20 ${className || ""}`}>
             <motion.div
                 initial={{ opacity: 0, x: -30, rotate: -25 }}
                 whileInView={{ opacity: 0.08, x: 0, rotate: -15 }}

@@ -32,8 +32,7 @@ import {
 } from "@/utils/animations";
 import { BsInstagram, BsTwitter, BsYoutube } from "react-icons/bs";
 import { LiaLinkedin } from "react-icons/lia";
-import data from "@/data/data.json";
-import { ContactDataWrapper } from "@/types/sections";
+import { site } from "@/data";
 
 const lilitaOne = Lilita_One({
     subsets: ["latin"],
@@ -56,7 +55,7 @@ const socialIconMap: Record<string, React.ElementType> = {
 };
 
 export default function ContactPage() {
-    const contactData: ContactDataWrapper = (data as unknown as { contactData?: ContactDataWrapper }).contactData || {
+    const contactData = site.contactPage || {
         pageData: {
             badgeText: "Contact Us",
             brandStart: "Pet",

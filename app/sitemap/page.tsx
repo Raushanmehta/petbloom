@@ -7,8 +7,7 @@ import { Lilita_One } from "next/font/google";
 import PageTopSection from "@/components/common/PageTopSection";
 import SitemapCard from "@/components/cards/SitemapCard";
 import { fadeUpVariants, containerVariants, columnVariants } from "@/utils/animations";
-import data from "@/data/data.json";
-import { SitemapData } from "@/types/sections";
+import { site } from "@/data";
 
 const lilitaOne = Lilita_One({
     subsets: ["latin"],
@@ -16,7 +15,7 @@ const lilitaOne = Lilita_One({
 });
 
 export default function SitemapPage() {
-    const sitemapData = (data as unknown as { sitemapData?: SitemapData }).sitemapData || {
+    const sitemapData = site.sitemap || {
         pageData: {
             title: "Site Map",
             subTitle: "Explore all our pages",
@@ -93,7 +92,7 @@ export default function SitemapPage() {
                                 <FaPaw className="h-5 w-5 text-[#387478]" />
                             </motion.div>
                             <span className="text-xs font-bold uppercase tracking-wider text-[#387478]">
-                                {pageData?.badgeText || "Sitemap Directory"}
+                                {"Sitemap Directory"}
                             </span>
                         </motion.div>
 

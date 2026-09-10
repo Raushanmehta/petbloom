@@ -1,8 +1,7 @@
 import { notFound } from "next/navigation";
 import PageTopSection from "@/components/common/PageTopSection";
 import LocationDetailPage from "@/pages/LocationDetailPage";
-import data from "@/data/data.json";
-import { LocationDataWrapper } from "@/types";
+import { site } from "@/data";
 
 interface PageProps {
     params: Promise<{
@@ -10,10 +9,9 @@ interface PageProps {
     }>;
 }
 
-const { locationsData } = data as { locationsData: LocationDataWrapper };
-
 export default async function LocationDetail({ params }: PageProps) {
     const { slug } = await params;
+    const locationsData = site.locations;
     const location = locationsData.locations.find(
         (l) => l.slug === slug || l.name.toLowerCase().replace(/\s+/g, '-') === slug
     );
@@ -28,7 +26,7 @@ export default async function LocationDetail({ params }: PageProps) {
                 title={location.name}
                 subTitle="Location Detail"
             />
-            <LocationDetailPage location={location} />
+            <LocationDetailPage data={location} location={location} />
         </main>
     );
 }

@@ -5,8 +5,8 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { Calendar, ArrowRight } from "lucide-react";
 import { FaPaw } from "react-icons/fa";
-import type { BlogPost } from "@/types/sections";
 import { cardVariant, fadeUpVariants } from "@/utils/animations";
+import type { BlogPost } from "@/data";
 
 interface BlogCardProps {
     blog: BlogPost;

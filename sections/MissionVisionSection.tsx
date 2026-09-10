@@ -3,13 +3,12 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import allData from "@/data/data.json";
 import { Target, Eye } from "lucide-react";
-import type { MissionVisionDataWrapper } from "@/types/sections";
 import { FaPaw } from "react-icons/fa";
 import { Lilita_One } from "next/font/google";
 import { missionHeaderContainerVariants, missionFadeUpVariants, missionCardsContainerVariants, missionLeftCardVariants, missionCenterImageVariants, missionRightCardVariants } from "@/utils/animations";
 import { IoMdHeartEmpty } from "react-icons/io";
+import { site, PetBloomMissionVisionData, SectionProps } from "@/data";
 
 const lilitaOne = Lilita_One({
     subsets: ["latin"],
@@ -21,12 +20,12 @@ const iconMap: Record<string, React.ElementType> = {
     Eye,
 };
 
-interface MissionVisionSectionProps {
+export interface MissionVisionSectionProps extends SectionProps<PetBloomMissionVisionData> {
     isPage?: boolean;
 }
 
-export default function MissionVisionSection({ isPage = false }: MissionVisionSectionProps) {
-    const rawMV = (allData as unknown as { missionVisionData: MissionVisionDataWrapper })?.missionVisionData;
+export default function MissionVisionSection({ data, className, isPage = false }: MissionVisionSectionProps = {}) {
+    const rawMV = data || site.missionVision;
     const header = (isPage ? rawMV?.pageData : rawMV?.sectionData) || {
         badgeText: "OUR PURPOSE",
         titleStart: "Our",
@@ -54,7 +53,7 @@ export default function MissionVisionSection({ isPage = false }: MissionVisionSe
     const MissionIcon = iconMap[missionData.iconName] || Target;
     const VisionIcon = iconMap[visionData.iconName] || Eye;
     return (
-        <section className="relative overflow-hidden bg-white py-16 sm:py-20">
+        <section className={`relative overflow-hidden bg-white py-16 sm:py-20 ${className || ""}`}>
             <div className="mx-auto max-w-[1355px] px-4 sm:px-4 md:px-6 lg:px-8">
                 <motion.div
                     variants={missionHeaderContainerVariants}

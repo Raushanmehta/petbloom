@@ -6,17 +6,17 @@ import { Lilita_One } from "next/font/google";
 import { MapPin, ChevronLeft, ChevronRight } from "lucide-react";
 import { headerContainer, fadeUp, cardsContainer, cardAnimation } from "@/utils/animations";
 import LocationCard from "@/components/cards/LocationCard";
-import data from "@/data/data.json";
-import { LocationDataWrapper } from "@/types";
+import { site, PetBloomLocationsData, SectionProps } from "@/data";
 
 const lilitaOne = Lilita_One({
     subsets: ["latin"],
     weight: "400",
 });
 
-const { locationsData } = data as { locationsData: LocationDataWrapper };
+export interface LocationSectionProps extends SectionProps<PetBloomLocationsData> {}
 
-export default function LocationSection() {
+export default function LocationSection({ data, className }: LocationSectionProps = {}) {
+    const locationsData = data || site.locations;
     const scrollRef = useRef<HTMLDivElement>(null);
 
     const scroll = (direction: "left" | "right") => {
@@ -35,7 +35,7 @@ export default function LocationSection() {
     };
 
     return (
-        <section className="relative overflow-hidden bg-[#FEFDFB] py-16 sm:py-20">
+        <section className={`relative overflow-hidden bg-[#FEFDFB] py-16 sm:py-20 ${className || ""}`}>
 
             {/* Decorative background paw left */}
             <motion.div
@@ -166,14 +166,7 @@ export default function LocationSection() {
                     variants={fadeUp}
                     className="mx-auto mt-4 max-w-xl text-sm sm:text-base font-medium text-gray-600 md:text-lg"
                 >
-                    {locationsData.sectionData.descriptionPart1 ? (
-                        <>
-                            {locationsData.sectionData.descriptionPart1}{" "}
-                            <span className="font-bold text-[#387478]">{locationsData.sectionData.descriptionPart2}</span>
-                        </>
-                    ) : (
-                        locationsData.sectionData.description
-                    )}
+                    {locationsData.sectionData.description}
                 </motion.p>
             </motion.div>
 

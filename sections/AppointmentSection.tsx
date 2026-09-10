@@ -7,7 +7,7 @@ import { ShieldCheck, Leaf, Home as HomeIcon, Heart, Calendar, Clock, User, Phon
 import { FaPaw } from "react-icons/fa";
 import { Lilita_One } from "next/font/google";
 import { columnVariants, containerVariants, fadeUpVariants } from "@/utils/animations";
-import { AppointmentSectionData } from "@/types/sections";
+import { site, PetBloomAppointmentData, SectionProps } from "@/data";
 
 const lilitaOne = Lilita_One({
     subsets: ["latin"],
@@ -30,11 +30,13 @@ const iconMap: Record<string, React.ElementType> = {
     Lock,
 };
 
-interface AppointmentSectionProps {
-    data: AppointmentSectionData;
-}
+export type AppointmentInnerData = PetBloomAppointmentData["appointment"];
 
-export default function AppointmentSection({ data }: AppointmentSectionProps) {
+export interface AppointmentSectionProps extends SectionProps<AppointmentInnerData | PetBloomAppointmentData> {}
+
+export default function AppointmentSection({ data, className }: AppointmentSectionProps = {}) {
+    const rawData = data || site.appointment;
+    const appointmentData = "appointment" in rawData ? rawData.appointment : rawData;
     const [formData, setFormData] = useState({
         petName: "",
         petType: "",
@@ -59,22 +61,22 @@ export default function AppointmentSection({ data }: AppointmentSectionProps) {
         alert("Appointment booked successfully!");
     };
 
-    const bannerImage = data?.bannerImage || "https://images.unsplash.com/photo-1548767797-d8c844163c4c?auto=format&fit=crop&q=80&w=800";
-    const bannerTitleWhite = data?.bannerTitleWhite || "Book Your Pet's";
-    const bannerTitleColored = data?.bannerTitleColored || "Special Day";
-    const bannerDescription = data?.bannerDescription || "Schedule a grooming, boarding, or veterinary session with our trusted and loving specialists.";
-    const features = data?.features || [
+    const bannerImage = appointmentData?.bannerImage || "https://images.unsplash.com/photo-1548767797-d8c844163c4c?auto=format&fit=crop&q=80&w=800";
+    const bannerTitleWhite = appointmentData?.bannerTitleWhite || "Book Your Pet's";
+    const bannerTitleColored = appointmentData?.bannerTitleColored || "Special Day";
+    const bannerDescription = appointmentData?.bannerDescription || "Schedule a grooming, boarding, or veterinary session with our trusted and loving specialists.";
+    const features = appointmentData?.features || [
         { icon: "ShieldCheck", title: "Certified" },
         { icon: "Leaf", title: "Organic" },
         { icon: "HomeIcon", title: "Safe Care" },
         { icon: "Heart", title: "Loved" },
     ];
-    const formTitleBlack = data?.formTitleBlack || "Book An";
-    const formTitleColored = data?.formTitleColored || "Appointment";
-    const formDescription = data?.formDescription || "Fill out the form below to schedule a session for your furry family member.";
+    const formTitleBlack = appointmentData?.formTitleBlack || "Book An";
+    const formTitleColored = appointmentData?.formTitleColored || "Appointment";
+    const formDescription = appointmentData?.formDescription || "Fill out the form below to schedule a session for your furry family member.";
 
     return (
-        <section className="relative overflow-hidden bg-[#FEFDFB] py-16 sm:py-20">
+        <section className={`relative overflow-hidden bg-[#FEFDFB] py-16 sm:py-20 ${className || ""}`}>
             <div className="mx-auto max-w-[1355px] px-4 sm:px-4 md:px-6 lg:px-8">
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
 

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { PhotoItem } from "@/types/sections";
+import { PhotoItem } from "@/data";
 
 interface GalleryCardProps {
     photo: PhotoItem;

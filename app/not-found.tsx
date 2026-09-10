@@ -7,8 +7,7 @@ import { Home } from "lucide-react";
 import { FaPaw } from "react-icons/fa";
 import { Lilita_One } from "next/font/google";
 import { columnVariants } from "@/utils/animations";
-import data from "@/data/data.json";
-import { NotFoundData } from "@/types/sections";
+import { site } from "@/data";
 
 const lilitaOne = Lilita_One({
     subsets: ["latin"],
@@ -16,7 +15,7 @@ const lilitaOne = Lilita_One({
 });
 
 export default function NotFoundPage() {
-    const notFoundData = data["404Data"] as unknown as NotFoundData;
+    const notFoundData = site.notFound;
 
     return (
         <section className="relative min-h-screen w-full bg-[#111827] overflow-hidden flex items-center justify-center px-4 py-20 sm:px-6 lg:px-12">

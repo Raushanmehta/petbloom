@@ -4,7 +4,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { Home, Users, FileText, MapPin, User, Tag, Calendar, Image as ImageIcon, MessageSquare, HelpCircle, BookOpen, File, Phone, Briefcase, Shield, FileCheck, AlertTriangle, GitCommit, ChevronRight } from "lucide-react";
 import { FaPaw } from "react-icons/fa";
-import { SitemapCategory } from "@/types/sections";
+import { SitemapCategory } from "@/data";
 
 interface SitemapCardProps {
     category: SitemapCategory;

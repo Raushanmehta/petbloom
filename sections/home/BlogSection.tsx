@@ -7,31 +7,32 @@ import { Calendar, ArrowRight } from "lucide-react";
 import { FaPaw } from "react-icons/fa";
 import { Lilita_One } from "next/font/google";
 import BlogCard from "@/components/cards/BlogCard";
-import type { BlogPost, BlogSectionData } from "@/types/sections";
 import { blogFeaturedVariants, blogSideCardVariants, blogSideContainerVariants, containerVariants, fadeUpVariants } from "@/utils/animations";
-import allData from "@/data/data.json";
+import { site, PetBloomBlogData, SectionProps } from "@/data";
 
 const lilitaOne = Lilita_One({
     subsets: ["latin"],
     weight: "400",
 });
 
-export default function BlogSection() {
-    const rawBlog = (allData as any)?.blogData;
-    const blogSectionData: BlogSectionData = rawBlog?.sectionData || {
+export interface BlogSectionProps extends SectionProps<PetBloomBlogData> {}
+
+export default function BlogSection({ data, className }: BlogSectionProps = {}) {
+    const rawBlog = data || site.blog;
+    const blogSectionData = rawBlog?.sectionData || {
         badgeText: "BLOG & NEWS",
         titleWhite: "Latest",
         titleColored: "Blog Articles",
         description: ""
     };
-    const blogsData: BlogPost[] = rawBlog?.blogs || [];
+    const blogsData = rawBlog?.blogs || [];
     const featuredBlog =
         blogsData.find((blog) => blog.featured) || blogsData[0];
 
     const sideBlogs = blogsData.filter((blog) => !blog.featured);
 
     return (
-        <section className="relative overflow-hidden bg-[#FEFDFB] py-16 sm:py-20">
+        <section className={`relative overflow-hidden bg-[#FEFDFB] py-16 sm:py-20 ${className || ""}`}>
             <div className="mx-auto max-w-[1355px] px-4 sm:px-4 md:px-6 lg:px-8">
                 <motion.div
                     variants={containerVariants}

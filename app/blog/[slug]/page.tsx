@@ -1,8 +1,7 @@
 import { notFound } from "next/navigation";
 import PageTopSection from "@/components/common/PageTopSection";
 import BlogDetailPage from "@/pages/BlogDetailPage";
-import allData from "@/data/data.json";
-import { BlogPost } from "@/types/sections";
+import { site, BlogPost } from "@/data";
 
 interface PageProps {
     params: Promise<{
@@ -12,7 +11,7 @@ interface PageProps {
 
 export default async function BlogDetail({ params }: PageProps) {
     const { slug } = await params;
-    const blogs = allData.blogData.blogs as unknown as BlogPost[];
+    const blogs = site.blog.blogs;
     const blog = blogs.find((b) => b.id === slug);
 
     if (!blog) {
@@ -21,7 +20,7 @@ export default async function BlogDetail({ params }: PageProps) {
     return (
         <main>
             <PageTopSection title="Blog Detail" subTitle="Blog Detail" />
-            <BlogDetailPage blog={blog} />
+            <BlogDetailPage data={blog} blog={blog} />
         </main>
     );
 }

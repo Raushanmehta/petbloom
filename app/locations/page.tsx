@@ -8,15 +8,14 @@ import { Lilita_One } from "next/font/google";
 import { cardAnimation, cardsContainer, fadeUp, headerContainer } from "@/utils/animations";
 import { ChevronLeft, ChevronRight, MapPin } from "lucide-react";
 import LocationCard from "@/components/cards/LocationCard";
-import data from "@/data/data.json";
-import { LocationDataWrapper } from "@/types";
+import { site } from "@/data";
 
 const lilitaOne = Lilita_One({
     subsets: ["latin"],
     weight: "400",
 });
 
-const { locationsData } = data as { locationsData: LocationDataWrapper };
+const locationsData = site.locations;
 
 export default function LocationsPage() {
     const scrollRef = useRef<HTMLDivElement>(null);
@@ -166,14 +165,7 @@ export default function LocationsPage() {
                             variants={fadeUp}
                             className="mx-auto mt-4 text-sm sm:text-base md:text-lg font-medium text-gray-600 leading-relaxed"
                         >
-                            {locationsData.pageData.descriptionPart1 ? (
-                                <>
-                                    {locationsData.pageData.descriptionPart1}
-                                    <span className="font-bold text-[#387478]">{locationsData.pageData.descriptionPart2}</span>
-                                </>
-                            ) : (
-                                locationsData.pageData.description
-                            )}
+                            {locationsData.pageData.description}
                         </motion.p>
                     </motion.div>
 

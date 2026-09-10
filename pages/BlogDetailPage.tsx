@@ -6,23 +6,22 @@ import { Calendar, Clock, User, CheckCircle2 } from "lucide-react";
 import { FaPaw, FaQuoteLeft } from "react-icons/fa";
 import { Lilita_One } from "next/font/google";
 import { columnVariants, fadeUpVariants } from "@/utils/animations";
-import allData from "@/data/data.json";
-import { BlogPost } from "@/types/sections";
+import { site, BlogPost, SectionProps } from "@/data";
 
 const lilitaOne = Lilita_One({
     subsets: ["latin"],
     weight: "400",
 });
 
-interface BlogDetailPageProps {
+export interface BlogDetailPageProps extends SectionProps<BlogPost> {
     blog?: BlogPost;
 }
 
-export default function BlogDetailPage({ blog }: BlogDetailPageProps = {}) {
-    const defaultBlog = (allData.blogData.blogs[0] as unknown) as BlogPost;
-    const blogDetailData = blog || defaultBlog;
+export default function BlogDetailPage({ data, blog, className }: BlogDetailPageProps = {}) {
+    const defaultBlog = site.blog.blogs[0];
+    const blogDetailData = data || blog || defaultBlog;
     return (
-        <section className="relative overflow-hidden bg-[#FEFDFB] py-16 sm:py-20">
+        <section className={`relative overflow-hidden bg-[#FEFDFB] py-16 sm:py-20 ${className || ""}`}>
             <motion.div
                 initial={{ opacity: 0, x: -30, rotate: -25 }}
                 whileInView={{ opacity: 0.1, x: 0, rotate: -15 }}

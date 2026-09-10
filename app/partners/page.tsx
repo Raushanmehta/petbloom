@@ -6,8 +6,7 @@ import { Lilita_One } from "next/font/google";
 import { columnVariants, containerVariants, fadeUpVariants } from "@/utils/animations";
 import PartnerCard from "@/components/cards/PartnerCard";
 import PageTopSection from "@/components/common/PageTopSection";
-import data from "@/data/data.json";
-import { PartnersDataWrapper } from "@/types/sections";
+import { site } from "@/data";
 
 const lilitaOne = Lilita_One({
     subsets: ["latin"],
@@ -15,7 +14,7 @@ const lilitaOne = Lilita_One({
 });
 
 export default function PartnersPage() {
-    const partnersData: PartnersDataWrapper = (data as unknown as { partnersData?: PartnersDataWrapper }).partnersData || {
+    const partnersData = site.partners || {
         pageData: {
             badgeText: "Our Partners",
             titleWhite: "Trusted by",

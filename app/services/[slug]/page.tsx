@@ -1,8 +1,7 @@
 import { notFound } from "next/navigation";
 import PageTopSection from "@/components/common/PageTopSection";
 import ServiceDetailPage from "@/pages/ServiceDetailPage";
-import data from "@/data/data.json";
-import { ServicesDataWrapper } from "@/types";
+import { site } from "@/data";
 
 interface PageProps {
     params: Promise<{
@@ -10,10 +9,9 @@ interface PageProps {
     }>;
 }
 
-const { servicesData } = data as { servicesData: ServicesDataWrapper };
-
 export default async function ServiceDetail({ params }: PageProps) {
     const { slug } = await params;
+    const servicesData = site.services;
     const service = servicesData.services.find((s) => s.slug === slug);
 
     if (!service) {
@@ -23,7 +21,7 @@ export default async function ServiceDetail({ params }: PageProps) {
     return (
         <main>
             <PageTopSection title={service.title} subTitle="service" />
-            <ServiceDetailPage service={service} />
+            <ServiceDetailPage data={service} service={service} />
         </main>
     );
 }

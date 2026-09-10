@@ -7,8 +7,7 @@ import { columnVariants, containerVariants, fadeUpVariants } from "@/utils/anima
 import GalleryCard from "@/components/cards/GalleryCard";
 import VideoCard from "@/components/cards/VideoCard";
 import PageTopSection from "@/components/common/PageTopSection";
-import { GalleryDataWrapper } from "@/types/sections";
-import data from "@/data/data.json";
+import { site } from "@/data";
 import Link from "next/link";
 
 const lilitaOne = Lilita_One({
@@ -16,23 +15,21 @@ const lilitaOne = Lilita_One({
     weight: "400",
 });
 
-const { galleryData } = (data as unknown as { galleryData?: GalleryDataWrapper }) || {
-    galleryData: {
-        pageData: {
-            badgeText: "Our Gallery",
-            titleWhite: "Moments of",
-            titleColored: "Joy & Care",
-            description: "Explore joyful moments, pampering sessions, and adorable pet transformations at PetBloom.",
-        },
-        videoPageData: {
-            badgeText: "Pet Videos",
-            titleWhite: "Watch Our",
-            titleColored: "Happy Pets",
-            description: "Take a peek behind the scenes at our grooming salon and daycare in action.",
-        },
-        photos: [],
-        videos: [],
+const galleryData = site.gallery || {
+    pageData: {
+        badgeText: "Our Gallery",
+        titleWhite: "Moments of",
+        titleColored: "Joy & Care",
+        description: "Explore joyful moments, pampering sessions, and adorable pet transformations at PetBloom.",
     },
+    videoPageData: {
+        badgeText: "Pet Videos",
+        titleWhite: "Watch Our",
+        titleColored: "Happy Pets",
+        description: "Take a peek behind the scenes at our grooming salon and daycare in action.",
+    },
+    photos: [],
+    videos: [],
 };
 
 export default function GalleryPage() {

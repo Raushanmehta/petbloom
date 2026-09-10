@@ -11,7 +11,7 @@ import {
     testimonialStarContainerVariants as starContainerVariants,
     testimonialStarVariants as starVariants
 } from "@/utils/animations";
-import { Testimonial } from "@/types";
+import { Testimonial } from "@/data";
 
 interface TestimonialCardProps {
     testimonial: Testimonial;

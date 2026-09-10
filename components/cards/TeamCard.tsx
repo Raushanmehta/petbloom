@@ -5,7 +5,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { FaPaw } from "react-icons/fa";
 import { ArrowUpRight } from "lucide-react";
-import { Team } from "@/types";
+import { Team } from "@/data";
 import { teamCardVariants } from "@/utils/animations";
 
 interface TeamCardProps {

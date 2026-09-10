@@ -3,29 +3,32 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { Lilita_One } from "next/font/google";
-import { StatisticsItem } from "@/types";
+import { site, PetBloomStatsSectionData, SectionProps } from "@/data";
 import { statisticsContainerVariants, statisticsItemVariants } from "@/utils/animations";
-import data from "@/data/data.json";
 
 const lilitaOne = Lilita_One({
     subsets: ["latin"],
     weight: "400",
 });
 
-interface StatisticsSectionProps {
-    statisticsData?: StatisticsItem[];
+export interface StatisticsSectionProps extends SectionProps<PetBloomStatsSectionData> {
+    statisticsData?: PetBloomStatsSectionData;
 }
 
 export default function StatisticsSection({
-    statisticsData = (data as any).statisticsData as StatisticsItem[],
-}: StatisticsSectionProps) {
+    data,
+    className,
+    statisticsData,
+}: StatisticsSectionProps = {}) {
+    const stats = data || statisticsData || site.statsSection;
+
     return (
         <motion.div
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className="mt-12 sm:mt-16 lg:mt-20 rounded-[1.5rem] sm:rounded-[2rem] bg-[#387478] px-5 py-7 sm:px-8 sm:py-9 lg:px-6 xl:px-8 lg:py-10 text-white shadow-xl"
+            className={`mt-12 sm:mt-16 lg:mt-20 rounded-[1.5rem] sm:rounded-[2rem] bg-[#387478] px-5 py-7 sm:px-8 sm:py-9 lg:px-6 xl:px-8 lg:py-10 text-white shadow-xl ${className || ""}`}
         >
             <motion.div
                 variants={statisticsContainerVariants}
@@ -34,7 +37,7 @@ export default function StatisticsSection({
                 viewport={{ once: true, amount: 0.2 }}
                 className="grid grid-cols-1 divide-y divide-white/20 sm:grid-cols-2 sm:divide-y-0 sm:gap-x-8 sm:gap-y-8 lg:grid-cols-4 lg:gap-0 lg:divide-x lg:divide-white/25"
             >
-                {statisticsData.map((stat, index) => {
+                {stats.map((stat, index) => {
                     const iconPath = stat.icon || "/icon/team-icon.png";
 
                     return (

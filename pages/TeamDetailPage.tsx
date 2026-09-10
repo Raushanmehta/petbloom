@@ -7,8 +7,7 @@ import * as LucideIcons from "lucide-react";
 import { Phone, Mail, Globe, MapPin, Briefcase, User, Star, ChevronRight, } from "lucide-react";
 import { FaPaw } from "react-icons/fa";
 import { Lilita_One } from "next/font/google";
-import data from "@/data/data.json";
-import { Team, TeamDataWrapper } from "@/types";
+import { site, TeamMember, SectionProps } from "@/data";
 import { teamDetailContainerVariants, teamDetailLeftCardVariants, teamDetailRightCardVariants, teamDetailBottomCardVariants, teamDetailItemVariants, } from "@/utils/animations";
 import StatisticsSection from "@/components/common/StatisticsSection";
 
@@ -17,10 +16,12 @@ const lilitaOne = Lilita_One({
     weight: "400",
 });
 
-const { teamData } = data as { teamData: TeamDataWrapper };
+export interface TeamDetailPageProps extends SectionProps<TeamMember> {
+    team?: TeamMember;
+}
 
-export default function TeamDetailPage({ team: propTeam }: { team?: Team }) {
-    const team = propTeam || teamData.teams[0];
+export default function TeamDetailPage({ data, team: propTeam, className }: TeamDetailPageProps = {}) {
+    const team = data || propTeam || site.team.teams[0];
     if (!team || !team.detail) return null;
 
     const contactItems = [
@@ -32,7 +33,7 @@ export default function TeamDetailPage({ team: propTeam }: { team?: Team }) {
     ];
 
     return (
-        <section className="relative overflow-hidden bg-[#FEFDFB] py-16 sm:py-20">
+        <section className={`relative overflow-hidden bg-[#FEFDFB] py-16 sm:py-20 ${className || ""}`}>
             <motion.div
                 initial={{ opacity: 0, x: -30, rotate: -25 }}
                 whileInView={{ opacity: 0.08, x: 0, rotate: -15 }}

@@ -2,12 +2,11 @@
 
 import React from "react";
 import Image from "next/image";
-import data from "@/data/data.json";
 import { motion } from "framer-motion";
 import { Scissors, Leaf, Heart } from "lucide-react";
 import { FaPaw } from "react-icons/fa";
 import { Lilita_One, Courgette } from "next/font/google";
-import { AboutDataWrapper } from "@/types";
+import { site, PetBloomAboutData, SectionProps } from "@/data";
 import { containerVariants, fadeUpVariants, featureVariants } from "@/utils/animations";
 
 const IconMap: Record<string, React.ElementType> = {
@@ -26,12 +25,12 @@ const courgette = Courgette({
     weight: "400",
 });
 
-interface AboutSectionProps {
+export interface AboutSectionProps extends SectionProps<PetBloomAboutData> {
     isPage?: boolean;
 }
 
-export default function AboutSection({ isPage = false }: AboutSectionProps) {
-    const rawAbout = (data as unknown as { aboutData: AboutDataWrapper })?.aboutData;
+export default function AboutSection({ data, className, isPage = false }: AboutSectionProps = {}) {
+    const rawAbout = data || site.about;
     const headerData = (isPage ? rawAbout?.pageData : rawAbout?.sectionData) || {
         badgeText: "About Us",
         titleWhite: "Where Pets Look Great",
@@ -52,7 +51,7 @@ export default function AboutSection({ isPage = false }: AboutSectionProps) {
     const features = rawAbout?.features || [];
 
     return (
-        <section className="relative overflow-hidden bg-[#FCF7F3] py-14 sm:py-18 md:py-20 lg:py-24">
+        <section className={`relative overflow-hidden bg-[#FCF7F3] py-14 sm:py-18 md:py-20 lg:py-24 ${className || ""}`}>
             <div className="mx-auto grid max-w-[1355px] grid-cols-1 items-center justify-between gap-12 sm:gap-14 lg:gap-12 lg:grid-cols-12 px-4 sm:px-4 md:px-6 lg:px-8">
 
                 {/* Left Visual Column */}

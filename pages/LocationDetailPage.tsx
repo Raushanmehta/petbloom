@@ -14,15 +14,12 @@ import {
     linkContainerVariants,
     linkItemVariants,
 } from "@/utils/animations";
-import data from "@/data/data.json";
-import { LocationDataWrapper, LocationItem, LocationDetail } from "@/types";
+import { site, LocationItem, SectionProps } from "@/data";
 
 const lilitaOne = Lilita_One({
     subsets: ["latin"],
     weight: "400",
 });
-
-const { locationsData } = data as { locationsData: LocationDataWrapper };
 
 // Helper to render dynamic icons by string name
 function DynamicLocationIcon({ name, className }: { name?: string; className?: string }) {
@@ -37,22 +34,23 @@ function DynamicLocationIcon({ name, className }: { name?: string; className?: s
     return <LucideIcons.MapPin className={className} />;
 }
 
-interface LocationDetailPageProps {
+export interface LocationDetailPageProps extends SectionProps<LocationItem> {
     location?: LocationItem;
 }
 
-export default function LocationDetailPage({ location: propLocation }: LocationDetailPageProps) {
+export default function LocationDetailPage({ data, location: propLocation, className }: LocationDetailPageProps = {}) {
+    const locationsData = site.locations;
     const defaultLocation = locationsData.locations.find((l) => l.active) || locationsData.locations[0];
-    const currentLocation = propLocation || defaultLocation;
+    const currentLocation = data || propLocation || defaultLocation;
 
-    const fallbackDetail = locationsData.locations[0]?.detail as LocationDetail;
-    const detail: LocationDetail = (currentLocation?.detail || fallbackDetail) as LocationDetail;
+    const fallbackDetail = locationsData.locations[0]?.detail;
+    const detail = currentLocation?.detail || fallbackDetail;
 
     if (!detail) return null;
     const allLocations = locationsData.locations;
 
     return (
-        <section className="relative overflow-hidden bg-[#FEFDFB] py-16 sm:py-20">
+        <section className={`relative overflow-hidden bg-[#FEFDFB] py-16 sm:py-20 ${className || ""}`}>
             {/* Background Decorative Paws */}
             <motion.div
                 initial={{ opacity: 0, x: -30, rotate: -25 }}

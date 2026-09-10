@@ -5,11 +5,10 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { Lilita_One } from "next/font/google";
 import { columnVariants } from "@/utils/animations";
-import allData from "@/data/data.json";
-import { PageTopSectionData } from "@/types/sections";
+import { site, PetBloomPageTopSectionData, SectionProps } from "@/data";
 
-interface PageTopSectionProps {
-    title: string;
+export interface PageTopSectionProps extends SectionProps<PetBloomPageTopSectionData> {
+    title?: string;
     subTitle?: string;
 }
 
@@ -18,19 +17,21 @@ const lilitaOne = Lilita_One({
     weight: "400",
 });
 
-const { pageTopSectionData } = allData as { pageTopSectionData: PageTopSectionData };
-
 export default function PageTopSection({
+    data,
+    className,
     title = "About Us",
     subTitle = "About Us"
-}: PageTopSectionProps) {
+}: PageTopSectionProps = {}) {
+    const pageTop = data || site.pageTopSection;
+
     return (
-        <section className="relative w-full  bg-[#F2EDE9] px-4 py-6 sm:px-6 lg:px-8">
+        <section className={`relative w-full bg-[#F2EDE9] px-4 py-6 sm:px-6 lg:px-8 ${className || ""}`}>
             <div className="relative mx-auto overflow-hidden rounded-[2.5rem] bg-gray-900 shadow-2xl min-h-[340px] sm:min-h-[380px] flex items-center justify-center">
                 <div className="absolute inset-0 z-0">
                     <Image
-                        src={pageTopSectionData.backgroundImage}
-                        alt={pageTopSectionData.backgroundAlt}
+                        src={pageTop.backgroundImage}
+                        alt={pageTop.backgroundAlt}
                         fill
                         className="object-cover opacity-80 mix-blend-overlay"
                         priority

@@ -6,8 +6,7 @@ import { Lilita_One } from "next/font/google";
 import PageTopSection from "@/components/common/PageTopSection";
 import { fadeUpVariants, pricingCardContainer } from "@/utils/animations";
 import PricingCard from "@/components/cards/PricingCard";
-import data from "@/data/data.json";
-import { PricingPackage, PricingDataWrapper } from "@/types/sections";
+import { site, PricingPackage } from "@/data";
 
 const lilitaOne = Lilita_One({
     subsets: ["latin"],
@@ -15,7 +14,7 @@ const lilitaOne = Lilita_One({
 });
 
 export default function PricingPage() {
-    const pricingData = (data as unknown as { pricingData?: PricingDataWrapper }).pricingData || {
+    const pricingData = site.pricing || {
         pageData: {
             badgeText: "Affordable Pricing",
             titleWhite: "Best Plans For",

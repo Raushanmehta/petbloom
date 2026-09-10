@@ -1,6 +1,6 @@
 "use client";
 
-import data from "@/data/data.json";
+import { site } from "@/data";
 import { motion } from "framer-motion";
 import { FaPaw } from "react-icons/fa";
 import { Lilita_One } from "next/font/google";
@@ -13,7 +13,7 @@ const lilitaOne = Lilita_One({
     weight: "400",
 });
 
-const { servicesData } = data;
+const servicesData = site.services;
 
 export default function ServicesPage() {
     return (

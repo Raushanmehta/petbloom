@@ -19,21 +19,7 @@ import {
     FaPhoneAlt,
 } from "react-icons/fa";
 
-import { NavLink } from "@/types";
-import data from "@/data/data.json";
-
-const {
-    quickLinks,
-    serviceLinks,
-    resourceLinks,
-    supportLinks
-} = data.footerData as {
-    quickLinks: NavLink[];
-    serviceLinks: NavLink[];
-    resourceLinks: NavLink[];
-    supportLinks: NavLink[];
-};
-
+import { site, PetBloomFooterData, SectionProps } from "@/data";
 import {
     containerVariants,
     columnVariants,
@@ -41,9 +27,17 @@ import {
     linkItemVariants
 } from "@/utils/animations";
 
-export default function Footer() {
+export default function Footer({ data, className }: SectionProps<PetBloomFooterData> = {}) {
+    const footer = data || site.footer;
+    const {
+        quickLinks,
+        serviceLinks,
+        resourceLinks,
+        supportLinks
+    } = footer;
+
     return (
-        <footer className="relative box-border overflow-hidden bg-[#051d1b] pt-[60px] text-[#d1d8d8]">
+        <footer className={`relative box-border overflow-hidden bg-[#051d1b] pt-[60px] text-[#d1d8d8] ${className || ""}`}>
             {/* Background Cat Mascot on Right Side */}
             <div className="pointer-events-none absolute inset-0 mx-auto max-w-[1355px] px-4 sm:px-4 md:px-6 lg:px-8 z-0">
                 <motion.div

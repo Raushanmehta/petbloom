@@ -9,8 +9,7 @@ import TestimonialCard from "@/components/cards/TestimonialCard";
 import { Carousel, CarouselContent, CarouselItem, CarouselApi } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 import { testimonialHeaderContainerVariants as headerContainerVariants, testimonialFadeUpVariants as fadeUpVariants, testimonialCarouselVariants as carouselVariants } from "@/utils/animations";
-import data from "@/data/data.json";
-import { TestimonialDataWrapper } from "@/types/sections";
+import { site, PetBloomTestimonialsData, SectionProps } from "@/data";
 import StatisticsSection from "@/components/common/StatisticsSection";
 
 const lilitaOne = Lilita_One({
@@ -18,12 +17,12 @@ const lilitaOne = Lilita_One({
     weight: "400",
 });
 
-interface TestimonialSectionProps {
+export interface TestimonialSectionProps extends SectionProps<PetBloomTestimonialsData> {
     isPage?: boolean;
 }
 
-export default function TestimonialsSection({ isPage = false }: TestimonialSectionProps) {
-    const rawTestimonial = (data as unknown as { testimonialData: TestimonialDataWrapper })?.testimonialData;
+export default function TestimonialsSection({ data, className, isPage = false }: TestimonialSectionProps = {}) {
+    const rawTestimonial = data || site.testimonials;
     const headerData = (isPage ? rawTestimonial?.pageData : rawTestimonial?.sectionData) || {
         badgeText: "Testimonials",
         titleWhite: "Happy Pets, ",
@@ -54,7 +53,7 @@ export default function TestimonialsSection({ isPage = false }: TestimonialSecti
     }, [api]);
 
     return (
-        <section className="relative overflow-hidden bg-[#FEFDFB] py-16 sm:py-20">
+        <section className={`relative overflow-hidden bg-[#FEFDFB] py-16 sm:py-20 ${className || ""}`}>
             <motion.div
                 initial={{ opacity: 0, x: -50, rotate: -30 }}
                 whileInView={{ opacity: 0.05, x: 0, rotate: -15 }}

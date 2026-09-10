@@ -5,8 +5,7 @@ import { FaPaw } from "react-icons/fa";
 import { Lilita_One } from "next/font/google";
 import { fadeUpVariants } from "@/utils/animations";
 import PageTopSection from "@/components/common/PageTopSection";
-import { LegalDataWrapper } from "@/types/sections";
-import data from "@/data/data.json";
+import { site } from "@/data";
 import LegalSection from "@/sections/LegalSection";
 
 const lilitaOne = Lilita_One({
@@ -15,8 +14,8 @@ const lilitaOne = Lilita_One({
 });
 
 export default function DisclaimerPage() {
-    const legalData = data.legalData;
-    const pageDataWrapper: LegalDataWrapper = {
+    const legalData = site.legalPage;
+    const pageDataWrapper = {
         pageData: legalData.disclaimerData,
         introDescription: legalData.disclaimerData.description,
         policies: legalData.policies,

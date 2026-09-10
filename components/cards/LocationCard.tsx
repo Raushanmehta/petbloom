@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { MapPin } from "lucide-react";
-import { Location } from "@/types";
+import { Location } from "@/data";
 
 interface LocationCardProps {
     location?: Location;

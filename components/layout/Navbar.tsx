@@ -6,12 +6,15 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaPhoneAlt, FaChevronDown, FaBars, FaTimes } from "react-icons/fa";
-import { NavLink, ServicesDataWrapper } from "@/types";
-import data from "@/data/data.json";
+import { site, PetBloomNavbarData, SectionProps } from "@/data";
 
-const { navLinks, servicesData } = data as { navLinks: NavLink[], servicesData: ServicesDataWrapper };
+interface NavbarProps extends SectionProps<PetBloomNavbarData> {
+    servicesData?: typeof site.services;
+}
 
-export default function Navbar() {
+export default function Navbar({ data, className, servicesData: injectedServices }: NavbarProps = {}) {
+    const navLinks = data || site.navbar;
+    const servicesData = injectedServices || site.services;
     const [isOpen, setIsOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
     const [isMobileServicesOpen, setIsMobileServicesOpen] = useState(false);

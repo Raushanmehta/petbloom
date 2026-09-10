@@ -8,8 +8,7 @@ import * as LucideIcons from "lucide-react";
 import { ChevronRight } from "lucide-react";
 import { FaPaw } from "react-icons/fa";
 import { Lilita_One } from "next/font/google";
-import data from "@/data/data.json";
-import { ServicesDataWrapper, ServiceItem } from "@/types";
+import { site, ServiceItem, SectionProps } from "@/data";
 import { breadcrumbVariants, heroContainerVariants, heroItemVariants, featureContainerVariants, featureItemVariants, sectionVariants, includedContainerVariants, includedItemVariants, sidebarVariants, sidebarItemVariants } from "@/utils/animations";
 
 const lilitaOne = Lilita_One({
@@ -17,15 +16,20 @@ const lilitaOne = Lilita_One({
     weight: "400",
 });
 
-const { servicesData } = data as { servicesData: ServicesDataWrapper };
+export interface ServiceDetailPageProps extends SectionProps<ServiceItem> {
+    service?: ServiceItem;
+}
 
-export default function ServiceDetailPage({ service }: { service: ServiceItem }) {
+export default function ServiceDetailPage({ data, service: propService, className }: ServiceDetailPageProps = {}) {
+    const servicesData = site.services;
+    const defaultService = servicesData.services[0];
+    const service = data || propService || defaultService;
     const pathname = usePathname();
 
     if (!service) return null;
 
     return (
-        <section className="relative overflow-hidden bg-[#FEFDFB] py-16 sm:py-20">
+        <section className={`relative overflow-hidden bg-[#FEFDFB] py-16 sm:py-20 ${className || ""}`}>
             {/* Background Decorative Paws */}
             <motion.div
                 initial={{ opacity: 0, x: -30, rotate: -25 }}
