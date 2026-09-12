@@ -9,6 +9,8 @@ import { Lilita_One } from "next/font/google";
 import { missionHeaderContainerVariants, missionFadeUpVariants, missionCardsContainerVariants, missionLeftCardVariants, missionCenterImageVariants, missionRightCardVariants } from "@/utils/animations";
 import { IoMdHeartEmpty } from "react-icons/io";
 import { site, PetBloomMissionVisionData, SectionProps } from "@/data";
+import { TbTargetArrow } from "react-icons/tb";
+import StatisticsSection from "@/components/common/StatisticsSection";
 
 const lilitaOne = Lilita_One({
     subsets: ["latin"],
@@ -53,14 +55,14 @@ export default function MissionVisionSection({ data, className, isPage = false }
     const MissionIcon = iconMap[missionData.iconName] || Target;
     const VisionIcon = iconMap[visionData.iconName] || Eye;
     return (
-        <section className={`relative overflow-hidden bg-white py-16 sm:py-20 ${className || ""}`}>
+        <section className={`relative overflow-hidden bg-white  py-10 sm:py-14 md:py-16 lg:py-16 ${className || ""}`}>
             <div className="mx-auto max-w-[1355px] px-4 sm:px-4 md:px-6 lg:px-8">
                 <motion.div
                     variants={missionHeaderContainerVariants}
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true, amount: 0.2 }}
-                    className="mx-auto mb-12 sm:mb-16 max-w-2xl text-center">
+                    className="mx-auto mb-10 sm:mb-10 max-w-2xl text-center">
 
                     {/* Top Badge with responsive decorative lines and wiggling paws */}
                     <motion.div
@@ -86,7 +88,7 @@ export default function MissionVisionSection({ data, className, isPage = false }
                             whileHover={{ scale: 1.05, y: -3 }}
                             transition={{ duration: 0.25 }}
                             className="inline-flex items-center gap-2 rounded-full border border-[#387478]/30 bg-white/80 px-3.5 py-1.5 sm:px-4 shadow-sm backdrop-blur-md">
-                            <span className="text-xs font-bold uppercase tracking-wider text-[#387478]">
+                            <span className="text-sm font-bold uppercase px-2 tracking-wider text-[#387478]">
                                 {header.badgeText}
                             </span>
                         </motion.div>
@@ -178,8 +180,8 @@ export default function MissionVisionSection({ data, className, isPage = false }
                                 <motion.div
                                     animate={{ scale: [1, 1.05, 1] }}
                                     transition={{ duration: 2.5, repeat: Infinity, repeatDelay: 2 }}
-                                    className="flex h-14 w-14 sm:h-16 sm:w-16 items-center justify-center rounded-full bg-[#EAF2F2] text-[#387478]">
-                                    <MissionIcon className="h-7 w-7 sm:h-8 sm:w-8" />
+                                    className="flex h-14 w-14 sm:h-18 sm:w-18 items-center justify-center rounded-full bg-[#EAF2F2] text-[#387478]">
+                                    <TbTargetArrow className="h-8 w-8 sm:h-10 sm:w-10" />
                                 </motion.div>
                             </motion.div>
 
@@ -228,8 +230,8 @@ export default function MissionVisionSection({ data, className, isPage = false }
                             <motion.div
                                 whileHover={{ scale: 1.15, rotate: -8 }}
                                 transition={{ duration: 0.3 }}
-                                className="flex h-12 w-12 sm:h-14 sm:w-14 items-center justify-center">
-                                <IoMdHeartEmpty className="h-7 w-7 sm:h-8 sm:w-8 text-[#387478]" />
+                                className="flex h-12 w-12 sm:h-18 sm:w-18 items-center justify-center">
+                                <IoMdHeartEmpty className="h-7 w-7 sm:h-10 sm:w-10 text-[#387478]" />
                             </motion.div>
                             <span className="text-xs tracking-widest text-gray-300">
                                 ~~~~~
@@ -278,8 +280,8 @@ export default function MissionVisionSection({ data, className, isPage = false }
                                 <motion.div
                                     animate={{ scale: [1, 1.05, 1] }}
                                     transition={{ duration: 2.5, repeat: Infinity, repeatDelay: 2 }}
-                                    className="flex h-14 w-14 sm:h-16 sm:w-16 items-center justify-center rounded-full bg-[#FDF6F0] text-[#E67E22]">
-                                    <VisionIcon className="h-7 w-7 sm:h-8 sm:w-8" />
+                                    className="flex h-14 w-14 sm:h-18 sm:w-18 items-center justify-center rounded-full bg-[#FDF6F0] text-[#E67E22]">
+                                    <VisionIcon className="h-7 w-7 sm:h-10 sm:w-10" />
                                 </motion.div>
                             </motion.div>
                             <motion.div
@@ -323,8 +325,8 @@ export default function MissionVisionSection({ data, className, isPage = false }
                             <motion.div
                                 whileHover={{ scale: 1.15, rotate: 8 }}
                                 transition={{ duration: 0.3 }}
-                                className="flex h-12 w-12 sm:h-14 sm:w-14 items-center justify-center">
-                                <IoMdHeartEmpty className="h-7 w-7 sm:h-8 sm:w-8 text-[#E67E22]" />
+                                className="flex h-12 w-12 sm:h-16 sm:w-16 items-center justify-center">
+                                <IoMdHeartEmpty className="h-8 w-8 sm:h-10 sm:w-10 text-[#E67E22]" />
                             </motion.div>
                             <span className="text-xs tracking-widest text-gray-300">
                                 ~~~~~
@@ -332,6 +334,8 @@ export default function MissionVisionSection({ data, className, isPage = false }
                         </motion.div>
                     </motion.div>
                 </motion.div>
+
+                <StatisticsSection />
             </div>
         </section>
     );

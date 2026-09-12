@@ -65,9 +65,9 @@ export default function BlogCard({ blog }: BlogCardProps) {
                         variants={fadeUpVariants}
                         className="mt-3 border-t border-gray-100 pt-3">
                         <span
-                            className="inline-flex items-center gap-1.5 text-xs font-bold text-[#387478] transition-colors group-hover:text-[#2d5d61]">
+                            className="inline-flex items-center gap-1.5 text-md font-bold text-[#387478] transition-colors group-hover:text-[#2d5d61]">
                             Read More
-                            <ArrowRight className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-1" />
+                            <ArrowRight className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
                         </span>
                     </motion.div>
                 </div>

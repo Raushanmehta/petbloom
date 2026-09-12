@@ -8,7 +8,7 @@ import { Phone, Mail, Globe, MapPin, Briefcase, User, Star, ChevronRight, } from
 import { FaPaw } from "react-icons/fa";
 import { Lilita_One } from "next/font/google";
 import { site, TeamMember, SectionProps } from "@/data";
-import { teamDetailContainerVariants, teamDetailLeftCardVariants, teamDetailRightCardVariants, teamDetailBottomCardVariants, teamDetailItemVariants, } from "@/utils/animations";
+import { teamDetailContainerVariants, teamDetailLeftCardVariants, teamDetailRightCardVariants, teamDetailBottomCardVariants, teamDetailItemVariants, fadeUpVariants, } from "@/utils/animations";
 import StatisticsSection from "@/components/common/StatisticsSection";
 
 const lilitaOne = Lilita_One({
@@ -33,7 +33,7 @@ export default function TeamDetailPage({ data, team: propTeam, className }: Team
     ];
 
     return (
-        <section className={`relative overflow-hidden bg-[#FEFDFB] py-16 sm:py-20 ${className || ""}`}>
+        <section className={`relative overflow-hidden bg-[#FEFDFB] py-10 sm:py-14 md:py-16 lg:py-16 ${className || ""}`}>
             <motion.div
                 initial={{ opacity: 0, x: -30, rotate: -25 }}
                 whileInView={{ opacity: 0.08, x: 0, rotate: -15 }}
@@ -61,24 +61,7 @@ export default function TeamDetailPage({ data, team: propTeam, className }: Team
             </motion.div>
 
             <div className="relative z-10 mx-auto max-w-[1355px] px-4 sm:px-4 md:px-6 lg:px-8 space-y-10">
-                <motion.div
-                    initial={{ opacity: 0, y: -15 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5, ease: "easeOut" }}
-                    className="flex items-center gap-2 text-xs font-semibold text-gray-500 sm:text-sm">
-                    <motion.div whileHover={{ x: 3 }}>
-                        <Link href="/" className="transition-colors hover:text-[#387478]">Home</Link>
-                    </motion.div>
-                    <ChevronRight className="h-3.5 w-3.5 text-[#E67E22]" />
 
-                    <motion.div whileHover={{ x: 3 }}>
-                        <Link href="/team" className="transition-colors hover:text-[#387478]">Our Team</Link>
-                    </motion.div>
-                    <ChevronRight className="h-3.5 w-3.5 text-[#E67E22]" />
-                    <span className="font-bold text-[#E67E22]">
-                        {team.name}
-                    </span>
-                </motion.div>
 
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
                     <motion.div
@@ -140,6 +123,14 @@ export default function TeamDetailPage({ data, team: propTeam, className }: Team
                             >
                                 {team.role}
                             </motion.p>
+                            {/* Decorative Divider */}
+                            <motion.div
+                                initial={{ width: 0 }}
+                                whileInView={{ width: 56 }}
+                                viewport={{ once: true }}
+                                transition={{ duration: 0.7, delay: 0.4 }}
+                                className="h-1 mt-1 w-14 rounded-full bg-[#E67E22]"
+                            />
 
                             {/* Bio Description */}
                             <motion.p
@@ -211,7 +202,16 @@ export default function TeamDetailPage({ data, team: propTeam, className }: Team
                                     <h3 className={`${lilitaOne.className} text-2xl sm:text-3xl tracking-wide text-gray-900`}>
                                         About Me
                                     </h3>
+                                    <motion.div
+                                        initial={{ width: 0 }}
+                                        whileInView={{ width: 56 }}
+                                        viewport={{ once: true }}
+                                        transition={{ duration: 0.7, delay: 0.4 }}
+                                        className="h-1 mt-1 w-14 rounded-full bg-[#E67E22]"
+                                    />
+
                                 </div>
+
                             </div>
 
                             {/* Paragraphs */}
@@ -259,6 +259,14 @@ export default function TeamDetailPage({ data, team: propTeam, className }: Team
                                     <h3 className={`${lilitaOne.className} text-2xl sm:text-3xl tracking-wide text-gray-900`}>
                                         Personal Skills
                                     </h3>
+                                    <motion.div
+                                        initial={{ width: 0 }}
+                                        whileInView={{ width: 56 }}
+                                        viewport={{ once: true }}
+                                        transition={{ duration: 0.7, delay: 0.4 }}
+                                        className="h-1 mt-1 w-14 rounded-full bg-[#E67E22]"
+                                    />
+
                                 </div>
                             </div>
 

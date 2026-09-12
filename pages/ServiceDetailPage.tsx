@@ -119,7 +119,7 @@ export default function ServiceDetailPage({ data, service: propService, classNam
                                         <FaPaw className="h-6 w-6 text-[#387478]" />
                                     </motion.div>
 
-                                    <span className="text-xs font-bold uppercase tracking-wider text-[#387478]">
+                                    <span className="text-sm font-bold uppercase px-2 tracking-wider text-[#387478]">
                                         {service.title}
                                     </span>
                                 </motion.div>

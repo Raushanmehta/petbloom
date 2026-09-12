@@ -89,9 +89,9 @@ export default function SitemapPage() {
                             <motion.div
                                 animate={{ rotate: [0, 10, -10, 0] }}
                                 transition={{ duration: 2, repeat: Infinity, repeatDelay: 3, ease: "easeInOut" }}>
-                                <FaPaw className="h-5 w-5 text-[#387478]" />
+                                <FaPaw className="h-5 w-5 sm:h-6 sm:w-6 text-[#387478]" />
                             </motion.div>
-                            <span className="text-xs font-bold uppercase tracking-wider text-[#387478]">
+                            <span className="text-sm font-bold uppercase px-2 tracking-wider text-[#387478]">
                                 {"Sitemap Directory"}
                             </span>
                         </motion.div>
@@ -162,7 +162,7 @@ export default function SitemapPage() {
                         className="mt-14 sm:mt-16 text-center space-y-2">
                         <div className="inline-flex items-center justify-center gap-2 text-[#387478]">
                             <FaPaw className="h-5 w-5 sm:h-6 sm:w-6 text-[#E67E22]" />
-                            <span className="text-xs sm:text-sm font-bold text-gray-900 uppercase tracking-wider">
+                            <span className="text-sm font-bold text-gray-900 uppercase px-2 tracking-wider">
                                 All Pages Indexed & Regularly Updated
                             </span>
                         </div>

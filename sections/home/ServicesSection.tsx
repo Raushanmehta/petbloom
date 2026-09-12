@@ -14,13 +14,13 @@ const lilitaOne = Lilita_One({
     weight: "400",
 });
 
-export interface ServicesSectionProps extends SectionProps<PetBloomServicesData> {}
+export interface ServicesSectionProps extends SectionProps<PetBloomServicesData> { }
 
 export default function ServicesSection({ data, className }: ServicesSectionProps = {}) {
     const servicesData = data || site.services;
 
     return (
-        <section className={`relative overflow-hidden bg-[#FCF7F3] py-16 sm:py-20 ${className || ""}`}>
+        <section className={`relative overflow-hidden bg-[#FCF7F3] py-10 sm:py-14 md:py-16 lg:py-16 ${className || ""}`}>
             <div className="mx-auto max-w-[1355px] px-4 sm:px-4 md:px-6 lg:px-8">
                 <motion.div
                     variants={headerContainer}
@@ -37,7 +37,7 @@ export default function ServicesSection({ data, className }: ServicesSectionProp
                             whileHover={{ scale: 1.05, y: -2 }}
                             className="mb-3 sm:mb-4 inline-flex items-center rounded-full border border-[#E67E22]/40 bg-white/80 px-4 py-1.5 shadow-sm backdrop-blur-md"
                         >
-                            <span className="text-xs flex gap-2 items-center font-bold uppercase tracking-wider text-[#E67E22]">
+                            <span className="text-sm flex gap-2 items-center font-bold uppercase px-2 tracking-wider text-[#E67E22]">
                                 <motion.div
                                     animate={{ rotate: [0, 10, -10, 0] }}
                                     transition={{ duration: 2, repeat: Infinity, repeatDelay: 3, ease: "easeInOut" }}
@@ -82,7 +82,7 @@ export default function ServicesSection({ data, className }: ServicesSectionProp
                             whileInView={{ opacity: 1, x: 0 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.6, delay: 0.2 }}
-                            className="relative mb-4 flex justify-end gap-2.5 sm:gap-3 md:absolute md:-top-24 md:right-0 md:z-10"
+                            className="relative  flex justify-end gap-2.5 sm:gap-3 md:absolute md:-top-24 md:right-0 md:z-10"
                         >
                             {/* Previous */}
                             <CarouselPrevious className="static h-10 w-10 sm:h-12 sm:w-12 translate-y-0 rounded-full border-2 border-gray-300 bg-white/80 sm:bg-transparent text-gray-900 hover:border-black hover:bg-black hover:text-white transition-all duration-300 shadow-sm">
@@ -96,7 +96,7 @@ export default function ServicesSection({ data, className }: ServicesSectionProp
                         </motion.div>
 
                         {/* Cards */}
-                        <CarouselContent className="-ml-4">
+                        <CarouselContent className="-ml-4 ">
                             {servicesData.services.map((service, index) => (
                                 <CarouselItem
                                     key={`${service.id}-${index}`}

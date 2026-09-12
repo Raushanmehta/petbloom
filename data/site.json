@@ -322,14 +322,14 @@
           "PetBloomServices1": {
             "pageData": {
               "badgeText": "Our Services",
-              "titleWhite": "Premium Care For ",
-              "titleColored": "Your Pet",
-              "description": "We offer a wide range of professional services to keep your furry friends happy, healthy, and looking their absolute best."
+              "titleWhite": " Boarding Service Tailored For  ",
+              "titleColored": " Eevery Pets",
+              "description": "From pampering grooming to safe stays, we offer a range of professional services designed to keep yours pets happy, healthy and loved."
             },
             "sectionData": {
               "badgeText": "Our Services",
-              "titleBlack": "Boarding Service Tailored For Eevery Pets",
-              "description": "We offer a wide range of professional services to keep your furry friends happy, healthy, and looking their absolute best."
+              "titleBlack": "Boarding Service Tailored For Eevery Pets ",
+              "description": "From pampering grooming to safe stays, we offer a range of professional services designed to keep yours pets happy, healthy and loved."
             },
             "services": [
               {
@@ -991,35 +991,35 @@
               "badgeText": "Our Service Areas",
               "titleWhite": "Our ",
               "titleColored": "Service Areas",
-              "description": "We proudly serve premium pet grooming and care services across Mumbai and surrounding regions."
+              "description": "We proudly serve premium pet grooming and care services across Delhi NCR and surrounding regions."
             },
             "sectionData": {
               "badgeText": "Our Service Areas",
               "titleWhite": "Our ",
               "titleColored": "Service Areas",
-              "description": "We proudly serve premium pet grooming and care services across Mumbai and surrounding regions."
+              "description": "We proudly serve premium pet grooming and care services across Delhi NCR and surrounding regions."
             },
             "locations": [
               {
                 "id": "1",
-                "name": "Mumbai",
-                "title": "Mumbai Pet Grooming & Care",
-                "slug": "mumbai",
-                "image": "https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&q=80&w=600",
+                "name": "Delhi",
+                "title": "Delhi Pet Grooming & Care",
+                "slug": "delhi",
+                "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
                 "active": true,
                 "detail": {
-                  "heroImage": "https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&q=80&w=600",
-                  "heroImageAlt": "Mumbai Pet Grooming Service",
-                  "title": "Mumbai",
+                  "heroImage": "https://images.unsplash.com/photo-1587474260584-136574528ed5?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                  "heroImageAlt": "Delhi Pet Grooming Service",
+                  "title": "Delhi",
                   "titleHighlight": "Grooming Service",
                   "titleIcon": "MapPin",
-                  "description": "We bring professional pet grooming services right to your neighborhood in Mumbai. Our team ensures your furry friend gets the best care, comfort, and pampering.",
+                  "description": "We bring professional pet grooming services right to your neighborhood in Delhi. Our team ensures your furry friend gets the best care, comfort, and pampering.",
                   "features": [
                     {
                       "id": "1",
                       "icon": "MapPin",
                       "title": "Service Area",
-                      "subtitle": "All Over Mumbai"
+                      "subtitle": "All Over Delhi"
                     },
                     {
                       "id": "2",
@@ -1040,12 +1040,12 @@
                       "subtitle": "Available"
                     }
                   ],
-                  "aboutTitle": "About Our Mumbai Grooming Service",
+                  "aboutTitle": "About Our Delhi Grooming Service",
                   "aboutIcon": "FaPaw",
-                  "aboutDescription": "We offer a complete range of grooming services at your doorstep across Mumbai. Our experienced groomers use pet-safe products and the latest techniques to ensure your pet feels relaxed, comfortable, and looks their best.",
+                  "aboutDescription": "We offer a complete range of grooming services at your doorstep across Delhi. Our experienced groomers use pet-safe products and the latest techniques to ensure your pet feels relaxed, comfortable, and looks their best.",
                   "aboutImage": "/images/location-image.png",
-                  "aboutImageAlt": "About Our Mumbai Grooming Service",
-                  "trustTitle": "Why Pet Parents in Mumbai Trust Us",
+                  "aboutImageAlt": "About Our Delhi Grooming Service",
+                  "trustTitle": "Why Pet Parents in Delhi Trust Us",
                   "trustFeatures": [
                     {
                       "id": "1",
@@ -1090,24 +1090,24 @@
               },
               {
                 "id": "2",
-                "name": "Navi Mumbai",
-                "title": "Navi Mumbai Pet Grooming & Care",
-                "slug": "navi-mumbai",
-                "image": "https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?auto=format&fit=crop&q=80&w=600",
+                "name": "Gurugram",
+                "title": "Gurugram Pet Grooming & Care",
+                "slug": "gurugram",
+                "image": "https://images.unsplash.com/photo-1689338039987-8a2539194e27?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z3VyZ2FvbnxlbnwwfHwwfHx8MA%3D%3D",
                 "active": false,
                 "detail": {
-                  "heroImage": "https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?auto=format&fit=crop&q=80&w=600",
-                  "heroImageAlt": "Navi Mumbai Pet Grooming Service",
-                  "title": "Navi Mumbai",
+                  "heroImage": "https://images.unsplash.com/photo-1689338039987-8a2539194e27?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z3VyZ2FvbnxlbnwwfHwwfHx8MA%3D%3D",
+                  "heroImageAlt": "Gurugram Pet Grooming Service",
+                  "title": "Gurugram",
                   "titleHighlight": "Grooming Service",
                   "titleIcon": "MapPin",
-                  "description": "We bring professional pet grooming services right to your neighborhood in Navi Mumbai. Our team ensures your furry friend gets the best care, comfort, and pampering.",
+                  "description": "We bring professional pet grooming services right to your neighborhood in Gurugram. Our team ensures your furry friend gets the best care, comfort, and pampering.",
                   "features": [
                     {
                       "id": "1",
                       "icon": "MapPin",
                       "title": "Service Area",
-                      "subtitle": "Across Navi Mumbai"
+                      "subtitle": "Across Gurugram"
                     },
                     {
                       "id": "2",
@@ -1128,12 +1128,12 @@
                       "subtitle": "Available"
                     }
                   ],
-                  "aboutTitle": "About Our Navi Mumbai Grooming Service",
+                  "aboutTitle": "About Our Gurugram Grooming Service",
                   "aboutIcon": "FaPaw",
-                  "aboutDescription": "We offer a complete range of grooming services at your doorstep across Navi Mumbai. Our experienced groomers use pet-safe products and the latest techniques to ensure your pet feels relaxed, comfortable, and looks their best.",
+                  "aboutDescription": "We offer a complete range of grooming services at your doorstep across Gurugram. Our experienced groomers use pet-safe products and the latest techniques to ensure your pet feels relaxed, comfortable, and looks their best.",
                   "aboutImage": "/images/location-image.png",
-                  "aboutImageAlt": "About Our Navi Mumbai Grooming Service",
-                  "trustTitle": "Why Pet Parents in Navi Mumbai Trust Us",
+                  "aboutImageAlt": "About Our Gurugram Grooming Service",
+                  "trustTitle": "Why Pet Parents in Gurugram Trust Us",
                   "trustFeatures": [
                     {
                       "id": "1",
@@ -1178,18 +1178,18 @@
               },
               {
                 "id": "3",
-                "name": "Thane",
-                "title": "Thane Pet Grooming & Care",
-                "slug": "thane",
-                "image": "https://images.unsplash.com/photo-1537151625747-768eb6cf92b2?auto=format&fit=crop&q=80&w=600",
+                "name": "Noida",
+                "title": "Noida Pet Grooming & Care",
+                "slug": "noida",
+                "image": "https://images.unsplash.com/photo-1645938374241-7f0e5f520663?q=80&w=764&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
                 "active": false,
                 "detail": {
-                  "heroImage": "https://images.unsplash.com/photo-1537151625747-768eb6cf92b2?auto=format&fit=crop&q=80&w=600",
-                  "heroImageAlt": "Thane Pet Grooming Service",
-                  "title": "Thane",
+                  "heroImage": "https://images.unsplash.com/photo-1645938374241-7f0e5f520663?q=80&w=764&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                  "heroImageAlt": "Noida Pet Grooming Service",
+                  "title": "Noida",
                   "titleHighlight": "Grooming Service",
                   "titleIcon": "MapPin",
-                  "description": "We bring professional pet grooming services right to your neighborhood in Thane. Our team ensures your furry friend gets the best care, comfort, and pampering.",
+                  "description": "We bring professional pet grooming services right to your neighborhood in Noida. Our team ensures your furry friend gets the best care, comfort, and pampering.",
                   "features": [
                     {
                       "id": "1",
@@ -1216,12 +1216,12 @@
                       "subtitle": "Available"
                     }
                   ],
-                  "aboutTitle": "About Our Thane Grooming Service",
+                  "aboutTitle": "About Our Noida Grooming Service",
                   "aboutIcon": "FaPaw",
-                  "aboutDescription": "We offer a complete range of grooming services at your doorstep across Thane. Our experienced groomers use pet-safe products and the latest techniques to ensure your pet feels relaxed, comfortable, and looks their best.",
+                  "aboutDescription": "We offer a complete range of grooming services at your doorstep across Noida. Our experienced groomers use pet-safe products and the latest techniques to ensure your pet feels relaxed, comfortable, and looks their best.",
                   "aboutImage": "/images/location-image.png",
-                  "aboutImageAlt": "About Our Thane Grooming Service",
-                  "trustTitle": "Why Pet Parents in Thane Trust Us",
+                  "aboutImageAlt": "About Our Noida Grooming Service",
+                  "trustTitle": "Why Pet Parents in Noida Trust Us",
                   "trustFeatures": [
                     {
                       "id": "1",
@@ -1266,18 +1266,18 @@
               },
               {
                 "id": "4",
-                "name": "Bandra",
-                "title": "Bandra Pet Grooming & Care",
-                "slug": "bandra",
-                "image": "https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&q=80&w=600",
+                "name": "Faridabad",
+                "title": "Faridabad Pet Grooming & Care",
+                "slug": "faridabad",
+                "image": "https://media.istockphoto.com/id/2257054799/photo/aerial-drone-shot-flying-low-forward-over-similar-houses-with-solar-panels-on-roof-showing.jpg?s=612x612&w=0&k=20&c=hfgHbAHMyDNMBgkPtOVKJUQl0BzmETltx-F_10suBQU=",
                 "active": false,
                 "detail": {
-                  "heroImage": "https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&q=80&w=600",
-                  "heroImageAlt": "Bandra Pet Grooming Service",
-                  "title": "Bandra",
+                  "heroImage": "https://media.istockphoto.com/id/2257054799/photo/aerial-drone-shot-flying-low-forward-over-similar-houses-with-solar-panels-on-roof-showing.jpg?s=612x612&w=0&k=20&c=hfgHbAHMyDNMBgkPtOVKJUQl0BzmETltx-F_10suBQU=",
+                  "heroImageAlt": "Faridabad Pet Grooming Service",
+                  "title": "Faridabad",
                   "titleHighlight": "Grooming Service",
                   "titleIcon": "MapPin",
-                  "description": "We bring professional pet grooming services right to your neighborhood in Bandra. Our team ensures your furry friend gets the best care, comfort, and pampering.",
+                  "description": "We bring professional pet grooming services right to your neighborhood in Faridabad. Our team ensures your furry friend gets the best care, comfort, and pampering.",
                   "features": [
                     {
                       "id": "1",
@@ -1304,9 +1304,9 @@
                       "subtitle": "Available"
                     }
                   ],
-                  "aboutTitle": "About Our Bandra Grooming Service",
+                  "aboutTitle": "About Our Faridabad Grooming Service",
                   "aboutIcon": "FaPaw",
-                  "aboutDescription": "We offer a complete range of grooming services at your doorstep across Bandra. Our experienced groomers use pet-safe products and the latest techniques to ensure your pet feels relaxed, comfortable, and looks their best.",
+                  "aboutDescription": "We offer a complete range of grooming services at your doorstep across Faridabad. Our experienced groomers use pet-safe products and the latest techniques to ensure your pet feels relaxed, comfortable, and looks their best.",
                   "aboutImage": "/images/location-image.png",
                   "aboutImageAlt": "About Our Bandra Grooming Service",
                   "trustTitle": "Why Pet Parents in Bandra Trust Us",
@@ -1354,18 +1354,18 @@
               },
               {
                 "id": "5",
-                "name": "Andheri",
-                "title": "Andheri Pet Grooming & Care",
-                "slug": "andheri",
-                "image": "https://images.unsplash.com/photo-1587300003388-59208cc962cb?auto=format&fit=crop&q=80&w=600",
+                "name": "Ghaziabad",
+                "title": "Ghaziabad Pet Grooming & Care",
+                "slug": "ghaziabad",
+                "image": "https://plus.unsplash.com/premium_photo-1697729725856-05c3e7aeec30?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Z2hhemlhYmFkfGVufDB8fDB8fHww",
                 "active": false,
                 "detail": {
-                  "heroImage": "https://images.unsplash.com/photo-1587300003388-59208cc962cb?auto=format&fit=crop&q=80&w=600",
-                  "heroImageAlt": "Andheri Pet Grooming Service",
-                  "title": "Andheri",
+                  "heroImage": "https://plus.unsplash.com/premium_photo-1697729725856-05c3e7aeec30?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Z2hhemlhYmFkfGVufDB8fDB8fHww",
+                  "heroImageAlt": "Ghaziabad Pet Grooming Service",
+                  "title": "Ghaziabad",
                   "titleHighlight": "Grooming Service",
                   "titleIcon": "MapPin",
-                  "description": "We bring professional pet grooming services right to your neighborhood in Andheri. Our team ensures your furry friend gets the best care, comfort, and pampering.",
+                  "description": "We bring professional pet grooming services right to your neighborhood in Ghaziabad. Our team ensures your furry friend gets the best care, comfort, and pampering.",
                   "features": [
                     {
                       "id": "1",
@@ -1392,12 +1392,12 @@
                       "subtitle": "Available"
                     }
                   ],
-                  "aboutTitle": "About Our Andheri Grooming Service",
+                  "aboutTitle": "About Our Ghaziabad Grooming Service",
                   "aboutIcon": "FaPaw",
-                  "aboutDescription": "We offer a complete range of grooming services at your doorstep across Andheri. Our experienced groomers use pet-safe products and the latest techniques to ensure your pet feels relaxed, comfortable, and looks their best.",
+                  "aboutDescription": "We offer a complete range of grooming services at your doorstep across Ghaziabad. Our experienced groomers use pet-safe products and the latest techniques to ensure your pet feels relaxed, comfortable, and looks their best.",
                   "aboutImage": "/images/location-image.png",
-                  "aboutImageAlt": "About Our Andheri Grooming Service",
-                  "trustTitle": "Why Pet Parents in Andheri Trust Us",
+                  "aboutImageAlt": "About Our Ghaziabad Grooming Service",
+                  "trustTitle": "Why Pet Parents in Ghaziabad Trust Us",
                   "trustFeatures": [
                     {
                       "id": "1",
@@ -1442,24 +1442,24 @@
               },
               {
                 "id": "6",
-                "name": "Borivali",
-                "title": "Borivali Pet Grooming & Care",
-                "slug": "borivali",
-                "image": "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&q=80&w=600",
+                "name": "Greater Noida",
+                "title": "Greater Noida Pet Grooming & Care",
+                "slug": "greater-noida",
+                "image": "https://images.unsplash.com/photo-1709015653284-1c121cf92ddf?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z3JlYXRlciUyMG5vaWRhfGVufDB8fDB8fHww",
                 "active": false,
                 "detail": {
-                  "heroImage": "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&q=80&w=600",
-                  "heroImageAlt": "Borivali Pet Grooming Service",
-                  "title": "Borivali",
+                  "heroImage": "https://images.unsplash.com/photo-1709015653284-1c121cf92ddf?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z3JlYXRlciUyMG5vaWRhfGVufDB8fDB8fHww",
+                  "heroImageAlt": "Greater Noida Pet Grooming Service",
+                  "title": "Greater Noida",
                   "titleHighlight": "Grooming Service",
                   "titleIcon": "MapPin",
-                  "description": "We bring professional pet grooming services right to your neighborhood in Borivali. Our team ensures your furry friend gets the best care, comfort, and pampering.",
+                  "description": "We bring professional pet grooming services right to your neighborhood in Greater Noida. Our team ensures your furry friend gets the best care, comfort, and pampering.",
                   "features": [
                     {
                       "id": "1",
                       "icon": "MapPin",
                       "title": "Service Area",
-                      "subtitle": "Borivali & Dahisar"
+                      "subtitle": "Greater Noida"
                     },
                     {
                       "id": "2",
@@ -1480,364 +1480,12 @@
                       "subtitle": "Available"
                     }
                   ],
-                  "aboutTitle": "About Our Borivali Grooming Service",
+                  "aboutTitle": "About Our Greater Noida Grooming Service",
                   "aboutIcon": "FaPaw",
-                  "aboutDescription": "We offer a complete range of grooming services at your doorstep across Borivali. Our experienced groomers use pet-safe products and the latest techniques to ensure your pet feels relaxed, comfortable, and looks their best.",
+                  "aboutDescription": "We offer a complete range of grooming services at your doorstep across Greater Noida. Our experienced groomers use pet-safe products and the latest techniques to ensure your pet feels relaxed, comfortable, and looks their best.",
                   "aboutImage": "/images/location-image.png",
-                  "aboutImageAlt": "About Our Borivali Grooming Service",
-                  "trustTitle": "Why Pet Parents in Borivali Trust Us",
-                  "trustFeatures": [
-                    {
-                      "id": "1",
-                      "icon": "ShieldCheck",
-                      "title": "Trained &\nVerified Experts"
-                    },
-                    {
-                      "id": "2",
-                      "icon": "Leaf",
-                      "title": "Pet-Safe &\nQuality Products"
-                    },
-                    {
-                      "id": "3",
-                      "icon": "Home",
-                      "title": "Hassle-Free\nHome Service"
-                    },
-                    {
-                      "id": "4",
-                      "icon": "Heart",
-                      "title": "Personalized\nCare & Attention"
-                    },
-                    {
-                      "id": "5",
-                      "icon": "FaPaw",
-                      "title": "Stress-Free\nExperience"
-                    }
-                  ],
-                  "sidebarTitle": "Our Service Locations",
-                  "sidebarIcon": "MapPin",
-                  "bookService": {
-                    "title": "Book Our Service",
-                    "icon": "CalendarCheck",
-                    "description": "Give your pet the care they deserve. Book an appointment with us today!",
-                    "buttonText": "Book Appointment",
-                    "buttonLink": "/appointment",
-                    "buttonIcon": "CalendarCheck",
-                    "helpText": "Need Help?",
-                    "helpPhone": "+91 98765 43210",
-                    "helpIcon": "Phone"
-                  }
-                }
-              },
-              {
-                "id": "7",
-                "name": "Ghatkopar",
-                "title": "Ghatkopar Pet Grooming & Care",
-                "slug": "ghatkopar",
-                "image": "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&q=80&w=600",
-                "active": false,
-                "detail": {
-                  "heroImage": "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&q=80&w=600",
-                  "heroImageAlt": "Ghatkopar Pet Grooming Service",
-                  "title": "Ghatkopar",
-                  "titleHighlight": "Grooming Service",
-                  "titleIcon": "MapPin",
-                  "description": "We bring professional pet grooming services right to your neighborhood in Ghatkopar. Our team ensures your furry friend gets the best care, comfort, and pampering.",
-                  "features": [
-                    {
-                      "id": "1",
-                      "icon": "MapPin",
-                      "title": "Service Area",
-                      "subtitle": "Ghatkopar & Vidyavihar"
-                    },
-                    {
-                      "id": "2",
-                      "icon": "Clock",
-                      "title": "Service Time",
-                      "subtitle": "9:00 AM - 8:00 PM"
-                    },
-                    {
-                      "id": "3",
-                      "icon": "Calendar",
-                      "title": "Available",
-                      "subtitle": "All 7 Days a Week"
-                    },
-                    {
-                      "id": "4",
-                      "icon": "Truck",
-                      "title": "Home Service",
-                      "subtitle": "Available"
-                    }
-                  ],
-                  "aboutTitle": "About Our Ghatkopar Grooming Service",
-                  "aboutIcon": "FaPaw",
-                  "aboutDescription": "We offer a complete range of grooming services at your doorstep across Ghatkopar. Our experienced groomers use pet-safe products and the latest techniques to ensure your pet feels relaxed, comfortable, and looks their best.",
-                  "aboutImage": "/images/location-image.png",
-                  "aboutImageAlt": "About Our Ghatkopar Grooming Service",
-                  "trustTitle": "Why Pet Parents in Ghatkopar Trust Us",
-                  "trustFeatures": [
-                    {
-                      "id": "1",
-                      "icon": "ShieldCheck",
-                      "title": "Trained &\nVerified Experts"
-                    },
-                    {
-                      "id": "2",
-                      "icon": "Leaf",
-                      "title": "Pet-Safe &\nQuality Products"
-                    },
-                    {
-                      "id": "3",
-                      "icon": "Home",
-                      "title": "Hassle-Free\nHome Service"
-                    },
-                    {
-                      "id": "4",
-                      "icon": "Heart",
-                      "title": "Personalized\nCare & Attention"
-                    },
-                    {
-                      "id": "5",
-                      "icon": "FaPaw",
-                      "title": "Stress-Free\nExperience"
-                    }
-                  ],
-                  "sidebarTitle": "Our Service Locations",
-                  "sidebarIcon": "MapPin",
-                  "bookService": {
-                    "title": "Book Our Service",
-                    "icon": "CalendarCheck",
-                    "description": "Give your pet the care they deserve. Book an appointment with us today!",
-                    "buttonText": "Book Appointment",
-                    "buttonLink": "/appointment",
-                    "buttonIcon": "CalendarCheck",
-                    "helpText": "Need Help?",
-                    "helpPhone": "+91 98765 43210",
-                    "helpIcon": "Phone"
-                  }
-                }
-              },
-              {
-                "id": "8",
-                "name": "Malad",
-                "title": "Malad Pet Grooming & Care",
-                "slug": "malad",
-                "image": "https://images.unsplash.com/photo-1561037404-61cd46aa615b?auto=format&fit=crop&q=80&w=600",
-                "active": false,
-                "detail": {
-                  "heroImage": "https://images.unsplash.com/photo-1561037404-61cd46aa615b?auto=format&fit=crop&q=80&w=600",
-                  "heroImageAlt": "Malad Pet Grooming Service",
-                  "title": "Malad",
-                  "titleHighlight": "Grooming Service",
-                  "titleIcon": "MapPin",
-                  "description": "We bring professional pet grooming services right to your neighborhood in Malad. Our team ensures your furry friend gets the best care, comfort, and pampering.",
-                  "features": [
-                    {
-                      "id": "1",
-                      "icon": "MapPin",
-                      "title": "Service Area",
-                      "subtitle": "Malad West & East"
-                    },
-                    {
-                      "id": "2",
-                      "icon": "Clock",
-                      "title": "Service Time",
-                      "subtitle": "9:00 AM - 8:00 PM"
-                    },
-                    {
-                      "id": "3",
-                      "icon": "Calendar",
-                      "title": "Available",
-                      "subtitle": "All 7 Days a Week"
-                    },
-                    {
-                      "id": "4",
-                      "icon": "Truck",
-                      "title": "Home Service",
-                      "subtitle": "Available"
-                    }
-                  ],
-                  "aboutTitle": "About Our Malad Grooming Service",
-                  "aboutIcon": "FaPaw",
-                  "aboutDescription": "We offer a complete range of grooming services at your doorstep across Malad. Our experienced groomers use pet-safe products and the latest techniques to ensure your pet feels relaxed, comfortable, and looks their best.",
-                  "aboutImage": "/images/location-image.png",
-                  "aboutImageAlt": "About Our Malad Grooming Service",
-                  "trustTitle": "Why Pet Parents in Malad Trust Us",
-                  "trustFeatures": [
-                    {
-                      "id": "1",
-                      "icon": "ShieldCheck",
-                      "title": "Trained &\nVerified Experts"
-                    },
-                    {
-                      "id": "2",
-                      "icon": "Leaf",
-                      "title": "Pet-Safe &\nQuality Products"
-                    },
-                    {
-                      "id": "3",
-                      "icon": "Home",
-                      "title": "Hassle-Free\nHome Service"
-                    },
-                    {
-                      "id": "4",
-                      "icon": "Heart",
-                      "title": "Personalized\nCare & Attention"
-                    },
-                    {
-                      "id": "5",
-                      "icon": "FaPaw",
-                      "title": "Stress-Free\nExperience"
-                    }
-                  ],
-                  "sidebarTitle": "Our Service Locations",
-                  "sidebarIcon": "MapPin",
-                  "bookService": {
-                    "title": "Book Our Service",
-                    "icon": "CalendarCheck",
-                    "description": "Give your pet the care they deserve. Book an appointment with us today!",
-                    "buttonText": "Book Appointment",
-                    "buttonLink": "/appointment",
-                    "buttonIcon": "CalendarCheck",
-                    "helpText": "Need Help?",
-                    "helpPhone": "+91 98765 43210",
-                    "helpIcon": "Phone"
-                  }
-                }
-              },
-              {
-                "id": "9",
-                "name": "Kandivali",
-                "title": "Kandivali Pet Grooming & Care",
-                "slug": "kandivali",
-                "image": "https://images.unsplash.com/photo-1534361960057-19889db9621e?auto=format&fit=crop&q=80&w=600",
-                "active": false,
-                "detail": {
-                  "heroImage": "https://images.unsplash.com/photo-1534361960057-19889db9621e?auto=format&fit=crop&q=80&w=600",
-                  "heroImageAlt": "Kandivali Pet Grooming Service",
-                  "title": "Kandivali",
-                  "titleHighlight": "Grooming Service",
-                  "titleIcon": "MapPin",
-                  "description": "We bring professional pet grooming services right to your neighborhood in Kandivali. Our team ensures your furry friend gets the best care, comfort, and pampering.",
-                  "features": [
-                    {
-                      "id": "1",
-                      "icon": "MapPin",
-                      "title": "Service Area",
-                      "subtitle": "Kandivali East & West"
-                    },
-                    {
-                      "id": "2",
-                      "icon": "Clock",
-                      "title": "Service Time",
-                      "subtitle": "9:00 AM - 8:00 PM"
-                    },
-                    {
-                      "id": "3",
-                      "icon": "Calendar",
-                      "title": "Available",
-                      "subtitle": "All 7 Days a Week"
-                    },
-                    {
-                      "id": "4",
-                      "icon": "Truck",
-                      "title": "Home Service",
-                      "subtitle": "Available"
-                    }
-                  ],
-                  "aboutTitle": "About Our Kandivali Grooming Service",
-                  "aboutIcon": "FaPaw",
-                  "aboutDescription": "We offer a complete range of grooming services at your doorstep across Kandivali. Our experienced groomers use pet-safe products and the latest techniques to ensure your pet feels relaxed, comfortable, and looks their best.",
-                  "aboutImage": "/images/location-image.png",
-                  "aboutImageAlt": "About Our Kandivali Grooming Service",
-                  "trustTitle": "Why Pet Parents in Kandivali Trust Us",
-                  "trustFeatures": [
-                    {
-                      "id": "1",
-                      "icon": "ShieldCheck",
-                      "title": "Trained &\nVerified Experts"
-                    },
-                    {
-                      "id": "2",
-                      "icon": "Leaf",
-                      "title": "Pet-Safe &\nQuality Products"
-                    },
-                    {
-                      "id": "3",
-                      "icon": "Home",
-                      "title": "Hassle-Free\nHome Service"
-                    },
-                    {
-                      "id": "4",
-                      "icon": "Heart",
-                      "title": "Personalized\nCare & Attention"
-                    },
-                    {
-                      "id": "5",
-                      "icon": "FaPaw",
-                      "title": "Stress-Free\nExperience"
-                    }
-                  ],
-                  "sidebarTitle": "Our Service Locations",
-                  "sidebarIcon": "MapPin",
-                  "bookService": {
-                    "title": "Book Our Service",
-                    "icon": "CalendarCheck",
-                    "description": "Give your pet the care they deserve. Book an appointment with us today!",
-                    "buttonText": "Book Appointment",
-                    "buttonLink": "/appointment",
-                    "buttonIcon": "CalendarCheck",
-                    "helpText": "Need Help?",
-                    "helpPhone": "+91 98765 43210",
-                    "helpIcon": "Phone"
-                  }
-                }
-              },
-              {
-                "id": "10",
-                "name": "Chembur",
-                "title": "Chembur Pet Grooming & Care",
-                "slug": "chembur",
-                "image": "https://images.unsplash.com/photo-1596492784531-6e6eb5ea9993?auto=format&fit=crop&q=80&w=600",
-                "active": false,
-                "detail": {
-                  "heroImage": "https://images.unsplash.com/photo-1596492784531-6e6eb5ea9993?auto=format&fit=crop&q=80&w=600",
-                  "heroImageAlt": "Chembur Pet Grooming Service",
-                  "title": "Chembur",
-                  "titleHighlight": "Grooming Service",
-                  "titleIcon": "MapPin",
-                  "description": "We bring professional pet grooming services right to your neighborhood in Chembur. Our team ensures your furry friend gets the best care, comfort, and pampering.",
-                  "features": [
-                    {
-                      "id": "1",
-                      "icon": "MapPin",
-                      "title": "Service Area",
-                      "subtitle": "Chembur & Govandi"
-                    },
-                    {
-                      "id": "2",
-                      "icon": "Clock",
-                      "title": "Service Time",
-                      "subtitle": "9:00 AM - 8:00 PM"
-                    },
-                    {
-                      "id": "3",
-                      "icon": "Calendar",
-                      "title": "Available",
-                      "subtitle": "All 7 Days a Week"
-                    },
-                    {
-                      "id": "4",
-                      "icon": "Truck",
-                      "title": "Home Service",
-                      "subtitle": "Available"
-                    }
-                  ],
-                  "aboutTitle": "About Our Chembur Grooming Service",
-                  "aboutIcon": "FaPaw",
-                  "aboutDescription": "We offer a complete range of grooming services at your doorstep across Chembur. Our experienced groomers use pet-safe products and the latest techniques to ensure your pet feels relaxed, comfortable, and looks their best.",
-                  "aboutImage": "/images/location-image.png",
-                  "aboutImageAlt": "About Our Chembur Grooming Service",
-                  "trustTitle": "Why Pet Parents in Chembur Trust Us",
+                  "aboutImageAlt": "About Our Greater Noida Grooming Service",
+                  "trustTitle": "Why Pet Parents in Greater Noida Trust Us",
                   "trustFeatures": [
                     {
                       "id": "1",
@@ -2962,7 +2610,7 @@
             "images": {
               "main": "https://plus.unsplash.com/premium_photo-1707410050552-e94a738102a1?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y296eSUyMGRvZ3xlbnwwfHwwfHx8MA%3D%3D",
               "secondary": "https://images.unsplash.com/photo-1625794084867-8ddd239946b1?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c3RyZXNzZWQlMjBkb2d8ZW58MHx8MHx8fDA%3D",
-              "badgeIcon": "/icon/cat-foot-icon.svg"
+              "badgeIcon": "/icon/about-icon.png"
             },
             "badge": {
               "line1": "Safe, Gentle",
@@ -4082,35 +3730,35 @@
       "badgeText": "Our Service Areas",
       "titleWhite": "Our ",
       "titleColored": "Service Areas",
-      "description": "We proudly serve premium pet grooming and care services across Mumbai and surrounding regions."
+      "description": "We proudly serve premium pet grooming and care services across Delhi NCR and surrounding regions."
     },
     "sectionData": {
       "badgeText": "Our Service Areas",
       "titleWhite": "Our ",
       "titleColored": "Service Areas",
-      "description": "We proudly serve premium pet grooming and care services across Mumbai and surrounding regions."
+      "description": "We proudly serve premium pet grooming and care services across Delhi NCR and surrounding regions."
     },
     "locations": [
       {
         "id": "1",
-        "name": "Mumbai",
-        "title": "Mumbai Pet Grooming & Care",
-        "slug": "mumbai",
+        "name": "Delhi",
+        "title": "Delhi Pet Grooming & Care",
+        "slug": "delhi",
         "image": "https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&q=80&w=600",
         "active": true,
         "detail": {
           "heroImage": "https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&q=80&w=600",
-          "heroImageAlt": "Mumbai Pet Grooming Service",
-          "title": "Mumbai",
+          "heroImageAlt": "Delhi Pet Grooming Service",
+          "title": "Delhi",
           "titleHighlight": "Grooming Service",
           "titleIcon": "MapPin",
-          "description": "We bring professional pet grooming services right to your neighborhood in Mumbai. Our team ensures your furry friend gets the best care, comfort, and pampering.",
+          "description": "We bring professional pet grooming services right to your neighborhood in Delhi. Our team ensures your furry friend gets the best care, comfort, and pampering.",
           "features": [
             {
               "id": "1",
               "icon": "MapPin",
               "title": "Service Area",
-              "subtitle": "All Over Mumbai"
+              "subtitle": "All Over Delhi"
             },
             {
               "id": "2",
@@ -4131,12 +3779,12 @@
               "subtitle": "Available"
             }
           ],
-          "aboutTitle": "About Our Mumbai Grooming Service",
+          "aboutTitle": "About Our Delhi Grooming Service",
           "aboutIcon": "FaPaw",
-          "aboutDescription": "We offer a complete range of grooming services at your doorstep across Mumbai. Our experienced groomers use pet-safe products and the latest techniques to ensure your pet feels relaxed, comfortable, and looks their best.",
+          "aboutDescription": "We offer a complete range of grooming services at your doorstep across Delhi. Our experienced groomers use pet-safe products and the latest techniques to ensure your pet feels relaxed, comfortable, and looks their best.",
           "aboutImage": "/images/location-image.png",
-          "aboutImageAlt": "About Our Mumbai Grooming Service",
-          "trustTitle": "Why Pet Parents in Mumbai Trust Us",
+          "aboutImageAlt": "About Our Delhi Grooming Service",
+          "trustTitle": "Why Pet Parents in Delhi Trust Us",
           "trustFeatures": [
             {
               "id": "1",
@@ -4146,7 +3794,7 @@
             {
               "id": "2",
               "icon": "Leaf",
-              "title": "Pet-Safe &\nQuality Products"
+              "title": "Pet-Safe\nQuality Products"
             },
             {
               "id": "3",
@@ -4181,24 +3829,24 @@
       },
       {
         "id": "2",
-        "name": "Navi Mumbai",
-        "title": "Navi Mumbai Pet Grooming & Care",
-        "slug": "navi-mumbai",
-        "image": "https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?auto=format&fit=crop&q=80&w=600",
+        "name": "Gurugram",
+        "title": "Gurugram Pet Grooming & Care",
+        "slug": "gurugram",
+        "image": "https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&q=80&w=600",
         "active": false,
         "detail": {
-          "heroImage": "https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?auto=format&fit=crop&q=80&w=600",
-          "heroImageAlt": "Navi Mumbai Pet Grooming Service",
-          "title": "Navi Mumbai",
+          "heroImage": "https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&q=80&w=600",
+          "heroImageAlt": "Gurugram Pet Grooming Service",
+          "title": "Gurugram",
           "titleHighlight": "Grooming Service",
           "titleIcon": "MapPin",
-          "description": "We bring professional pet grooming services right to your neighborhood in Navi Mumbai. Our team ensures your furry friend gets the best care, comfort, and pampering.",
+          "description": "We bring professional pet grooming services right to your neighborhood in Gurugram. Our team ensures your furry friend gets the best care, comfort, and pampering.",
           "features": [
             {
               "id": "1",
               "icon": "MapPin",
               "title": "Service Area",
-              "subtitle": "Across Navi Mumbai"
+              "subtitle": "All Over Gurugram"
             },
             {
               "id": "2",
@@ -4219,12 +3867,12 @@
               "subtitle": "Available"
             }
           ],
-          "aboutTitle": "About Our Navi Mumbai Grooming Service",
+          "aboutTitle": "About Our Gurugram Grooming Service",
           "aboutIcon": "FaPaw",
-          "aboutDescription": "We offer a complete range of grooming services at your doorstep across Navi Mumbai. Our experienced groomers use pet-safe products and the latest techniques to ensure your pet feels relaxed, comfortable, and looks their best.",
+          "aboutDescription": "We offer a complete range of grooming services at your doorstep across Gurugram. Our experienced groomers use pet-safe products and the latest techniques to ensure your pet feels relaxed, comfortable, and looks their best.",
           "aboutImage": "/images/location-image.png",
-          "aboutImageAlt": "About Our Navi Mumbai Grooming Service",
-          "trustTitle": "Why Pet Parents in Navi Mumbai Trust Us",
+          "aboutImageAlt": "About Our Gurugram Grooming Service",
+          "trustTitle": "Why Pet Parents in Gurugram Trust Us",
           "trustFeatures": [
             {
               "id": "1",
@@ -4269,24 +3917,24 @@
       },
       {
         "id": "3",
-        "name": "Thane",
-        "title": "Thane Pet Grooming & Care",
-        "slug": "thane",
-        "image": "https://images.unsplash.com/photo-1537151625747-768eb6cf92b2?auto=format&fit=crop&q=80&w=600",
+        "name": "Noida",
+        "title": "Noida Pet Grooming & Care",
+        "slug": "noida",
+        "image": "https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&q=80&w=600",
         "active": false,
         "detail": {
-          "heroImage": "https://images.unsplash.com/photo-1537151625747-768eb6cf92b2?auto=format&fit=crop&q=80&w=600",
-          "heroImageAlt": "Thane Pet Grooming Service",
-          "title": "Thane",
+          "heroImage": "https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&q=80&w=600",
+          "heroImageAlt": "Noida Pet Grooming Service",
+          "title": "Noida",
           "titleHighlight": "Grooming Service",
           "titleIcon": "MapPin",
-          "description": "We bring professional pet grooming services right to your neighborhood in Thane. Our team ensures your furry friend gets the best care, comfort, and pampering.",
+          "description": "We bring professional pet grooming services right to your neighborhood in Noida. Our team ensures your furry friend gets the best care, comfort, and pampering.",
           "features": [
             {
               "id": "1",
               "icon": "MapPin",
               "title": "Service Area",
-              "subtitle": "Thane & Surrounding"
+              "subtitle": "All Over Noida"
             },
             {
               "id": "2",
@@ -4307,12 +3955,12 @@
               "subtitle": "Available"
             }
           ],
-          "aboutTitle": "About Our Thane Grooming Service",
+          "aboutTitle": "About Our Noida Grooming Service",
           "aboutIcon": "FaPaw",
-          "aboutDescription": "We offer a complete range of grooming services at your doorstep across Thane. Our experienced groomers use pet-safe products and the latest techniques to ensure your pet feels relaxed, comfortable, and looks their best.",
+          "aboutDescription": "We offer a complete range of grooming services at your doorstep across Noida. Our experienced groomers use pet-safe products and the latest techniques to ensure your pet feels relaxed, comfortable, and looks their best.",
           "aboutImage": "/images/location-image.png",
-          "aboutImageAlt": "About Our Thane Grooming Service",
-          "trustTitle": "Why Pet Parents in Thane Trust Us",
+          "aboutImageAlt": "About Our Noida Grooming Service",
+          "trustTitle": "Why Pet Parents in Noida Trust Us",
           "trustFeatures": [
             {
               "id": "1",
@@ -4357,24 +4005,24 @@
       },
       {
         "id": "4",
-        "name": "Bandra",
-        "title": "Bandra Pet Grooming & Care",
-        "slug": "bandra",
-        "image": "https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&q=80&w=600",
+        "name": "Faridabad",
+        "title": "Faridabad Pet Grooming & Care",
+        "slug": "faridabad",
+        "image": "https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&q=80&w=600",
         "active": false,
         "detail": {
-          "heroImage": "https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&q=80&w=600",
-          "heroImageAlt": "Bandra Pet Grooming Service",
-          "title": "Bandra",
+          "heroImage": "https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&q=80&w=600",
+          "heroImageAlt": "Faridabad Pet Grooming Service",
+          "title": "Faridabad",
           "titleHighlight": "Grooming Service",
           "titleIcon": "MapPin",
-          "description": "We bring professional pet grooming services right to your neighborhood in Bandra. Our team ensures your furry friend gets the best care, comfort, and pampering.",
+          "description": "We bring professional pet grooming services right to your neighborhood in Faridabad. Our team ensures your furry friend gets the best care, comfort, and pampering.",
           "features": [
             {
               "id": "1",
               "icon": "MapPin",
               "title": "Service Area",
-              "subtitle": "Bandra & Khar Area"
+              "subtitle": "All Over Faridabad"
             },
             {
               "id": "2",
@@ -4395,12 +4043,12 @@
               "subtitle": "Available"
             }
           ],
-          "aboutTitle": "About Our Bandra Grooming Service",
+          "aboutTitle": "About Our Faridabad Grooming Service",
           "aboutIcon": "FaPaw",
-          "aboutDescription": "We offer a complete range of grooming services at your doorstep across Bandra. Our experienced groomers use pet-safe products and the latest techniques to ensure your pet feels relaxed, comfortable, and looks their best.",
+          "aboutDescription": "We offer a complete range of grooming services at your doorstep across Faridabad. Our experienced groomers use pet-safe products and the latest techniques to ensure your pet feels relaxed, comfortable, and looks their best.",
           "aboutImage": "/images/location-image.png",
-          "aboutImageAlt": "About Our Bandra Grooming Service",
-          "trustTitle": "Why Pet Parents in Bandra Trust Us",
+          "aboutImageAlt": "About Our Faridabad Grooming Service",
+          "trustTitle": "Why Pet Parents in Faridabad Trust Us",
           "trustFeatures": [
             {
               "id": "1",
@@ -4445,24 +4093,24 @@
       },
       {
         "id": "5",
-        "name": "Andheri",
-        "title": "Andheri Pet Grooming & Care",
-        "slug": "andheri",
-        "image": "https://images.unsplash.com/photo-1587300003388-59208cc962cb?auto=format&fit=crop&q=80&w=600",
+        "name": "Ghaziabad",
+        "title": "Ghaziabad Pet Grooming & Care",
+        "slug": "ghaziabad",
+        "image": "https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&q=80&w=600",
         "active": false,
         "detail": {
-          "heroImage": "https://images.unsplash.com/photo-1587300003388-59208cc962cb?auto=format&fit=crop&q=80&w=600",
-          "heroImageAlt": "Andheri Pet Grooming Service",
-          "title": "Andheri",
+          "heroImage": "https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&q=80&w=600",
+          "heroImageAlt": "Ghaziabad Pet Grooming Service",
+          "title": "Ghaziabad",
           "titleHighlight": "Grooming Service",
           "titleIcon": "MapPin",
-          "description": "We bring professional pet grooming services right to your neighborhood in Andheri. Our team ensures your furry friend gets the best care, comfort, and pampering.",
+          "description": "We bring professional pet grooming services right to your neighborhood in Ghaziabad. Our team ensures your furry friend gets the best care, comfort, and pampering.",
           "features": [
             {
               "id": "1",
               "icon": "MapPin",
               "title": "Service Area",
-              "subtitle": "Andheri East & West"
+              "subtitle": "All Over Ghaziabad"
             },
             {
               "id": "2",
@@ -4483,12 +4131,12 @@
               "subtitle": "Available"
             }
           ],
-          "aboutTitle": "About Our Andheri Grooming Service",
+          "aboutTitle": "About Our Ghaziabad Grooming Service",
           "aboutIcon": "FaPaw",
-          "aboutDescription": "We offer a complete range of grooming services at your doorstep across Andheri. Our experienced groomers use pet-safe products and the latest techniques to ensure your pet feels relaxed, comfortable, and looks their best.",
+          "aboutDescription": "We offer a complete range of grooming services at your doorstep across Ghaziabad. Our experienced groomers use pet-safe products and the latest techniques to ensure your pet feels relaxed, comfortable, and looks their best.",
           "aboutImage": "/images/location-image.png",
-          "aboutImageAlt": "About Our Andheri Grooming Service",
-          "trustTitle": "Why Pet Parents in Andheri Trust Us",
+          "aboutImageAlt": "About Our Ghaziabad Grooming Service",
+          "trustTitle": "Why Pet Parents in Ghaziabad Trust Us",
           "trustFeatures": [
             {
               "id": "1",
@@ -4533,24 +4181,24 @@
       },
       {
         "id": "6",
-        "name": "Borivali",
-        "title": "Borivali Pet Grooming & Care",
-        "slug": "borivali",
-        "image": "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&q=80&w=600",
+        "name": "Greater Noida",
+        "title": "Greater Noida Pet Grooming & Care",
+        "slug": "greater-noida",
+        "image": "https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&q=80&w=600",
         "active": false,
         "detail": {
-          "heroImage": "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&q=80&w=600",
-          "heroImageAlt": "Borivali Pet Grooming Service",
-          "title": "Borivali",
+          "heroImage": "https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&q=80&w=600",
+          "heroImageAlt": "Greater Noida Pet Grooming Service",
+          "title": "Greater Noida",
           "titleHighlight": "Grooming Service",
           "titleIcon": "MapPin",
-          "description": "We bring professional pet grooming services right to your neighborhood in Borivali. Our team ensures your furry friend gets the best care, comfort, and pampering.",
+          "description": "We bring professional pet grooming services right to your neighborhood in Greater Noida. Our team ensures your furry friend gets the best care, comfort, and pampering.",
           "features": [
             {
               "id": "1",
               "icon": "MapPin",
               "title": "Service Area",
-              "subtitle": "Borivali & Dahisar"
+              "subtitle": "All Over Greater Noida"
             },
             {
               "id": "2",
@@ -4571,364 +4219,12 @@
               "subtitle": "Available"
             }
           ],
-          "aboutTitle": "About Our Borivali Grooming Service",
+          "aboutTitle": "About Our Greater Noida Grooming Service",
           "aboutIcon": "FaPaw",
-          "aboutDescription": "We offer a complete range of grooming services at your doorstep across Borivali. Our experienced groomers use pet-safe products and the latest techniques to ensure your pet feels relaxed, comfortable, and looks their best.",
+          "aboutDescription": "We offer a complete range of grooming services at your doorstep across Greater Noida. Our experienced groomers use pet-safe products and the latest techniques to ensure your pet feels relaxed, comfortable, and looks their best.",
           "aboutImage": "/images/location-image.png",
-          "aboutImageAlt": "About Our Borivali Grooming Service",
-          "trustTitle": "Why Pet Parents in Borivali Trust Us",
-          "trustFeatures": [
-            {
-              "id": "1",
-              "icon": "ShieldCheck",
-              "title": "Trained &\nVerified Experts"
-            },
-            {
-              "id": "2",
-              "icon": "Leaf",
-              "title": "Pet-Safe &\nQuality Products"
-            },
-            {
-              "id": "3",
-              "icon": "Home",
-              "title": "Hassle-Free\nHome Service"
-            },
-            {
-              "id": "4",
-              "icon": "Heart",
-              "title": "Personalized\nCare & Attention"
-            },
-            {
-              "id": "5",
-              "icon": "FaPaw",
-              "title": "Stress-Free\nExperience"
-            }
-          ],
-          "sidebarTitle": "Our Service Locations",
-          "sidebarIcon": "MapPin",
-          "bookService": {
-            "title": "Book Our Service",
-            "icon": "CalendarCheck",
-            "description": "Give your pet the care they deserve. Book an appointment with us today!",
-            "buttonText": "Book Appointment",
-            "buttonLink": "/appointment",
-            "buttonIcon": "CalendarCheck",
-            "helpText": "Need Help?",
-            "helpPhone": "+91 98765 43210",
-            "helpIcon": "Phone"
-          }
-        }
-      },
-      {
-        "id": "7",
-        "name": "Ghatkopar",
-        "title": "Ghatkopar Pet Grooming & Care",
-        "slug": "ghatkopar",
-        "image": "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&q=80&w=600",
-        "active": false,
-        "detail": {
-          "heroImage": "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&q=80&w=600",
-          "heroImageAlt": "Ghatkopar Pet Grooming Service",
-          "title": "Ghatkopar",
-          "titleHighlight": "Grooming Service",
-          "titleIcon": "MapPin",
-          "description": "We bring professional pet grooming services right to your neighborhood in Ghatkopar. Our team ensures your furry friend gets the best care, comfort, and pampering.",
-          "features": [
-            {
-              "id": "1",
-              "icon": "MapPin",
-              "title": "Service Area",
-              "subtitle": "Ghatkopar & Vidyavihar"
-            },
-            {
-              "id": "2",
-              "icon": "Clock",
-              "title": "Service Time",
-              "subtitle": "9:00 AM - 8:00 PM"
-            },
-            {
-              "id": "3",
-              "icon": "Calendar",
-              "title": "Available",
-              "subtitle": "All 7 Days a Week"
-            },
-            {
-              "id": "4",
-              "icon": "Truck",
-              "title": "Home Service",
-              "subtitle": "Available"
-            }
-          ],
-          "aboutTitle": "About Our Ghatkopar Grooming Service",
-          "aboutIcon": "FaPaw",
-          "aboutDescription": "We offer a complete range of grooming services at your doorstep across Ghatkopar. Our experienced groomers use pet-safe products and the latest techniques to ensure your pet feels relaxed, comfortable, and looks their best.",
-          "aboutImage": "/images/location-image.png",
-          "aboutImageAlt": "About Our Ghatkopar Grooming Service",
-          "trustTitle": "Why Pet Parents in Ghatkopar Trust Us",
-          "trustFeatures": [
-            {
-              "id": "1",
-              "icon": "ShieldCheck",
-              "title": "Trained &\nVerified Experts"
-            },
-            {
-              "id": "2",
-              "icon": "Leaf",
-              "title": "Pet-Safe &\nQuality Products"
-            },
-            {
-              "id": "3",
-              "icon": "Home",
-              "title": "Hassle-Free\nHome Service"
-            },
-            {
-              "id": "4",
-              "icon": "Heart",
-              "title": "Personalized\nCare & Attention"
-            },
-            {
-              "id": "5",
-              "icon": "FaPaw",
-              "title": "Stress-Free\nExperience"
-            }
-          ],
-          "sidebarTitle": "Our Service Locations",
-          "sidebarIcon": "MapPin",
-          "bookService": {
-            "title": "Book Our Service",
-            "icon": "CalendarCheck",
-            "description": "Give your pet the care they deserve. Book an appointment with us today!",
-            "buttonText": "Book Appointment",
-            "buttonLink": "/appointment",
-            "buttonIcon": "CalendarCheck",
-            "helpText": "Need Help?",
-            "helpPhone": "+91 98765 43210",
-            "helpIcon": "Phone"
-          }
-        }
-      },
-      {
-        "id": "8",
-        "name": "Malad",
-        "title": "Malad Pet Grooming & Care",
-        "slug": "malad",
-        "image": "https://images.unsplash.com/photo-1561037404-61cd46aa615b?auto=format&fit=crop&q=80&w=600",
-        "active": false,
-        "detail": {
-          "heroImage": "https://images.unsplash.com/photo-1561037404-61cd46aa615b?auto=format&fit=crop&q=80&w=600",
-          "heroImageAlt": "Malad Pet Grooming Service",
-          "title": "Malad",
-          "titleHighlight": "Grooming Service",
-          "titleIcon": "MapPin",
-          "description": "We bring professional pet grooming services right to your neighborhood in Malad. Our team ensures your furry friend gets the best care, comfort, and pampering.",
-          "features": [
-            {
-              "id": "1",
-              "icon": "MapPin",
-              "title": "Service Area",
-              "subtitle": "Malad West & East"
-            },
-            {
-              "id": "2",
-              "icon": "Clock",
-              "title": "Service Time",
-              "subtitle": "9:00 AM - 8:00 PM"
-            },
-            {
-              "id": "3",
-              "icon": "Calendar",
-              "title": "Available",
-              "subtitle": "All 7 Days a Week"
-            },
-            {
-              "id": "4",
-              "icon": "Truck",
-              "title": "Home Service",
-              "subtitle": "Available"
-            }
-          ],
-          "aboutTitle": "About Our Malad Grooming Service",
-          "aboutIcon": "FaPaw",
-          "aboutDescription": "We offer a complete range of grooming services at your doorstep across Malad. Our experienced groomers use pet-safe products and the latest techniques to ensure your pet feels relaxed, comfortable, and looks their best.",
-          "aboutImage": "/images/location-image.png",
-          "aboutImageAlt": "About Our Malad Grooming Service",
-          "trustTitle": "Why Pet Parents in Malad Trust Us",
-          "trustFeatures": [
-            {
-              "id": "1",
-              "icon": "ShieldCheck",
-              "title": "Trained &\nVerified Experts"
-            },
-            {
-              "id": "2",
-              "icon": "Leaf",
-              "title": "Pet-Safe &\nQuality Products"
-            },
-            {
-              "id": "3",
-              "icon": "Home",
-              "title": "Hassle-Free\nHome Service"
-            },
-            {
-              "id": "4",
-              "icon": "Heart",
-              "title": "Personalized\nCare & Attention"
-            },
-            {
-              "id": "5",
-              "icon": "FaPaw",
-              "title": "Stress-Free\nExperience"
-            }
-          ],
-          "sidebarTitle": "Our Service Locations",
-          "sidebarIcon": "MapPin",
-          "bookService": {
-            "title": "Book Our Service",
-            "icon": "CalendarCheck",
-            "description": "Give your pet the care they deserve. Book an appointment with us today!",
-            "buttonText": "Book Appointment",
-            "buttonLink": "/appointment",
-            "buttonIcon": "CalendarCheck",
-            "helpText": "Need Help?",
-            "helpPhone": "+91 98765 43210",
-            "helpIcon": "Phone"
-          }
-        }
-      },
-      {
-        "id": "9",
-        "name": "Kandivali",
-        "title": "Kandivali Pet Grooming & Care",
-        "slug": "kandivali",
-        "image": "https://images.unsplash.com/photo-1534361960057-19889db9621e?auto=format&fit=crop&q=80&w=600",
-        "active": false,
-        "detail": {
-          "heroImage": "https://images.unsplash.com/photo-1534361960057-19889db9621e?auto=format&fit=crop&q=80&w=600",
-          "heroImageAlt": "Kandivali Pet Grooming Service",
-          "title": "Kandivali",
-          "titleHighlight": "Grooming Service",
-          "titleIcon": "MapPin",
-          "description": "We bring professional pet grooming services right to your neighborhood in Kandivali. Our team ensures your furry friend gets the best care, comfort, and pampering.",
-          "features": [
-            {
-              "id": "1",
-              "icon": "MapPin",
-              "title": "Service Area",
-              "subtitle": "Kandivali East & West"
-            },
-            {
-              "id": "2",
-              "icon": "Clock",
-              "title": "Service Time",
-              "subtitle": "9:00 AM - 8:00 PM"
-            },
-            {
-              "id": "3",
-              "icon": "Calendar",
-              "title": "Available",
-              "subtitle": "All 7 Days a Week"
-            },
-            {
-              "id": "4",
-              "icon": "Truck",
-              "title": "Home Service",
-              "subtitle": "Available"
-            }
-          ],
-          "aboutTitle": "About Our Kandivali Grooming Service",
-          "aboutIcon": "FaPaw",
-          "aboutDescription": "We offer a complete range of grooming services at your doorstep across Kandivali. Our experienced groomers use pet-safe products and the latest techniques to ensure your pet feels relaxed, comfortable, and looks their best.",
-          "aboutImage": "/images/location-image.png",
-          "aboutImageAlt": "About Our Kandivali Grooming Service",
-          "trustTitle": "Why Pet Parents in Kandivali Trust Us",
-          "trustFeatures": [
-            {
-              "id": "1",
-              "icon": "ShieldCheck",
-              "title": "Trained &\nVerified Experts"
-            },
-            {
-              "id": "2",
-              "icon": "Leaf",
-              "title": "Pet-Safe &\nQuality Products"
-            },
-            {
-              "id": "3",
-              "icon": "Home",
-              "title": "Hassle-Free\nHome Service"
-            },
-            {
-              "id": "4",
-              "icon": "Heart",
-              "title": "Personalized\nCare & Attention"
-            },
-            {
-              "id": "5",
-              "icon": "FaPaw",
-              "title": "Stress-Free\nExperience"
-            }
-          ],
-          "sidebarTitle": "Our Service Locations",
-          "sidebarIcon": "MapPin",
-          "bookService": {
-            "title": "Book Our Service",
-            "icon": "CalendarCheck",
-            "description": "Give your pet the care they deserve. Book an appointment with us today!",
-            "buttonText": "Book Appointment",
-            "buttonLink": "/appointment",
-            "buttonIcon": "CalendarCheck",
-            "helpText": "Need Help?",
-            "helpPhone": "+91 98765 43210",
-            "helpIcon": "Phone"
-          }
-        }
-      },
-      {
-        "id": "10",
-        "name": "Chembur",
-        "title": "Chembur Pet Grooming & Care",
-        "slug": "chembur",
-        "image": "https://images.unsplash.com/photo-1596492784531-6e6eb5ea9993?auto=format&fit=crop&q=80&w=600",
-        "active": false,
-        "detail": {
-          "heroImage": "https://images.unsplash.com/photo-1596492784531-6e6eb5ea9993?auto=format&fit=crop&q=80&w=600",
-          "heroImageAlt": "Chembur Pet Grooming Service",
-          "title": "Chembur",
-          "titleHighlight": "Grooming Service",
-          "titleIcon": "MapPin",
-          "description": "We bring professional pet grooming services right to your neighborhood in Chembur. Our team ensures your furry friend gets the best care, comfort, and pampering.",
-          "features": [
-            {
-              "id": "1",
-              "icon": "MapPin",
-              "title": "Service Area",
-              "subtitle": "Chembur & Govandi"
-            },
-            {
-              "id": "2",
-              "icon": "Clock",
-              "title": "Service Time",
-              "subtitle": "9:00 AM - 8:00 PM"
-            },
-            {
-              "id": "3",
-              "icon": "Calendar",
-              "title": "Available",
-              "subtitle": "All 7 Days a Week"
-            },
-            {
-              "id": "4",
-              "icon": "Truck",
-              "title": "Home Service",
-              "subtitle": "Available"
-            }
-          ],
-          "aboutTitle": "About Our Chembur Grooming Service",
-          "aboutIcon": "FaPaw",
-          "aboutDescription": "We offer a complete range of grooming services at your doorstep across Chembur. Our experienced groomers use pet-safe products and the latest techniques to ensure your pet feels relaxed, comfortable, and looks their best.",
-          "aboutImage": "/images/location-image.png",
-          "aboutImageAlt": "About Our Chembur Grooming Service",
-          "trustTitle": "Why Pet Parents in Chembur Trust Us",
+          "aboutImageAlt": "About Our Greater Noida Grooming Service",
+          "trustTitle": "Why Pet Parents in Greater Noida Trust Us",
           "trustFeatures": [
             {
               "id": "1",
@@ -4976,8 +4272,8 @@
   "pricingData": {
     "pageData": {
       "badgeText": "OUR PACKAGES",
-      "titleWhite": "Grooming Packages for Every",
-      "titleColored": "Pet & Need",
+      "titleWhite": "Grooming Packages",
+      "titleColored": " for Every Pet & Need",
       "description": "Choose the perfect grooming package that keeps your furry friend clean, comfortable, and looking their absolute best."
     },
     "pricingPackages": [

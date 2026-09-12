@@ -4,7 +4,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { FaPaw } from "react-icons/fa";
-import { ArrowUpRight } from "lucide-react";
 import { Team } from "@/data";
 import { teamCardVariants } from "@/utils/animations";
 
@@ -21,7 +20,6 @@ export default function TeamCard({
         <Link href={`/team/${slug}`} className="group block w-full h-full">
             <motion.div
                 variants={teamCardVariants}
-                whileHover={{ y: -10, scale: 1.02 }}
                 transition={{ duration: 0.3, ease: "easeOut" }}
                 className="relative flex flex-col items-center rounded-3xl border border-gray-100/80 bg-white p-2 shadow-xl shadow-gray-100/60 transition-shadow duration-300 hover:shadow-2xl cursor-pointer"
             >
@@ -35,11 +33,6 @@ export default function TeamCard({
                     />
                     {/* Hover Gradient Overlay */}
                     <div className="absolute inset-0 bg-gradient-to-t from-[#387478]/40 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
-
-                    {/* Floating Arrow Badge */}
-                    <div className="absolute top-3 right-3 flex h-10 w-10 items-center justify-center rounded-full bg-white/90 text-[#387478] shadow-md backdrop-blur-md transition-all duration-300 group-hover:bg-[#387478] group-hover:text-white group-hover:scale-110">
-                        <ArrowUpRight className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-                    </div>
                 </div>
 
                 {/* Paw Badge in center */}
@@ -49,13 +42,13 @@ export default function TeamCard({
                     viewport={{ once: true }}
                     transition={{ type: "spring", stiffness: 220, damping: 15, delay: 0.25 }}
                     whileHover={{ scale: 1.15, rotate: 10 }}
-                    className="relative -mt-8 flex h-16 w-16 items-center justify-center rounded-full border-4 border-white bg-[#EAF2F2] text-[#387478] "
+                    className="relative -mt-8 flex h-18 w-18 items-center justify-center rounded-full border-4 border-white bg-[#EAF2F2] text-[#387478] "
                 >
                     <motion.div
                         animate={{ rotate: [0, 8, -8, 0] }}
                         transition={{ duration: 2.5, repeat: Infinity, repeatDelay: 2 }}
                     >
-                        <FaPaw className="h-8 w-8" />
+                        <FaPaw className="h-10 w-10" />
                     </motion.div>
                 </motion.div>
 
@@ -84,16 +77,9 @@ export default function TeamCard({
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.5, delay: 0.5 }}
-                        className="text-sm font-semibold text-[#387478]"
-                    >
+                        className="text-sm font-semibold text-[#387478]">
                         {team.role}
                     </motion.p>
-
-                    {/* View Details CTA */}
-                    <div className="mt-2 inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-[#E67E22] transition-colors group-hover:text-[#387478]">
-                        <span>View Details</span>
-                        <ArrowUpRight className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-                    </div>
                 </div>
             </motion.div>
         </Link>

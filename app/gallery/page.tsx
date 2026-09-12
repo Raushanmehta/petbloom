@@ -41,7 +41,7 @@ export default function GalleryPage() {
     return (
         <main>
             <PageTopSection title="Gallery" subTitle="Our Gallery" />
-            <section className="relative overflow-hidden bg-[#FEFDFB] py-16 sm:py-20">
+            <section className="relative overflow-hidden bg-[#FEFDFB] py-10 sm:py-14 md:py-16 lg:py-16">
                 {/* Decorative Background Paws */}
                 <motion.div
                     initial={{ opacity: 0, x: -30, rotate: -25 }}
@@ -76,7 +76,7 @@ export default function GalleryPage() {
                         initial="hidden"
                         whileInView="visible"
                         viewport={{ once: true, amount: 0.2 }}
-                        className="mx-auto mb-12 sm:mb-16 max-w-2xl text-center">
+                        className="mx-auto mb-8 sm:mb-8 max-w-2xl text-center">
                         {/* Badge */}
                         <motion.div
                             variants={fadeUpVariants}
@@ -87,7 +87,7 @@ export default function GalleryPage() {
                                 transition={{ duration: 2, repeat: Infinity, repeatDelay: 3, ease: "easeInOut" }}>
                                 <FaPaw className="h-5 w-5 sm:h-6 sm:w-6 text-[#387478]" />
                             </motion.div>
-                            <span className="text-xs font-bold uppercase tracking-wider text-[#387478]">
+                            <span className="text-sm font-bold uppercase px-2 tracking-wider text-[#387478]">
                                 {pageData?.badgeText}
                             </span>
                         </motion.div>
@@ -164,7 +164,7 @@ export default function GalleryPage() {
                             whileHover={{ scale: 1.05, y: -2 }}
                             whileTap={{ scale: 0.97 }}>
                             <Link
-                                href="/gallery/photos"
+                                href=""
                                 className="inline-flex items-center gap-2 rounded-full border-2 border-[#387478] bg-white px-7 py-3 sm:px-8 sm:py-3.5 text-xs sm:text-sm font-bold text-[#387478] shadow-sm transition-all duration-300 hover:bg-[#387478] hover:text-white">
                                 <FaPaw className="h-5 w-5 sm:h-6 sm:w-6" />
                                 <span>See More Photos</span>
@@ -173,14 +173,14 @@ export default function GalleryPage() {
                     </motion.div>
 
                     {/* Video Section Container */}
-                    <div className="mt-16 sm:mt-20 border-t border-gray-100 pt-12 sm:pt-16">
+                    <div className="mt-16 sm:mt-20">
                         {/* Video Header */}
                         <motion.div
                             variants={containerVariants}
                             initial="hidden"
                             whileInView="visible"
                             viewport={{ once: true, amount: 0.2 }}
-                            className="mx-auto mb-12 sm:mb-16 max-w-2xl text-center">
+                            className="mx-auto mb-8 sm:mb-8 max-w-2xl text-center">
 
                             {/* Badge */}
                             <motion.div
@@ -193,7 +193,7 @@ export default function GalleryPage() {
                                     <FaPaw className="h-5 w-5 sm:h-6 sm:w-6 text-[#387478]" />
                                 </motion.div>
 
-                                <span className="text-xs font-bold uppercase tracking-wider text-[#387478]">
+                                <span className="text-sm font-bold uppercase px-2 tracking-wider text-[#387478]">
                                     {videoPageData?.badgeText}
                                 </span>
                             </motion.div>
@@ -272,7 +272,7 @@ export default function GalleryPage() {
                                 whileHover={{ scale: 1.05, y: -2 }}
                                 whileTap={{ scale: 0.97 }}>
                                 <Link
-                                    href="/gallery/videos"
+                                    href=""
                                     className="inline-flex items-center gap-2 rounded-full border-2 border-[#387478] bg-white px-7 py-3 sm:px-8 sm:py-3.5 text-xs sm:text-sm font-bold text-[#387478] shadow-sm transition-all duration-300 hover:bg-[#387478] hover:text-white">
                                     <FaPaw className="h-5 w-5 sm:h-6 sm:w-6" />
                                     <span>See More Videos</span>

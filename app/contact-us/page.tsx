@@ -119,10 +119,10 @@ export default function ContactPage() {
     return (
         <main>
             <PageTopSection
-                title={pageData?.badgeText || "Contact Us"}
-                subTitle={pageData?.badgeText || "Contact us"}
+                title={"Contact Us"}
+                subTitle={"Contact us"}
             />
-            <section className="relative overflow-hidden bg-[#FEFDFB] py-16 sm:py-20">
+            <section className="relative overflow-hidden bg-[#FEFDFB] py-10 sm:py-14 md:py-16 lg:py-16">
                 <motion.div
                     initial={{ opacity: 0, x: -30, rotate: -25 }}
                     whileInView={{ opacity: 0.1, x: 0, rotate: -15 }}
@@ -233,8 +233,8 @@ export default function ContactPage() {
                                             whileHover={{ y: -4, scale: 1.015 }}
                                             transition={{ duration: 0.25 }}
                                             className="flex items-start gap-3.5 sm:gap-4 rounded-2xl bg-white p-4 sm:p-5 shadow-lg shadow-gray-100 border border-gray-100/90 cursor-default">
-                                            <div className="flex h-11 w-11 sm:h-12 sm:w-12 shrink-0 items-center justify-center rounded-full bg-[#EAF2F2] text-[#387478]">
-                                                <IconComponent className="h-5 w-5 sm:h-6 sm:w-6" />
+                                            <div className="flex h-11 w-11 sm:h-16 sm:w-16 shrink-0 items-center justify-center rounded-full bg-[#EAF2F2] text-[#387478]">
+                                                <IconComponent className="h-5 w-5 sm:h-8 sm:w-8" />
                                             </div>
                                             <div className="space-y-1">
                                                 <h3 className="text-xs sm:text-sm font-bold text-gray-900">{card.title}</h3>
@@ -327,15 +327,15 @@ export default function ContactPage() {
 
                         <motion.div
                             variants={contactRightColumnVariants}
-                            className="lg:col-span-6 rounded-[1.75rem] sm:rounded-[2rem] bg-white p-5 sm:p-8 lg:p-10 shadow-2xl shadow-gray-200 border border-gray-100">
-                            <div className="text-center mb-6 sm:mb-8 space-y-2 sm:space-y-3">
+                            className="lg:col-span-6 rounded-[1.75rem] sm:rounded-[2rem] bg-white p-5  lg:p-6 shadow-2xl shadow-gray-200 border border-gray-100">
+                            <div className="text-center mb-4 sm:mb-4 space-y-2 sm:space-y-2">
                                 <motion.div
                                     initial={{ scale: 0, rotate: -45 }}
                                     whileInView={{ scale: 1, rotate: 0 }}
                                     viewport={{ once: true }}
                                     transition={{ type: "spring", stiffness: 260, damping: 15 }}
-                                    className="mx-auto flex h-12 w-12 sm:h-14 sm:w-14 items-center justify-center rounded-full bg-[#EAF2F2] text-[#387478] shadow-sm">
-                                    <Calendar className="h-6 w-6 sm:h-7 sm:w-7" />
+                                    className="mx-auto flex h-12 w-12 sm:h-16 sm:w-16 items-center justify-center rounded-full bg-[#EAF2F2] text-[#387478] shadow-sm">
+                                    <Calendar className="h-6 w-6 sm:h-8 sm:w-8" />
                                 </motion.div>
 
                                 <h3 className={`${lilitaOne.className} text-2xl sm:text-3xl lg:text-4xl tracking-wide text-gray-900 leading-tight`}>

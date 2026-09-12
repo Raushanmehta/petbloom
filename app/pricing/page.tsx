@@ -32,7 +32,7 @@ export default function PricingPage() {
                 title="Pricing"
                 subTitle="Pricing"
             />
-            <section className="relative overflow-hidden bg-[#FEFDFB] py-16 sm:py-20">
+            <section className="relative overflow-hidden bg-[#FEFDFB]  py-10 sm:py-14 md:py-16 lg:py-16">
                 {/* Decorative Background Paws */}
                 <motion.div
                     initial={{ opacity: 0, x: -30, rotate: -25 }}
@@ -60,19 +60,6 @@ export default function PricingPage() {
                     </motion.div>
                 </motion.div>
 
-                <motion.div
-                    initial={{ opacity: 0, x: -40, rotate: 25 }}
-                    whileInView={{ opacity: 0.08, x: 0, rotate: 25 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 1, delay: 0.2 }}
-                    className="pointer-events-none absolute left-10 bottom-24 text-[#387478] hidden lg:block">
-                    <motion.div
-                        animate={{ y: [0, 10, 0], rotate: [25, 32, 25] }}
-                        transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}>
-                        <FaPaw className="h-24 w-24 xl:h-28 xl:w-28" />
-                    </motion.div>
-                </motion.div>
-
                 <div className="relative z-10 mx-auto max-w-[1355px] px-4 sm:px-4 md:px-6 lg:px-8">
                     {/* Header */}
                     <motion.div
@@ -80,19 +67,19 @@ export default function PricingPage() {
                         initial="hidden"
                         whileInView="visible"
                         viewport={{ once: true, amount: 0.2 }}
-                        className="mx-auto mb-12 sm:mb-16 max-w-2xl text-center">
+                        className="mx-auto mb-10 sm:mb-10 max-w-3xl text-center">
                         {/* Badge */}
                         <motion.div
                             variants={fadeUpVariants}
                             whileHover={{ scale: 1.05, y: -2 }}
-                            className="inline-flex items-center gap-2 rounded-full border border-[#387478]/30 bg-white/80 px-4 py-1.5 shadow-sm backdrop-blur-md">
+                            className="inline-flex items-center gap-2 rounded-full border border-[#E67E22]/30 bg-white/80 px-4 py-1.5 shadow-sm backdrop-blur-md">
                             <motion.div
                                 animate={{ rotate: [0, 10, -10, 0] }}
                                 transition={{ duration: 2, repeat: Infinity, repeatDelay: 3, ease: "easeInOut" }}>
-                                <FaPaw className="h-5 w-5 sm:h-6 sm:w-6 text-[#387478]" />
+                                <FaPaw className="h-5 w-5 sm:h-6 sm:w-6 text-[#E67E22]" />
                             </motion.div>
 
-                            <span className="text-xs font-bold uppercase tracking-wider text-[#387478]">
+                            <span className="text-sm font-bold uppercase px-2 tracking-wider text-[#E67E22]">
                                 {pageData?.badgeText}
                             </span>
                         </motion.div>
@@ -100,8 +87,8 @@ export default function PricingPage() {
                         {/* Title */}
                         <motion.h2
                             variants={fadeUpVariants}
-                            className={`${lilitaOne.className} mt-4 text-3xl sm:text-5xl lg:text-6xl tracking-wide text-gray-900 leading-tight`}>
-                            {pageData?.titleWhite}{" "}
+                            className={`${lilitaOne.className} mt-4 text-3xl sm:text-5xl lg:text-6xl tracking-wide text-[#387478] leading-tight`}>
+                            {pageData?.titleWhite} {" "}
                             <span className="text-[#E67E22]">
                                 {pageData?.titleColored}
                             </span>

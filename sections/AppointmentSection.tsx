@@ -32,7 +32,7 @@ const iconMap: Record<string, React.ElementType> = {
 
 export type AppointmentInnerData = PetBloomAppointmentData["appointment"];
 
-export interface AppointmentSectionProps extends SectionProps<AppointmentInnerData | PetBloomAppointmentData> {}
+export interface AppointmentSectionProps extends SectionProps<AppointmentInnerData | PetBloomAppointmentData> { }
 
 export default function AppointmentSection({ data, className }: AppointmentSectionProps = {}) {
     const rawData = data || site.appointment;
@@ -76,7 +76,7 @@ export default function AppointmentSection({ data, className }: AppointmentSecti
     const formDescription = appointmentData?.formDescription || "Fill out the form below to schedule a session for your furry family member.";
 
     return (
-        <section className={`relative overflow-hidden bg-[#FEFDFB] py-16 sm:py-20 ${className || ""}`}>
+        <section className={`relative overflow-hidden bg-[#FEFDFB]  py-10 sm:py-14 md:py-16 lg:py-16 ${className || ""}`}>
             <div className="mx-auto max-w-[1355px] px-4 sm:px-4 md:px-6 lg:px-8">
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
 

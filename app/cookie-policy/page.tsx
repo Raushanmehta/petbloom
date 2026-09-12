@@ -75,10 +75,10 @@ export default function CookiePolicyPage() {
                             <motion.div
                                 animate={{ rotate: [0, 10, -10, 0] }}
                                 transition={{ duration: 2, repeat: Infinity, repeatDelay: 3, ease: "easeInOut" }}>
-                                <FaPaw className="h-5 w-5 text-[#387478]" />
+                                <FaPaw className="h-5 w-5 sm:h-6 sm:w-6 text-[#387478]" />
                             </motion.div>
 
-                            <span className="text-xs font-bold uppercase tracking-wider text-[#387478]">
+                            <span className="text-sm font-bold uppercase px-2 tracking-wider text-[#387478]">
                                 {pageDataWrapper.pageData.badgeText}
                             </span>
                         </motion.div>

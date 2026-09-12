@@ -5,6 +5,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { MapPin } from "lucide-react";
 import { Location } from "@/data";
+import { FaLocationDot } from "react-icons/fa6";
 
 interface LocationCardProps {
     location?: Location;
@@ -31,11 +32,10 @@ export default function LocationCard({
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.2 }}
                 transition={{ duration: 0.6, ease: "easeOut" }}
-                whileHover={{ y: -10 }}
-                className="group flex w-full flex-col items-center rounded-3xl border border-gray-100/80 bg-white p-6 shadow-xl shadow-gray-100 snap-center transition-all duration-300 hover:shadow-2xl hover:border-[#387478]/30"
+                className="group flex w-full flex-col items-center rounded-3xl border border-gray-100/80 bg-white p-3 shadow-xl shadow-gray-100 snap-center transition-all duration-300 hover:shadow-2xl hover:border-[#387478]/30"
             >
                 <div className="relative w-full">
-                    <div className="relative h-[280px] w-full overflow-hidden rounded-b-[6rem] rounded-t-[5rem] shadow-md sm:h-[250px] sm:rounded-b-[8rem] sm:rounded-t-[6rem]">
+                    <div className="relative h-[280px] w-full overflow-hidden rounded-b-[5rem] rounded-t-[5rem] shadow-md sm:h-[280px] sm:rounded-b-[6rem] sm:rounded-t-[6rem]">
                         <motion.div
                             className="relative h-full w-full"
                             whileHover={{ scale: 1.08 }}
@@ -56,9 +56,9 @@ export default function LocationCard({
                         viewport={{ once: true }}
                         transition={{ type: "spring", stiffness: 220, damping: 14, delay: 0.25 }}
                         whileHover={{ scale: 1.12, rotate: 5 }}
-                        className="absolute -bottom-6 left-1/2 z-10 flex h-16 w-16 -translate-x-1/2 items-center justify-center rounded-full bg-white/90 text-[#387478] backdrop-blur-sm transition-colors duration-300 group-hover:bg-[#387478] group-hover:text-white "
+                        className="absolute -bottom-6 left-1/2 z-10 flex h-18 w-18 -translate-x-1/2 items-center justify-center rounded-full bg-white/90 text-[#387478] backdrop-blur-sm transition-colors duration-300 group-hover:bg-[#387478] group-hover:text-white "
                     >
-                        <MapPin className="h-8 w-8 fill-[#387478] text-white transition-colors duration-300 group-hover:fill-white group-hover:text-[#387478]" />
+                        <FaLocationDot className="h-10 w-10 fill-[#387478] text-white transition-colors duration-300 group-hover:fill-white group-hover:text-[#387478]" />
                     </motion.div>
                 </div>
                 <motion.h3

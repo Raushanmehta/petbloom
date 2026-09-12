@@ -13,7 +13,7 @@ const lilitaOne = Lilita_One({
     weight: "400",
 });
 
-export interface LocationSectionProps extends SectionProps<PetBloomLocationsData> {}
+export interface LocationSectionProps extends SectionProps<PetBloomLocationsData> { }
 
 export default function LocationSection({ data, className }: LocationSectionProps = {}) {
     const locationsData = data || site.locations;
@@ -35,7 +35,7 @@ export default function LocationSection({ data, className }: LocationSectionProp
     };
 
     return (
-        <section className={`relative overflow-hidden bg-[#FEFDFB] py-16 sm:py-20 ${className || ""}`}>
+        <section className={`relative overflow-hidden bg-[#FEFDFB]  py-10 sm:py-14 md:py-16 lg:py-16 ${className || ""}`}>
 
             {/* Decorative background paw left */}
             <motion.div
@@ -119,7 +119,7 @@ export default function LocationSection({ data, className }: LocationSectionProp
                         <MapPin className="h-5 w-5 sm:h-6 sm:w-6 text-[#387478]" />
                     </motion.div>
 
-                    <span className="text-xs font-bold uppercase tracking-wider text-[#387478]">
+                    <span className="text-sm font-bold uppercase px-2 tracking-wider text-[#387478]">
                         {locationsData.sectionData.badgeText}
                     </span>
                 </motion.div>
@@ -172,7 +172,7 @@ export default function LocationSection({ data, className }: LocationSectionProp
 
             {/* Carousel Container with Responsive Arrows */}
             <motion.div
-                className="relative z-10 mx-auto mt-10 sm:mt-14 max-w-[1355px] px-4 sm:px-4 md:px-6 lg:px-8"
+                className="relative z-10 mx-auto mt-6 sm:mt-6 max-w-[1355px] px-4 sm:px-4 md:px-6 lg:px-8"
                 variants={cardsContainer}
                 initial="hidden"
                 whileInView="visible"
@@ -229,7 +229,7 @@ export default function LocationSection({ data, className }: LocationSectionProp
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.5 }}
-                className="relative z-10 mt-6 sm:mt-8 flex justify-center gap-2"
+                className="relative z-10 mt-6 sm:mt-4 flex justify-center gap-2"
             >
                 <motion.span
                     animate={{ scale: [1, 1.25, 1] }}

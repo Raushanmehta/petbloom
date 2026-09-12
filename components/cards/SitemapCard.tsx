@@ -15,7 +15,7 @@ export default function SitemapCard({ category }: SitemapCardProps) {
         switch (type) {
             case "home": return <Home className="h-5 w-5 text-[#387478]" />;
             case "users": return <Users className="h-5 w-5 text-[#387478]" />;
-            case "paw": return <FaPaw className="h-5 w-5 text-[#387478]" />;
+            case "paw": return <FaPaw className="h-5 w-5 sm:h-6 sm:w-6 text-[#387478]" />;
             case "file-text": return <FileText className="h-5 w-5 text-[#387478]" />;
             case "map-pin": return <MapPin className="h-5 w-5 text-[#387478]" />;
             case "team": return <Users className="h-5 w-5 text-[#387478]" />;
@@ -33,7 +33,7 @@ export default function SitemapCard({ category }: SitemapCardProps) {
             case "file-check": return <FileCheck className="h-5 w-5 text-[#387478]" />;
             case "alert-triangle": return <AlertTriangle className="h-5 w-5 text-[#387478]" />;
             case "git-commit": return <GitCommit className="h-5 w-5 text-[#387478]" />;
-            default: return <FaPaw className="h-5 w-5 text-[#387478]" />;
+            default: return <FaPaw className="h-5 w-5 sm:h-6 sm:w-6 text-[#387478]" />;
         }
     };
 

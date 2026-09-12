@@ -27,7 +27,7 @@ export default function BlogPage() {
     return (
         <main>
             <PageTopSection title="Blog" subTitle="Explore all our blogs" />
-            <section className="relative overflow-hidden bg-[#FEFDFB] py-16 sm:py-20">
+            <section className="relative overflow-hidden bg-[#FEFDFB] py-10 sm:py-14 md:py-16 lg:py-16">
                 {/* Decorative Background Paws */}
                 <motion.div
                     initial={{ opacity: 0, x: -30, rotate: -25 }}
@@ -62,7 +62,7 @@ export default function BlogPage() {
                         initial="hidden"
                         whileInView="visible"
                         viewport={{ once: true, amount: 0.2 }}
-                        className="mx-auto mb-12 sm:mb-16 max-w-2xl text-center">
+                        className="mx-auto mb-6 sm:mb-8 md:mb-10 lg:mb-10 max-w-2xl text-center">
                         {/* Badge */}
                         <motion.div
                             variants={fadeUpVariants}
@@ -75,7 +75,7 @@ export default function BlogPage() {
                                 <FaPaw className="h-5 w-5 sm:h-6 sm:w-6 text-[#387478]" />
                             </motion.div>
 
-                            <span className="text-xs font-bold uppercase tracking-wider text-[#387478]">
+                            <span className="text-sm font-bold uppercase px-2 tracking-wider text-[#387478]">
                                 {pageData?.badgeText}
                             </span>
                         </motion.div>

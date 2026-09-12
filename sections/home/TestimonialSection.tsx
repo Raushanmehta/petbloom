@@ -53,27 +53,37 @@ export default function TestimonialsSection({ data, className, isPage = false }:
     }, [api]);
 
     return (
-        <section className={`relative overflow-hidden bg-[#FEFDFB] py-16 sm:py-20 ${className || ""}`}>
+        <section className={`relative overflow-hidden bg-[#FEFDFB] py-10 sm:py-14 md:py-16 lg:py-16 ${className || ""}`}>
+            {/* Decorative background paw left */}
             <motion.div
-                initial={{ opacity: 0, x: -50, rotate: -30 }}
-                whileInView={{ opacity: 0.05, x: 0, rotate: -15 }}
-                viewport={{ once: true, amount: 0.2 }}
-                transition={{ duration: 1, ease: "easeOut" }}
-                animate={{ y: [0, -10, 0] }}
-                className="pointer-events-none absolute left-4 top-16 hidden text-[#387478] lg:block"
+                initial={{ opacity: 0, x: -60 }}
+                whileInView={{ opacity: 0.08, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 1 }}
+                className="absolute left-10 top-12 hidden flex-col items-center text-[#387478] lg:flex xl:left-20"
             >
-                <FaPaw className="h-28 w-28" />
+                <motion.div
+                    animate={{ y: [0, -8, 0], rotate: [-15, -10, -15] }}
+                    transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+                >
+                    <FaPaw className="h-20 w-20 xl:h-24 xl:w-24 rotate-[-15deg]" />
+                </motion.div>
             </motion.div>
 
+            {/* Decorative background paw right */}
             <motion.div
-                initial={{ opacity: 0, x: 50, rotate: 30 }}
-                whileInView={{ opacity: 0.05, x: 0, rotate: 15 }}
-                viewport={{ once: true, amount: 0.2 }}
-                transition={{ duration: 1, delay: 0.2, ease: "easeOut" }}
-                animate={{ y: [0, -10, 0] }}
-                className="pointer-events-none absolute bottom-16 right-4 hidden text-[#387478] lg:block"
+                initial={{ opacity: 0, x: 60 }}
+                whileInView={{ opacity: 0.08, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 1 }}
+                className="absolute right-10 top-12 hidden flex-col items-center text-[#387478] lg:flex xl:right-20"
             >
-                <FaPaw className="h-28 w-28" />
+                <motion.div
+                    animate={{ y: [0, -8, 0], rotate: [15, 10, 15] }}
+                    transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+                >
+                    <FaPaw className="h-20 w-20 xl:h-24 xl:w-24 rotate-[15deg]" />
+                </motion.div>
             </motion.div>
 
             <div className="relative z-10 mx-auto max-w-[1355px] px-4 sm:px-4 md:px-6 lg:px-8">
@@ -126,7 +136,7 @@ export default function TestimonialsSection({ data, className, isPage = false }:
                                 >
                                     <FaPaw className="h-5 w-5 sm:h-6 sm:w-6 text-[#387478]" />
                                 </motion.div>
-                                <span className="text-xs font-bold uppercase tracking-wider text-[#387478]">
+                                <span className="text-sm font-bold uppercase px-2 tracking-wider text-[#387478]">
                                     {headerData.badgeText}
                                 </span>
                             </motion.div>
@@ -245,8 +255,8 @@ export default function TestimonialsSection({ data, className, isPage = false }:
                                     whileTap={{ scale: 0.9 }}
                                     onClick={() => api?.scrollTo(index)}
                                     className={`h-2.5 sm:h-3 cursor-pointer rounded-full transition-all duration-300 ${current === index
-                                            ? "w-7 sm:w-8 bg-[#387478]"
-                                            : "w-2.5 sm:w-3 bg-[#387478]/30"
+                                        ? "w-7 sm:w-8 bg-[#387478]"
+                                        : "w-2.5 sm:w-3 bg-[#387478]/30"
                                         }`}
                                     aria-label={`Go to slide ${index + 1}`}
                                 />
@@ -254,8 +264,6 @@ export default function TestimonialsSection({ data, className, isPage = false }:
                         </motion.div>
                     </div>
                 </div>
-
-                <StatisticsSection />
             </div>
         </section>
     );

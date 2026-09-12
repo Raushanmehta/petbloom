@@ -26,7 +26,7 @@ export default function TestimonialCard({
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.2, }}
-            whileHover={{ y: -8, scale: 1.01, }}
+            // whileHover={{ y: -8, scale: 1.01, }}
             transition={{ duration: 0.35, ease: "easeOut", }}
             className="group relative flex h-full min-h-[280px] sm:min-h-[320px] w-full flex-col justify-between overflow-hidden rounded-[1.5rem] border border-gray-100/80 bg-white p-5 sm:p-7 md:p-8 shadow-xl shadow-gray-100">
 

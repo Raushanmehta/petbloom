@@ -21,7 +21,7 @@ export default function BlogDetailPage({ data, blog, className }: BlogDetailPage
     const defaultBlog = site.blog.blogs[0];
     const blogDetailData = data || blog || defaultBlog;
     return (
-        <section className={`relative overflow-hidden bg-[#FEFDFB] py-16 sm:py-20 ${className || ""}`}>
+        <section className={`relative overflow-hidden bg-[#FEFDFB] py-10 sm:py-14 md:py-16 lg:py-16 ${className || ""}`}>
             <motion.div
                 initial={{ opacity: 0, x: -30, rotate: -25 }}
                 whileInView={{ opacity: 0.1, x: 0, rotate: -15 }}
@@ -85,7 +85,7 @@ export default function BlogDetailPage({ data, blog, className }: BlogDetailPage
                                 <FaPaw className="h-6 w-6 text-[#387478]" />
                             </motion.div>
 
-                            <span className="text-xs font-bold uppercase tracking-wider text-[#387478]">
+                            <span className="text-sm font-bold uppercase px-2 tracking-wider text-[#387478]">
                                 {blogDetailData.category}
                             </span>
                         </motion.div>

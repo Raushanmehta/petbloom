@@ -35,39 +35,7 @@ export default function FaqSection({ data, className, isPage = false }: FaqSecti
     };
 
     return (
-        <section className={`relative overflow-hidden bg-[#FEFDFB] py-16 sm:py-20 ${className || ""}`}>
-            <motion.div
-                initial={{ opacity: 0, scale: 0.5, rotate: -30 }}
-                whileInView={{ opacity: 0.08, scale: 1, rotate: -15 }}
-                animate={{ y: [0, -10, 0] }}
-                viewport={{ once: true }}
-                transition={{
-                    opacity: { duration: 0.8 },
-                    scale: { duration: 0.8, ease: "easeOut" },
-                    rotate: { duration: 0.8 },
-                    y: { duration: 4, repeat: Infinity, ease: "easeInOut" },
-                }}
-                className="absolute left-10 top-16 hidden text-[#387478] lg:block"
-            >
-                <FaPaw className="h-20 w-20" />
-            </motion.div>
-
-            <motion.div
-                initial={{ opacity: 0, scale: 0.5, rotate: 40 }}
-                whileInView={{ opacity: 0.08, scale: 1, rotate: 20 }}
-                animate={{ y: [0, 12, 0] }}
-                viewport={{ once: true }}
-                transition={{
-                    opacity: { duration: 0.8, delay: 0.2 },
-                    scale: { duration: 0.8, delay: 0.2, ease: "easeOut" },
-                    rotate: { duration: 0.8, delay: 0.2 },
-                    y: { duration: 4.5, repeat: Infinity, ease: "easeInOut" },
-                }}
-                className="absolute right-12 top-24 hidden text-[#387478] lg:block"
-            >
-                <FaPaw className="h-24 w-24" />
-            </motion.div>
-
+        <section className={`relative overflow-hidden bg-[#FCF7F3]  py-10 sm:py-14 md:py-16 lg:py-16 ${className || ""}`}>
             <div className="mx-auto max-w-[1355px] px-4 sm:px-4 md:px-6 lg:px-8">
                 {/* Header */}
                 <motion.div
@@ -75,7 +43,7 @@ export default function FaqSection({ data, className, isPage = false }: FaqSecti
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true, amount: 0.3 }}
-                    className="mx-auto mb-10 sm:mb-16 max-w-4xl text-center"
+                    className="mx-auto mb-6 sm:mb-8 max-w-4xl text-center"
                 >
                     <motion.div
                         variants={fadeUpVariants}
@@ -90,7 +58,7 @@ export default function FaqSection({ data, className, isPage = false }: FaqSecti
                             <FaPaw className="h-5 w-5 sm:h-6 sm:w-6 text-[#387478]" />
                         </motion.div>
 
-                        <span className="text-xs font-bold uppercase tracking-wider text-[#387478]">
+                        <span className="text-sm font-bold uppercase px-2 tracking-wider text-[#387478]">
                             {headerData.badgeText}
                         </span>
                     </motion.div>
@@ -194,11 +162,10 @@ export default function FaqSection({ data, className, isPage = false }: FaqSecti
                                     variants={faqItemVariants}
                                     whileHover={{ y: -2 }}
                                     transition={{ duration: 0.25 }}
-                                    className={`group overflow-hidden rounded-2xl sm:rounded-3xl border transition-colors duration-300 ${
-                                        isOpen
-                                            ? "border-[#387478]/30 bg-[#EAF2F2]/50 shadow-md"
-                                            : "border-gray-100/90 bg-white shadow-xs hover:border-[#387478]/20 hover:shadow-md"
-                                    }`}
+                                    className={`group overflow-hidden rounded-2xl sm:rounded-3xl border transition-colors duration-300 ${isOpen
+                                        ? "border-[#387478]/30 bg-[#EAF2F2]/50 shadow-md"
+                                        : "border-gray-100/90 bg-white shadow-xs hover:border-[#387478]/20 hover:shadow-md"
+                                        }`}
                                 >
                                     <motion.button
                                         type="button"
@@ -218,11 +185,10 @@ export default function FaqSection({ data, className, isPage = false }: FaqSecti
                                         <motion.div
                                             animate={{ rotate: isOpen ? 180 : 0, scale: isOpen ? 1.05 : 1 }}
                                             transition={{ type: "spring", stiffness: 300, damping: 18 }}
-                                            className={`flex h-8 w-8 sm:h-10 sm:w-10 shrink-0 items-center justify-center rounded-full transition-colors duration-300 ${
-                                                isOpen
-                                                    ? "bg-[#387478] text-white"
-                                                    : "bg-gray-100 text-gray-700"
-                                            }`}
+                                            className={`flex h-8 w-8 sm:h-10 sm:w-10 shrink-0 items-center justify-center rounded-full transition-colors duration-300 ${isOpen
+                                                ? "bg-[#387478] text-white"
+                                                : "bg-gray-100 text-gray-700"
+                                                }`}
                                         >
                                             <AnimatePresence mode="wait" initial={false}>
                                                 {isOpen ? (

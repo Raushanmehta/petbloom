@@ -15,7 +15,7 @@ const lilitaOne = Lilita_One({
     weight: "400",
 });
 
-export interface BlogSectionProps extends SectionProps<PetBloomBlogData> {}
+export interface BlogSectionProps extends SectionProps<PetBloomBlogData> { }
 
 export default function BlogSection({ data, className }: BlogSectionProps = {}) {
     const rawBlog = data || site.blog;
@@ -32,14 +32,45 @@ export default function BlogSection({ data, className }: BlogSectionProps = {}) 
     const sideBlogs = blogsData.filter((blog) => !blog.featured);
 
     return (
-        <section className={`relative overflow-hidden bg-[#FEFDFB] py-16 sm:py-20 ${className || ""}`}>
+        <section className={`relative overflow-hidden bg-[#FEFDFB] py-10 sm:py-14 md:py-16 lg:py-16 ${className || ""}`}>
+            {/* Decorative background paw left */}
+            <motion.div
+                initial={{ opacity: 0, x: -60 }}
+                whileInView={{ opacity: 0.08, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 1 }}
+                className="absolute left-10 top-12 hidden flex-col items-center text-[#387478] lg:flex xl:left-20"
+            >
+                <motion.div
+                    animate={{ y: [0, -8, 0], rotate: [-15, -10, -15] }}
+                    transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+                >
+                    <FaPaw className="h-20 w-20 xl:h-24 xl:w-24 rotate-[-15deg]" />
+                </motion.div>
+            </motion.div>
+
+            {/* Decorative background paw right */}
+            <motion.div
+                initial={{ opacity: 0, x: 60 }}
+                whileInView={{ opacity: 0.08, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 1 }}
+                className="absolute right-10 top-12 hidden flex-col items-center text-[#387478] lg:flex xl:right-20"
+            >
+                <motion.div
+                    animate={{ y: [0, -8, 0], rotate: [15, 10, 15] }}
+                    transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+                >
+                    <FaPaw className="h-20 w-20 xl:h-24 xl:w-24 rotate-[15deg]" />
+                </motion.div>
+            </motion.div>
             <div className="mx-auto max-w-[1355px] px-4 sm:px-4 md:px-6 lg:px-8">
                 <motion.div
                     variants={containerVariants}
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true, amount: 0.2 }}
-                    className="mx-auto mb-10 sm:mb-16 max-w-2xl text-center"
+                    className="mx-auto mb-6 sm:mb-8 max-w-2xl text-center"
                 >
                     {/* Badge */}
                     <motion.div
@@ -55,7 +86,7 @@ export default function BlogSection({ data, className }: BlogSectionProps = {}) 
                             <FaPaw className="h-5 w-5 sm:h-6 sm:w-6 text-[#387478]" />
                         </motion.div>
 
-                        <span className="text-xs font-bold uppercase tracking-wider text-[#387478]">
+                        <span className="text-sm font-bold uppercase px-2 tracking-wider text-[#387478]">
                             {blogSectionData.badgeText}
                         </span>
                     </motion.div>

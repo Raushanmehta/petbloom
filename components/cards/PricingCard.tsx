@@ -44,7 +44,7 @@ export default function PricingCard({ pkg }: PricingCardProps) {
             <div>
                 {/* Card Header */}
                 <div
-                    className={`rounded-t-[1.75rem] p-5 sm:p-6 text-center text-white ${isPopular
+                    className={`rounded-t-[1.75rem] p-4 sm:p-4 text-center text-white ${isPopular
                         ? "bg-[#E67E22] pt-8 sm:pt-10"
                         : "bg-[#387478]"
                         }`}>
@@ -59,19 +59,18 @@ export default function PricingCard({ pkg }: PricingCardProps) {
                             {pkg?.name}
                         </h3>
                     </div>
-
-                    <p className="text-xs sm:text-sm font-medium text-white/90 leading-relaxed max-w-xs mx-auto">
-                        {pkg?.description}
-                    </p>
                 </div>
 
                 {/* Price Block */}
                 <div className="border-b border-gray-100 p-5 sm:p-6 text-center sm:text-left">
-                    <div className="flex items-baseline justify-center sm:justify-start gap-1">
-                        <span className={`${lilitaOne.className} text-4xl text-gray-900 sm:text-5xl`}>
+                    <div className="flex flex-col items-center sm:items-start">
+                        <p className="text-md font-medium text-gray-500 leading-relaxed mb-4">
+                            {pkg?.description}
+                        </p>
+                        <span className={`${lilitaOne.className} text-4xl sm:text-5xl ${isPopular ? 'text-[#E67E22]' : 'text-[#387478]'}`}>
                             {pkg?.price}
                         </span>
-                        <span className="text-xs font-bold uppercase tracking-wider text-gray-400">
+                        <span className="text-sm font-bold uppercase tracking-wider text-gray-400 mt-1">
                             / Session
                         </span>
                     </div>
@@ -90,7 +89,7 @@ export default function PricingCard({ pkg }: PricingCardProps) {
                             variants={pricingFeatureVariants}
                             className="flex items-start gap-3 text-xs sm:text-sm font-semibold text-gray-700">
                             <CheckCircle2
-                                className={`h-5 w-5 shrink-0 mt-0.5 ${isPopular ? "text-[#E67E22]" : "text-[#387478]"
+                                className={`h-6 w-6 shrink-0 mt-0.5 ${isPopular ? "text-[#E67E22]" : "text-[#387478]"
                                     }`}
                             />
                             <span className="leading-snug">{feature}</span>

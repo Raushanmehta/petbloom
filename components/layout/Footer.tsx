@@ -77,9 +77,9 @@ export default function Footer({ data, className }: SectionProps<PetBloomFooterD
                             <Image
                                 src="/logo/logo.png"
                                 alt="PetBloom Logo"
-                                width={150}
-                                height={150}
-                                className="w-[140px] sm:w-[150px] h-auto"
+                                width={180}
+                                height={180}
+                                className="w-[180px] sm:w-[170px] md:w-[160px] h-auto"
                             />
                         </Link>
                     </motion.div>
@@ -317,8 +317,8 @@ export default function Footer({ data, className }: SectionProps<PetBloomFooterD
             >
                 <div className="mx-auto flex max-w-[1355px] flex-col items-center justify-between gap-4 px-4 sm:px-4 md:px-6 lg:px-8 text-center text-xs sm:text-sm text-[#8da4a2] sm:flex-row sm:text-left">
                     <p>
-                        &copy; {new Date().getFullYear()}{" "}
-                        <strong className="text-white font-medium">PetBloom</strong>. All Rights Reserved.
+                        &copy; {new Date().getFullYear()}{" "}Copyright PetBloom. All rights reserved.
+                        <strong className="text-white font-medium"> Powered by Lestow.</strong>
                     </p>
 
                     <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-5">

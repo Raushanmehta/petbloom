@@ -7,6 +7,7 @@ import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaPhoneAlt, FaChevronDown, FaBars, FaTimes } from "react-icons/fa";
 import { site, PetBloomNavbarData, SectionProps } from "@/data";
+import { PiPhoneCallLight } from "react-icons/pi";
 
 interface NavbarProps extends SectionProps<PetBloomNavbarData> {
     servicesData?: typeof site.services;
@@ -84,9 +85,9 @@ export default function Navbar({ data, className, servicesData: injectedServices
                         <Image
                             src="/logo/logo.png"
                             alt="PetBloom Logo"
-                            width={160}
-                            height={160}
-                            className="w-[145px] sm:w-[160px] md:w-[150px] h-auto"
+                            width={180}
+                            height={180}
+                            className="w-[180px] sm:w-[170px] md:w-[160px] h-auto"
                             priority
                             loading="eager"
                         />
@@ -126,7 +127,7 @@ export default function Navbar({ data, className, servicesData: injectedServices
 
                     {/* Services Dropdown */}
                     <div className="group relative">
-                        <Link href="/services">
+                        <Link href="">
                             <motion.div
                                 initial={{ opacity: 0, y: -20 }}
                                 animate={{ opacity: 1, y: 0 }}
@@ -219,19 +220,19 @@ export default function Navbar({ data, className, servicesData: injectedServices
                         <motion.a
                             href="tel:+001203456789"
                             whileHover={{ scale: 1.1, rotate: 8 }}
-                            className="flex h-[46px] w-[46px] items-center justify-center rounded-full border border-[#2ec4b6]/30 bg-[#0b3c38] text-white transition-colors hover:border-[#2ec4b6] hover:bg-[#2ec4b6] hover:text-[#051d1b]"
+                            className="flex h-[50px] w-[50px] items-center justify-center rounded-full border border-[#2ec4b6]/30 bg-[#0b3c38] text-white transition-colors hover:border-[#2ec4b6] hover:bg-[#2ec4b6] hover:text-[#051d1b]"
                             aria-label="Call PetBloom"
                         >
-                            <FaPhoneAlt size={16} />
+                            <PiPhoneCallLight size={28} />
                         </motion.a>
 
                         <div className="flex flex-col">
-                            <span className="text-xs font-medium tracking-wide text-[#8da4a2]">
+                            <span className="text-[18px] font-medium tracking-wide text-white">
                                 Call us:
                             </span>
                             <a
                                 href="tel:+001203456789"
-                                className="text-[16px] font-bold tracking-tight text-white hover:text-[#2ec4b6] transition-colors"
+                                className="text-[18px] font-bold tracking-tight text-white hover:text-[#2ec4b6] transition-colors"
                             >
                                 +00-(120) 3456 789
                             </a>

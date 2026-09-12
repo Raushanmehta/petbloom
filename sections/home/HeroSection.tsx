@@ -14,7 +14,7 @@ const lilitaOne = Lilita_One({
     display: "swap",
 });
 
-export interface HeroSectionProps extends SectionProps<PetBloomHeroData> {}
+export interface HeroSectionProps extends SectionProps<PetBloomHeroData> { }
 
 export default function HeroSection({ data, className }: HeroSectionProps = {}) {
     const hero = data || site.hero;
@@ -71,7 +71,7 @@ export default function HeroSection({ data, className }: HeroSectionProps = {}) 
                                         />
                                     </motion.div>
                                     {/* Left Side Dark Overlay */}
-                                    <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/50 to-transparent sm:from-black/80 sm:via-black/45" />
+                                    <div className="absolute inset-0 bg-gradient-to-r from-black/30 via-black/30 to-transparent sm:from-black/30 sm:via-black/30" />
                                 </div>
 
                                 {/* Slide Content */}
@@ -144,7 +144,7 @@ export default function HeroSection({ data, className }: HeroSectionProps = {}) 
                                                     >
                                                         <Link
                                                             href={hero.button2.href}
-                                                            className="block w-full rounded-full border border-white/40 bg-transparent px-6 py-3 text-center text-sm font-medium text-white transition-all duration-300 hover:bg-white/10 sm:w-auto sm:px-8 sm:py-4 sm:text-base"
+                                                            className="block w-full rounded-full border-2 border-white/40 bg-transparent px-6 py-3 text-center text-sm font-medium text-white transition-all duration-300 hover:bg-white/10 sm:w-auto sm:px-8 sm:py-4 sm:text-base"
                                                         >
                                                             {hero.button2.label}
                                                         </Link>

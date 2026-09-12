@@ -1,8 +1,10 @@
 "use client";
 
 import Image from "next/image";
-import { motion } from "framer-motion";
+import { motion, animate, useInView } from "framer-motion";
+import { useEffect, useRef } from "react";
 import { Lilita_One } from "next/font/google";
+import { FaPaw } from "react-icons/fa";
 import { site, PetBloomStatsSectionData, SectionProps } from "@/data";
 import { statisticsContainerVariants, statisticsItemVariants } from "@/utils/animations";
 
@@ -13,6 +15,34 @@ const lilitaOne = Lilita_One({
 
 export interface StatisticsSectionProps extends SectionProps<PetBloomStatsSectionData> {
     statisticsData?: PetBloomStatsSectionData;
+}
+
+function AnimatedCounter({ from = 0, to }: { from?: number; to: string }) {
+    const nodeRef = useRef<HTMLSpanElement>(null);
+    const inView = useInView(nodeRef, { once: true, amount: 0.5 });
+    
+    // Extract the numeric part and the suffix/prefix
+    const numericMatch = to.match(/(\d+)/);
+    const numericPart = numericMatch ? parseInt(numericMatch[0], 10) : 0;
+    const suffixIndex = numericMatch ? (numericMatch.index || 0) + numericMatch[0].length : 0;
+    const prefix = numericMatch ? to.substring(0, numericMatch.index) : "";
+    const suffix = numericMatch ? to.substring(suffixIndex) : to;
+
+    useEffect(() => {
+        if (inView && nodeRef.current) {
+            animate(from, numericPart, {
+                duration: 2,
+                ease: "easeOut",
+                onUpdate(value) {
+                    if (nodeRef.current) {
+                        nodeRef.current.textContent = prefix + Math.round(value) + suffix;
+                    }
+                },
+            });
+        }
+    }, [inView, from, numericPart, suffix, prefix]);
+
+    return <span ref={nodeRef}>{prefix}{from}{suffix}</span>;
 }
 
 export default function StatisticsSection({
@@ -28,8 +58,18 @@ export default function StatisticsSection({
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className={`mt-12 sm:mt-16 lg:mt-20 rounded-[1.5rem] sm:rounded-[2rem] bg-[#387478] px-5 py-7 sm:px-8 sm:py-9 lg:px-6 xl:px-8 lg:py-10 text-white shadow-xl ${className || ""}`}
+            className={`relative overflow-hidden mt-12 sm:mt-16 lg:mt-20 rounded-[1.5rem] sm:rounded-[2rem] bg-[#387478] px-5 py-7 sm:px-8 sm:py-9 lg:px-6 xl:px-8 lg:py-10 text-white shadow-xl ${className || ""}`}
         >
+            {/* Decorative Background Graphics */}
+            <div className="pointer-events-none absolute inset-0">
+                <div className="absolute -left-10 -top-10 h-40 w-40 rounded-full bg-white/5 blur-3xl" />
+                <div className="absolute -bottom-10 -right-10 h-40 w-40 rounded-full bg-white/5 blur-3xl" />
+
+                <FaPaw className="absolute -left-4 top-1/2 h-20 w-20 -translate-y-1/2 rotate-[-15deg] text-white/[0.03]" />
+                <FaPaw className="absolute right-10 top-4 h-14 w-14 rotate-[20deg] text-white/[0.03]" />
+                <FaPaw className="absolute bottom-4 left-1/3 h-16 w-16 rotate-[-10deg] text-white/[0.03]" />
+            </div>
+
             <motion.div
                 variants={statisticsContainerVariants}
                 initial="hidden"
@@ -55,14 +95,14 @@ export default function StatisticsSection({
                                 viewport={{ once: true }}
                                 transition={{ type: "spring", stiffness: 220, damping: 15, delay: index * 0.1 }}
                                 whileHover={{ rotate: 8, scale: 1.1 }}
-                                className="flex h-12 w-12 sm:h-14 sm:w-14 shrink-0 items-center justify-center"
+                                className="flex h-18 w-18 sm:h-18 sm:w-18 shrink-0 items-center justify-center"
                             >
                                 <Image
                                     src={iconPath}
                                     alt={stat.label}
                                     width={48}
                                     height={48}
-                                    className="w-10 h-10 sm:w-12 sm:h-12 object-contain"
+                                    className="w-10 h-10 sm:w-16 sm:h-16 object-contain brightness-0 invert"
                                 />
                             </motion.div>
 
@@ -73,12 +113,12 @@ export default function StatisticsSection({
                                     whileInView={{ opacity: 1, y: 0 }}
                                     viewport={{ once: true }}
                                     transition={{ duration: 0.5, delay: index * 0.1 + 0.15 }}
-                                    className={`${lilitaOne.className} text-2xl sm:text-3xl lg:text-4xl tracking-wide leading-tight`}
+                                    className={`${lilitaOne.className} text-2xl sm:text-3xl lg:text-5xl tracking-wide leading-tight`}
                                 >
-                                    {stat.count}
+                                    <AnimatedCounter to={stat.count as string} />
                                 </motion.h3>
 
-                                <p className="mt-0.5 sm:mt-1 text-xs sm:text-sm font-medium text-white/85 leading-snug max-w-[150px] sm:max-w-[160px]">
+                                <p className="mt-0.5 sm:mt-1 text-sm sm:text-md font-medium text-white/85 leading-snug max-w-[150px] sm:max-w-[160px]">
                                     {stat.label}
                                 </p>
                             </div>

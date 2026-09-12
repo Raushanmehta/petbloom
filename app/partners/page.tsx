@@ -92,7 +92,7 @@ export default function PartnersPage() {
                                 <FaPaw className="h-5 w-5 sm:h-6 sm:w-6 text-[#387478]" />
                             </motion.div>
 
-                            <span className="text-xs font-bold uppercase tracking-wider text-[#387478]">
+                            <span className="text-sm font-bold uppercase px-2 tracking-wider text-[#387478]">
                                 {pageData?.badgeText}
                             </span>
                         </motion.div>

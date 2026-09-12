@@ -1,5 +1,3 @@
-"use client";
-
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
@@ -20,7 +18,7 @@ export default function ServiceCard({
                 whileInView={{ opacity: 1, y: 0, }}
                 viewport={{ once: true, amount: 0.2, }}
                 transition={{ duration: 0.6, ease: "easeOut", }}
-                whileHover={{ y: -10, }}
+                // whileHover={{ y: -10, }}
                 className="group relative h-[480px] w-full cursor-pointer overflow-hidden rounded-[2.5rem] bg-gray-900 shadow-lg">
                 <motion.div
                     className="absolute inset-0"

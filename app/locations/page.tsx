@@ -38,7 +38,7 @@ export default function LocationsPage() {
     return (
         <main>
             <PageTopSection title="Our Locations" subTitle="Our Locations" />
-            <section className="relative overflow-hidden bg-[#FEFDFB] py-16 sm:py-20">
+            <section className="relative overflow-hidden bg-[#FEFDFB] py-10 sm:py-14 md:py-16 lg:py-16">
                 {/* Decorative Background Graphics */}
                 <motion.div
                     initial={{ opacity: 0, x: -60 }}
@@ -119,7 +119,7 @@ export default function LocationsPage() {
                                 <MapPin className="h-5 w-5 sm:h-6 sm:w-6 text-[#387478]" />
                             </motion.div>
 
-                            <span className="text-xs font-bold uppercase tracking-wider text-[#387478]">
+                            <span className="text-sm font-bold uppercase px-2 tracking-wider text-[#387478]">
                                 {locationsData.pageData.badgeText}
                             </span>
                         </motion.div>
@@ -171,7 +171,7 @@ export default function LocationsPage() {
 
                     {/* Carousel Container */}
                     <motion.div
-                        className="relative mx-auto mt-12 sm:mt-14"
+                        className="relative mx-auto mt-8 sm:mt-8"
                         variants={cardsContainer}
                         initial="hidden"
                         whileInView="visible"
@@ -183,7 +183,7 @@ export default function LocationsPage() {
                             onClick={() => scroll("left")}
                             whileHover={{ scale: 1.1, x: -2 }}
                             whileTap={{ scale: 0.9 }}
-                            className="absolute -left-2 sm:-left-4 top-1/2 z-20 flex h-10 w-10 sm:h-12 sm:w-12 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full bg-[#387478] text-white shadow-xl backdrop-blur-sm"
+                            className="absolute -left-4 sm:-left-8 lg:-left-12 top-1/2 z-20 flex h-10 w-10 sm:h-12 sm:w-12 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full bg-[#387478] text-white shadow-xl backdrop-blur-sm"
                             aria-label="Scroll left">
                             <ChevronLeft className="h-5 w-5 sm:h-6 sm:w-6" />
                         </motion.button>
@@ -194,7 +194,7 @@ export default function LocationsPage() {
                             onClick={() => scroll("right")}
                             whileHover={{ scale: 1.1, x: 2 }}
                             whileTap={{ scale: 0.9 }}
-                            className="absolute -right-2 sm:-right-4 top-1/2 z-20 flex h-10 w-10 sm:h-12 sm:w-12 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full bg-[#387478] text-white shadow-xl backdrop-blur-sm"
+                            className="absolute -right-4 sm:-right-8 lg:-right-12 top-1/2 z-20 flex h-10 w-10 sm:h-12 sm:w-12 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full bg-[#387478] text-white shadow-xl backdrop-blur-sm"
                             aria-label="Scroll right">
                             <ChevronRight className="h-5 w-5 sm:h-6 sm:w-6" />
                         </motion.button>
@@ -226,7 +226,7 @@ export default function LocationsPage() {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ delay: 0.5 }}
-                        className="mt-6 sm:mt-8 flex justify-center gap-2"
+                        className="mt-4 sm:mt-4 flex justify-center gap-2"
                     >
                         <motion.span
                             animate={{ scale: [1, 1.25, 1] }}

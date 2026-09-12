@@ -5,6 +5,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import * as LucideIcons from "lucide-react";
 import { FaPaw } from "react-icons/fa";
+import { MdLocationOn } from "react-icons/md";
 import { Lilita_One } from "next/font/google";
 import {
     columnVariants,
@@ -15,6 +16,7 @@ import {
     linkItemVariants,
 } from "@/utils/animations";
 import { site, LocationItem, SectionProps } from "@/data";
+import { FiPhoneCall } from "react-icons/fi";
 
 const lilitaOne = Lilita_One({
     subsets: ["latin"],
@@ -23,7 +25,7 @@ const lilitaOne = Lilita_One({
 
 // Helper to render dynamic icons by string name
 function DynamicLocationIcon({ name, className }: { name?: string; className?: string }) {
-    if (!name) return <LucideIcons.MapPin className={className} />;
+    if (!name) return <MdLocationOn className={className} />;
     if (name === "FaPaw" || name.toLowerCase() === "paw") {
         return <FaPaw className={className} />;
     }
@@ -31,7 +33,7 @@ function DynamicLocationIcon({ name, className }: { name?: string; className?: s
     if (IconComponent) {
         return <IconComponent className={className} />;
     }
-    return <LucideIcons.MapPin className={className} />;
+    return <MdLocationOn className={className} />;
 }
 
 export interface LocationDetailPageProps extends SectionProps<LocationItem> {
@@ -50,7 +52,7 @@ export default function LocationDetailPage({ data, location: propLocation, class
     const allLocations = locationsData.locations;
 
     return (
-        <section className={`relative overflow-hidden bg-[#FEFDFB] py-16 sm:py-20 ${className || ""}`}>
+        <section className={`relative overflow-hidden bg-[#FEFDFB] py-10 sm:py-14 md:py-16 lg:py-16 ${className || ""}`}>
             {/* Background Decorative Paws */}
             <motion.div
                 initial={{ opacity: 0, x: -30, rotate: -25 }}
@@ -92,11 +94,11 @@ export default function LocationDetailPage({ data, location: propLocation, class
                             <div className="grid grid-cols-1 md:grid-cols-12 items-center">
 
                                 {/* Left Side Image */}
-                                <div className="md:col-span-5 relative h-[280px] sm:h-[385px] w-full overflow-hidden">
+                                <div className="md:col-span-5 relative h-[280px] sm:h-[395px] w-full overflow-hidden rounded-3xl">
                                     <motion.div
                                         whileHover={{ scale: 1.05 }}
                                         transition={{ duration: 0.4 }}
-                                        className="relative h-full w-full">
+                                        className="relative h-full w-full ">
                                         <Image
                                             src={detail.heroImage}
                                             alt={detail.heroImageAlt || detail.title}
@@ -108,7 +110,7 @@ export default function LocationDetailPage({ data, location: propLocation, class
                                 </div>
 
                                 {/* Right Side Info */}
-                                <div className="md:col-span-7 space-y-4 p-6 sm:p-8">
+                                <div className="md:col-span-7 space-y-2 p-6 sm:p-8">
                                     <h1 className={`${lilitaOne.className} text-3xl sm:text-5xl tracking-wide text-gray-900 leading-tight`}>
                                         {detail.title} <br />
                                         <span className="inline-flex flex-wrap items-center gap-2 text-[#E67E22]">
@@ -118,11 +120,16 @@ export default function LocationDetailPage({ data, location: propLocation, class
                                                 transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
                                                 className="inline-block"
                                             >
-                                                <DynamicLocationIcon
-                                                    name={detail.titleIcon || "MapPin"}
-                                                    className="h-7 w-7 sm:h-9 sm:w-9 text-[#387478] shrink-0"
-                                                />
+                                                <MdLocationOn className="h-7 w-7 sm:h-9 sm:w-9 text-[#387478] shrink-0" />
                                             </motion.span>
+                                            {/* Decorative Divider */}
+                                            <motion.div
+                                                initial={{ width: 0 }}
+                                                whileInView={{ width: 56 }}
+                                                viewport={{ once: true }}
+                                                transition={{ duration: 0.7, delay: 0.4 }}
+                                                className="h-1 mt-1 w-14 rounded-full bg-[#E67E22]"
+                                            />
                                         </span>
                                     </h1>
                                     <p className="text-xs sm:text-sm font-medium text-gray-600 leading-relaxed">
@@ -138,7 +145,7 @@ export default function LocationDetailPage({ data, location: propLocation, class
                                         className="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-2">
                                         {detail.features.map((feat, idx) => {
                                             const isEven = idx % 2 === 0;
-                                            const iconColor = isEven ? "text-[#387478]" : "text-[#E67E22]";
+                                            const iconBgColor = isEven ? "bg-[#387478]" : "bg-[#E67E22]";
                                             const hoverBg = isEven ? "hover:bg-[#EAF2F2]/40" : "hover:bg-[#FDF6F0]/60";
                                             const rotateAngle = isEven ? 6 : -6;
 
@@ -151,10 +158,11 @@ export default function LocationDetailPage({ data, location: propLocation, class
                                                     className={`flex flex-col items-center text-center cursor-default p-2 rounded-2xl ${hoverBg} transition-colors`}>
                                                     <motion.div
                                                         whileHover={{ scale: 1.15, rotate: rotateAngle }}
-                                                        transition={{ type: "spring", stiffness: 350 }}>
+                                                        transition={{ type: "spring", stiffness: 350 }}
+                                                        className={`p-2 rounded-xl text-white ${iconBgColor} mb-2 flex items-center justify-center`}>
                                                         <DynamicLocationIcon
                                                             name={feat.icon}
-                                                            className={`h-8 w-8 ${iconColor} mb-1`}
+                                                            className={`h-6 w-6 sm:h-7 sm:w-7`}
                                                         />
                                                     </motion.div>
                                                     <span className="text-[12px] font-bold text-gray-800">{feat.title}</span>
@@ -174,7 +182,7 @@ export default function LocationDetailPage({ data, location: propLocation, class
                             initial="hidden"
                             whileInView="visible"
                             viewport={{ once: true }}
-                            className="rounded-[1.5rem] bg-white p-6 sm:p-8 shadow-xl shadow-gray-100 border border-gray-100/90">
+                            className="rounded-[1.5rem] bg-white p-5 sm:p-5 shadow-xl shadow-gray-100 border border-gray-100/90">
                             <div className="flex items-center gap-3 mb-4">
                                 <motion.div
                                     animate={{ rotate: [0, 10, -10, 0] }}
@@ -184,11 +192,21 @@ export default function LocationDetailPage({ data, location: propLocation, class
                                 </motion.div>
                                 <h2 className={`${lilitaOne.className} text-2xl sm:text-3xl tracking-wide text-gray-900`}>
                                     {detail.aboutTitle}
+                                    {/* Decorative Divider */}
+                                    <motion.div
+                                        initial={{ width: 0 }}
+                                        whileInView={{ width: 56 }}
+                                        viewport={{ once: true }}
+                                        transition={{ duration: 0.7, delay: 0.4 }}
+                                        className="h-1 mt-3 w-14 rounded-full bg-[#E67E22]"
+                                    />
                                 </h2>
+
                             </div>
 
+
                             <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
-                                <div className="md:col-span-5 space-y-4 text-xs sm:text-sm font-medium text-gray-600 leading-relaxed">
+                                <div className="md:col-span-5 space-y-4 text-sm sm:text-[15px] font-medium text-gray-600 leading-relaxed">
                                     <p>{detail.aboutDescription}</p>
                                 </div>
 
@@ -215,11 +233,19 @@ export default function LocationDetailPage({ data, location: propLocation, class
                             initial="hidden"
                             whileInView="visible"
                             viewport={{ once: true }}
-                            className="rounded-[1.5rem] bg-white p-6 sm:p-8 shadow-xl shadow-gray-100 border border-gray-100/90">
-                            <div className="pb-4 mb-6 border-b border-gray-100">
+                            className="rounded-[1.5rem] bg-white p-5 sm:p-5 shadow-xl shadow-gray-100 border border-gray-100/90">
+                            <div className="pb-4 mb-4 border-b border-gray-100">
                                 <h2 className={`${lilitaOne.className} text-xl sm:text-2xl tracking-wide text-gray-900`}>
                                     {detail.trustTitle}
                                 </h2>
+                                {/* Decorative Divider */}
+                                <motion.div
+                                    initial={{ width: 0 }}
+                                    whileInView={{ width: 56 }}
+                                    viewport={{ once: true }}
+                                    transition={{ duration: 0.7, delay: 0.4 }}
+                                    className="h-1 mt-3 w-14 rounded-full bg-[#E67E22]"
+                                />
                             </div>
 
                             <motion.div
@@ -266,7 +292,7 @@ export default function LocationDetailPage({ data, location: propLocation, class
                     </div>
 
                     {/* Sidebar Column */}
-                    <div className="lg:col-span-4 space-y-6 sticky top-6">
+                    <div className="lg:col-span-4 space-y-6 ">
 
                         {/* 1. Our Service Locations Card */}
                         <motion.div
@@ -279,7 +305,7 @@ export default function LocationDetailPage({ data, location: propLocation, class
                                 <motion.div
                                     animate={{ y: [0, -4, 0] }}
                                     transition={{ duration: 2.5, repeat: Infinity, ease: "easeInOut" }}>
-                                    <DynamicLocationIcon
+                                    <MdLocationOn
                                         name={detail.sidebarIcon || "MapPin"}
                                         className="h-8 w-8 text-white shrink-0"
                                     />
@@ -316,7 +342,7 @@ export default function LocationDetailPage({ data, location: propLocation, class
                                                     : "text-gray-900 hover:text-black hover:bg-gray-50 border border-gray-100"
                                                     }`}>
                                                 <div className="flex items-center gap-3">
-                                                    <LucideIcons.MapPin
+                                                    <MdLocationOn
                                                         className={`h-8 w-8 shrink-0 transition-colors ${isCurrentActive ? "text-[#387478]" : "text-gray-400 group-hover:text-[#387478]"
                                                             }`}
                                                     />
@@ -383,16 +409,16 @@ export default function LocationDetailPage({ data, location: propLocation, class
                                         whileHover={{ rotate: [0, -15, 15, -10, 10, 0] }}
                                         transition={{ duration: 0.5 }}
                                         className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-[#387478] text-white shadow-sm">
-                                        <DynamicLocationIcon
+                                        <FiPhoneCall
                                             name={detail.bookService.helpIcon || "Phone"}
-                                            className="h-8 w-8"
+                                            className="h-7 w-7"
                                         />
                                     </motion.div>
                                     <div>
-                                        <p className="text-[12px] font-semibold text-gray-500 leading-tight">
+                                        <p className="text-[14px] font-semibold text-gray-500 leading-tight">
                                             {detail.bookService.helpText}
                                         </p>
-                                        <p className="text-sm font-bold text-gray-900">
+                                        <p className="text-md font-bold text-gray-900">
                                             {detail.bookService.helpPhone}
                                         </p>
                                     </div>
