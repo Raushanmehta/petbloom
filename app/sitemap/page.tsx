@@ -32,7 +32,7 @@ export default function SitemapPage() {
                 title={pageData?.title || "Site Map"}
                 subTitle={pageData?.subTitle || "Explore all our pages"}
             />
-            <section className="relative overflow-hidden bg-[#FEFDFB] py-16 sm:py-20">
+            <section className="relative overflow-hidden bg-[#FEFDFB]  py-10 sm:py-14 md:py-16 lg:py-16">
                 {/* Decorative Background Paws */}
                 <motion.div
                     initial={{ opacity: 0, x: -30, rotate: -25 }}

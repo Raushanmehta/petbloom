@@ -30,7 +30,7 @@ export default function DisclaimerPage() {
                 title={pageDataWrapper.pageData.titleColored || "Disclaimer"}
                 subTitle={pageDataWrapper.pageData.badgeText || "Disclaimer"}
             />
-            <section className="relative overflow-hidden bg-[#FEFDFB] py-16 sm:py-20">
+            <section className="relative overflow-hidden bg-[#FEFDFB]  py-10 sm:py-14 md:py-16 lg:py-16">
                 <div className="relative z-10 mx-auto max-w-[1355px] px-4 sm:px-4 md:px-6 lg:px-8">
 
                     {/* Decorative Background Paws */}
@@ -65,7 +65,7 @@ export default function DisclaimerPage() {
                         initial="hidden"
                         whileInView="visible"
                         viewport={{ once: true, amount: 0.2 }}
-                        className="mx-auto mb-12 sm:mb-16 max-w-2xl text-center">
+                        className="mx-auto mb-8 sm:mb-8 max-w-2xl text-center">
 
                         {/* Badge */}
                         <motion.div

@@ -13,7 +13,7 @@ export type LegalSectionData = {
     contactPhoneValue?: string;
 } | PetBloomLegalPageData;
 
-export interface LegalSectionProps extends SectionProps<LegalSectionData> {}
+export interface LegalSectionProps extends SectionProps<LegalSectionData> { }
 
 export default function LegalSection({ data, className }: LegalSectionProps = {}) {
     const legal = data || site.legalPage;
@@ -46,7 +46,7 @@ export default function LegalSection({ data, className }: LegalSectionProps = {}
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}
-                className="mt-10 sm:mt-14 rounded-2xl sm:rounded-3xl mx-auto max-w-[1355px] bg-[#EAF2F2]/70 border border-[#387478]/20 p-5 sm:p-7 text-center space-y-2.5 shadow-sm"
+                className="mt-8 sm:mt-8 rounded-2xl sm:rounded-3xl mx-auto max-w-[1355px] bg-[#EAF2F2]/70 border border-[#387478]/20 p-5 sm:p-7 text-center space-y-2.5 shadow-sm"
             >
                 <p className="text-xs sm:text-sm font-medium text-gray-700">
                     If you have any questions about this policy, feel free to contact us at

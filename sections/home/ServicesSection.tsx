@@ -74,7 +74,7 @@ export default function ServicesSection({ data, className }: ServicesSectionProp
                 >
                     <Carousel
                         opts={{ align: "start", loop: true }}
-                        className="relative w-full"
+                        className="relative w-full "
                     >
                         {/* Navigation Buttons */}
                         <motion.div
@@ -82,7 +82,7 @@ export default function ServicesSection({ data, className }: ServicesSectionProp
                             whileInView={{ opacity: 1, x: 0 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.6, delay: 0.2 }}
-                            className="relative  flex justify-end gap-2.5 sm:gap-3 md:absolute md:-top-24 md:right-0 md:z-10"
+                            className="relative flex justify-end gap-2.5 sm:gap-3 md:absolute md:-top-24 md:right-0 md:z-10"
                         >
                             {/* Previous */}
                             <CarouselPrevious className="static h-10 w-10 sm:h-12 sm:w-12 translate-y-0 rounded-full border-2 border-gray-300 bg-white/80 sm:bg-transparent text-gray-900 hover:border-black hover:bg-black hover:text-white transition-all duration-300 shadow-sm">
@@ -96,7 +96,7 @@ export default function ServicesSection({ data, className }: ServicesSectionProp
                         </motion.div>
 
                         {/* Cards */}
-                        <CarouselContent className="-ml-4 ">
+                        <CarouselContent className="-ml-4  sm:mt-4  ">
                             {servicesData.services.map((service, index) => (
                                 <CarouselItem
                                     key={`${service.id}-${index}`}

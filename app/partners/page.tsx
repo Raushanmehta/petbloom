@@ -32,7 +32,7 @@ export default function PartnersPage() {
                 title="Partners"
                 subTitle="our partners"
             />
-            <section className="relative overflow-hidden bg-[#FEFDFB] py-16 sm:py-20">
+            <section className="relative overflow-hidden bg-[#FEFDFB]  py-10 sm:py-14 md:py-16 lg:py-16">
                 {/* Decorative Background Paws */}
                 <motion.div
                     initial={{ opacity: 0, x: -30, rotate: -25 }}
@@ -60,19 +60,6 @@ export default function PartnersPage() {
                     </motion.div>
                 </motion.div>
 
-                <motion.div
-                    initial={{ opacity: 0, x: -40, rotate: 25 }}
-                    whileInView={{ opacity: 0.08, x: 0, rotate: 25 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 1, delay: 0.2 }}
-                    className="pointer-events-none absolute left-10 bottom-24 text-[#E67E22] hidden lg:block">
-                    <motion.div
-                        animate={{ y: [0, 10, 0], rotate: [25, 32, 25] }}
-                        transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}>
-                        <FaPaw className="h-24 w-24 xl:h-28 xl:w-28" />
-                    </motion.div>
-                </motion.div>
-
                 <div className="relative z-10 mx-auto max-w-[1355px] px-4 sm:px-4 md:px-6 lg:px-8">
                     {/* Header */}
                     <motion.div
@@ -80,7 +67,7 @@ export default function PartnersPage() {
                         initial="hidden"
                         whileInView="visible"
                         viewport={{ once: true, amount: 0.2 }}
-                        className="mx-auto mb-12 sm:mb-16 max-w-2xl text-center">
+                        className="mx-auto mb-8 sm:mb-8 max-w-2xl text-center">
                         {/* Badge */}
                         <motion.div
                             variants={fadeUpVariants}
@@ -167,7 +154,7 @@ export default function PartnersPage() {
                         initial="hidden"
                         whileInView="visible"
                         viewport={{ once: true }}
-                        className="mt-14 sm:mt-16 text-center space-y-2">
+                        className="mt-8 sm:mt-8 text-center space-y-2">
                         <div className="inline-flex items-center justify-center gap-2 text-[#387478]">
                             <FaPaw className="h-5 w-5 sm:h-6 sm:w-6 bg-[#FCF7F3] text-[#E67E22] rounded-full p-1" />
                             <span className="text-xs sm:text-sm font-extrabold text-gray-900 tracking-wide">
