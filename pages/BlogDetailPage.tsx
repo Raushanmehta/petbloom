@@ -157,11 +157,11 @@ export default function BlogDetailPage({ data, blog, className }: BlogDetailPage
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true }}
-                    className="text-sm sm:text-base font-medium text-gray-700 leading-relaxed py-8 ">
+                    className="text-sm sm:text-base font-medium text-gray-700 leading-relaxed py-2 sm:py-6  ">
                     {blogDetailData.introText}
                 </motion.p>
 
-                <div className="space-y-12">
+                <div className="space-y-2">
                     {blogDetailData.sections?.map((sec) => (
                         <motion.div
                             key={sec.id}
@@ -169,7 +169,7 @@ export default function BlogDetailPage({ data, blog, className }: BlogDetailPage
                             initial="hidden"
                             whileInView="visible"
                             viewport={{ once: true }}
-                            className="space-y-4 pt-6 border-t border-gray-100">
+                            className="space-y-4 pt-4 ">
                             {/* Section Title */}
                             <div className="flex items-center gap-3">
                                 <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#EAF2F2] text-[#387478]">
@@ -183,9 +183,16 @@ export default function BlogDetailPage({ data, blog, className }: BlogDetailPage
                             {/* Layout based on section type */}
                             {sec.imagePosition === "right" && (
                                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
-                                    <div className="lg:col-span-8 space-y-3">
+                                    <div className="lg:col-span-8 space-y-4">
                                         <p className="text-md sm:text-md font-medium text-gray-600 leading-relaxed whitespace-pre-line">
-                                            {sec.content}
+                                            {(sec as any).contentText1 ? (
+                                                <>
+                                                    <span className="block mb-4">{(sec as any).contentText1}</span>
+                                                    <span className="block">{(sec as any).contentText2}</span>
+                                                </>
+                                            ) : (
+                                                sec.content
+                                            )}
                                         </p>
                                         {sec.subheading && (
                                             <p className="text-md sm:text-md font-bold text-gray-900 pt-1">
@@ -203,7 +210,7 @@ export default function BlogDetailPage({ data, blog, className }: BlogDetailPage
                                             </ul>
                                         )}
                                     </div>
-                                    <div className="lg:col-span-4 relative h-[220px] w-full overflow-hidden rounded-2xl shadow-md">
+                                    <div className="lg:col-span-4 relative h-[260px] w-full overflow-hidden rounded-2xl shadow-md">
                                         <Image src={sec.image!} alt={sec.title} fill className="object-cover" />
                                     </div>
                                 </div>
@@ -212,7 +219,14 @@ export default function BlogDetailPage({ data, blog, className }: BlogDetailPage
                             {sec.imagePosition === "bottom-banner" && (
                                 <div className="space-y-4">
                                     <p className="text-sm sm:text-base font-medium text-gray-600 leading-relaxed">
-                                        {sec.content}
+                                        {(sec as any).contentText1 ? (
+                                            <>
+                                                <span className="block mb-4">{(sec as any).contentText1}</span>
+                                                <span className="block">{(sec as any).contentText2}</span>
+                                            </>
+                                        ) : (
+                                            sec.content
+                                        )}
                                     </p>
                                     {sec.bullets && (
                                         <ul className="space-y-2">
@@ -237,11 +251,13 @@ export default function BlogDetailPage({ data, blog, className }: BlogDetailPage
                                             <p className="relative z-10 text-md sm:text-md font-medium text-gray-700 italic leading-relaxed mb-3">
                                                 &ldquo;{sec.quote?.text}&rdquo;
                                             </p>
+
                                             <span className="text-md sm:text-md font-bold text-[#E67E22] block text-right">
                                                 - {sec.quote?.author}
                                             </span>
                                         </div>
-                                        <div className="lg:col-span-5 relative h-[180px] w-full overflow-hidden rounded-2xl shadow-md ">
+
+                                        <div className="lg:col-span-5 relative h-[140px] w-full overflow-hidden rounded-2xl shadow-md">
                                             <Image src={sec.image!} alt={sec.title} fill className="object-cover" />
                                         </div>
                                     </div>
@@ -252,12 +268,19 @@ export default function BlogDetailPage({ data, blog, className }: BlogDetailPage
                                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
                                     <div className="lg:col-span-7">
                                         <p className="text-md sm:text-md font-medium text-gray-600 leading-relaxed">
-                                            {sec.content}
+                                            {(sec as any).contentText1 ? (
+                                                <>
+                                                    <span className="block mb-4">{(sec as any).contentText1}</span>
+                                                    <span className="block">{(sec as any).contentText2}</span>
+                                                </>
+                                            ) : (
+                                                sec.content
+                                            )}
                                         </p>
                                     </div>
                                     <div className="lg:col-span-5 grid grid-cols-2 gap-3">
                                         {sec.images?.map((img, iIdx) => (
-                                            <div key={iIdx} className="relative h-[160px] w-full overflow-hidden rounded-2xl shadow-md ">
+                                            <div key={iIdx} className="relative h-[280px] w-full overflow-hidden rounded-2xl shadow-md ">
                                                 <Image src={img} alt="Gallery view" fill className="object-cover" />
                                             </div>
                                         ))}
@@ -266,11 +289,20 @@ export default function BlogDetailPage({ data, blog, className }: BlogDetailPage
                             )}
 
                             {sec.imagePosition === "full-bottom-image" && (
-                                <div className="space-y-4">
-                                    <p className="text-md sm:text-md font-medium text-gray-600 leading-relaxed whitespace-pre-line">
-                                        {sec.content}
-                                    </p>
-                                    <div className="relative h-[285px] w-full overflow-hidden rounded-[2rem] shadow-xl  mt-4">
+                                <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+                                    <div className="lg:col-span-7">
+                                        <p className="text-md sm:text-md font-medium text-gray-600 leading-relaxed whitespace-pre-line">
+                                            {(sec as any).contentText1 ? (
+                                                <>
+                                                    <span className="block mb-4">{(sec as any).contentText1}</span>
+                                                    <span className="block">{(sec as any).contentText2}</span>
+                                                </>
+                                            ) : (
+                                                sec.content
+                                            )}
+                                        </p>
+                                    </div>
+                                    <div className="lg:col-span-5 relative h-[200px] w-full overflow-hidden rounded-[2rem] shadow-xl">
                                         <Image src={sec.image!} alt={sec.title} fill className="object-cover" />
                                     </div>
                                 </div>

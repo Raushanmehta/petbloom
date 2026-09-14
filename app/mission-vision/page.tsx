@@ -1,4 +1,5 @@
 import PageTopSection from "@/components/common/PageTopSection";
+import StatisticsSection from "@/components/common/StatisticsSection";
 import MissionVisionSection from "@/sections/MissionVisionSection";
 
 export default function MissionVisionPage() {

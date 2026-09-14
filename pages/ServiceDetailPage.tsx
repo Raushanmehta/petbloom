@@ -29,55 +29,37 @@ export default function ServiceDetailPage({ data, service: propService, classNam
     if (!service) return null;
 
     return (
-        <section className={`relative overflow-hidden bg-[#FEFDFB] py-16 sm:py-20 ${className || ""}`}>
-            {/* Background Decorative Paws */}
-            <motion.div
-                initial={{ opacity: 0, x: -30, rotate: -25 }}
-                whileInView={{ opacity: 0.08, x: 0, rotate: -15 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.9 }}
-                className="pointer-events-none absolute left-6 top-20 hidden text-[#387478] lg:block">
+        <section className={`relative bg-[#FEFDFB]  py-10 sm:py-14 md:py-16 lg:py-16 ${className || ""}`}>
+            <div className="absolute inset-0 overflow-hidden pointer-events-none z-0">
+                {/* Background Decorative Paws */}
                 <motion.div
-                    animate={{ y: [0, -12, 0], rotate: [-15, -8, -15] }}
-                    transition={{ duration: 4.5, repeat: Infinity, ease: "easeInOut" }}>
-                    <FaPaw className="h-28 w-28" />
+                    initial={{ opacity: 0, x: -30, rotate: -25 }}
+                    whileInView={{ opacity: 0.08, x: 0, rotate: -15 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.9 }}
+                    className="pointer-events-none absolute left-6 top-20 hidden text-[#387478] lg:block">
+                    <motion.div
+                        animate={{ y: [0, -12, 0], rotate: [-15, -8, -15] }}
+                        transition={{ duration: 4.5, repeat: Infinity, ease: "easeInOut" }}>
+                        <FaPaw className="h-28 w-28" />
+                    </motion.div>
                 </motion.div>
-            </motion.div>
 
-            <motion.div
-                initial={{ opacity: 0, x: 30, rotate: 25 }}
-                whileInView={{ opacity: 0.08, x: 0, rotate: 15 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.9, delay: 0.2 }}
-                className="pointer-events-none absolute right-6 top-32 hidden text-[#E67E22] lg:block">
                 <motion.div
-                    animate={{ y: [0, -12, 0], rotate: [15, 8, 15] }}
-                    transition={{ duration: 4.5, repeat: Infinity, ease: "easeInOut" }}>
-                    <FaPaw className="h-24 w-24" />
+                    initial={{ opacity: 0, x: 30, rotate: 25 }}
+                    whileInView={{ opacity: 0.08, x: 0, rotate: 15 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.9, delay: 0.2 }}
+                    className="pointer-events-none absolute right-6 top-32 hidden text-[#E67E22] lg:block">
+                    <motion.div
+                        animate={{ y: [0, -12, 0], rotate: [15, 8, 15] }}
+                        transition={{ duration: 4.5, repeat: Infinity, ease: "easeInOut" }}>
+                        <FaPaw className="h-24 w-24" />
+                    </motion.div>
                 </motion.div>
-            </motion.div>
+            </div>
 
             <div className="relative z-10 mx-auto max-w-[1355px] px-4 sm:px-4 md:px-6 lg:px-8">
-                <motion.div
-                    variants={breadcrumbVariants}
-                    initial="hidden"
-                    whileInView="visible"
-                    viewport={{ once: true, amount: 0.3 }}
-                    className="mb-8 flex items-center gap-2 text-xs font-semibold text-gray-500 sm:text-sm">
-                    <motion.div whileHover={{ x: 3 }}>
-                        <Link href="/" className="transition-colors hover:text-[#387478]">Home</Link>
-                    </motion.div>
-                    <ChevronRight className="h-3.5 w-3.5 text-[#E67E22]" />
-
-                    <motion.div whileHover={{ x: 3 }}>
-                        <Link href="/services" className="transition-colors hover:text-[#387478]">Services</Link>
-                    </motion.div>
-                    <ChevronRight className="h-3.5 w-3.5 text-[#E67E22]" />
-                    <span className="font-bold text-[#E67E22]">
-                        {service.title}
-                    </span>
-                </motion.div>
-
                 <div className="grid grid-cols-1 items-start gap-8 lg:grid-cols-12">
                     <div className="space-y-10 lg:col-span-8">
                         <motion.div
@@ -86,14 +68,14 @@ export default function ServiceDetailPage({ data, service: propService, classNam
                             viewport={{ once: true, amount: 0.25, }}
                             transition={{ duration: 0.8, ease: "easeOut", }}
                             whileHover={{ y: -4, }}
-                            className="group relative flex min-h-[380px] items-center overflow-hidden rounded-2xl sm:rounded-[1.75rem] border border-gray-100 p-6 sm:p-8 lg:p-10 shadow-xl">
+                            className="group relative flex min-h-[380px] items-center overflow-hidden rounded-2xl sm:rounded-[1.75rem] bg-white border border-gray-100 p-6 sm:p-8 lg:p-10 shadow-xl">
 
                             <motion.div
                                 initial={{ scale: 1.08, }}
                                 whileInView={{ scale: 1, }}
                                 viewport={{ once: true, }}
                                 transition={{ duration: 1.2, ease: "easeOut", }}
-                                className="absolute inset-0 z-0">
+                                className="absolute inset-y-0 right-0 w-full sm:w-[65%] z-0">
                                 <Image
                                     src={service.image}
                                     alt="Dog getting groomed"
@@ -101,13 +83,30 @@ export default function ServiceDetailPage({ data, service: propService, classNam
                                     className="object-cover object-right"
                                 />
                             </motion.div>
-                            <div className="absolute inset-0 z-10 bg-gradient-to-r from-white via-white/90 to-transparent sm:via-white/80" />
+                            <div className="absolute inset-0 z-10 bg-gradient-to-r from-white via-white/95 to-transparent sm:via-white/80" />
                             <motion.div
                                 variants={heroContainerVariants}
                                 initial="hidden"
                                 whileInView="visible"
                                 viewport={{ once: true, }}
                                 className="relative z-20 max-w-lg space-y-4">
+
+                                <motion.div
+                                    variants={breadcrumbVariants}
+                                    className="mb-4 flex flex-wrap items-center gap-2 text-xs font-semibold text-gray-500 sm:text-sm">
+                                    <motion.div whileHover={{ x: 3 }}>
+                                        <Link href="/" className="transition-colors hover:text-[#387478]">Home</Link>
+                                    </motion.div>
+                                    <ChevronRight className="h-3.5 w-3.5 text-[#E67E22]" />
+
+                                    <motion.div whileHover={{ x: 3 }}>
+                                        <Link href="/services" className="transition-colors hover:text-[#387478]">Services</Link>
+                                    </motion.div>
+                                    <ChevronRight className="h-3.5 w-3.5 text-[#E67E22]" />
+                                    <span className="font-bold text-[#E67E22]">
+                                        {service.title}
+                                    </span>
+                                </motion.div>
 
                                 <motion.div
                                     variants={heroItemVariants}
@@ -255,8 +254,8 @@ export default function ServiceDetailPage({ data, service: propService, classNam
                                         <motion.div
                                             whileHover={{ rotate: 8, scale: 1.1, }}
                                             transition={{ type: "spring", stiffness: 250, }}
-                                            className="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl text-[#387478]">
-                                            {(() => { const IncludedIcon = (LucideIcons as any)[service.icon] || LucideIcons.Check; return <IncludedIcon className="h-8 w-8" /> })()}
+                                            className="flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl text-[#387478]">
+                                            {(() => { const IncludedIcon = (LucideIcons as any)[item.icon || service.icon] || LucideIcons.Check; return <IncludedIcon className="h-8 w-8" /> })()}
                                         </motion.div>
 
                                         <div className="flex flex-col pt-1">
@@ -278,18 +277,18 @@ export default function ServiceDetailPage({ data, service: propService, classNam
                         initial="hidden"
                         whileInView="visible"
                         viewport={{ once: true, amount: 0.2, }}
-                        className="sticky top-6 lg:col-span-4">
+                        className="sticky top-28 lg:col-span-4 z-20">
                         <motion.div
                             whileHover={{ y: -3, }}
-                            className="rounded-[1.5rem] bg-white p-6 text-black shadow-xl">
-                            <div className="mb-6 flex items-center gap-3 px-2">
+                            className="rounded-[1.5rem] bg-white text-black shadow-xl overflow-hidden">
+                            <div className="mb-4 flex items-center gap-3 bg-[#387478] p-6">
                                 <motion.div
                                     animate={{ rotate: [0, 10, -10, 0], }}
                                     transition={{ duration: 2, repeat: Infinity, repeatDelay: 4, ease: "easeInOut" }}>
-                                    <FaPaw className="h-6 w-6 text-[#387478]" />
+                                    <FaPaw className="h-6 w-6 text-white" />
                                 </motion.div>
 
-                                <h3 className={`${lilitaOne.className} text-2xl tracking-wide text-black sm:text-3xl`}>
+                                <h3 className={`${lilitaOne.className} text-2xl tracking-wide text-white sm:text-3xl`}>
                                     Our Services
                                 </h3>
                             </div>
@@ -298,7 +297,7 @@ export default function ServiceDetailPage({ data, service: propService, classNam
                                 initial="hidden"
                                 whileInView="visible"
                                 viewport={{ once: true, }}
-                                className="space-y-3">
+                                className="space-y-3 px-6 pb-6">
                                 {servicesData.services.map((nav, index) => {
                                     const linkHref = `/services/${nav.slug}`;
                                     const isActive = pathname === linkHref;

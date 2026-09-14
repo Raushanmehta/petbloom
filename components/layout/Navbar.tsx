@@ -69,10 +69,10 @@ export default function Navbar({ data, className, servicesData: injectedServices
         <header
             className={`fixed left-0 z-50 w-full transition-all duration-300 ${isOpen || scrolled
                 ? "top-0 bg-[#051d1b]/95 shadow-xl backdrop-blur-md border-b border-white/10"
-                : "top-0 md:top-6 bg-transparent border-b border-transparent"
+                : "top-3 md:top-6 bg-transparent border-b border-transparent"
                 }`}
         >
-            <div className="mx-auto flex h-[82px] sm:h-[90px] md:h-[90px] max-w-[1355px] items-center justify-between px-4 sm:px-4 md:px-6 lg:px-8 pt-2 sm:pt-4 md:pt-0">
+            <div className="mx-auto flex h-[82px] sm:h-[90px] md:h-[90px] max-w-[1355px] items-center justify-between px-4 sm:px-4 md:px-6 lg:px-8">
                 {/* Logo */}
                 <motion.div
                     initial={{ opacity: 0, x: -30 }}

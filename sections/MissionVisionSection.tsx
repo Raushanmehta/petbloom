@@ -55,7 +55,7 @@ export default function MissionVisionSection({ data, className, isPage = false }
     const MissionIcon = iconMap[missionData.iconName] || Target;
     const VisionIcon = iconMap[visionData.iconName] || Eye;
     return (
-        <section className={`relative overflow-hidden bg-white  py-10 sm:py-14 md:py-16 lg:py-16 ${className || ""}`}>
+        <section className={`relative overflow-hidden bg-[#FCF7F3]  py-10 sm:py-14 md:py-16 lg:py-16 ${className || ""}`}>
             <div className="mx-auto max-w-[1355px] px-4 sm:px-4 md:px-6 lg:px-8">
                 <motion.div
                     variants={missionHeaderContainerVariants}
@@ -334,8 +334,6 @@ export default function MissionVisionSection({ data, className, isPage = false }
                         </motion.div>
                     </motion.div>
                 </motion.div>
-
-                <StatisticsSection />
             </div>
         </section>
     );

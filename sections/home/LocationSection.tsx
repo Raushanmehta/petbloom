@@ -36,7 +36,6 @@ export default function LocationSection({ data, className }: LocationSectionProp
 
     return (
         <section className={`relative overflow-hidden bg-[#FEFDFB]  py-10 sm:py-14 md:py-16 lg:py-16 ${className || ""}`}>
-
             {/* Decorative background paw left */}
             <motion.div
                 initial={{ opacity: 0, x: -60 }}
@@ -205,7 +204,7 @@ export default function LocationSection({ data, className }: LocationSectionProp
                 {/* Cards Container */}
                 <div
                     ref={scrollRef}
-                    className="flex snap-x snap-mandatory gap-4 sm:gap-6 overflow-x-auto scroll-smooth pb-4 sm:pb-6 pt-2 no-scrollbar px-10 sm:px-14 lg:px-0 lg:justify-between items-center"
+                    className="flex snap-x snap-mandatory gap-4 sm:gap-6 overflow-x-auto overflow-y-hidden scroll-smooth pb-4 sm:pb-6 pt-2 no-scrollbar px-10 sm:px-14 lg:px-0 lg:justify-between items-center"
                     style={{
                         scrollbarWidth: "none",
                         msOverflowStyle: "none",
@@ -215,7 +214,7 @@ export default function LocationSection({ data, className }: LocationSectionProp
                         <motion.div
                             key={`${locationItem.id}-${index}`}
                             variants={cardAnimation}
-                            className="w-[260px] sm:w-[300px] lg:w-[calc(20%-1.2rem)] shrink-0 snap-center"
+                            className="w-[310px] sm:w-[300px] lg:w-[calc(20%-1.2rem)] shrink-0 snap-center"
                         >
                             <LocationCard location={locationItem} />
                         </motion.div>
@@ -229,7 +228,7 @@ export default function LocationSection({ data, className }: LocationSectionProp
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.5 }}
-                className="relative z-10 mt-6 sm:mt-4 flex justify-center gap-2"
+                className="relative z-10 mt-0 sm:mt-4 flex justify-center gap-2"
             >
                 <motion.span
                     animate={{ scale: [1, 1.25, 1] }}

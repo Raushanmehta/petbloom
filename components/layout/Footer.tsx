@@ -41,14 +41,14 @@ export default function Footer({ data, className }: SectionProps<PetBloomFooterD
             {/* Background Cat Mascot on Right Side */}
             <div className="pointer-events-none absolute inset-0 mx-auto max-w-[1355px] px-4 sm:px-4 md:px-6 lg:px-8 z-0">
                 <motion.div
-                    className="absolute -right-4 sm:-right-16 md:-right-20 lg:-right-12 xl:-right-16 bottom-[95px] sm:bottom-[125px] md:bottom-[130px] lg:bottom-[80px] opacity-25 sm:opacity-30 lg:opacity-35"
+                    className="absolute -right-4 sm:-right-16 md:-right-20 lg:-right-12 xl:-right-16 bottom-[140px] sm:bottom-[125px] md:bottom-[130px] lg:bottom-[80px] opacity-25 sm:opacity-30 lg:opacity-35"
                 >
-                    <div className="relative h-[140px] sm:h-[200px] md:h-[210px] lg:h-[220px] w-[320px] sm:w-[470px] md:w-[490px] lg:w-[520px]">
+                    <div className="relative h-[180px] sm:h-[200px] md:h-[210px] lg:h-[220px] w-[380px] sm:w-[470px] md:w-[490px] lg:w-[520px]">
                         <Image
                             src="/images/cat.png"
                             alt="Cat Mascot Background"
                             fill
-                            sizes="(max-width: 640px) 320px, (max-width: 768px) 470px, 520px"
+                            sizes="(max-width: 640px) 380px, (max-width: 768px) 470px, 520px"
                             className="object-contain object-right-bottom"
                         />
                     </div>

@@ -45,7 +45,7 @@ export default function HeroSection({ data, className }: HeroSectionProps = {}) 
                 className="relative w-full"
                 opts={{ loop: true }}
             >
-                <CarouselContent className="ml-0 rounded-2xl sm:rounded-[2.5rem]">
+                <CarouselContent className="ml-0 rounded-[2.5rem] sm:rounded-[2.5rem]">
                     {slides.map((slide, index) => {
                         const isActive = currentSlide === index;
 
@@ -55,7 +55,7 @@ export default function HeroSection({ data, className }: HeroSectionProps = {}) 
                                 className="relative flex min-h-[610px] h-[calc(100vh-2rem)] sm:h-[calc(100vh-2rem)] md:h-[calc(100vh-3rem)] lg:h-[calc(100vh-3rem)] items-center pl-0 rounded-[2.5rem] sm:rounded-[2.5rem]"
                             >
                                 {/* Background Image */}
-                                <div className="absolute inset-0 z-0 h-full w-full overflow-hidden rounded-2xl sm:rounded-[2.5rem]">
+                                <div className="absolute inset-0 z-0 h-full w-full overflow-hidden rounded-[2.5rem] sm:rounded-[2.5rem]">
                                     <motion.div
                                         className="relative h-full w-full"
                                         animate={{ scale: isActive ? 1.08 : 1 }}

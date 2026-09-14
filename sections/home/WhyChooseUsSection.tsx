@@ -36,8 +36,6 @@ export default function WhyChooseUsSection({ data, className, isPage = false }: 
 
     return (
         <section className={`relative overflow-hidden bg-[#FEFDFB]  py-10 sm:py-14 md:py-16 lg:py-16 ${className || ""}`}>
-
-
             {/* Decorative background paw right */}
             <motion.div
                 initial={{ opacity: 0, x: 60 }}
@@ -53,7 +51,6 @@ export default function WhyChooseUsSection({ data, className, isPage = false }: 
                     <FaPaw className="h-20 w-20 xl:h-24 xl:w-24 rotate-[15deg]" />
                 </motion.div>
             </motion.div>
-
 
             <div className="relative z-10 mx-auto max-w-[1355px] px-4 sm:px-4 md:px-6 lg:px-8">
                 <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-12 lg:gap-12">
@@ -183,7 +180,7 @@ export default function WhyChooseUsSection({ data, className, isPage = false }: 
                         transition={{ duration: 0.9, ease: "easeOut" }}
                         className="relative flex justify-center mb-16 sm:mb-16 lg:mb-0 lg:col-span-5"
                     >
-                        <div className="relative w-[320px] sm:w-[450px] lg:w-[500px] max-w-full">
+                        <div className="relative w-[380px] sm:w-[380px] lg:w-[500px] max-w-full">
                             {/* Decorative background paw left (moved next to image) */}
                             <motion.div
                                 initial={{ opacity: 0, x: -60 }}
@@ -207,7 +204,7 @@ export default function WhyChooseUsSection({ data, className, isPage = false }: 
                                 viewport={{ once: true }}
                                 transition={{ duration: 0.8, delay: 0.15 }}
                                 whileHover={{ scale: 1.015 }}
-                                className="relative h-[340px] sm:h-[450px] lg:h-[550px] w-full overflow-hidden rounded-[2.5rem] sm:rounded-[2rem] shadow-2xl"
+                                className="relative h-[390px] sm:h-[450px] lg:h-[550px] w-full overflow-hidden rounded-[2.5rem] sm:rounded-[2rem] shadow-2xl"
                             >
                                 <Image
                                     src={images?.main || ""}
@@ -226,9 +223,9 @@ export default function WhyChooseUsSection({ data, className, isPage = false }: 
                                 viewport={{ once: true }}
                                 transition={{ type: "spring", stiffness: 180, damping: 14, delay: 0.4 }}
                                 whileHover={{ scale: 1.08, rotate: 8 }}
-                                className="absolute -bottom-4 -left-3 sm:-bottom-6 sm:-left-4 lg:-left-4 z-20 flex h-16 w-16 sm:h-32 sm:w-32 items-center justify-center rounded-full border-4 border-white bg-[#387478] text-white shadow-xl"
+                                className="absolute -bottom-4 -left-3 sm:-bottom-6 sm:-left-4 lg:-left-4 z-20 flex h-24 w-24 sm:h-32 sm:w-32 items-center justify-center rounded-full border-4 border-white bg-[#387478] text-white shadow-xl"
                             >
-                                <FaPaw className="h-8 w-8 sm:h-18 sm:w-18" />
+                                <FaPaw className="h-14 w-14 sm:h-18 sm:w-18" />
                             </motion.div>
 
                             {/* Healthy Pets Badge */}
@@ -243,14 +240,14 @@ export default function WhyChooseUsSection({ data, className, isPage = false }: 
                                 <motion.div
                                     animate={{ scale: [1, 1.08, 1] }}
                                     transition={{ duration: 2, repeat: Infinity }}
-                                    className="flex h-10 w-10 sm:h-12 sm:w-12 shrink-0 items-center justify-center text-[#387478]"
+                                    className="flex h-12 w-12 sm:h-12 sm:w-12 shrink-0 items-center justify-center text-[#387478]"
                                 >
                                     <FaRegHeart
-                                        className="w-8 h-8 sm:w-12 sm:h-12"
+                                        className="w-12 h-12 sm:w-12 sm:h-12"
                                     />
                                 </motion.div>
 
-                                <div className={`${courgette.className} text-sm sm:text-lg`}>
+                                <div className={`${courgette.className} text-lg sm:text-lg`}>
                                     <p className="font-bold leading-tight text-gray-900">
                                         {badge?.line1}
                                     </p>

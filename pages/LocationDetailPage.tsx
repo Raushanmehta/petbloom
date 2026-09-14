@@ -94,7 +94,7 @@ export default function LocationDetailPage({ data, location: propLocation, class
                             <div className="grid grid-cols-1 md:grid-cols-12 items-center">
 
                                 {/* Left Side Image */}
-                                <div className="md:col-span-5 relative h-[280px] sm:h-[395px] w-full overflow-hidden rounded-3xl">
+                                <div className="md:col-span-5 relative h-[280px] sm:h-[410px] w-full overflow-hidden rounded-3xl">
                                     <motion.div
                                         whileHover={{ scale: 1.05 }}
                                         transition={{ duration: 0.4 }}

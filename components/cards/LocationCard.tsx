@@ -32,10 +32,10 @@ export default function LocationCard({
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.2 }}
                 transition={{ duration: 0.6, ease: "easeOut" }}
-                className="group flex w-full flex-col items-center rounded-3xl border border-gray-100/80 bg-white p-3 shadow-xl shadow-gray-100 snap-center transition-all duration-300 hover:shadow-2xl hover:border-[#387478]/30"
+                className="group flex w-full flex-col items-center rounded-3xl border border-gray-100/80 bg-white p-3  hover:border-[#387478]/30"
             >
                 <div className="relative w-full">
-                    <div className="relative h-[280px] w-full overflow-hidden rounded-b-[5rem] rounded-t-[5rem] shadow-md sm:h-[280px] sm:rounded-b-[6rem] sm:rounded-t-[6rem]">
+                    <div className="relative h-[320px] sm:h-[280px] w-full overflow-hidden rounded-b-[5rem] rounded-t-[5rem] shadow-md  sm:rounded-b-[6rem] sm:rounded-t-[6rem]">
                         <motion.div
                             className="relative h-full w-full"
                             whileHover={{ scale: 1.08 }}

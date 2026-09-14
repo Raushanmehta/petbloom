@@ -20,7 +20,7 @@ export interface StatisticsSectionProps extends SectionProps<PetBloomStatsSectio
 function AnimatedCounter({ from = 0, to }: { from?: number; to: string }) {
     const nodeRef = useRef<HTMLSpanElement>(null);
     const inView = useInView(nodeRef, { once: true, amount: 0.5 });
-    
+
     // Extract the numeric part and the suffix/prefix
     const numericMatch = to.match(/(\d+)/);
     const numericPart = numericMatch ? parseInt(numericMatch[0], 10) : 0;
@@ -58,7 +58,7 @@ export default function StatisticsSection({
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className={`relative overflow-hidden mt-12 sm:mt-16 lg:mt-20 rounded-[1.5rem] sm:rounded-[2rem] bg-[#387478] px-5 py-7 sm:px-8 sm:py-9 lg:px-6 xl:px-8 lg:py-10 text-white shadow-xl ${className || ""}`}
+            className={`relative overflow-hidden mt-2 sm:mt-8 lg:mt-20 rounded-[1.5rem] sm:rounded-[2rem] bg-[#387478] px-5 py-7 sm:px-8 sm:py-9 lg:px-6 xl:px-8 lg:py-10 text-white shadow-xl ${className || ""}`}
         >
             {/* Decorative Background Graphics */}
             <div className="pointer-events-none absolute inset-0">

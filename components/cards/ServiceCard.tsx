@@ -44,7 +44,7 @@ export default function ServiceCard({
                         <motion.h3
                             whileHover={{ x: 3, }}
                             transition={{ duration: 0.2, }}
-                            className="text-xl font-bold tracking-wide text-white">
+                            className="text-2xl font-bold tracking-wide text-white">
                             {service.title}
                         </motion.h3>
 

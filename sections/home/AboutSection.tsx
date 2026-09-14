@@ -163,7 +163,7 @@ export default function AboutSection({ data, className, isPage = false }: AboutS
 
                 {/* Right Content Column */}
                 <motion.div
-                    className="space-y-5 sm:space-y-6 lg:col-span-7"
+                    className="space-y-4 sm:space-y-4 lg:col-span-7"
                     variants={containerVariants}
                     initial="hidden"
                     whileInView="visible"

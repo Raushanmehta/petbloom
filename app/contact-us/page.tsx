@@ -381,7 +381,7 @@ export default function ContactPage() {
                                     initial="hidden"
                                     whileInView="visible"
                                     viewport={{ once: true }}
-                                    className="space-y-4 sm:space-y-5">
+                                    className="space-y-2">
                                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5">
                                         <motion.div variants={contactFormFieldVariants} className="space-y-1.5">
                                             <div className="relative flex items-center">
@@ -393,7 +393,7 @@ export default function ContactPage() {
                                                     onChange={handleChange}
                                                     placeholder={formConfig?.namePlaceholder || "Your Name*"}
                                                     required
-                                                    className="w-full rounded-xl border border-gray-200 bg-[#FEFDFB] py-3 sm:py-3.5 pl-11 pr-4 text-xs sm:text-sm font-medium text-gray-800 focus:border-[#387478] focus:outline-none transition-colors"
+                                                    className="w-full rounded-xl border border-gray-200 bg-[#FEFDFB] py-2 sm:py-2.5 pl-11 pr-4 text-xs sm:text-sm font-medium text-gray-800 focus:border-[#387478] focus:outline-none transition-colors"
                                                 />
                                             </div>
                                         </motion.div>
@@ -408,7 +408,7 @@ export default function ContactPage() {
                                                     onChange={handleChange}
                                                     placeholder={formConfig?.emailPlaceholder || "Your Email*"}
                                                     required
-                                                    className="w-full rounded-xl border border-gray-200 bg-[#FEFDFB] py-3 sm:py-3.5 pl-11 pr-4 text-xs sm:text-sm font-medium text-gray-800 focus:border-[#387478] focus:outline-none transition-colors"
+                                                    className="w-full rounded-xl border border-gray-200 bg-[#FEFDFB] py-2 sm:py-2.5 pl-11 pr-4 text-xs sm:text-sm font-medium text-gray-800 focus:border-[#387478] focus:outline-none transition-colors"
                                                 />
                                             </div>
                                         </motion.div>
@@ -420,7 +420,7 @@ export default function ContactPage() {
                                             value={formData.subject}
                                             onChange={handleChange}
                                             required
-                                            className="w-full appearance-none rounded-xl border border-gray-200 bg-[#FEFDFB] py-3 sm:py-3.5 px-4 pr-10 text-xs sm:text-sm font-medium text-gray-800 focus:border-[#387478] focus:outline-none transition-colors cursor-pointer">
+                                            className="w-full appearance-none rounded-xl border border-gray-200 bg-[#FEFDFB] py-2 sm:py-2.5 px-4 pr-10 text-xs sm:text-sm font-medium text-gray-800 focus:border-[#387478] focus:outline-none transition-colors cursor-pointer">
                                             <option value="" disabled>Select Subject*</option>
                                             {formConfig?.subjects?.map((s) => (
                                                 <option key={s.value} value={s.value}>
@@ -440,7 +440,7 @@ export default function ContactPage() {
                                             onChange={handleChange}
                                             placeholder={formConfig?.phonePlaceholder || "Phone Number*"}
                                             required
-                                            className="w-full rounded-xl border border-gray-200 bg-[#FEFDFB] py-3 sm:py-3.5 pl-11 pr-4 text-xs sm:text-sm font-medium text-gray-800 focus:border-[#387478] focus:outline-none transition-colors"
+                                            className="w-full rounded-xl border border-gray-200 bg-[#FEFDFB] py-2 sm:py-2.5 pl-11 pr-4 text-xs sm:text-sm font-medium text-gray-800 focus:border-[#387478] focus:outline-none transition-colors"
                                         />
                                     </motion.div>
 
@@ -452,7 +452,7 @@ export default function ContactPage() {
                                             value={formData.date}
                                             onChange={handleChange}
                                             required
-                                            className="w-full rounded-xl border border-gray-200 bg-[#FEFDFB] py-3 sm:py-3.5 pl-11 pr-4 text-xs sm:text-sm font-medium text-gray-800 focus:border-[#387478] focus:outline-none transition-colors"
+                                            className="w-full rounded-xl border border-gray-200 bg-[#FEFDFB] py-2 sm:py-2.5 pl-11 pr-4 text-xs sm:text-sm font-medium text-gray-800 focus:border-[#387478] focus:outline-none transition-colors"
                                         />
                                     </motion.div>
 
@@ -463,7 +463,7 @@ export default function ContactPage() {
                                             value={formData.time}
                                             onChange={handleChange}
                                             required
-                                            className="w-full appearance-none rounded-xl border border-gray-200 bg-[#FEFDFB] py-3 sm:py-3.5 pl-11 pr-10 text-xs sm:text-sm font-medium text-gray-800 focus:border-[#387478] focus:outline-none transition-colors cursor-pointer">
+                                            className="w-full appearance-none rounded-xl border border-gray-200 bg-[#FEFDFB] py-2 sm:py-2.5 pl-11 pr-10 text-xs sm:text-sm font-medium text-gray-800 focus:border-[#387478] focus:outline-none transition-colors cursor-pointer">
                                             <option value="" disabled>Preferred Time*</option>
                                             {formConfig?.timeSlots?.map((t) => (
                                                 <option key={t.value} value={t.value}>
@@ -483,7 +483,7 @@ export default function ContactPage() {
                                             onChange={handleChange}
                                             placeholder={formConfig?.messagePlaceholder || "Write Message*"}
                                             required
-                                            className="w-full rounded-xl border border-gray-200 bg-[#FEFDFB] p-3.5 sm:p-4 text-xs sm:text-sm font-medium text-gray-800 focus:border-[#387478] focus:outline-none transition-colors resize-none"
+                                            className="w-full rounded-xl border border-gray-200 bg-[#FEFDFB] p-2 sm:py-2.5 text-xs sm:text-sm font-medium text-gray-800 focus:border-[#387478] focus:outline-none transition-colors resize-none"
                                         />
                                         <MessageSquare className="absolute right-4 top-4 h-4 w-4 text-gray-300 pointer-events-none" />
                                     </motion.div>
@@ -495,7 +495,7 @@ export default function ContactPage() {
                                             whileHover={{ scale: 1.01, y: -1 }}
                                             whileTap={{ scale: 0.98 }}
                                             transition={{ duration: 0.2 }}
-                                            className="flex items-center justify-center gap-2 w-full rounded-xl bg-[#E67E22] py-3.5 sm:py-4 text-sm font-bold text-white shadow-lg shadow-[#E67E22]/20 transition-colors duration-300 hover:bg-[#d5701b] cursor-pointer">
+                                            className="flex items-center justify-center gap-2 w-full rounded-xl bg-[#E67E22] py-2 sm:py-2.5 text-sm font-bold text-white shadow-lg shadow-[#E67E22]/20 transition-colors duration-300 hover:bg-[#d5701b] cursor-pointer">
                                             <FaPaw className="h-5 w-5 sm:h-6 sm:w-6" />
                                             {formConfig?.submitButtonText || "REQUEST A QUOTE"}
                                         </motion.button>
@@ -511,7 +511,7 @@ export default function ContactPage() {
                                     viewport={{ once: true }}
                                     transition={{ delay: 0.4 }}
                                     className="mt-6 pt-4 border-t border-gray-100 flex items-center justify-center gap-2 text-xs sm:text-sm font-medium text-gray-500">
-                                    <Lock className="h-3.5 w-3.5 text-[#387478]" />
+                                    <Lock className="h-2.5 w-2.5 text-[#387478]" />
                                     <span>{formConfig.privacyNotice}</span>
                                 </motion.div>
                             )}

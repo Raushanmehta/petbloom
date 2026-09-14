@@ -337,7 +337,7 @@
                 "title": "Full Grooming",
                 "subtitle": "Shiny & Fresh",
                 "description": "Complete grooming care to keep your pet clean, healthy, comfortable, and looking their best.",
-                "image": "https://images.unsplash.com/photo-1537151625747-768eb6cf92b2?auto=format&fit=crop&q=80&w=600",
+                "image": "https://i.pinimg.com/1200x/10/e0/8f/10e08f253f742e93438427b330cc80ee.jpg",
                 "slug": "full-grooming",
                 "icon": "Scissors",
                 "detail": {
@@ -362,39 +362,45 @@
                       "title": "Stress-Free Care"
                     }
                   ],
-                  "overviewText1": "Regular grooming is essential for your pet's health and happiness.",
-                  "overviewText2": "We use high-quality, pet-safe products and gentle techniques to ensure your furry friend feels relaxed, comfortable, and pampered.",
-                  "overviewImage": "https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&q=80&w=600",
+                  "overviewText1": "Regular grooming is essential for your pet's health and happiness. A consistent grooming schedule helps maintain a healthy coat and prevents skin issues from developing in your pets.",
+                  "overviewText2": "We use high-quality, pet-safe products and gentle techniques to ensure your furry friend feels relaxed, comfortable, and pampered. Our expert groomers provide a stress-free environment, taking their time to make sure your pet feels safe and happy throughout the process.",
+                  "overviewImage": "https://i.pinimg.com/1200x/cd/73/ea/cd73ea154fac570fa89aaf0a3c34075b.jpg",
                   "includedFeatures": [
                     {
                       "id": "1",
-                      "title": "Bath & Shampoo",
+                      "icon": "Droplets",
+                      "title": "Deep Clean Bath",
                       "description": "Gentle, skin-friendly shampoo for a deep clean."
                     },
                     {
                       "id": "2",
-                      "title": "Brushing & Detangling",
-                      "description": "Removes loose hair, prevents tangles and keeps coat smooth."
+                      "icon": "Scissors",
+                      "title": "Haircut & Styling",
+                      "description": "Professional breed-specific styling and trims."
                     },
                     {
                       "id": "3",
-                      "title": "Nail Trimming",
-                      "description": "Safe trimming to keep nails at the perfect length."
+                      "icon": "Wind",
+                      "title": "Blow Dry & Brush Out",
+                      "description": "Fluff drying and thorough brushing to remove tangles."
                     },
                     {
                       "id": "4",
-                      "title": "Ear Cleaning",
-                      "description": "Removes dirt and wax to prevent infections and discomfort."
+                      "icon": "ScissorsSquare",
+                      "title": "Nail Trimming",
+                      "description": "Safe clipping and filing of nails for comfort."
                     },
                     {
                       "id": "5",
-                      "title": "Hair Styling",
-                      "description": "Breed-specific cuts and styling for a neat look."
+                      "icon": "Ear",
+                      "title": "Ear Cleaning",
+                      "description": "Gentle ear cleaning to prevent infections."
                     },
                     {
                       "id": "6",
-                      "title": "Deodorizing Spray",
-                      "description": "Refreshing pet-safe finishing fragrance."
+                      "icon": "Smile",
+                      "title": "Teeth Brushing",
+                      "description": "Oral care to maintain healthy gums and fresh breath."
                     }
                   ]
                 }
@@ -404,7 +410,7 @@
                 "title": "Pet Boarding",
                 "subtitle": "Safe & Secure Stay",
                 "description": "A safe, comfortable, and supervised stay for your pet while you're away.",
-                "image": "https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&q=80&w=600",
+                "image": "https://i.pinimg.com/1200x/66/d3/e0/66d3e01eca94cd2d06cae4cff875886f.jpg",
                 "slug": "pet-boarding",
                 "icon": "Home",
                 "detail": {
@@ -429,39 +435,45 @@
                       "title": "24/7 Supervision"
                     }
                   ],
-                  "overviewText1": "Our pet boarding service provides a clean, secure, and comfortable environment.",
-                  "overviewText2": "Every pet receives individual attention, meals, playtime, exercise, and plenty of love.",
-                  "overviewImage": "https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&q=80&w=600",
+                  "overviewText1": "Our premium pet boarding service provides a clean, secure, and highly comfortable environment for your furry family members. We ensure every pet feels right at home while you're away.",
+                  "overviewText2": "Every pet receives individual attention, nutritious meals, structured playtime, plenty of exercise, and unconditional love. We maintain a strict cleaning schedule and climate-controlled rooms to guarantee the utmost comfort, safety, and well-being for your beloved companions.",
+                  "overviewImage": "https://i.pinimg.com/736x/42/db/54/42db54534d1115e9ef951ba535cb89e5.jpg",
                   "includedFeatures": [
                     {
                       "id": "1",
-                      "title": "Comfortable Rooms",
-                      "description": "Clean and cozy spaces designed for comfortable stays."
+                      "icon": "Home",
+                      "title": "Private Suites",
+                      "description": "Comfortable, climate-controlled rooms for a restful stay."
                     },
                     {
                       "id": "2",
-                      "title": "Daily Meals",
-                      "description": "Nutritious meals based on your pet's routine."
+                      "icon": "Utensils",
+                      "title": "Nutritious Meals",
+                      "description": "Premium pet food served on your pet's schedule."
                     },
                     {
                       "id": "3",
-                      "title": "Playtime",
-                      "description": "Supervised activities to keep pets active."
+                      "icon": "Activity",
+                      "title": "Daily Playtime",
+                      "description": "Supervised group or solo play sessions every day."
                     },
                     {
                       "id": "4",
-                      "title": "Daily Exercise",
-                      "description": "Regular exercise sessions."
+                      "icon": "Heart",
+                      "title": "Cuddle Time",
+                      "description": "One-on-one affection and petting from our staff."
                     },
                     {
                       "id": "5",
-                      "title": "Individual Attention",
-                      "description": "Personalized care according to your pet's needs."
+                      "icon": "Camera",
+                      "title": "Photo Updates",
+                      "description": "Daily photos sent to you so you can see they're happy."
                     },
                     {
                       "id": "6",
+                      "icon": "ShieldCheck",
                       "title": "24/7 Supervision",
-                      "description": "Continuous monitoring for safety and comfort."
+                      "description": "Round-the-clock monitoring for safety and peace of mind."
                     }
                   ]
                 }
@@ -471,7 +483,7 @@
                 "title": "Pet Daycare",
                 "subtitle": "Fun & Supervised",
                 "description": "Supervised playtime and socialization for your pet while you're at work.",
-                "image": "https://images.unsplash.com/photo-1587300003388-59208cc962cb?auto=format&fit=crop&q=80&w=600",
+                "image": "https://i.pinimg.com/1200x/21/89/f4/2189f4c1af5b685806455a1f7e58e7ed.jpg",
                 "slug": "pet-daycare",
                 "icon": "Sun",
                 "detail": {
@@ -496,29 +508,45 @@
                       "title": "Loving Staff"
                     }
                   ],
-                  "overviewText1": "Daycare provides your pet with the opportunity to play and socialize.",
-                  "overviewText2": "We offer structured activities and rest periods to keep your pet happy.",
-                  "overviewImage": "https://images.unsplash.com/photo-1587300003388-59208cc962cb?auto=format&fit=crop&q=80&w=600",
+                  "overviewText1": "Daycare provides your pet with the perfect opportunity to play, socialize, and burn off excess energy safely. It is an excellent way to prevent separation anxiety in your furry friend.",
+                  "overviewText2": "We offer structured activities, supervised group play, and dedicated rest periods to keep your pet happy and balanced. Our trained staff closely monitors all interactions, ensuring a safe, fun, and enriching experience for dogs of all sizes, breeds, and distinct temperaments.",
+                  "overviewImage": "https://i.pinimg.com/1200x/21/89/f4/2189f4c1af5b685806455a1f7e58e7ed.jpg",
                   "includedFeatures": [
                     {
                       "id": "1",
-                      "title": "Group Play",
-                      "description": "Supervised play with other compatible pets."
+                      "icon": "Users",
+                      "title": "Socialization",
+                      "description": "Safe interactions with other friendly dogs."
                     },
                     {
                       "id": "2",
-                      "title": "Rest Periods",
-                      "description": "Quiet time for relaxation."
+                      "icon": "Sun",
+                      "title": "Outdoor Play",
+                      "description": "Secure outdoor areas for running and fetching."
                     },
                     {
                       "id": "3",
-                      "title": "Basic Training",
-                      "description": "Reinforcement of good behaviors."
+                      "icon": "Moon",
+                      "title": "Nap Times",
+                      "description": "Scheduled rest periods to prevent overstimulation."
                     },
                     {
                       "id": "4",
-                      "title": "Updates",
-                      "description": "Photos and updates of your pet's day."
+                      "icon": "Brain",
+                      "title": "Enrichment Games",
+                      "description": "Mental stimulation puzzles and training games."
+                    },
+                    {
+                      "id": "5",
+                      "icon": "Camera",
+                      "title": "Webcam Access",
+                      "description": "Watch your pet play live from your phone or computer."
+                    },
+                    {
+                      "id": "6",
+                      "icon": "FileText",
+                      "title": "Report Cards",
+                      "description": "Daily updates on your pet's behavior and friends."
                     }
                   ]
                 }
@@ -528,7 +556,7 @@
                 "title": "Bath & Spa",
                 "subtitle": "Relax & Refresh",
                 "description": "Luxurious bath and spa treatments to keep your pet clean and relaxed.",
-                "image": "https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&q=80&w=600",
+                "image": "https://i.pinimg.com/736x/49/77/c7/4977c7946d5483ba511c3cccd624aab9.jpg",
                 "slug": "bath-spa",
                 "icon": "Droplets",
                 "detail": {
@@ -553,29 +581,45 @@
                       "title": "Fresh Scent"
                     }
                   ],
-                  "overviewText1": "A good bath is essential for healthy skin and coat.",
-                  "overviewText2": "Our spa treatments use premium products tailored to your pet's skin type.",
-                  "overviewImage": "https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&q=80&w=600",
+                  "overviewText1": "A good bath is essential for maintaining healthy skin and a shiny, vibrant coat. Regular bathing helps remove loose fur, dirt, and allergens, keeping your pet feeling fresh and clean.",
+                  "overviewText2": "Our luxurious spa treatments use premium, hypoallergenic products tailored specifically to your pet's skin type and coat condition. From deep conditioning treatments to soothing massages, we ensure a relaxing spa day that leaves your pet smelling amazing and feeling quite great.",
+                  "overviewImage": "https://i.pinimg.com/1200x/c7/ed/e8/c7ede8803d1fb9217e0e62c657efe375.jpg",
                   "includedFeatures": [
                     {
                       "id": "1",
-                      "title": "Premium Shampoo",
-                      "description": "Selected based on coat type."
+                      "icon": "Droplets",
+                      "title": "Luxury Bath",
+                      "description": "Warm water wash with premium hypoallergenic shampoo."
                     },
                     {
                       "id": "2",
-                      "title": "Conditioner",
-                      "description": "For a soft and shiny coat."
+                      "icon": "Sparkles",
+                      "title": "Deep Conditioning",
+                      "description": "Moisturizing treatment for a soft, shiny coat."
                     },
                     {
                       "id": "3",
-                      "title": "Blow Dry",
-                      "description": "Gentle drying."
+                      "icon": "Wind",
+                      "title": "Fluff Dry",
+                      "description": "Hand blow-dry for maximum volume and comfort."
                     },
                     {
                       "id": "4",
-                      "title": "Brush Out",
-                      "description": "To remove loose hair."
+                      "icon": "Heart",
+                      "title": "Blueberry Facial",
+                      "description": "Tearless facial scrub that brightens and cleans."
+                    },
+                    {
+                      "id": "5",
+                      "icon": "Scissors",
+                      "title": "Paw Pad Trim",
+                      "description": "Trimming hair between pads for better traction."
+                    },
+                    {
+                      "id": "6",
+                      "icon": "Smile",
+                      "title": "Finishing Cologne",
+                      "description": "A spritz of pet-safe fragrance to smell amazing."
                     }
                   ]
                 }
@@ -585,7 +629,7 @@
                 "title": "Dog Walking",
                 "subtitle": "Daily walking",
                 "description": "Professional dog walking services for exercise and mental stimulation.",
-                "image": "https://images.unsplash.com/photo-1537151625747-768eb6cf92b2?auto=format&fit=crop&q=80&w=600",
+                "image": "https://i.pinimg.com/736x/be/43/8a/be438a5ce7eb88c874c009f44b09bdfc.jpg",
                 "slug": "dog-walking",
                 "icon": "Map",
                 "detail": {
@@ -610,29 +654,45 @@
                       "title": "Flexible Times"
                     }
                   ],
-                  "overviewText1": "Regular walks are crucial for your dog's physical and mental health.",
-                  "overviewText2": "Our experienced walkers ensure a safe and enjoyable outing for your pet.",
-                  "overviewImage": "https://images.unsplash.com/photo-1537151625747-768eb6cf92b2?auto=format&fit=crop&q=80&w=600",
+                  "overviewText1": "Regular walks are crucial for your dog's physical health and mental stimulation. A daily walking routine helps prevent obesity, improves cardiovascular health, and reduces bad behavior.",
+                  "overviewText2": "Our experienced and reliable dog walkers ensure a safe, engaging, and enjoyable outing for your pet, exploring familiar neighborhoods or nearby parks. We tailor the pace and distance to your dog's age and fitness level, making sure they get the perfect amount of daily exercise.",
+                  "overviewImage": "https://i.pinimg.com/736x/ad/cc/d4/adccd4a56db47a635c816cffdac7f467.jpg",
                   "includedFeatures": [
                     {
                       "id": "1",
+                      "icon": "MapPin",
                       "title": "Neighborhood Walks",
-                      "description": "Familiar routes for comfort."
+                      "description": "Safe routes in familiar surroundings."
                     },
                     {
                       "id": "2",
-                      "title": "Park Visits",
-                      "description": "For extra sniffing and exploring."
+                      "icon": "Activity",
+                      "title": "Cardio Exercise",
+                      "description": "Brisk walking tailored to your dog's fitness level."
                     },
                     {
                       "id": "3",
-                      "title": "Potty Breaks",
-                      "description": "Essential relief during the day."
+                      "icon": "Trees",
+                      "title": "Park Visits",
+                      "description": "Trips to local parks for new sights and smells."
                     },
                     {
                       "id": "4",
-                      "title": "Water Refresh",
-                      "description": "Fresh water after every walk."
+                      "icon": "Droplet",
+                      "title": "Hydration Breaks",
+                      "description": "Provided fresh water during and after the walk."
+                    },
+                    {
+                      "id": "5",
+                      "icon": "CheckCircle",
+                      "title": "Potty Relief",
+                      "description": "Guaranteed bathroom breaks and waste cleanup."
+                    },
+                    {
+                      "id": "6",
+                      "icon": "Map",
+                      "title": "GPS Tracking",
+                      "description": "Track our route and duration via our mobile app."
                     }
                   ]
                 }
@@ -642,7 +702,7 @@
                 "title": "Cat Grooming",
                 "subtitle": "Gentle & Caring",
                 "description": "Specialized grooming services tailored specifically for feline friends.",
-                "image": "https://images.unsplash.com/photo-1537151625747-768eb6cf92b2?auto=format&fit=crop&q=80&w=600",
+                "image": "https://i.pinimg.com/736x/c0/b4/eb/c0b4eb2184d5b0a22b07539e03a20116.jpg",
                 "slug": "cat-grooming",
                 "icon": "Scissors",
                 "detail": {
@@ -667,29 +727,45 @@
                       "title": "Clean Coat"
                     }
                   ],
-                  "overviewText1": "Cats require special handling and a quiet environment for grooming.",
-                  "overviewText2": "Our groomers are trained to work with felines safely and gently.",
-                  "overviewImage": "https://images.unsplash.com/photo-1537151625747-768eb6cf92b2?auto=format&fit=crop&q=80&w=600",
+                  "overviewText1": "Cats require special handling, patience, and a quiet environment for successful grooming. Regular grooming prevents painful matting, reduces shedding, and helps monitor for health issues.",
+                  "overviewText2": "Our professional groomers are highly trained to work with felines safely, gently, and without the use of harmful sedatives. We understand feline body language and employ stress-reduction techniques to ensure your cat's grooming experience is as calm and comfortable as possible.",
+                  "overviewImage": "https://i.pinimg.com/736x/45/1e/81/451e81fb2d4a821b1bdb8f94d8782d52.jpg",
                   "includedFeatures": [
                     {
                       "id": "1",
-                      "title": "Waterless Bath",
-                      "description": "For cats who dislike water."
+                      "icon": "Scissors",
+                      "title": "Lion Cuts & Trims",
+                      "description": "Specialized styling to keep your cat cool and clean."
                     },
                     {
                       "id": "2",
-                      "title": "Lion Cut",
-                      "description": "Popular styling for long-haired cats."
+                      "icon": "Droplets",
+                      "title": "Waterless Bath",
+                      "description": "Stress-free cleaning without the anxiety of water."
                     },
                     {
                       "id": "3",
-                      "title": "Nail Trims",
-                      "description": "Careful trimming of sharp claws."
+                      "icon": "Wind",
+                      "title": "De-Shedding",
+                      "description": "Thorough brushing to reduce hairballs and shedding."
                     },
                     {
                       "id": "4",
-                      "title": "Ear Cleaning",
-                      "description": "Gentle removal of wax."
+                      "icon": "Shield",
+                      "title": "Nail Caps",
+                      "description": "Application of soft nail caps to prevent scratching."
+                    },
+                    {
+                      "id": "5",
+                      "icon": "Ear",
+                      "title": "Ear & Eye Clean",
+                      "description": "Gentle wiping of sensitive facial areas."
+                    },
+                    {
+                      "id": "6",
+                      "icon": "Heart",
+                      "title": "Feline-Friendly",
+                      "description": "Quiet, dog-free environment for maximum comfort."
                     }
                   ]
                 }
@@ -699,7 +775,7 @@
                 "title": "Pet Training",
                 "subtitle": "Smart & Obedient",
                 "description": "Professional obedience training and behavioral correction for your pet.",
-                "image": "https://images.unsplash.com/photo-1537151625747-768eb6cf92b2?auto=format&fit=crop&q=80&w=600",
+                "image": "https://i.pinimg.com/1200x/34/20/4f/34204f767a837e15c8c6d328ebe8bb1b.jpg",
                 "slug": "pet-training",
                 "icon": "Award",
                 "detail": {
@@ -724,29 +800,45 @@
                       "title": "Better Bond"
                     }
                   ],
-                  "overviewText1": "Training helps prevent behavioral issues and strengthens your relationship.",
-                  "overviewText2": "We focus on positive reinforcement to make learning fun for your pet.",
-                  "overviewImage": "https://images.unsplash.com/photo-1537151625747-768eb6cf92b2?auto=format&fit=crop&q=80&w=600",
+                  "overviewText1": "Professional training helps prevent behavioral issues and strengthens the bond between you and your pet. A well-trained pet is happier, safer, and much more enjoyable to be around daily.",
+                  "overviewText2": "We focus exclusively on positive reinforcement techniques to make learning fun, rewarding, and highly effective for your pet. Whether you need basic obedience, puppy socialization, or behavior modification, our certified trainers provide personalized plans for long-lasting results.",
+                  "overviewImage": "https://i.pinimg.com/1200x/5b/8e/9f/5b8e9fb83cd744e02db168af43bd3884.jpg",
                   "includedFeatures": [
                     {
                       "id": "1",
+                      "icon": "BookOpen",
                       "title": "Basic Obedience",
-                      "description": "Sit, stay, come, and leash walking."
+                      "description": "Teaching fundamental commands like sit, stay, and come."
                     },
                     {
                       "id": "2",
-                      "title": "Puppy Socialization",
-                      "description": "Getting puppies used to the world."
+                      "icon": "Link",
+                      "title": "Leash Training",
+                      "description": "Polite walking without pulling or lunging."
                     },
                     {
                       "id": "3",
-                      "title": "Behavior Modification",
-                      "description": "Addressing specific issues."
+                      "icon": "Users",
+                      "title": "Puppy Socialization",
+                      "description": "Safe exposure to new people, dogs, and environments."
                     },
                     {
                       "id": "4",
+                      "icon": "ShieldAlert",
+                      "title": "Behavior Modification",
+                      "description": "Addressing anxiety, aggression, or resource guarding."
+                    },
+                    {
+                      "id": "5",
+                      "icon": "Award",
                       "title": "Advanced Tricks",
-                      "description": "Fun commands to challenge your pet."
+                      "description": "Fun commands to challenge and engage your pet."
+                    },
+                    {
+                      "id": "6",
+                      "icon": "Home",
+                      "title": "In-Home Sessions",
+                      "description": "Training conducted in your home where behavior happens."
                     }
                   ]
                 }
@@ -756,7 +848,7 @@
                 "title": "Pet Taxi",
                 "subtitle": "Safe Transportation",
                 "description": "Reliable transportation for your pet to vet appointments, grooming, or daycare.",
-                "image": "https://images.unsplash.com/photo-1537151625747-768eb6cf92b2?auto=format&fit=crop&q=80&w=600",
+                "image": "https://i.pinimg.com/736x/0c/e7/ad/0ce7adf6b1cf1a7112ff3e1ce59158b8.jpg",
                 "slug": "pet-taxi",
                 "icon": "Truck",
                 "detail": {
@@ -781,29 +873,45 @@
                       "title": "Comfortable Ride"
                     }
                   ],
-                  "overviewText1": "We provide safe transport for your pet when you are unable to.",
-                  "overviewText2": "Our vehicles are equipped with safety restraints for pets of all sizes.",
-                  "overviewImage": "https://images.unsplash.com/photo-1537151625747-768eb6cf92b2?auto=format&fit=crop&q=80&w=600",
+                  "overviewText1": "We provide safe, reliable transport for your pet when you have a busy schedule or are unable to drive them yourself. Our service ensures they never miss a single important vet appointment.",
+                  "overviewText2": "Our dedicated pet taxi vehicles are fully equipped with safety restraints, comfortable bedding, and climate control for pets of all sizes. We can safely transport your furry friend to the vet, grooming salon, daycare, or boarding facility with the utmost care and strict punctuality.",
+                  "overviewImage": "https://i.pinimg.com/736x/11/ce/1a/11ce1a210bd06c15fb88d84d9aa3ab39.jpg",
                   "includedFeatures": [
                     {
                       "id": "1",
-                      "title": "Vet Visits",
-                      "description": "Transport to and from the clinic."
+                      "icon": "Truck",
+                      "title": "Safe Vehicles",
+                      "description": "Climate-controlled vans with secure pet carriers."
                     },
                     {
                       "id": "2",
-                      "title": "Grooming Drop-off",
-                      "description": "We'll take them to the salon."
+                      "icon": "Clock",
+                      "title": "On-Time Arrival",
+                      "description": "Punctual pick-ups to ensure you never miss appointments."
                     },
                     {
                       "id": "3",
-                      "title": "Airport Transfers",
-                      "description": "Assistance with travel arrangements."
+                      "icon": "Stethoscope",
+                      "title": "Vet Visits",
+                      "description": "Round-trip transport to and from the veterinary clinic."
                     },
                     {
                       "id": "4",
-                      "title": "Wait & Return",
-                      "description": "We can wait during appointments."
+                      "icon": "Scissors",
+                      "title": "Grooming Runs",
+                      "description": "Convenient drop-off and pick-up from the salon."
+                    },
+                    {
+                      "id": "5",
+                      "icon": "UserCheck",
+                      "title": "Trained Drivers",
+                      "description": "Staff experienced in pet handling and first aid."
+                    },
+                    {
+                      "id": "6",
+                      "icon": "MapPin",
+                      "title": "Door-to-Door",
+                      "description": "Hassle-free service directly from your front door."
                     }
                   ]
                 }
@@ -841,8 +949,8 @@
                   "website": "www.petbloom.com",
                   "address": "4140 Parker Rd. Petbloom, New Mexico 31134",
                   "experience": "5 Years",
-                  "aboutMeText1": "Conducts dedicated workshops and personalized seminars on pet care, covering vital topics including positive-reinforcement training, nutrition, grooming ethics, and gentle handling techniques.",
-                  "aboutMeText2": "Provides consulting services for facilities and pet parents wanting to optimize spaces for pet safety and comfort, utilizing eco-friendly materials and veterinary-approved environmental setups.",
+                  "aboutMeText1": "Conducts dedicated workshops and personalized seminars on pet care, covering vital topics including positive-reinforcement training, nutrition, grooming ethics, and gentle handling techniques. With a focus on creating a harmonious bond between pets and their families, Alex continuously strives to educate pet owners on the intricacies of canine and feline behavior for better home life.",
+                  "aboutMeText2": "Provides consulting services for facilities and pet parents wanting to optimize spaces for pet safety and comfort, utilizing eco-friendly materials and veterinary-approved environmental setups. Beyond environmental design, Alex creates customized daily routines that integrate physical exercise, mental stimulation, and rest periods to prevent anxiety and destructive behaviors. This holistic approach ensures that pets not only survive but truly thrive in their living spaces, fostering a lifelong foundation of health, happiness, and deeply meaningful companionship with their loving human families.",
                   "skillsDescription": "Certified in modern animal behavior, gentle grooming practices, and strict adherence to hygienic safety protocols.",
                   "skills": [
                     {
@@ -879,27 +987,27 @@
                   "website": "www.petbloom.com",
                   "address": "4140 Parker Rd. Petbloom, New Mexico 31134",
                   "experience": "6 Years",
-                  "aboutMeText1": "Specializes in coat restoration, de-shedding therapies, and sensitive-skin baths using 100% natural, hypoallergenic formulas.",
-                  "aboutMeText2": "Passionate about creating trust-based relationships with nervous dogs to ensure grooming sessions are relaxing and enjoyable.",
-                  "skillsDescription": "Highly skilled in breed styling, coat conditioning, hand scissoring, and gentle de-matting techniques.",
+                  "aboutMeText1": "Specializes in advanced styling and therapeutic grooming for all dog breeds, meticulously combining aesthetics with comprehensive skin and coat health management. With years of hands-on experience, Jessica ensures that every grooming session is entirely stress-free, utilizing gentle techniques to keep even the most anxious pets incredibly calm, relaxed, and comfortable throughout.",
+                  "aboutMeText2": "Routinely mentors junior grooming staff in mastering safe scissoring techniques, precise breed-standard cuts, and the careful identification of underlying skin conditions or unexpected lumps. Jessica strongly believes that grooming is an essential pillar of a pet's overall well-being, directly impacting their physical comfort and emotional happiness. By exclusively using premium, hypoallergenic products tailored to individual coat types, she consistently delivers exceptional, show-quality results while fiercely advocating for the long-term dermatological health of every furry client she sees.",
+                  "skillsDescription": "Expert in breed-specific cuts, skin health treatments, and fear-free grooming methodologies for anxious dogs.",
                   "skills": [
                     {
                       "id": "1",
-                      "title": "Breed Haircuts & Styling",
+                      "title": "Advanced Scissoring",
                       "percentage": 95,
                       "icon": "Scissors"
                     },
                     {
                       "id": "2",
-                      "title": "Skin & Coat Therapy",
+                      "title": "De-shedding Treatments",
                       "percentage": 88,
-                      "icon": "Heart"
+                      "icon": "Wind"
                     },
                     {
                       "id": "3",
-                      "title": "Puppy First-Cut Care",
+                      "title": "Fear-Free Handling",
                       "percentage": 90,
-                      "icon": "Sparkles"
+                      "icon": "Heart"
                     }
                   ]
                 }
@@ -917,27 +1025,27 @@
                   "website": "www.petbloom.com",
                   "address": "4140 Parker Rd. Petbloom, New Mexico 31134",
                   "experience": "7 Years",
-                  "aboutMeText1": "Provides comprehensive health screenings and monitors vital health indicators for pets staying at PetBloom boarding and day care facilities.",
-                  "aboutMeText2": "Conducts regular pet health awareness programs for pet parents to catch early signs of illness and maintain active, happy lives.",
-                  "skillsDescription": "Certified in Pet CPR, preventative veterinary support, emergency assistance, and physical rehabilitation.",
+                  "aboutMeText1": "Provides critical medical support and compassionate nursing care, expertly assisting with routine wellness exams, precise vaccinations, and urgent life-saving emergency procedures. Jenny is deeply passionate about preventive medicine, consistently taking the extra time to educate pet parents on proper at-home care, essential nutrition, and the early warning signs of common illnesses.",
+                  "aboutMeText2": "Manages the meticulous administration of prescribed medications, continuous patient monitoring during post-operative recovery, and the precise execution of diagnostic laboratory tests. Her unwavering dedication to veterinary excellence is matched only by her incredibly soothing bedside manner, which naturally comforts distressed animals and reassures worried families. By staying completely up-to-date with the latest advancements in veterinary technology and nursing protocols, Jenny guarantees that every single patient receives the absolute highest standard of medical attention and loving care.",
+                  "skillsDescription": "Highly proficient in emergency triage, patient monitoring, diagnostic sampling, and post-operative recovery care.",
                   "skills": [
                     {
                       "id": "1",
-                      "title": "Health Screenings",
-                      "percentage": 94,
-                      "icon": "Stethoscope"
+                      "title": "Patient Monitoring",
+                      "percentage": 96,
+                      "icon": "Activity"
                     },
                     {
                       "id": "2",
-                      "title": "Emergency Pet CPR",
-                      "percentage": 90,
-                      "icon": "ShieldCheck"
+                      "title": "Diagnostic Testing",
+                      "percentage": 85,
+                      "icon": "Stethoscope"
                     },
                     {
                       "id": "3",
-                      "title": "Nutrition Planning",
-                      "percentage": 86,
-                      "icon": "Apple"
+                      "title": "Emergency Response",
+                      "percentage": 90,
+                      "icon": "ShieldAlert"
                     }
                   ]
                 }
@@ -955,27 +1063,27 @@
                   "website": "www.petbloom.com",
                   "address": "4140 Parker Rd. Petbloom, New Mexico 31134",
                   "experience": "8 Years",
-                  "aboutMeText1": "Helps pet owners understand behavioral patterns, resolve leash reactivity, separation anxiety, and establish harmonious routines.",
-                  "aboutMeText2": "Designs interactive group play sessions that build agility, confidence, and social compatibility among dogs of all ages.",
-                  "skillsDescription": "Recognized leader in fear-free positive reinforcement, behavioral conditioning, and puppy socialization.",
+                  "aboutMeText1": "Develops highly customized, science-based behavior modification programs specifically designed to effectively address complex issues such as severe separation anxiety, resource guarding, and leash reactivity. Daniel strictly employs compassionate, positive-reinforcement techniques to rebuild trust and facilitate clear, rewarding communication between highly stressed dogs and their owners.",
+                  "aboutMeText2": "Conducts immersive one-on-one training sessions and highly engaging group socialization classes that dramatically boost canine confidence and reliably instill impeccable obedience skills. Recognizing that successful training fundamentally requires owner education, Daniel provides families with the essential tools, extensive knowledge, and ongoing support needed to maintain lasting results. His profound understanding of canine psychology enables him to completely transform challenging behavioral dynamics into deeply harmonious, joyful, and mutually respectful relationships that last a lifetime.",
+                  "skillsDescription": "Certified behavior consultant specializing in positive reinforcement, anxiety reduction, and advanced obedience training.",
                   "skills": [
                     {
                       "id": "1",
-                      "title": "Obedience Training",
-                      "percentage": 96,
-                      "icon": "Award"
+                      "title": "Behavior Modification",
+                      "percentage": 94,
+                      "icon": "Brain"
                     },
                     {
                       "id": "2",
-                      "title": "Behavior Therapy",
+                      "title": "Obedience Training",
                       "percentage": 92,
-                      "icon": "Heart"
+                      "icon": "BookOpen"
                     },
                     {
                       "id": "3",
-                      "title": "Agility & Play",
-                      "percentage": 89,
-                      "icon": "Smile"
+                      "title": "Puppy Socialization",
+                      "percentage": 88,
+                      "icon": "Users"
                     }
                   ]
                 }
@@ -2156,8 +2264,8 @@
                 "author": "Dr. Jordan Park",
                 "date": "24 Jun, 2025",
                 "readTime": "5 min read",
-                "image": "https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&q=80&w=800",
-                "heroImage": "https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&q=80&w=1200",
+                "image": "https://i.pinimg.com/736x/ca/f6/ef/caf6ef82a36b9d4c219b2f05175b622a.jpg",
+                "heroImage": "https://i.pinimg.com/736x/ca/f6/ef/caf6ef82a36b9d4c219b2f05175b622a.jpg",
                 "excerpt": "Discover why routine grooming is vital for your pet's physical health, coat shine, and emotional happiness.",
                 "featured": true,
                 "introText": "Grooming isn't just about keeping your pet looking adorable — it's a vital pillar of their overall health and longevity. From preventing painful skin mats to detecting early health warnings, regular grooming plays a decisive role in ensuring a happier, more comfortable life for your furry companion.",
@@ -2173,15 +2281,16 @@
                       "Distributes beneficial natural oils evenly across the coat for brilliant shine",
                       "Prevents painful tangles in high-friction areas like the armpits and ears"
                     ],
-                    "image": "https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&q=80&w=600",
+                    "image": "https://i.pinimg.com/736x/e7/69/7d/e7697db002a3d9ea6dc1ec4e3c5e9a8c.jpg",
                     "imagePosition": "right"
                   },
                   {
                     "id": "2",
                     "number": "2.",
                     "title": "Nail Care Is Crucial for Joint and Skeletal Health",
-                    "content": "Overgrown claws alter how a dog or cat places their paws upon the floor, forcing joints into unnatural angles and causing premature arthritis or hip strain. If you hear a distinctive clicking noise when your pet walks across hard floors, a nail trim is overdue. Professional dremel grinding smooths sharp edges while keeping the quick completely safe.",
-                    "image": "https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?auto=format&fit=crop&q=80&w=600",
+                    "contentText1": "Overgrown claws alter how a dog or cat places their paws upon the floor, forcing joints into unnatural angles and causing premature arthritis or hip strain. If you hear a distinctive clicking noise when your pet walks across hard floors, a nail trim is overdue.",
+                    "contentText2": "Professional dremel grinding smooths sharp edges while keeping the quick completely safe. Overgrown claws alter how a dog or cat places their paws upon the floor, forcing joints into unnatural angles and causing premature arthritis or hip strain. If you hear a distinctive clicking noise when your pet walks across hard floors, a nail trim is overdue. Professional dremel grinding smooths sharp edges while keeping the quick completely safe. Overgrown claws alter how a dog or cat places their paws upon the floor, forcing joints into unnatural angles and causing premature arthritis or hip strain. If you hear a distinctive clicking noise when your pet walks across hard floors, a nail trim is overdue. Professional dremel grinding smooths sharp edges while keeping the quick completely safe.",
+                    "image": "https://i.pinimg.com/1200x/2b/4c/10/2b4c10432a2576fd3fd5f69d149b5739.jpg",
                     "imagePosition": "right"
                   },
                   {
@@ -2198,17 +2307,18 @@
                       "text": "Grooming is far more than styling — it is one of the most effective preventative wellness habits any pet guardian can maintain.",
                       "author": "Dr. Jordan Park"
                     },
-                    "image": "https://images.unsplash.com/photo-1534361960057-19889db9621e?auto=format&fit=crop&q=80&w=600",
+                    "image": "https://i.pinimg.com/1200x/3c/67/62/3c67627aa25500da403b506a150fb782.jpg",
                     "imagePosition": "bottom-banner"
                   },
                   {
                     "id": "4",
                     "number": "4.",
                     "title": "Building Calmness, Trust, and Handling Confidence",
-                    "content": "When introduced with positive reinforcement and gentle touch, grooming turns into a comforting bonding ritual. Pets learn to stay calm when their paws, ears, and tails are handled, making future veterinary visits and daily home inspections completely stress-free.",
+                    "contentText1": "When introduced with positive reinforcement and gentle touch, grooming turns into a comforting bonding ritual.",
+                    "contentText2": "Pets learn to stay calm when their paws, ears, and tails are handled, making future veterinary visits and daily home inspections completely stress-free. Establishing a calm grooming routine builds immense trust between you and your furry companion. When introduced with positive reinforcement and gentle touch, grooming turns into a comforting bonding ritual. Pets learn to stay calm when their paws, ears, and tails are handled, making future veterinary visits and daily home inspections completely stress-free. Establishing a calm grooming routine builds immense trust between you and your furry companion. When introduced with positive reinforcement and gentle touch, grooming turns into a comforting bonding ritual. Pets learn to stay calm when their paws, ears, and tails are handled, making future veterinary visits and daily home inspections completely stress-free. Establishing a calm grooming routine builds immense trust between you and your furry companion.",
                     "images": [
-                      "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&q=80&w=400",
-                      "https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&q=80&w=400"
+                      "https://i.pinimg.com/736x/d1/4c/4c/d14c4c2a6033235884280dc9b986f0e8.jpg",
+                      "https://i.pinimg.com/1200x/d5/2c/17/d52c1753ecdd6346abfbda367c46cee5.jpg"
                     ],
                     "imagePosition": "split-right"
                   },
@@ -2216,8 +2326,8 @@
                     "id": "5",
                     "number": "5.",
                     "title": "A Clean, Well-Groomed Pet Brings Joy to the Entire Household",
-                    "content": "Beyond medical advantages, routine deshedding baths and conditioning blowouts significantly reduce indoor allergens, pet dander, and odors in your living spaces. Investing in your pet's coat cleanliness creates a healthier, happier sanctuary for the whole family.",
-                    "image": "https://images.unsplash.com/photo-1587300003388-59208cc962cb?auto=format&fit=crop&q=80&w=800",
+                    "content": "Beyond medical advantages, routine deshedding baths and conditioning blowouts significantly reduce indoor allergens, pet dander, and odors in your living spaces. Investing in your pet's coat cleanliness creates a healthier, happier sanctuary for the whole family. Beyond medical advantages, routine deshedding baths and conditioning blowouts significantly reduce indoor allergens, pet dander, and odors in your living spaces. Investing in your pet's coat cleanliness creates a healthier, happier sanctuary for the whole family.",
+                    "image": "https://i.pinimg.com/736x/d6/8c/84/d68c84d30eeb7c9acd9600b43e9c8bb4.jpg",
                     "imagePosition": "full-bottom-image"
                   }
                 ]
@@ -2229,8 +2339,8 @@
                 "author": "Dr. Emily Watson",
                 "date": "12 Jul, 2025",
                 "readTime": "6 min read",
-                "image": "https://images.unsplash.com/photo-1589924691995-400dc9ecc119?auto=format&fit=crop&q=80&w=800",
-                "heroImage": "https://images.unsplash.com/photo-1589924691995-400dc9ecc119?auto=format&fit=crop&q=80&w=1200",
+                "image": "https://i.pinimg.com/736x/31/11/ec/3111ec6941c62e95bc6858cda40b1f0d.jpg",
+                "heroImage": "https://i.pinimg.com/736x/31/11/ec/3111ec6941c62e95bc6858cda40b1f0d.jpg",
                 "excerpt": "Learn how clean ingredients, wholesome proteins, and superfoods fuel your companion's natural immunity.",
                 "featured": false,
                 "introText": "Every dog owner dreams of giving their pet the highest quality of life and boundless energy. That journey begins right in their food bowl. Understanding balanced canine nutrition helps prevent allergies, promotes lean muscle mass, and keeps digestive systems functioning at their peak.",
@@ -2246,15 +2356,16 @@
                       "Naturally rich in bioavailable iron, zinc, and B-complex vitamins",
                       "Significantly higher digestibility rate compared to plant-based substitutes"
                     ],
-                    "image": "https://images.unsplash.com/photo-1589924691995-400dc9ecc119?auto=format&fit=crop&q=80&w=600",
+                    "image": "https://i.pinimg.com/1200x/77/58/e6/7758e6b98531e7b85228b434ada15e3f.jpg",
                     "imagePosition": "right"
                   },
                   {
                     "id": "2",
                     "number": "2.",
                     "title": "Spotting and Managing Food Sensitivities",
-                    "content": "Chronic ear infections, red paws, and frequent itching are often telltale signals of food intolerances rather than seasonal allergies. Transitioning your pet to a limited-ingredient diet with novel protein sources like venison or turkey can resolve gastrointestinal distress within weeks.",
-                    "image": "https://images.unsplash.com/photo-1576201836106-db1758fd1c97?auto=format&fit=crop&q=80&w=600",
+                    "contentText1": "Many pets suffer silently from dietary intolerances that manifest as itchy skin, chronic ear infections, or digestive upset. Identifying culprits like wheat, corn, or specific proteins requires a careful elimination diet guided by veterinary advice.",
+                    "contentText2": " Switching to limited-ingredient or hypoallergenic formulas can dramatically improve your pet's comfort and vitality. Many pets suffer silently from dietary intolerances that manifest as itchy skin, chronic ear infections, or digestive upset. Identifying culprits like wheat, corn, or specific proteins requires a careful elimination diet guided by veterinary advice. Switching to limited-ingredient or hypoallergenic formulas can dramatically improve your pet's comfort and vitality. Many pets suffer silently from dietary intolerances that manifest as itchy skin, chronic ear infections, or digestive upset. Identifying culprits like wheat, corn, or specific proteins requires a careful elimination diet guided by veterinary advice. Switching to limited-ingredient or hypoallergenic formulas can dramatically improve your pet's comfort and vitality.",
+                    "image": "https://i.pinimg.com/1200x/ee/25/47/ee25479a6dece4a36654eccfbe234fca.jpg",
                     "imagePosition": "right"
                   },
                   {
@@ -2271,17 +2382,18 @@
                       "text": "What we put into our pets' bodies directly governs their mood, lifespan, and resistance to modern chronic diseases.",
                       "author": "Dr. Emily Watson"
                     },
-                    "image": "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&q=80&w=600",
+                    "image": "https://i.pinimg.com/1200x/ef/bf/98/efbf98d05bb5657e78d830d9d269498f.jpg",
                     "imagePosition": "bottom-banner"
                   },
                   {
                     "id": "4",
                     "number": "4.",
                     "title": "Hydration and Moisture-Rich Dietary Balance",
-                    "content": "Many dogs fed solely dry kibble exist in a chronic state of mild dehydration. Incorporating bone broths, wet toppers, and fresh water fountains encourages adequate renal filtration and urinary tract protection.",
+                    "contentText1": "Adequate hydration is critical for kidney function, digestion, and temperature regulation in dogs.",
+                    "contentText2": " Because dry kibble contains very little moisture, adding bone broth, wet food, or fresh water directly to their meals can prevent chronic dehydration. Ensuring constant access to fresh water and moisture-rich foods keeps their urinary tract flushed and healthy. Adequate hydration is critical for kidney function, digestion, and temperature regulation in dogs. Because dry kibble contains very little moisture, adding bone broth, wet food, or fresh water directly to their meals can prevent chronic dehydration. Ensuring constant access to fresh water and moisture-rich foods keeps their urinary tract flushed and healthy. Adequate hydration is critical for kidney function, digestion, and temperature regulation in dogs. Because dry kibble contains very little moisture, adding bone broth, wet food, or fresh water directly to their meals can prevent chronic dehydration. Ensuring constant access to fresh water and moisture-rich foods keeps their urinary tract flushed and healthy.",
                     "images": [
-                      "https://images.unsplash.com/photo-1534361960057-19889db9621e?auto=format&fit=crop&q=80&w=400",
-                      "https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&q=80&w=400"
+                      "https://i.pinimg.com/736x/b1/39/e6/b139e61b1ca8310829c66473e3afbc89.jpg",
+                      "https://i.pinimg.com/736x/53/2b/6f/532b6fe8d77e4d6d585c8dc5dd9909db.jpg"
                     ],
                     "imagePosition": "split-right"
                   },
@@ -2290,7 +2402,7 @@
                     "number": "5.",
                     "title": "Tailoring Meal Portions to Age and Energy Output",
                     "content": "Puppies, active working adults, and senior couch companions require drastically different caloric ratios. Routine weight monitoring prevents obesity — the single greatest threat to modern pet longevity.",
-                    "image": "https://images.unsplash.com/photo-1560807707-8cc77767d783?auto=format&fit=crop&q=80&w=800",
+                    "image": "https://i.pinimg.com/1200x/9f/b7/e7/9fb7e7ee1b7d6dffcf48d165fad8a2d7.jpg",
                     "imagePosition": "full-bottom-image"
                   }
                 ]
@@ -2302,8 +2414,8 @@
                 "author": "Marcus Vance",
                 "date": "05 Aug, 2025",
                 "readTime": "4 min read",
-                "image": "https://images.unsplash.com/photo-1587300003388-59208cc962cb?auto=format&fit=crop&q=80&w=800",
-                "heroImage": "https://images.unsplash.com/photo-1587300003388-59208cc962cb?auto=format&fit=crop&q=80&w=1200",
+                "image": "https://i.pinimg.com/1200x/24/22/8f/24228f4aaf3935c68347cbbac0c02f6c.jpg",
+                "heroImage": "https://i.pinimg.com/1200x/24/22/8f/24228f4aaf3935c68347cbbac0c02f6c.jpg",
                 "excerpt": "Transform your dog's habits with science-backed positive reinforcement techniques that build lifelong trust.",
                 "featured": false,
                 "introText": "Training should never rely on fear, intimidation, or outdated dominance theory. Modern behavioral science proves that reward-based positive reinforcement produces more confident, resilient, and cooperative pets who genuinely delight in learning.",
@@ -2319,15 +2431,16 @@
                       "High-value rewards: using real chicken or freeze-dried liver for tough distractions",
                       "Short, fun sessions: 5 to 10 minutes daily keeps canine motivation razor-sharp"
                     ],
-                    "image": "https://images.unsplash.com/photo-1587300003388-59208cc962cb?auto=format&fit=crop&q=80&w=600",
+                    "image": "https://i.pinimg.com/1200x/5e/2d/10/5e2d10c609fb22d0db1dbd4e704ca20f.jpg",
                     "imagePosition": "right"
                   },
                   {
                     "id": "2",
                     "number": "2.",
                     "title": "Mastering Loose-Leash Walking Without Pulling",
-                    "content": "When dogs pull on the leash, it is usually because walking forward is their primary self-reinforcing reward. By immediately stopping and waiting for eye contact whenever tension appears, dogs quickly discover that slack leashes are the only ticket forward.",
-                    "image": "https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&q=80&w=600",
+                    "contentText1": "Teaching a dog to walk politely on a leash transforms stressful outings into relaxing, enjoyable strolls for both of you. Instead of yanking back, simply stopping forward momentum when they pull teaches them that a tight leash means the walk pauses.",
+                    "contentText2": " Consistently rewarding them for maintaining a slack leash beside you creates reliable, long-lasting walking habits. Teaching a dog to walk politely on a leash transforms stressful outings into relaxing, enjoyable strolls for both of you. Instead of yanking back, simply stopping forward momentum when they pull teaches them that a tight leash means the walk pauses. Consistently rewarding them for maintaining a slack leash beside you creates reliable, long-lasting walking habits. Teaching a dog to walk politely on a leash transforms stressful outings into relaxing, enjoyable strolls for both of you. Instead of yanking back, simply stopping forward momentum when they pull teaches them that a tight leash means the walk pauses. Consistently rewarding them for maintaining a slack leash beside you creates reliable, long-lasting walking habits.",
+                    "image": "https://i.pinimg.com/1200x/af/dc/1d/afdc1d92e57ba79d7b546814bda5a87d.jpg",
                     "imagePosition": "right"
                   },
                   {
@@ -2344,17 +2457,18 @@
                       "text": "You do not train a dog by forcing your will upon them; you inspire them to make the right choices willingly.",
                       "author": "Marcus Vance"
                     },
-                    "image": "https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&q=80&w=600",
+                    "image": "https://i.pinimg.com/736x/52/16/35/5216351d4ff370cf86b9af301ad3432e.jpg",
                     "imagePosition": "bottom-banner"
                   },
                   {
                     "id": "4",
                     "number": "4.",
                     "title": "Intentional Socialization Across Varied Environments",
-                    "content": "Socialization does not mean forcing your dog to greet every stranger or animal. True socialization means teaching neutral indifference to novel sounds, surfaces, strollers, and traffic.",
+                    "contentText1": "Proper socialization goes far beyond just meeting other dogs; it involves positive exposure to diverse sights, sounds, and surfaces. Introducing your puppy to umbrellas, bicycles, and varying floor textures prevents the development of lifelong phobias. Thoughtful, controlled socialization creates a well-adjusted, emotionally resilient dog capable of handling real-world surprises. ",
+                    "contentText2": "Proper socialization goes far beyond just meeting other dogs; it involves positive exposure to diverse sights, sounds, and surfaces. Introducing your puppy to umbrellas, bicycles, and varying floor textures prevents the development of lifelong phobias. Thoughtful, controlled socialization creates a well-adjusted, emotionally resilient dog capable of handling real-world surprises. Proper socialization goes far beyond just meeting other dogs; it involves positive exposure to diverse sights, sounds, and surfaces. Introducing your puppy to umbrellas, bicycles, and varying floor textures prevents the development of lifelong phobias. Thoughtful, controlled socialization creates a well-adjusted, emotionally resilient dog capable of handling real-world surprises.",
                     "images": [
-                      "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&q=80&w=400",
-                      "https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?auto=format&fit=crop&q=80&w=400"
+                      "https://i.pinimg.com/736x/3f/16/2b/3f162b283f441d050cb1dd9f0fef4b01.jpg",
+                      "https://i.pinimg.com/1200x/c3/4d/bc/c34dbcab0ed73e6bf64e83dc4a614d19.jpg"
                     ],
                     "imagePosition": "split-right"
                   },
@@ -2362,8 +2476,8 @@
                     "id": "5",
                     "number": "5.",
                     "title": "Patience and Consistency: The Hallmarks of Great Companionship",
-                    "content": "Every dog progresses at their own pace. Celebrating small milestones and maintaining calm consistency cements good manners that last a lifetime and deepens the bond you share.",
-                    "image": "https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&q=80&w=800",
+                    "content": "Every dog progresses at their own pace. Celebrating small milestones and maintaining calm consistency cements good manners that last a lifetime and deepens the bond you share. With patience, encouragement, positive reinforcement, and regular practice, your dog gradually builds confidence, trust, and understanding, making everyday interactions happier, calmer, and more rewarding.",
+                    "image": "https://i.pinimg.com/1200x/cd/d1/ec/cdd1ece222bbf7ed3b9292b0f05174bc.jpg",
                     "imagePosition": "full-bottom-image"
                   }
                 ]
@@ -2375,8 +2489,8 @@
                 "author": "Dr. Sarah Jenkins",
                 "date": "18 Sep, 2025",
                 "readTime": "7 min read",
-                "image": "https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&q=80&w=800",
-                "heroImage": "https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&q=80&w=1200",
+                "image": "https://i.pinimg.com/1200x/2a/87/9c/2a879c1f1522f2ca67c3f77e360195bc.jpg",
+                "heroImage": "https://i.pinimg.com/1200x/2a/87/9c/2a879c1f1522f2ca67c3f77e360195bc.jpg",
                 "excerpt": "Regular wellness exams, vaccinations, and proactive diagnostics detect hidden illnesses before symptoms arise.",
                 "featured": false,
                 "introText": "Animals have evolved an instinctive habit to conceal pain and vulnerability until an illness has progressed. Establishing a proactive veterinary wellness routine ensures early clinical intervention, saves thousands in emergency treatments, and keeps your furry companions thriving.",
@@ -2392,15 +2506,16 @@
                       "Cardiopulmonary auscultation to ensure robust circulatory health",
                       "Comprehensive body condition scoring to fine-tune caloric balance"
                     ],
-                    "image": "https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&q=80&w=600",
+                    "image": "https://i.pinimg.com/736x/0a/8f/ba/0a8fba0f959aeaf3a99f0664576d58bc.jpg",
                     "imagePosition": "right"
                   },
                   {
                     "id": "2",
                     "number": "2.",
                     "title": "Tailored Vaccinations & Year-Round Parasite Defense",
-                    "content": "Core vaccines protect against deadly pathogens like rabies, parvovirus, and distemper, while lifestyle vaccines defend against Lyme disease and Bordetella. Year-round heartworm and flea-and-tick protection prevent debilitating vector-borne infections.",
-                    "image": "https://images.unsplash.com/photo-1601758228041-f3b2795255f1?auto=format&fit=crop&q=80&w=600",
+                    "contentText1": "Core vaccinations protect pets against deadly diseases like rabies, parvovirus, and distemper, keeping both them and the community safe.",
+                    "contenttext2": "Additionally, year-round prevention for fleas, ticks, and heartworms is absolutely non-negotiable, even for indoor pets. Consistent preventative medicine shields your pet from entirely avoidable, life-threatening parasitic infections. Core vaccinations protect pets against deadly diseases like rabies, parvovirus, and distemper, keeping both them and the community safe. Additionally, year-round prevention for fleas, ticks, and heartworms is absolutely non-negotiable, even for indoor pets. Consistent preventative medicine shields your pet from entirely avoidable, life-threatening parasitic infections.",
+                    "image": "https://i.pinimg.com/736x/48/c1/b3/48c1b35ca543ca226f47230ea64d2b09.jpg",
                     "imagePosition": "right"
                   },
                   {
@@ -2417,17 +2532,18 @@
                       "text": "Preventative care is not an added luxury; it is the single most compassionate commitment you make to your companion's future.",
                       "author": "Dr. Sarah Jenkins"
                     },
-                    "image": "https://images.unsplash.com/photo-1534361960057-19889db9621e?auto=format&fit=crop&q=80&w=600",
+                    "image": "https://i.pinimg.com/1200x/1b/6d/3f/1b6d3f99d7c262843b10421f2ba1bcdb.jpg",
                     "imagePosition": "bottom-banner"
                   },
                   {
                     "id": "4",
                     "number": "4.",
                     "title": "Recognizing Subtle Behavioral Signals of Pain",
-                    "content": "Subtle indicators like reluctance to climb stairs, appetite hesitation, unusual withdrawal, or excessive paw licking frequently signify joint discomfort, dental pain, or gastrointestinal distress.",
+                    "contentText1": "Animals are instinctively wired to hide their pain, making it difficult for owners to realize when they are suffering. Subtle changes like decreased appetite, reluctance to jump, or unusual aggression can indicate significant underlying discomfort. Being highly attuned to your pet's normal behavior allows you to seek veterinary help promptly when something is quietly wrong.",
+                    "contentText2": " Animals are instinctively wired to hide their pain, making it difficult for owners to realize when they are suffering. Subtle changes like decreased appetite, reluctance to jump, or unusual aggression can indicate significant underlying discomfort. Being highly attuned to your pet's normal behavior allows you to seek veterinary help promptly when something is quietly wrong. Animals are instinctively wired to hide their pain, making it difficult for owners to realize when they are suffering. Subtle changes like decreased appetite, reluctance to jump, or unusual aggression can indicate significant underlying discomfort. Being highly attuned to your pet's normal behavior allows you to seek veterinary help promptly when something is quietly wrong.",
                     "images": [
-                      "https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?auto=format&fit=crop&q=80&w=400",
-                      "https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&q=80&w=400"
+                      "https://i.pinimg.com/736x/aa/13/54/aa1354634299ca7ec4a63271817cd2a0.jpg",
+                      "https://i.pinimg.com/736x/fa/96/45/fa9645774ea5a4c00556720614251054.jpg"
                     ],
                     "imagePosition": "split-right"
                   },
@@ -2436,7 +2552,7 @@
                     "number": "5.",
                     "title": "Senior Pet Wellness: Supporting Mobility and Golden Years",
                     "content": "Pets aged seven and older benefit immensely from bi-annual wellness reviews. Joint supplements, orthopedic bedding, and gentle cognitive enrichment ensure their golden years remain dignified, vibrant, and joyful.",
-                    "image": "https://images.unsplash.com/photo-1587300003388-59208cc962cb?auto=format&fit=crop&q=80&w=800",
+                    "image": "https://i.pinimg.com/736x/ea/1e/72/ea1e728e315328a8cd503d4cd8b4616c.jpg",
                     "imagePosition": "full-bottom-image"
                   }
                 ]
@@ -3084,7 +3200,7 @@
         "title": "Full Grooming",
         "subtitle": "Shiny & Fresh",
         "description": "Complete grooming care to keep your pet clean, healthy, comfortable, and looking their best.",
-        "image": "https://images.unsplash.com/photo-1537151625747-768eb6cf92b2?auto=format&fit=crop&q=80&w=600",
+        "image": "https://i.pinimg.com/1200x/10/e0/8f/10e08f253f742e93438427b330cc80ee.jpg",
         "slug": "full-grooming",
         "icon": "Scissors",
         "detail": {
@@ -3109,39 +3225,45 @@
               "title": "Stress-Free Care"
             }
           ],
-          "overviewText1": "Regular grooming is essential for your pet's health and happiness.",
-          "overviewText2": "We use high-quality, pet-safe products and gentle techniques to ensure your furry friend feels relaxed, comfortable, and pampered.",
+          "overviewText1": "Regular grooming is essential for your pet's health and happiness. A consistent grooming schedule helps maintain a healthy coat and prevents skin issues from developing in your pets.",
+          "overviewText2": "We use high-quality, pet-safe products and gentle techniques to ensure your furry friend feels relaxed, comfortable, and pampered. Our expert groomers provide a stress-free environment, taking their time to make sure your pet feels safe and happy throughout the process.",
           "overviewImage": "https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&q=80&w=600",
           "includedFeatures": [
             {
               "id": "1",
-              "title": "Bath & Shampoo",
+              "icon": "Droplets",
+              "title": "Deep Clean Bath",
               "description": "Gentle, skin-friendly shampoo for a deep clean."
             },
             {
               "id": "2",
-              "title": "Brushing & Detangling",
-              "description": "Removes loose hair, prevents tangles and keeps coat smooth."
+              "icon": "Scissors",
+              "title": "Haircut & Styling",
+              "description": "Professional breed-specific styling and trims."
             },
             {
               "id": "3",
-              "title": "Nail Trimming",
-              "description": "Safe trimming to keep nails at the perfect length."
+              "icon": "Wind",
+              "title": "Blow Dry & Brush Out",
+              "description": "Fluff drying and thorough brushing to remove tangles."
             },
             {
               "id": "4",
-              "title": "Ear Cleaning",
-              "description": "Removes dirt and wax to prevent infections and discomfort."
+              "icon": "ScissorsSquare",
+              "title": "Nail Trimming",
+              "description": "Safe clipping and filing of nails for comfort."
             },
             {
               "id": "5",
-              "title": "Hair Styling",
-              "description": "Breed-specific cuts and styling for a neat look."
+              "icon": "Ear",
+              "title": "Ear Cleaning",
+              "description": "Gentle ear cleaning to prevent infections."
             },
             {
               "id": "6",
-              "title": "Deodorizing Spray",
-              "description": "Refreshing pet-safe finishing fragrance."
+              "icon": "Smile",
+              "title": "Teeth Brushing",
+              "description": "Oral care to maintain healthy gums and fresh breath."
             }
           ]
         }
@@ -3176,39 +3298,45 @@
               "title": "24/7 Supervision"
             }
           ],
-          "overviewText1": "Our pet boarding service provides a clean, secure, and comfortable environment.",
-          "overviewText2": "Every pet receives individual attention, meals, playtime, exercise, and plenty of love.",
+          "overviewText1": "Our premium pet boarding service provides a clean, secure, and highly comfortable environment for your furry family members. We ensure every pet feels right at home while you're away.",
+          "overviewText2": "Every pet receives individual attention, nutritious meals, structured playtime, plenty of exercise, and unconditional love. We maintain a strict cleaning schedule and climate-controlled rooms to guarantee the utmost comfort, safety, and well-being for your beloved companions.",
           "overviewImage": "https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&q=80&w=600",
           "includedFeatures": [
             {
               "id": "1",
-              "title": "Comfortable Rooms",
-              "description": "Clean and cozy spaces designed for comfortable stays."
+              "icon": "Home",
+              "title": "Private Suites",
+              "description": "Comfortable, climate-controlled rooms for a restful stay."
             },
             {
               "id": "2",
-              "title": "Daily Meals",
-              "description": "Nutritious meals based on your pet's routine."
+              "icon": "Utensils",
+              "title": "Nutritious Meals",
+              "description": "Premium pet food served on your pet's schedule."
             },
             {
               "id": "3",
-              "title": "Playtime",
-              "description": "Supervised activities to keep pets active."
+              "icon": "Activity",
+              "title": "Daily Playtime",
+              "description": "Supervised group or solo play sessions every day."
             },
             {
               "id": "4",
-              "title": "Daily Exercise",
-              "description": "Regular exercise sessions."
+              "icon": "Heart",
+              "title": "Cuddle Time",
+              "description": "One-on-one affection and petting from our staff."
             },
             {
               "id": "5",
-              "title": "Individual Attention",
-              "description": "Personalized care according to your pet's needs."
+              "icon": "Camera",
+              "title": "Photo Updates",
+              "description": "Daily photos sent to you so you can see they're happy."
             },
             {
               "id": "6",
+              "icon": "ShieldCheck",
               "title": "24/7 Supervision",
-              "description": "Continuous monitoring for safety and comfort."
+              "description": "Round-the-clock monitoring for safety and peace of mind."
             }
           ]
         }
@@ -3243,29 +3371,45 @@
               "title": "Loving Staff"
             }
           ],
-          "overviewText1": "Daycare provides your pet with the opportunity to play and socialize.",
-          "overviewText2": "We offer structured activities and rest periods to keep your pet happy.",
+          "overviewText1": "Daycare provides your pet with the perfect opportunity to play, socialize, and burn off excess energy safely. It is an excellent way to prevent separation anxiety in your furry friend.",
+          "overviewText2": "We offer structured activities, supervised group play, and dedicated rest periods to keep your pet happy and balanced. Our trained staff closely monitors all interactions, ensuring a safe, fun, and enriching experience for dogs of all sizes, breeds, and distinct temperaments.",
           "overviewImage": "https://images.unsplash.com/photo-1587300003388-59208cc962cb?auto=format&fit=crop&q=80&w=600",
           "includedFeatures": [
             {
               "id": "1",
-              "title": "Group Play",
-              "description": "Supervised play with other compatible pets."
+              "icon": "Users",
+              "title": "Socialization",
+              "description": "Safe interactions with other friendly dogs."
             },
             {
               "id": "2",
-              "title": "Rest Periods",
-              "description": "Quiet time for relaxation."
+              "icon": "Sun",
+              "title": "Outdoor Play",
+              "description": "Secure outdoor areas for running and fetching."
             },
             {
               "id": "3",
-              "title": "Basic Training",
-              "description": "Reinforcement of good behaviors."
+              "icon": "Moon",
+              "title": "Nap Times",
+              "description": "Scheduled rest periods to prevent overstimulation."
             },
             {
               "id": "4",
-              "title": "Updates",
-              "description": "Photos and updates of your pet's day."
+              "icon": "Brain",
+              "title": "Enrichment Games",
+              "description": "Mental stimulation puzzles and training games."
+            },
+            {
+              "id": "5",
+              "icon": "Camera",
+              "title": "Webcam Access",
+              "description": "Watch your pet play live from your phone or computer."
+            },
+            {
+              "id": "6",
+              "icon": "FileText",
+              "title": "Report Cards",
+              "description": "Daily updates on your pet's behavior and friends."
             }
           ]
         }
@@ -3300,29 +3444,45 @@
               "title": "Fresh Scent"
             }
           ],
-          "overviewText1": "A good bath is essential for healthy skin and coat.",
-          "overviewText2": "Our spa treatments use premium products tailored to your pet's skin type.",
+          "overviewText1": "A good bath is essential for maintaining healthy skin and a shiny, vibrant coat. Regular bathing helps remove loose fur, dirt, and allergens, keeping your pet feeling fresh and clean.",
+          "overviewText2": "Our luxurious spa treatments use premium, hypoallergenic products tailored specifically to your pet's skin type and coat condition. From deep conditioning treatments to soothing massages, we ensure a relaxing spa day that leaves your pet smelling amazing and feeling quite great.",
           "overviewImage": "https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&q=80&w=600",
           "includedFeatures": [
             {
               "id": "1",
-              "title": "Premium Shampoo",
-              "description": "Selected based on coat type."
+              "icon": "Droplets",
+              "title": "Luxury Bath",
+              "description": "Warm water wash with premium hypoallergenic shampoo."
             },
             {
               "id": "2",
-              "title": "Conditioner",
-              "description": "For a soft and shiny coat."
+              "icon": "Sparkles",
+              "title": "Deep Conditioning",
+              "description": "Moisturizing treatment for a soft, shiny coat."
             },
             {
               "id": "3",
-              "title": "Blow Dry",
-              "description": "Gentle drying."
+              "icon": "Wind",
+              "title": "Fluff Dry",
+              "description": "Hand blow-dry for maximum volume and comfort."
             },
             {
               "id": "4",
-              "title": "Brush Out",
-              "description": "To remove loose hair."
+              "icon": "Heart",
+              "title": "Blueberry Facial",
+              "description": "Tearless facial scrub that brightens and cleans."
+            },
+            {
+              "id": "5",
+              "icon": "Scissors",
+              "title": "Paw Pad Trim",
+              "description": "Trimming hair between pads for better traction."
+            },
+            {
+              "id": "6",
+              "icon": "Smile",
+              "title": "Finishing Cologne",
+              "description": "A spritz of pet-safe fragrance to smell amazing."
             }
           ]
         }
@@ -3357,29 +3517,45 @@
               "title": "Flexible Times"
             }
           ],
-          "overviewText1": "Regular walks are crucial for your dog's physical and mental health.",
-          "overviewText2": "Our experienced walkers ensure a safe and enjoyable outing for your pet.",
+          "overviewText1": "Regular walks are crucial for your dog's physical health and mental stimulation. A daily walking routine helps prevent obesity, improves cardiovascular health, and reduces bad behavior.",
+          "overviewText2": "Our experienced and reliable dog walkers ensure a safe, engaging, and enjoyable outing for your pet, exploring familiar neighborhoods or nearby parks. We tailor the pace and distance to your dog's age and fitness level, making sure they get the perfect amount of daily exercise.",
           "overviewImage": "https://images.unsplash.com/photo-1537151625747-768eb6cf92b2?auto=format&fit=crop&q=80&w=600",
           "includedFeatures": [
             {
               "id": "1",
+              "icon": "MapPin",
               "title": "Neighborhood Walks",
-              "description": "Familiar routes for comfort."
+              "description": "Safe routes in familiar surroundings."
             },
             {
               "id": "2",
-              "title": "Park Visits",
-              "description": "For extra sniffing and exploring."
+              "icon": "Activity",
+              "title": "Cardio Exercise",
+              "description": "Brisk walking tailored to your dog's fitness level."
             },
             {
               "id": "3",
-              "title": "Potty Breaks",
-              "description": "Essential relief during the day."
+              "icon": "Trees",
+              "title": "Park Visits",
+              "description": "Trips to local parks for new sights and smells."
             },
             {
               "id": "4",
-              "title": "Water Refresh",
-              "description": "Fresh water after every walk."
+              "icon": "Droplet",
+              "title": "Hydration Breaks",
+              "description": "Provided fresh water during and after the walk."
+            },
+            {
+              "id": "5",
+              "icon": "CheckCircle",
+              "title": "Potty Relief",
+              "description": "Guaranteed bathroom breaks and waste cleanup."
+            },
+            {
+              "id": "6",
+              "icon": "Map",
+              "title": "GPS Tracking",
+              "description": "Track our route and duration via our mobile app."
             }
           ]
         }
@@ -3414,29 +3590,45 @@
               "title": "Clean Coat"
             }
           ],
-          "overviewText1": "Cats require special handling and a quiet environment for grooming.",
-          "overviewText2": "Our groomers are trained to work with felines safely and gently.",
+          "overviewText1": "Cats require special handling, patience, and a quiet environment for successful grooming. Regular grooming prevents painful matting, reduces shedding, and helps monitor for health issues.",
+          "overviewText2": "Our professional groomers are highly trained to work with felines safely, gently, and without the use of harmful sedatives. We understand feline body language and employ stress-reduction techniques to ensure your cat's grooming experience is as calm and comfortable as possible.",
           "overviewImage": "https://images.unsplash.com/photo-1537151625747-768eb6cf92b2?auto=format&fit=crop&q=80&w=600",
           "includedFeatures": [
             {
               "id": "1",
-              "title": "Waterless Bath",
-              "description": "For cats who dislike water."
+              "icon": "Scissors",
+              "title": "Lion Cuts & Trims",
+              "description": "Specialized styling to keep your cat cool and clean."
             },
             {
               "id": "2",
-              "title": "Lion Cut",
-              "description": "Popular styling for long-haired cats."
+              "icon": "Droplets",
+              "title": "Waterless Bath",
+              "description": "Stress-free cleaning without the anxiety of water."
             },
             {
               "id": "3",
-              "title": "Nail Trims",
-              "description": "Careful trimming of sharp claws."
+              "icon": "Wind",
+              "title": "De-Shedding",
+              "description": "Thorough brushing to reduce hairballs and shedding."
             },
             {
               "id": "4",
-              "title": "Ear Cleaning",
-              "description": "Gentle removal of wax."
+              "icon": "Shield",
+              "title": "Nail Caps",
+              "description": "Application of soft nail caps to prevent scratching."
+            },
+            {
+              "id": "5",
+              "icon": "Ear",
+              "title": "Ear & Eye Clean",
+              "description": "Gentle wiping of sensitive facial areas."
+            },
+            {
+              "id": "6",
+              "icon": "Heart",
+              "title": "Feline-Friendly",
+              "description": "Quiet, dog-free environment for maximum comfort."
             }
           ]
         }
@@ -3471,29 +3663,45 @@
               "title": "Better Bond"
             }
           ],
-          "overviewText1": "Training helps prevent behavioral issues and strengthens your relationship.",
-          "overviewText2": "We focus on positive reinforcement to make learning fun for your pet.",
+          "overviewText1": "Professional training helps prevent behavioral issues and strengthens the bond between you and your pet. A well-trained pet is happier, safer, and much more enjoyable to be around daily.",
+          "overviewText2": "We focus exclusively on positive reinforcement techniques to make learning fun, rewarding, and highly effective for your pet. Whether you need basic obedience, puppy socialization, or behavior modification, our certified trainers provide personalized plans for long-lasting results.",
           "overviewImage": "https://images.unsplash.com/photo-1537151625747-768eb6cf92b2?auto=format&fit=crop&q=80&w=600",
           "includedFeatures": [
             {
               "id": "1",
+              "icon": "BookOpen",
               "title": "Basic Obedience",
-              "description": "Sit, stay, come, and leash walking."
+              "description": "Teaching fundamental commands like sit, stay, and come."
             },
             {
               "id": "2",
-              "title": "Puppy Socialization",
-              "description": "Getting puppies used to the world."
+              "icon": "Link",
+              "title": "Leash Training",
+              "description": "Polite walking without pulling or lunging."
             },
             {
               "id": "3",
-              "title": "Behavior Modification",
-              "description": "Addressing specific issues."
+              "icon": "Users",
+              "title": "Puppy Socialization",
+              "description": "Safe exposure to new people, dogs, and environments."
             },
             {
               "id": "4",
+              "icon": "ShieldAlert",
+              "title": "Behavior Modification",
+              "description": "Addressing anxiety, aggression, or resource guarding."
+            },
+            {
+              "id": "5",
+              "icon": "Award",
               "title": "Advanced Tricks",
-              "description": "Fun commands to challenge your pet."
+              "description": "Fun commands to challenge and engage your pet."
+            },
+            {
+              "id": "6",
+              "icon": "Home",
+              "title": "In-Home Sessions",
+              "description": "Training conducted in your home where behavior happens."
             }
           ]
         }
@@ -3528,29 +3736,45 @@
               "title": "Comfortable Ride"
             }
           ],
-          "overviewText1": "We provide safe transport for your pet when you are unable to.",
-          "overviewText2": "Our vehicles are equipped with safety restraints for pets of all sizes.",
+          "overviewText1": "We provide safe, reliable transport for your pet when you have a busy schedule or are unable to drive them yourself. Our service ensures they never miss a single important vet appointment.",
+          "overviewText2": "Our dedicated pet taxi vehicles are fully equipped with safety restraints, comfortable bedding, and climate control for pets of all sizes. We can safely transport your furry friend to the vet, grooming salon, daycare, or boarding facility with the utmost care and strict punctuality.",
           "overviewImage": "https://images.unsplash.com/photo-1537151625747-768eb6cf92b2?auto=format&fit=crop&q=80&w=600",
           "includedFeatures": [
             {
               "id": "1",
-              "title": "Vet Visits",
-              "description": "Transport to and from the clinic."
+              "icon": "Truck",
+              "title": "Safe Vehicles",
+              "description": "Climate-controlled vans with secure pet carriers."
             },
             {
               "id": "2",
-              "title": "Grooming Drop-off",
-              "description": "We'll take them to the salon."
+              "icon": "Clock",
+              "title": "On-Time Arrival",
+              "description": "Punctual pick-ups to ensure you never miss appointments."
             },
             {
               "id": "3",
-              "title": "Airport Transfers",
-              "description": "Assistance with travel arrangements."
+              "icon": "Stethoscope",
+              "title": "Vet Visits",
+              "description": "Round-trip transport to and from the veterinary clinic."
             },
             {
               "id": "4",
-              "title": "Wait & Return",
-              "description": "We can wait during appointments."
+              "icon": "Scissors",
+              "title": "Grooming Runs",
+              "description": "Convenient drop-off and pick-up from the salon."
+            },
+            {
+              "id": "5",
+              "icon": "UserCheck",
+              "title": "Trained Drivers",
+              "description": "Staff experienced in pet handling and first aid."
+            },
+            {
+              "id": "6",
+              "icon": "MapPin",
+              "title": "Door-to-Door",
+              "description": "Hassle-free service directly from your front door."
             }
           ]
         }
@@ -3584,8 +3808,8 @@
           "website": "www.petbloom.com",
           "address": "4140 Parker Rd. Petbloom, New Mexico 31134",
           "experience": "5 Years",
-          "aboutMeText1": "Conducts dedicated workshops and personalized seminars on pet care, covering vital topics including positive-reinforcement training, nutrition, grooming ethics, and gentle handling techniques.",
-          "aboutMeText2": "Provides consulting services for facilities and pet parents wanting to optimize spaces for pet safety and comfort, utilizing eco-friendly materials and veterinary-approved environmental setups.",
+          "aboutMeText1": "Conducts dedicated workshops and personalized seminars on pet care, covering vital topics including positive-reinforcement training, nutrition, grooming ethics, and gentle handling techniques. With a focus on creating a harmonious bond between pets and their families, Alex continuously strives to educate pet owners on the intricacies of canine and feline behavior for better home life.",
+          "aboutMeText2": "Provides consulting services for facilities and pet parents wanting to optimize spaces for pet safety and comfort, utilizing eco-friendly materials and veterinary-approved environmental setups. Beyond environmental design, Alex creates customized daily routines that integrate physical exercise, mental stimulation, and rest periods to prevent anxiety and destructive behaviors. This holistic approach ensures that pets not only survive but truly thrive in their living spaces, fostering a lifelong foundation of health, happiness, and deeply meaningful companionship with their loving human families.",
           "skillsDescription": "Certified in modern animal behavior, gentle grooming practices, and strict adherence to hygienic safety protocols.",
           "skills": [
             {
@@ -3622,27 +3846,27 @@
           "website": "www.petbloom.com",
           "address": "4140 Parker Rd. Petbloom, New Mexico 31134",
           "experience": "6 Years",
-          "aboutMeText1": "Specializes in coat restoration, de-shedding therapies, and sensitive-skin baths using 100% natural, hypoallergenic formulas.",
-          "aboutMeText2": "Passionate about creating trust-based relationships with nervous dogs to ensure grooming sessions are relaxing and enjoyable.",
-          "skillsDescription": "Highly skilled in breed styling, coat conditioning, hand scissoring, and gentle de-matting techniques.",
+          "aboutMeText1": "Specializes in advanced styling and therapeutic grooming for all dog breeds, meticulously combining aesthetics with comprehensive skin and coat health management. With years of hands-on experience, Jessica ensures that every grooming session is entirely stress-free, utilizing gentle techniques to keep even the most anxious pets incredibly calm, relaxed, and comfortable throughout.",
+          "aboutMeText2": "Routinely mentors junior grooming staff in mastering safe scissoring techniques, precise breed-standard cuts, and the careful identification of underlying skin conditions or unexpected lumps. Jessica strongly believes that grooming is an essential pillar of a pet's overall well-being, directly impacting their physical comfort and emotional happiness. By exclusively using premium, hypoallergenic products tailored to individual coat types, she consistently delivers exceptional, show-quality results while fiercely advocating for the long-term dermatological health of every furry client she sees.",
+          "skillsDescription": "Expert in breed-specific cuts, skin health treatments, and fear-free grooming methodologies for anxious dogs.",
           "skills": [
             {
               "id": "1",
-              "title": "Breed Haircuts & Styling",
+              "title": "Advanced Scissoring",
               "percentage": 95,
               "icon": "Scissors"
             },
             {
               "id": "2",
-              "title": "Skin & Coat Therapy",
+              "title": "De-shedding Treatments",
               "percentage": 88,
-              "icon": "Heart"
+              "icon": "Wind"
             },
             {
               "id": "3",
-              "title": "Puppy First-Cut Care",
+              "title": "Fear-Free Handling",
               "percentage": 90,
-              "icon": "Sparkles"
+              "icon": "Heart"
             }
           ]
         }
@@ -3660,27 +3884,27 @@
           "website": "www.petbloom.com",
           "address": "4140 Parker Rd. Petbloom, New Mexico 31134",
           "experience": "7 Years",
-          "aboutMeText1": "Provides comprehensive health screenings and monitors vital health indicators for pets staying at PetBloom boarding and day care facilities.",
-          "aboutMeText2": "Conducts regular pet health awareness programs for pet parents to catch early signs of illness and maintain active, happy lives.",
-          "skillsDescription": "Certified in Pet CPR, preventative veterinary support, emergency assistance, and physical rehabilitation.",
+          "aboutMeText1": "Provides critical medical support and compassionate nursing care, expertly assisting with routine wellness exams, precise vaccinations, and urgent life-saving emergency procedures. Jenny is deeply passionate about preventive medicine, consistently taking the extra time to educate pet parents on proper at-home care, essential nutrition, and the early warning signs of common illnesses.",
+          "aboutMeText2": "Manages the meticulous administration of prescribed medications, continuous patient monitoring during post-operative recovery, and the precise execution of diagnostic laboratory tests. Her unwavering dedication to veterinary excellence is matched only by her incredibly soothing bedside manner, which naturally comforts distressed animals and reassures worried families. By staying completely up-to-date with the latest advancements in veterinary technology and nursing protocols, Jenny guarantees that every single patient receives the absolute highest standard of medical attention and loving care.",
+          "skillsDescription": "Highly proficient in emergency triage, patient monitoring, diagnostic sampling, and post-operative recovery care.",
           "skills": [
             {
               "id": "1",
-              "title": "Health Screenings",
-              "percentage": 94,
-              "icon": "Stethoscope"
+              "title": "Patient Monitoring",
+              "percentage": 96,
+              "icon": "Activity"
             },
             {
               "id": "2",
-              "title": "Emergency Pet CPR",
-              "percentage": 90,
-              "icon": "ShieldCheck"
+              "title": "Diagnostic Testing",
+              "percentage": 85,
+              "icon": "Stethoscope"
             },
             {
               "id": "3",
-              "title": "Nutrition Planning",
-              "percentage": 86,
-              "icon": "Apple"
+              "title": "Emergency Response",
+              "percentage": 90,
+              "icon": "ShieldAlert"
             }
           ]
         }
@@ -3698,27 +3922,27 @@
           "website": "www.petbloom.com",
           "address": "4140 Parker Rd. Petbloom, New Mexico 31134",
           "experience": "8 Years",
-          "aboutMeText1": "Helps pet owners understand behavioral patterns, resolve leash reactivity, separation anxiety, and establish harmonious routines.",
-          "aboutMeText2": "Designs interactive group play sessions that build agility, confidence, and social compatibility among dogs of all ages.",
-          "skillsDescription": "Recognized leader in fear-free positive reinforcement, behavioral conditioning, and puppy socialization.",
+          "aboutMeText1": "Develops highly customized, science-based behavior modification programs specifically designed to effectively address complex issues such as severe separation anxiety, resource guarding, and leash reactivity. Daniel strictly employs compassionate, positive-reinforcement techniques to rebuild trust and facilitate clear, rewarding communication between highly stressed dogs and their owners.",
+          "aboutMeText2": "Conducts immersive one-on-one training sessions and highly engaging group socialization classes that dramatically boost canine confidence and reliably instill impeccable obedience skills. Recognizing that successful training fundamentally requires owner education, Daniel provides families with the essential tools, extensive knowledge, and ongoing support needed to maintain lasting results. His profound understanding of canine psychology enables him to completely transform challenging behavioral dynamics into deeply harmonious, joyful, and mutually respectful relationships that last a lifetime.",
+          "skillsDescription": "Certified behavior consultant specializing in positive reinforcement, anxiety reduction, and advanced obedience training.",
           "skills": [
             {
               "id": "1",
-              "title": "Obedience Training",
-              "percentage": 96,
-              "icon": "Award"
+              "title": "Behavior Modification",
+              "percentage": 94,
+              "icon": "Brain"
             },
             {
               "id": "2",
-              "title": "Behavior Therapy",
+              "title": "Obedience Training",
               "percentage": 92,
-              "icon": "Heart"
+              "icon": "BookOpen"
             },
             {
               "id": "3",
-              "title": "Agility & Play",
-              "percentage": 89,
-              "icon": "Smile"
+              "title": "Puppy Socialization",
+              "percentage": 88,
+              "icon": "Users"
             }
           ]
         }
@@ -4887,7 +5111,7 @@
             "id": "2",
             "number": "2.",
             "title": "Nail Care Is Crucial for Joint and Skeletal Health",
-            "content": "Overgrown claws alter how a dog or cat places their paws upon the floor, forcing joints into unnatural angles and causing premature arthritis or hip strain. If you hear a distinctive clicking noise when your pet walks across hard floors, a nail trim is overdue. Professional dremel grinding smooths sharp edges while keeping the quick completely safe.",
+            "content": "Overgrown claws alter how a dog or cat places their paws upon the floor, forcing joints into unnatural angles and causing premature arthritis or hip strain. If you hear a distinctive clicking noise when your pet walks across hard floors, a nail trim is overdue. Professional dremel grinding smooths sharp edges while keeping the quick completely safe. Overgrown claws alter how a dog or cat places their paws upon the floor, forcing joints into unnatural angles and causing premature arthritis or hip strain. If you hear a distinctive clicking noise when your pet walks across hard floors, a nail trim is overdue. Professional dremel grinding smooths sharp edges while keeping the quick completely safe. Overgrown claws alter how a dog or cat places their paws upon the floor, forcing joints into unnatural angles and causing premature arthritis or hip strain. If you hear a distinctive clicking noise when your pet walks across hard floors, a nail trim is overdue. Professional dremel grinding smooths sharp edges while keeping the quick completely safe.",
             "image": "https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?auto=format&fit=crop&q=80&w=600",
             "imagePosition": "right"
           },
@@ -4912,7 +5136,7 @@
             "id": "4",
             "number": "4.",
             "title": "Building Calmness, Trust, and Handling Confidence",
-            "content": "When introduced with positive reinforcement and gentle touch, grooming turns into a comforting bonding ritual. Pets learn to stay calm when their paws, ears, and tails are handled, making future veterinary visits and daily home inspections completely stress-free.",
+            "content": "When introduced with positive reinforcement and gentle touch, grooming turns into a comforting bonding ritual. Pets learn to stay calm when their paws, ears, and tails are handled, making future veterinary visits and daily home inspections completely stress-free. Establishing a calm grooming routine builds immense trust between you and your furry companion. When introduced with positive reinforcement and gentle touch, grooming turns into a comforting bonding ritual. Pets learn to stay calm when their paws, ears, and tails are handled, making future veterinary visits and daily home inspections completely stress-free. Establishing a calm grooming routine builds immense trust between you and your furry companion. When introduced with positive reinforcement and gentle touch, grooming turns into a comforting bonding ritual. Pets learn to stay calm when their paws, ears, and tails are handled, making future veterinary visits and daily home inspections completely stress-free. Establishing a calm grooming routine builds immense trust between you and your furry companion.",
             "images": [
               "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&q=80&w=400",
               "https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&q=80&w=400"
@@ -4960,7 +5184,7 @@
             "id": "2",
             "number": "2.",
             "title": "Spotting and Managing Food Sensitivities",
-            "content": "Chronic ear infections, red paws, and frequent itching are often telltale signals of food intolerances rather than seasonal allergies. Transitioning your pet to a limited-ingredient diet with novel protein sources like venison or turkey can resolve gastrointestinal distress within weeks.",
+            "content": "Many pets suffer silently from dietary intolerances that manifest as itchy skin, chronic ear infections, or digestive upset. Identifying culprits like wheat, corn, or specific proteins requires a careful elimination diet guided by veterinary advice. Switching to limited-ingredient or hypoallergenic formulas can dramatically improve your pet's comfort and vitality. Many pets suffer silently from dietary intolerances that manifest as itchy skin, chronic ear infections, or digestive upset. Identifying culprits like wheat, corn, or specific proteins requires a careful elimination diet guided by veterinary advice. Switching to limited-ingredient or hypoallergenic formulas can dramatically improve your pet's comfort and vitality. Many pets suffer silently from dietary intolerances that manifest as itchy skin, chronic ear infections, or digestive upset. Identifying culprits like wheat, corn, or specific proteins requires a careful elimination diet guided by veterinary advice. Switching to limited-ingredient or hypoallergenic formulas can dramatically improve your pet's comfort and vitality.",
             "image": "https://images.unsplash.com/photo-1576201836106-db1758fd1c97?auto=format&fit=crop&q=80&w=600",
             "imagePosition": "right"
           },
@@ -4985,7 +5209,7 @@
             "id": "4",
             "number": "4.",
             "title": "Hydration and Moisture-Rich Dietary Balance",
-            "content": "Many dogs fed solely dry kibble exist in a chronic state of mild dehydration. Incorporating bone broths, wet toppers, and fresh water fountains encourages adequate renal filtration and urinary tract protection.",
+            "content": "Adequate hydration is critical for kidney function, digestion, and temperature regulation in dogs. Because dry kibble contains very little moisture, adding bone broth, wet food, or fresh water directly to their meals can prevent chronic dehydration. Ensuring constant access to fresh water and moisture-rich foods keeps their urinary tract flushed and healthy. Adequate hydration is critical for kidney function, digestion, and temperature regulation in dogs. Because dry kibble contains very little moisture, adding bone broth, wet food, or fresh water directly to their meals can prevent chronic dehydration. Ensuring constant access to fresh water and moisture-rich foods keeps their urinary tract flushed and healthy. Adequate hydration is critical for kidney function, digestion, and temperature regulation in dogs. Because dry kibble contains very little moisture, adding bone broth, wet food, or fresh water directly to their meals can prevent chronic dehydration. Ensuring constant access to fresh water and moisture-rich foods keeps their urinary tract flushed and healthy.",
             "images": [
               "https://images.unsplash.com/photo-1534361960057-19889db9621e?auto=format&fit=crop&q=80&w=400",
               "https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&q=80&w=400"
@@ -5033,7 +5257,7 @@
             "id": "2",
             "number": "2.",
             "title": "Mastering Loose-Leash Walking Without Pulling",
-            "content": "When dogs pull on the leash, it is usually because walking forward is their primary self-reinforcing reward. By immediately stopping and waiting for eye contact whenever tension appears, dogs quickly discover that slack leashes are the only ticket forward.",
+            "content": "Teaching a dog to walk politely on a leash transforms stressful outings into relaxing, enjoyable strolls for both of you. Instead of yanking back, simply stopping forward momentum when they pull teaches them that a tight leash means the walk pauses. Consistently rewarding them for maintaining a slack leash beside you creates reliable, long-lasting walking habits. Teaching a dog to walk politely on a leash transforms stressful outings into relaxing, enjoyable strolls for both of you. Instead of yanking back, simply stopping forward momentum when they pull teaches them that a tight leash means the walk pauses. Consistently rewarding them for maintaining a slack leash beside you creates reliable, long-lasting walking habits. Teaching a dog to walk politely on a leash transforms stressful outings into relaxing, enjoyable strolls for both of you. Instead of yanking back, simply stopping forward momentum when they pull teaches them that a tight leash means the walk pauses. Consistently rewarding them for maintaining a slack leash beside you creates reliable, long-lasting walking habits.",
             "image": "https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&q=80&w=600",
             "imagePosition": "right"
           },
@@ -5058,7 +5282,7 @@
             "id": "4",
             "number": "4.",
             "title": "Intentional Socialization Across Varied Environments",
-            "content": "Socialization does not mean forcing your dog to greet every stranger or animal. True socialization means teaching neutral indifference to novel sounds, surfaces, strollers, and traffic.",
+            "content": "Proper socialization goes far beyond just meeting other dogs; it involves positive exposure to diverse sights, sounds, and surfaces. Introducing your puppy to umbrellas, bicycles, and varying floor textures prevents the development of lifelong phobias. Thoughtful, controlled socialization creates a well-adjusted, emotionally resilient dog capable of handling real-world surprises. Proper socialization goes far beyond just meeting other dogs; it involves positive exposure to diverse sights, sounds, and surfaces. Introducing your puppy to umbrellas, bicycles, and varying floor textures prevents the development of lifelong phobias. Thoughtful, controlled socialization creates a well-adjusted, emotionally resilient dog capable of handling real-world surprises. Proper socialization goes far beyond just meeting other dogs; it involves positive exposure to diverse sights, sounds, and surfaces. Introducing your puppy to umbrellas, bicycles, and varying floor textures prevents the development of lifelong phobias. Thoughtful, controlled socialization creates a well-adjusted, emotionally resilient dog capable of handling real-world surprises.",
             "images": [
               "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&q=80&w=400",
               "https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?auto=format&fit=crop&q=80&w=400"
@@ -5106,7 +5330,7 @@
             "id": "2",
             "number": "2.",
             "title": "Tailored Vaccinations & Year-Round Parasite Defense",
-            "content": "Core vaccines protect against deadly pathogens like rabies, parvovirus, and distemper, while lifestyle vaccines defend against Lyme disease and Bordetella. Year-round heartworm and flea-and-tick protection prevent debilitating vector-borne infections.",
+            "content": "Core vaccinations protect pets against deadly diseases like rabies, parvovirus, and distemper, keeping both them and the community safe. Additionally, year-round prevention for fleas, ticks, and heartworms is absolutely non-negotiable, even for indoor pets. Consistent preventative medicine shields your pet from entirely avoidable, life-threatening parasitic infections. Core vaccinations protect pets against deadly diseases like rabies, parvovirus, and distemper, keeping both them and the community safe. Additionally, year-round prevention for fleas, ticks, and heartworms is absolutely non-negotiable, even for indoor pets. Consistent preventative medicine shields your pet from entirely avoidable, life-threatening parasitic infections. Core vaccinations protect pets against deadly diseases like rabies, parvovirus, and distemper, keeping both them and the community safe. Additionally, year-round prevention for fleas, ticks, and heartworms is absolutely non-negotiable, even for indoor pets. Consistent preventative medicine shields your pet from entirely avoidable, life-threatening parasitic infections.",
             "image": "https://images.unsplash.com/photo-1601758228041-f3b2795255f1?auto=format&fit=crop&q=80&w=600",
             "imagePosition": "right"
           },
@@ -5131,7 +5355,7 @@
             "id": "4",
             "number": "4.",
             "title": "Recognizing Subtle Behavioral Signals of Pain",
-            "content": "Subtle indicators like reluctance to climb stairs, appetite hesitation, unusual withdrawal, or excessive paw licking frequently signify joint discomfort, dental pain, or gastrointestinal distress.",
+            "content": "Animals are instinctively wired to hide their pain, making it difficult for owners to realize when they are suffering. Subtle changes like decreased appetite, reluctance to jump, or unusual aggression can indicate significant underlying discomfort. Being highly attuned to your pet's normal behavior allows you to seek veterinary help promptly when something is quietly wrong. Animals are instinctively wired to hide their pain, making it difficult for owners to realize when they are suffering. Subtle changes like decreased appetite, reluctance to jump, or unusual aggression can indicate significant underlying discomfort. Being highly attuned to your pet's normal behavior allows you to seek veterinary help promptly when something is quietly wrong. Animals are instinctively wired to hide their pain, making it difficult for owners to realize when they are suffering. Subtle changes like decreased appetite, reluctance to jump, or unusual aggression can indicate significant underlying discomfort. Being highly attuned to your pet's normal behavior allows you to seek veterinary help promptly when something is quietly wrong.",
             "images": [
               "https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?auto=format&fit=crop&q=80&w=400",
               "https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&q=80&w=400"
